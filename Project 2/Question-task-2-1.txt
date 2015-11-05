@@ -1,0 +1,30 @@
+Node 1's id: 3167093720
+Node 1's successor id: 2199444382
+Node 1's predecessor id: 3636840596
+
+
+
+Node 2's id: 3636840596
+Node 2's successor id: 3167093720
+Node 2's predecessor id: 3007557874
+
+
+
+Node 5's id: 3007557874
+Node 5's successor id: 3636840596
+Node 5's predecessor id: 180046049
+
+
+
+Node 3's id: 180046049
+Node 3's successor id: 3007557874
+Node 3's predecessor id: 2199444382
+
+
+
+Node 4's id: 2199444382
+Node 4's successor id: 180046049
+Node 4's predecessor id: 3167093720
+
+
+Is it possible that the successor has a lower id?

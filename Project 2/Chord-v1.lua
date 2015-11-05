@@ -76,23 +76,78 @@ end
 ------------------------------------------------
 ------------------------------------------------
 function set_successor(node)
-    print("Node "..job.position.."\'s old successor id: "..successor.id)
     successor = node
-    print("Node "..job.position.."\'s new successor id: "..successor.id)
 end
 ------------------------------------------------
 ------------------------------------------------
 function set_predecessor(node)
-    print("Node "..job.position.."\'s old predecessor id: "..predecessor.id)
     predecessor = node
-    print("Node "..job.position.."\'s new predecessor id: "..predecessor.id)
 end
 ------------------------------------------------
+
+-----------------------------------------------------------------------------
+var = false
+function test()
+    if var == false then
+       var = true
+       print("Node ", job.position.."\'s successor id: ", ' ', successor.id)
+       events.sleep(2)
+       rpc.call(successor, {"test"})
+    end
+end
+-----------------------------------------------------------------------------
 
 
 ------------------------------------------------
 ---   ===        Chord functions         === ---
 ------------------------------------------------
+
+------------------------------------------------
+-- Utility function to check if c is in interval [a,b].
+-- Intervals can be (), (], [), [].
+-- A call to this function is for example: is_between(5, 4, 6, '(]')
+-- Returns true or false
+function is_between(nb, lower, upper, brackets)
+   if brackets == '()' then
+      if lower < upper then
+	 return (nb > lower) and (nb < upper)
+      else
+	 return (nb >= lower) or (nb <= upper)
+      end
+   elseif brackets == '(]' then
+      if lower < upper then
+	 return (nb > lower) and (nb <= upper)
+      else
+	 return (nb > lower) or (nb <= upper)
+      end
+   elseif brackets == '[)' then
+      if lower < upper then
+	 return (nb >= lower) and (nb < upper)
+      else
+	 return (nb >= lower) or (nb < upper)
+      end
+   else
+      if lower < upper then
+	 return (nb >= lower) and (nb <= upper)
+      else
+	 return (nb >= lower) or (nb <= upper)
+      end
+   end
+end
+------------------------------------------------
+
+
+
+
+function isInRange(e, from, to)
+   if from < to then
+      return (e > from) and (e <= to) -- => (from, to]
+   else
+      return (e > from) or (e <= to)  -- => (from, to] over circle nPrime, also handles starting condition from == to
+   end
+end
+
+
 
 ------------------------------------------------
 -- ask node n to find id's predecessor
@@ -101,19 +156,21 @@ function find_predecessor(id)
     local n1 = n -- start searching with self
     local n1_successor = successor
     -- important: n1_successor may have smaller ID than n1
-    -- while id is not in (n1.id, n1_successor.id] (seen as an interval)
-    -- id is intervall if id > n1.id and id <= n1_successor.id => we negate this
-    -- Note: added the condition that n1.id < n1_successor.id because otherwise,
-    --       (n1.id, n1_successor.id] is empty, which leads to an infinite loop.
+    -- we check if the interval is not empty (otherwise we discard the solution) and then we apply the condition
+    -- that id is not in the interval (n1.id, n1_successor.id].
     print("id: ", id, "(", n1.id, n1_successor.id,"]")
-    while n1.id < n1_successor.id and (id <= n1.id or id > n1_successor.id) do
+    --while (not interval_is_empty(n1.id, n1_successor.id, '(]')) and (not is_between(id, n1.id, n1_successor.id, '(]')) do
+    while not is_between(id, n1.id, n1_successor.id, '(]')  do
         n1 = n1_successor
         n1_successor = rpc.call(n1, {"get_successor"}) -- invoke get_successor() on n1
+	print("id: ", id, "(", n1.id, n1_successor.id,"]")
     end
+    --print("Node "..job.position.."\'s successor id: "..successor.id)
+    --rpc.call(successor, {"test", n.id})
     return n1
 end
 ------------------------------------------------
-
+ 
 ------------------------------------------------
 -- ask node n1 to find id's successor
 function find_successor(id)
@@ -139,20 +196,7 @@ function init_neighbours(n1)
     rpc.call(successor, {"set_predecessor", n})
     -- call set_successor(n) on predecessor
     rpc.call(predecessor, {"set_successor", n})
-
-    print("Node "..job.position.."\'s successor: "..successor.id)
-    print("Node "..job.position.."\'s predecessor: "..predecessor.id)
 end
-------------------------------------------------
-
-
-------------------------------------------------
--- n.create() creates a new Chord Ring
--- https://pdos.csail.mit.edu/papers/ton:chord/paper-ton.pdf p.6, Fig. 6
---function create()
---    predecessor = n
---    successor = n
---end
 ------------------------------------------------
 
 ------------------------------------------------
@@ -161,6 +205,9 @@ end
 function join(n1)
     if n1 then
         init_neighbours(n1)
+	print("Node "..job.position.." id :"..n.id)
+	print("Node "..job.position.." successor id :"..successor.id)
+	print("Node "..job.position.." predecessor id :"..predecessor.id)
     -- n is the only node in the network
     else
         successor = n
@@ -174,17 +221,16 @@ end
 -----------------------------------------------------------------------------
 function terminator()
     events.sleep(max_time)
-
     os.exit()
 end
 -----------------------------------------------------------------------------
+
 
 -----------------------------------------------------------------------------
 function main()
 
     -- This is the first node that every other node knows
     n0 = nodes[1]
-
     -- If n is the first node, it immediately joins the ring
     if job.position == 1 then
        -- The first node creates the Ring
@@ -199,15 +245,19 @@ function main()
         -- wait a random time in [0,8) seconds to join the ring (=> total waited <= 10)
         wait_time = math.random()*8
         events.sleep(wait_time)
+	--events.sleep(job.position)
 	print("Node " .. job.position .. " joins the ring after waiting " .. (wait_time+2) .. " seconds.\n")
         join(n0)
     end
 
-    events.sleep(15+job.position)
+    if job.position == 1 then
+       events.sleep(15)
+       rpc.call(successor, {"test"})
+    end
 
-    print("\n\nNode "..job.position.."\'s id: "..n.id)
-    print("Node "..job.position.."\'s successor id: "..successor.id)
-    print("Node "..job.position.."\'s predecessor id: "..predecessor.id.."\n")
+   -- print("\n\nNode "..job.position.."\'s id: "..n.id)
+   -- print("Node "..job.position.."\'s successor id: "..successor.id)
+   -- print("Node "..job.position.."\'s predecessor id: "..predecessor.id.."\n")
 
     events.thread(terminator)
 end
