@@ -1,9 +1,8 @@
 --
 -- Author:      Laurent Hayez
--- Date:        05 oct. 2015
+-- Date:        06 oct. 2015
 -- Last Modif:  06 nov. 2015
--- Description: Basic implementation of the chord ring.
---              Adds 500 queries per node to see the average number of hops required to satisfy the query.
+-- Description: Implementation of Chord with fingers
 --
 
 require("splay.base")
@@ -49,8 +48,10 @@ n = job.me
 -- it is the hash of the concatenation of the node's ip and port
 n.id = compute_hash(n.ip .. n.port)
 print("Node " .. job.position .. " id: " .. n.id)
+-- fingers is table of know nodes
+finger = {}
 -- closest node with bigger id
-successor = nil
+successor = finger[1].node
 -- closest node with lower id
 predecessor = nil
 -- max time that the algorithm can run is 3 min
@@ -150,14 +151,22 @@ end
 ------------------------------------------------
 
 ------------------------------------------------
--- ask node n to find id's predecessor
+-- find_predecessor is split into two functions: closest_preceding_finger and find_predecessor
+function closest_preceding_finger(id)
+    for i = m, 1, -1 do
+        if is_between(finger[i].node, n.id, id, '()') then
+            return finger[i].node
+        end
+    end
+end
+------------------------------------------------
 function find_predecessor(id)
     local n1 = n -- start searching with self
     local n1_successor = successor
     local i = 0
 
     while not is_between(id, n1.id, n1_successor.id, '(]') do
-        n1 = n1_successor
+        n1 = rpc.call(n1, {"closest_preceding_finger", id})
         n1_successor = rpc.call(n1, { "get_successor" }) -- invoke get_successor() on n1
         i = i + 1
     end
@@ -178,23 +187,35 @@ end
 ------------------------------------------------
 
 ------------------------------------------------
--- Initialize n's neighbours through n1
--- This function will be changed in future versions.
--- It will be split into three functions to implement chord's fingers.
-function init_neighbours(n1)
-    -- find (through node n1) the successor of your ID
-    -- call find_successor on n1 with parameter (n.id+1)%2^m
-    successor = rpc.call(n1, { "find_successor", (n.id + 1) % (2 ^ m) })
-    -- call get_predecessor on node successor
+-- Instead of init_neighbours, we have init_finger_table, update_finger_table and update_others
+function init_finger_table(n1)
+    finger[1].node = rpc.call(n1, { "find_successor", finger[1].start })
+    successor = finger[1].node
     predecessor = rpc.call(successor, { "get_predecessor" })
-
-    -- update the neighbours
-    -- call set_predecessor(n) on successor
-    rpc.call(successor, { "set_predecessor", n })
-    -- call set_successor(n) on predecessor
-    rpc.call(predecessor, { "set_successor", n })
+    for i = 1, m-1 do
+        if is_between(finger[i+1].start, n, finger[i].node, '[)') then
+            finger[i+1].node = finger[i].node
+        else
+            finger[i+1].node = rpc.call(n1, { "find_successor", finger[i+1].start })
+        end
+    end
 end
-
+------------------------------------------------
+function update_finger_table(s,i)
+    if finger[i].start ~= finger[i].node and is_between(s, finger[i].start, finger[i].node, '[)') then
+        finger[i].node = s
+        p = predecessor
+        rpc.call(p, { "update_finger_table", s,i })
+    end
+end
+------------------------------------------------
+function update_others()
+    rpc.call(successor, { "set_predecessor", n })
+    for i = 1, m do
+        p = find_predecessor((n+1-2^(i-1)) % 2 ^ m)
+        rpc.call(p, { "update_finger_table", n, i })
+    end
+end
 ------------------------------------------------
 
 ------------------------------------------------
@@ -202,14 +223,17 @@ end
 -- n1 is an arbitrary node in the network
 function join(n1)
     if n1 then
-        init_neighbours(n1)
+        init_finger_table(n1)
+        predecessor = rpc.call(successor, {"get_predecessor"})
+        update_others()
         -- n is the only node in the network
     else
-        successor = n
+        for i = 1, m do
+            finger[i].node = n
+        end
         predecessor = n
     end
 end
-
 ------------------------------------------------
 
 
@@ -223,10 +247,9 @@ end
 
 ------------------------------------------------
 -- function to generate n random keys per node
--- use hash function to be in the same space as the nodes
 function generate_keys(n)
     for j = 1, n do
-        rand_number = compute_hash(math.random(0, 2 ^ m))
+        rand_number = math.random(0, 2 ^ m)
         local _, i = find_predecessor(rand_number)
         print("Number of hops:", i)
         print("Key to find:", rand_number)
@@ -277,6 +300,8 @@ end
 -- execute the main function
 events.thread(main)
 events.run()
+
+
 
 
 
