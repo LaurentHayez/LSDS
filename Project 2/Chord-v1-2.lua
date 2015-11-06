@@ -225,12 +225,27 @@ end
 -- function to generate n random keys per node
 -- use hash function to be in the same space as the nodes
 function generate_keys(n)
-    for j = 1, n do
+   if not on_cluster then
+      file = io.open("Logs/log-test", "a+")
+      for j = 1, n do
         rand_number = compute_hash(math.random(0, 2 ^ m))
         local _, i = find_predecessor(rand_number)
+	   
+	file:write("Number of hops:", i, "\n")
+	file:write("Key to find:", rand_number, "\n")
+	   
         print("Number of hops:", i)
         print("Key to find:", rand_number)
-    end
+      end
+      file:close()
+   else
+      for j = 1, n do
+	 rand_number = compute_hash(math.random(0, 2 ^ m))
+	 local _, i = find_predecessor(rand_number)
+	 print("Number of hops:", i)
+	 print("Key to find:", rand_number)
+      end
+   end
 end
 ------------------------------------------------
 
@@ -258,8 +273,19 @@ function main()
         -- wait a random time in [0,8) seconds to join the ring (=> total waited <= 10)
         wait_time = math.random() * 8
         events.sleep(wait_time)
+
         print("Node " .. job.position .. " joins the ring after waiting " .. (wait_time + 2) .. " seconds.\n")
         join(n0)
+    end
+
+    if on_cluster then
+        -- wait 3 minutes for latency.
+        events.sleep(180)
+    end
+
+    if job.position == 1 then
+        events.sleep(15)
+        rpc.call(successor, { "test" })
     end
 
     if on_cluster then

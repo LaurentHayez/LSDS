@@ -48,8 +48,9 @@ n = job.me
 -- it is the hash of the concatenation of the node's ip and port
 n.id = compute_hash(n.ip .. n.port)
 print("Node " .. job.position .. " id: " .. n.id)
--- fingers is table of know nodes
-finger = {}
+-- fingers is table of know nodes (at initialization, it only knows itself, 
+-- start = n.id+2^(k-1) mod 2^m, 1 <= k <= m thus start = n.id + 1 % 2^m)
+finger = {[1] = {node = n, start = (n.id + 1) % 2^m}}
 -- closest node with bigger id
 successor = finger[1].node
 -- closest node with lower id
@@ -111,7 +112,7 @@ end
 -- A call to this function is for example: is_between(5, 4, 6, '(]')
 -- Returns true or false
 -- -----------------------
--- Note: The functionnment of is_between is the same for all kind of brackets. Example for '()':
+-- Note: The functionnment of is_between is the same for all kind of brackets. Example for '()':
 -- We are on a ring, so if the lower bound of the interval is smaller than the upper bound, we
 -- simply check if the id is in (lower, upper).
 -- if upper < lower, the id may still be in the intervall, that simply means that 2^m is in the interval,
@@ -193,7 +194,8 @@ function init_finger_table(n1)
     successor = finger[1].node
     predecessor = rpc.call(successor, { "get_predecessor" })
     for i = 1, m-1 do
-        if is_between(finger[i+1].start, n, finger[i].node, '[)') then
+       print(unpack(finger[i+1]))
+        if is_between(finger[i+1].start, n.id, finger[i].node, '[)') then
             finger[i+1].node = finger[i].node
         else
             finger[i+1].node = rpc.call(n1, { "find_successor", finger[i+1].start })
@@ -212,7 +214,7 @@ end
 function update_others()
     rpc.call(successor, { "set_predecessor", n })
     for i = 1, m do
-        p = find_predecessor((n+1-2^(i-1)) % 2 ^ m)
+        p = find_predecessor((n.id+1-2^(i-1)) % 2 ^ m)
         rpc.call(p, { "update_finger_table", n, i })
     end
 end
@@ -223,13 +225,17 @@ end
 -- n1 is an arbitrary node in the network
 function join(n1)
     if n1 then
-        init_finger_table(n1)
-        predecessor = rpc.call(successor, {"get_predecessor"})
-        update_others()
+       init_finger_table(n1)
+       predecessor = rpc.call(successor, {"get_predecessor"})
+       update_others()
         -- n is the only node in the network
     else
         for i = 1, m do
-            finger[i].node = n
+	   -- have to initialize an empty array for finger[i], otherwise lua does not understand what I want to do
+	   if i ~= 1 then
+	      finger[i] = {}
+	   end
+	   finger[i].node = n
         end
         predecessor = n
     end
@@ -286,12 +292,24 @@ function main()
     end
 
     if on_cluster then
+        -- wait 3 minutes for latency.
+        events.sleep(180)
+    end
+
+    if job.position == 1 then
+        events.sleep(15)
+        rpc.call(successor, { "test" })
+    end
+
+    --[[
+    if on_cluster then
         events.sleep(300)
         generate_keys(500)
     else
         events.sleep(30)
         generate_keys(10)
     end
+    --]]
 
     events.thread(terminator)
 end
