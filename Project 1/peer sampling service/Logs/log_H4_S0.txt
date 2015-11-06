@@ -1,0 +1,2370 @@
+17:39:51.471622 (39)  START_LOG
+17:39:51.472266 (39)  SPLAYD LUA EXEC
+17:39:51.531673 (39)  >> Job settings:
+17:39:51.531840 (39)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:51.531986 (39)  Name: 
+17:39:51.532195 (39)  Description: 
+17:39:51.532279 (39)  Disk:
+17:39:51.532416 (39)  	max 512 files
+17:39:51.532563 (39)  	max 32 file descriptors
+17:39:51.532837 (39)  	max 67108864 size in bytes
+17:39:51.533056 (39)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:51.533185 (39)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:51.533359 (39)  Mem 2097152 bytes of memory
+17:39:51.533569 (39)  Network:
+17:39:51.533747 (39)  	max 134217728/134217728 send/receive bytes
+17:39:51.533960 (39)  	max 32 tcp sockets
+17:39:51.534184 (39)  	ip 172.17.0.33
+17:39:51.534267 (39)  	ports 14635-14635
+17:39:51.534405 (39)  
+17:39:51.554031 (39)  >> Into sandbox !!!
+17:39:51.567208 (39)  > Memory: 169.1484375 KBytes
+17:39:51.567338 (39)  > Checking sandbox...
+17:39:51.567479 (39)     > passed
+17:39:51.567541 (39)  
+17:39:51.567608 (39)  [splay.urpc] W: setsockname(14635): address already in use
+17:39:52.308908 (78)  START_LOG
+17:39:52.309013 (78)  SPLAYD LUA EXEC
+17:39:52.368296 (78)  >> Job settings:
+17:39:52.368543 (78)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:52.368650 (78)  Name: 
+17:39:52.368706 (78)  Description: 
+17:39:52.368805 (78)  Disk:
+17:39:52.368979 (78)  	max 512 files
+17:39:52.369184 (78)  	max 32 file descriptors
+17:39:52.369384 (78)  	max 67108864 size in bytes
+17:39:52.369573 (78)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_8/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:52.369903 (78)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_8/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:52.370043 (78)  Mem 2097152 bytes of memory
+17:39:52.370193 (78)  Network:
+17:39:52.370398 (78)  	max 134217728/134217728 send/receive bytes
+17:39:52.370622 (78)  	max 32 tcp sockets
+17:39:52.370817 (78)  	ip 172.17.0.26
+17:39:52.370875 (78)  	ports 16940-16940
+17:39:52.371055 (78)  
+17:39:52.390949 (78)  >> Into sandbox !!!
+17:39:52.406877 (78)  > Memory: 169.1484375 KBytes
+17:39:52.407003 (78)  > Checking sandbox...
+17:39:52.407179 (78)     > passed
+17:39:52.407238 (78)  
+17:39:52.407302 (78)  [splay.urpc] W: setsockname(16940): address already in use
+17:39:52.573463 (114)  START_LOG
+17:39:52.573623 (114)  SPLAYD LUA EXEC
+17:39:52.637502 (114)  >> Job settings:
+17:39:52.643631 (114)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:52.643749 (114)  Name: 
+17:39:52.643805 (114)  Description: 
+17:39:52.643861 (114)  Disk:
+17:39:52.643915 (114)  	max 512 files
+17:39:52.643969 (114)  	max 32 file descriptors
+17:39:52.644109 (114)  	max 67108864 size in bytes
+17:39:52.644165 (114)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_14/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:52.644220 (114)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_14/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:52.644275 (114)  Mem 2097152 bytes of memory
+17:39:52.644330 (114)  Network:
+17:39:52.644383 (114)  	max 134217728/134217728 send/receive bytes
+17:39:52.644438 (114)  	max 32 tcp sockets
+17:39:52.644492 (114)  	ip 172.17.0.32
+17:39:52.644545 (114)  	ports 19740-19740
+17:39:52.644600 (114)  
+17:39:52.657754 (114)  >> Into sandbox !!!
+17:39:52.672394 (114)  > Memory: 169.1513671875 KBytes
+17:39:52.672520 (114)  > Checking sandbox...
+17:39:52.672659 (114)     > passed
+17:39:52.672715 (114)  
+17:39:52.672769 (114)  [splay.urpc] W: setsockname(19740): address already in use
+17:39:52.812114 (20)  START_LOG
+17:39:52.812764 (20)  SPLAYD LUA EXEC
+17:39:52.885554 (24)  START_LOG
+17:39:52.886841 (24)  SPLAYD LUA EXEC
+17:39:52.898283 (20)  >> Job settings:
+17:39:52.929698 (20)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:52.929785 (20)  Name: 
+17:39:52.929844 (20)  Description: 
+17:39:52.929902 (20)  Disk:
+17:39:52.929958 (20)  	max 512 files
+17:39:52.930016 (20)  	max 32 file descriptors
+17:39:52.930074 (20)  	max 67108864 size in bytes
+17:39:52.930133 (20)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:52.930191 (20)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:52.930250 (20)  Mem 2097152 bytes of memory
+17:39:52.930307 (20)  Network:
+17:39:52.930364 (20)  	max 134217728/134217728 send/receive bytes
+17:39:52.930420 (20)  	max 32 tcp sockets
+17:39:52.930478 (20)  	ip 172.17.0.29
+17:39:52.930535 (20)  	ports 13097-13097
+17:39:52.930592 (20)  
+17:39:52.930648 (20)  >> Into sandbox !!!
+17:39:52.930705 (20)  > Memory: 169.1484375 KBytes
+17:39:52.930762 (20)  > Checking sandbox...
+17:39:52.930820 (20)     > passed
+17:39:52.930876 (20)  
+17:39:52.930997 (20)  [splay.urpc] W: setsockname(13097): address already in use
+17:39:52.946178 (24)  >> Job settings:
+17:39:52.946347 (24)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:52.946561 (24)  Name: 
+17:39:52.946740 (24)  Description: 
+17:39:52.946822 (24)  Disk:
+17:39:52.946948 (24)  	max 512 files
+17:39:52.947159 (24)  	max 32 file descriptors
+17:39:52.947772 (24)  	max 67108864 size in bytes
+17:39:52.947871 (24)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_5/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:52.947931 (24)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_5/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:52.948035 (24)  Mem 2097152 bytes of memory
+17:39:52.948095 (24)  Network:
+17:39:52.948196 (24)  	max 134217728/134217728 send/receive bytes
+17:39:52.948521 (24)  	max 32 tcp sockets
+17:39:52.948667 (24)  	ip 172.17.0.30
+17:39:52.948912 (24)  	ports 15343-15343
+17:39:52.948996 (24)  
+17:39:52.974309 (24)  >> Into sandbox !!!
+17:39:52.975542 (24)  > Memory: 169.1484375 KBytes
+17:39:52.975662 (24)  > Checking sandbox...
+17:39:52.975723 (24)     > passed
+17:39:52.975780 (24)  
+17:39:53.14800 (96)  START_LOG
+17:39:53.15244 (96)  SPLAYD LUA EXEC
+17:39:53.52921 (21)  START_LOG
+17:39:53.53025 (21)  SPLAYD LUA EXEC
+17:39:53.76342 (96)  >> Job settings:
+17:39:53.96245 (96)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:53.96347 (96)  Name: 
+17:39:53.96459 (96)  Description: 
+17:39:53.96520 (96)  Disk:
+17:39:53.96575 (96)  	max 512 files
+17:39:53.96630 (96)  	max 32 file descriptors
+17:39:53.96685 (96)  	max 67108864 size in bytes
+17:39:53.96740 (96)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_12/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:53.96796 (96)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_12/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:53.96873 (96)  Mem 2097152 bytes of memory
+17:39:53.96929 (96)  Network:
+17:39:53.96983 (96)  	max 134217728/134217728 send/receive bytes
+17:39:53.97064 (96)  	max 32 tcp sockets
+17:39:53.97121 (96)  	ip 172.17.0.29
+17:39:53.97200 (96)  	ports 18864-18864
+17:39:53.97257 (96)  
+17:39:53.98405 (96)  >> Into sandbox !!!
+17:39:53.98653 (96)  > Memory: 169.1513671875 KBytes
+17:39:53.98890 (96)  > Checking sandbox...
+17:39:53.98981 (96)     > passed
+17:39:53.99081 (96)  
+17:39:53.109338 (96)  [splay.urpc] W: setsockname(18864): address already in use
+17:39:53.111849 (21)  >> Job settings:
+17:39:53.112048 (21)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:53.112269 (21)  Name: 
+17:39:53.112479 (21)  Description: 
+17:39:53.112560 (21)  Disk:
+17:39:53.112669 (21)  	max 512 files
+17:39:53.113266 (21)  	max 32 file descriptors
+17:39:53.113350 (21)  	max 67108864 size in bytes
+17:39:53.113444 (21)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:53.113512 (21)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:53.113611 (21)  Mem 2097152 bytes of memory
+17:39:53.113815 (21)  Network:
+17:39:53.114014 (21)  	max 134217728/134217728 send/receive bytes
+17:39:53.114223 (21)  	max 32 tcp sockets
+17:39:53.114283 (21)  	ip 172.17.0.30
+17:39:53.114409 (21)  	ports 14340-14340
+17:39:53.114470 (21)  
+17:39:53.135151 (21)  >> Into sandbox !!!
+17:39:53.135313 (21)  > Memory: 169.1484375 KBytes
+17:39:53.135375 (21)  > Checking sandbox...
+17:39:53.135430 (21)     > passed
+17:39:53.135484 (21)  
+17:39:53.144788 (21)  [splay.urpc] W: setsockname(14340): address already in use
+17:39:53.387621 (112)  START_LOG
+17:39:53.387726 (112)  SPLAYD LUA EXEC
+17:39:53.448198 (112)  >> Job settings:
+17:39:53.448367 (112)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:53.448440 (112)  Name: 
+17:39:53.448548 (112)  Description: 
+17:39:53.448627 (112)  Disk:
+17:39:53.448734 (112)  	max 512 files
+17:39:53.448801 (112)  	max 32 file descriptors
+17:39:53.448935 (112)  	max 67108864 size in bytes
+17:39:53.449002 (112)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_12/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:53.449253 (112)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_12/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:53.449425 (112)  Mem 2097152 bytes of memory
+17:39:53.449615 (112)  Network:
+17:39:53.449837 (112)  	max 134217728/134217728 send/receive bytes
+17:39:53.450076 (112)  	max 32 tcp sockets
+17:39:53.450176 (112)  	ip 172.17.0.32
+17:39:53.450294 (112)  	ports 18647-18647
+17:39:53.450353 (112)  
+17:39:53.470620 (112)  >> Into sandbox !!!
+17:39:53.470862 (112)  > Memory: 169.1513671875 KBytes
+17:39:53.470931 (112)  > Checking sandbox...
+17:39:53.473975 (112)     > passed
+17:39:53.474060 (112)  
+17:39:53.481839 (112)  [splay.urpc] W: setsockname(18647): address already in use
+17:39:53.483139 (38)  START_LOG
+17:39:53.483242 (38)  SPLAYD LUA EXEC
+17:39:53.540424 (38)  >> Job settings:
+17:39:53.540596 (38)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:53.540842 (38)  Name: 
+17:39:53.540925 (38)  Description: 
+17:39:53.541059 (38)  Disk:
+17:39:53.541194 (38)  	max 512 files
+17:39:53.541414 (38)  	max 32 file descriptors
+17:39:53.541633 (38)  	max 67108864 size in bytes
+17:39:53.541868 (38)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:53.542065 (38)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:53.542259 (38)  Mem 2097152 bytes of memory
+17:39:53.542442 (38)  Network:
+17:39:53.542650 (38)  	max 134217728/134217728 send/receive bytes
+17:39:53.542865 (38)  	max 32 tcp sockets
+17:39:53.542946 (38)  	ip 172.17.0.33
+17:39:53.543059 (38)  	ports 14135-14135
+17:39:53.543118 (38)  
+17:39:53.564886 (39)  waiting for 0.98248557699029 to desynchronize
+17:39:53.566636 (38)  >> Into sandbox !!!
+17:39:53.566892 (38)  > Memory: 169.1484375 KBytes
+17:39:53.566957 (38)  > Checking sandbox...
+17:39:53.567025 (38)     > passed
+17:39:53.567082 (38)  
+17:39:53.574717 (38)  [splay.urpc] W: setsockname(14135): address already in use
+17:39:53.837224 (37)  START_LOG
+17:39:53.837340 (37)  SPLAYD LUA EXEC
+17:39:53.901351 (37)  >> Job settings:
+17:39:53.901555 (37)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:53.901621 (37)  Name: 
+17:39:53.901680 (37)  Description: 
+17:39:53.901739 (37)  Disk:
+17:39:53.901797 (37)  	max 512 files
+17:39:53.901857 (37)  	max 32 file descriptors
+17:39:53.901916 (37)  	max 67108864 size in bytes
+17:39:53.901974 (37)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:53.902034 (37)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:53.902093 (37)  Mem 2097152 bytes of memory
+17:39:53.902152 (37)  Network:
+17:39:53.902210 (37)  	max 134217728/134217728 send/receive bytes
+17:39:53.902294 (37)  	max 32 tcp sockets
+17:39:53.902355 (37)  	ip 172.17.0.33
+17:39:53.902424 (37)  	ports 13862-13862
+17:39:53.902482 (37)  
+17:39:53.919767 (37)  >> Into sandbox !!!
+17:39:53.919986 (37)  > Memory: 169.1484375 KBytes
+17:39:53.920246 (37)  > Checking sandbox...
+17:39:53.920340 (37)     > passed
+17:39:53.920488 (37)  
+17:39:53.930333 (37)  [splay.urpc] W: setsockname(13862): address already in use
+17:39:54.196935 (75)  START_LOG
+17:39:54.217895 (75)  SPLAYD LUA EXEC
+17:39:54.225143 (76)  START_LOG
+17:39:54.226005 (76)  SPLAYD LUA EXEC
+17:39:54.270576 (75)  >> Job settings:
+17:39:54.292964 (75)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:54.293163 (75)  Name: 
+17:39:54.293223 (75)  Description: 
+17:39:54.293280 (75)  Disk:
+17:39:54.293336 (75)  	max 512 files
+17:39:54.293392 (75)  	max 32 file descriptors
+17:39:54.293449 (75)  	max 67108864 size in bytes
+17:39:54.293565 (75)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_8/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:54.293623 (75)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_8/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:54.293680 (75)  Mem 2097152 bytes of memory
+17:39:54.293792 (75)  Network:
+17:39:54.293849 (75)  	max 134217728/134217728 send/receive bytes
+17:39:54.293963 (75)  	max 32 tcp sockets
+17:39:54.294020 (75)  	ip 172.17.0.27
+17:39:54.294077 (75)  	ports 16610-16610
+17:39:54.294133 (75)  
+17:39:54.295322 (75)  >> Into sandbox !!!
+17:39:54.295496 (75)  > Memory: 169.1484375 KBytes
+17:39:54.295703 (75)  > Checking sandbox...
+17:39:54.295914 (75)     > passed
+17:39:54.296127 (75)  
+17:39:54.306881 (75)  [splay.urpc] W: setsockname(16610): address already in use
+17:39:54.342089 (6)  START_LOG
+17:39:54.342701 (6)  SPLAYD LUA EXEC
+17:39:54.403022 (78)  waiting for 3.1939812019439 to desynchronize
+17:39:54.406586 (6)  >> Job settings:
+17:39:54.406746 (6)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:54.406960 (6)  Name: 
+17:39:54.407213 (6)  Description: 
+17:39:54.407405 (6)  Disk:
+17:39:54.407624 (6)  	max 512 files
+17:39:54.407845 (6)  	max 32 file descriptors
+17:39:54.408123 (6)  	max 67108864 size in bytes
+17:39:54.408399 (6)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:54.408804 (6)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:54.409014 (6)  Mem 2097152 bytes of memory
+17:39:54.409270 (6)  Network:
+17:39:54.409517 (6)  	max 134217728/134217728 send/receive bytes
+17:39:54.409766 (6)  	max 32 tcp sockets
+17:39:54.410001 (6)  	ip 172.17.0.26
+17:39:54.410274 (6)  	ports 13448-13448
+17:39:54.410522 (6)  
+17:39:54.428615 (76)  >> Job settings:
+17:39:54.428756 (76)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:54.428818 (76)  Name: 
+17:39:54.428895 (76)  Description: 
+17:39:54.428954 (76)  Disk:
+17:39:54.429012 (76)  	max 512 files
+17:39:54.429071 (76)  	max 32 file descriptors
+17:39:54.429130 (76)  	max 67108864 size in bytes
+17:39:54.429189 (76)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_6/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:54.429249 (76)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_6/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:54.429309 (76)  Mem 2097152 bytes of memory
+17:39:54.429368 (76)  Network:
+17:39:54.429426 (76)  	max 134217728/134217728 send/receive bytes
+17:39:54.429517 (76)  	max 32 tcp sockets
+17:39:54.429577 (76)  	ip 172.17.0.26
+17:39:54.429635 (76)  	ports 15843-15843
+17:39:54.429694 (76)  
+17:39:54.429752 (76)  >> Into sandbox !!!
+17:39:54.429810 (76)  > Memory: 169.1484375 KBytes
+17:39:54.429869 (76)  > Checking sandbox...
+17:39:54.429928 (76)     > passed
+17:39:54.429986 (76)  
+17:39:54.430043 (76)  [splay.urpc] W: setsockname(15843): address already in use
+17:39:54.432138 (6)  >> Into sandbox !!!
+17:39:54.432417 (6)  > Memory: 169.1484375 KBytes
+17:39:54.432656 (6)  > Checking sandbox...
+17:39:54.432900 (6)     > passed
+17:39:54.433142 (6)  
+17:39:54.616428 (22)  START_LOG
+17:39:54.616979 (22)  SPLAYD LUA EXEC
+17:39:54.669195 (114)  waiting for 1.6954180280191 to desynchronize
+17:39:54.677541 (22)  >> Job settings:
+17:39:54.678255 (22)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:54.678431 (22)  Name: 
+17:39:54.678553 (22)  Description: 
+17:39:54.678618 (22)  Disk:
+17:39:54.678689 (22)  	max 512 files
+17:39:54.678750 (22)  	max 32 file descriptors
+17:39:54.678810 (22)  	max 67108864 size in bytes
+17:39:54.682152 (93)  START_LOG
+17:39:54.682309 (93)  SPLAYD LUA EXEC
+17:39:54.685706 (22)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:54.685848 (22)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:54.685912 (22)  Mem 2097152 bytes of memory
+17:39:54.685973 (22)  Network:
+17:39:54.686034 (22)  	max 134217728/134217728 send/receive bytes
+17:39:54.686095 (22)  	max 32 tcp sockets
+17:39:54.686154 (22)  	ip 172.17.0.30
+17:39:54.686214 (22)  	ports 14840-14840
+17:39:54.686275 (22)  
+17:39:54.701633 (22)  >> Into sandbox !!!
+17:39:54.709637 (22)  > Memory: 169.1484375 KBytes
+17:39:54.709767 (22)  > Checking sandbox...
+17:39:54.709829 (22)     > passed
+17:39:54.709890 (22)  
+17:39:54.713562 (22)  [splay.urpc] W: setsockname(14840): address already in use
+17:39:54.742646 (93)  >> Job settings:
+17:39:54.750145 (93)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:54.750265 (93)  Name: 
+17:39:54.750375 (93)  Description: 
+17:39:54.750430 (93)  Disk:
+17:39:54.750481 (93)  	max 512 files
+17:39:54.750533 (93)  	max 32 file descriptors
+17:39:54.750671 (93)  	max 67108864 size in bytes
+17:39:54.750723 (93)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_13/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:54.750787 (93)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_13/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:54.750839 (93)  Mem 2097152 bytes of memory
+17:39:54.750918 (93)  Network:
+17:39:54.750972 (93)  	max 134217728/134217728 send/receive bytes
+17:39:54.751035 (93)  	max 32 tcp sockets
+17:39:54.751087 (93)  	ip 172.17.0.27
+17:39:54.751178 (93)  	ports 19454-19454
+17:39:54.751284 (93)  
+17:39:54.765685 (93)  >> Into sandbox !!!
+17:39:54.765939 (93)  > Memory: 168.681640625 KBytes
+17:39:54.766184 (93)  > Checking sandbox...
+17:39:54.766269 (93)     > passed
+17:39:54.766530 (93)  
+17:39:54.905920 (20)  waiting for 0.12038348015416 to desynchronize
+17:39:54.925781 (40)  START_LOG
+17:39:54.925888 (40)  SPLAYD LUA EXEC
+17:39:54.980739 (24)  waiting for 4.3060456934879 to desynchronize
+17:39:54.985140 (40)  >> Job settings:
+17:39:54.985311 (40)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:54.985438 (40)  Name: 
+17:39:54.985665 (40)  Description: 
+17:39:54.986010 (40)  Disk:
+17:39:54.986079 (40)  	max 512 files
+17:39:54.986248 (40)  	max 32 file descriptors
+17:39:54.986376 (40)  	max 67108864 size in bytes
+17:39:54.986443 (40)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_5/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:54.986668 (40)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_5/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:54.986837 (40)  Mem 2097152 bytes of memory
+17:39:54.987031 (40)  Network:
+17:39:54.987207 (40)  	max 134217728/134217728 send/receive bytes
+17:39:54.987267 (40)  	max 32 tcp sockets
+17:39:54.987393 (40)  	ip 172.17.0.33
+17:39:54.987583 (40)  	ports 15135-15135
+17:39:54.987803 (40)  
+17:39:54.997581 (23)  START_LOG
+17:39:54.998210 (23)  SPLAYD LUA EXEC
+17:39:55.11724 (40)  >> Into sandbox !!!
+17:39:55.24623 (40)  > Memory: 169.1484375 KBytes
+17:39:55.24711 (40)  > Checking sandbox...
+17:39:55.24807 (40)     > passed
+17:39:55.24935 (40)  
+17:39:55.25018 (40)  [splay.urpc] W: setsockname(15135): address already in use
+17:39:55.61799 (23)  >> Job settings:
+17:39:55.70410 (23)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:55.70522 (23)  Name: 
+17:39:55.70582 (23)  Description: 
+17:39:55.70641 (23)  Disk:
+17:39:55.70699 (23)  	max 512 files
+17:39:55.70757 (23)  	max 32 file descriptors
+17:39:55.70816 (23)  	max 67108864 size in bytes
+17:39:55.70874 (23)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:55.70934 (23)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:55.70993 (23)  Mem 2097152 bytes of memory
+17:39:55.71052 (23)  Network:
+17:39:55.71109 (23)  	max 134217728/134217728 send/receive bytes
+17:39:55.71217 (23)  	max 32 tcp sockets
+17:39:55.71276 (23)  	ip 172.17.0.30
+17:39:55.71334 (23)  	ports 13840-13840
+17:39:55.71392 (23)  
+17:39:55.80107 (92)  START_LOG
+17:39:55.80216 (92)  SPLAYD LUA EXEC
+17:39:55.85753 (23)  >> Into sandbox !!!
+17:39:55.93565 (23)  > Memory: 169.1484375 KBytes
+17:39:55.93743 (23)  > Checking sandbox...
+17:39:55.93817 (23)     > passed
+17:39:55.93878 (23)  
+17:39:55.93947 (23)  [splay.urpc] W: setsockname(13840): address already in use
+17:39:55.109964 (96)  waiting for 4.3571213420281 to desynchronize
+17:39:55.139631 (92)  >> Job settings:
+17:39:55.149232 (92)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:55.149320 (92)  Name: 
+17:39:55.149417 (92)  Description: 
+17:39:55.149608 (92)  Disk:
+17:39:55.149692 (92)  	max 512 files
+17:39:55.149749 (92)  	max 32 file descriptors
+17:39:55.149857 (92)  	max 67108864 size in bytes
+17:39:55.149974 (92)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_12/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:55.150031 (92)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_12/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:55.150087 (92)  Mem 2097152 bytes of memory
+17:39:55.150143 (92)  Network:
+17:39:55.150197 (92)  	max 134217728/134217728 send/receive bytes
+17:39:55.150280 (92)  	max 32 tcp sockets
+17:39:55.150338 (92)  	ip 172.17.0.27
+17:39:55.150405 (92)  	ports 18557-18557
+17:39:55.150525 (92)  
+17:39:55.162459 (92)  >> Into sandbox !!!
+17:39:55.162750 (92)  > Memory: 168.681640625 KBytes
+17:39:55.162978 (92)  > Checking sandbox...
+17:39:55.163074 (92)     > passed
+17:39:55.163250 (92)  
+17:39:55.173514 (92)  [splay.urpc] W: setsockname(18557): address already in use
+17:39:55.205377 (21)  waiting for 1.8114615798981 to desynchronize
+17:39:55.334277 (80)  START_LOG
+17:39:55.390151 (80)  SPLAYD LUA EXEC
+17:39:55.393298 (80)  >> Job settings:
+17:39:55.393481 (80)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:55.393679 (80)  Name: 
+17:39:55.393930 (80)  Description: 
+17:39:55.394049 (80)  Disk:
+17:39:55.394119 (80)  	max 512 files
+17:39:55.394231 (80)  	max 32 file descriptors
+17:39:55.394436 (80)  	max 67108864 size in bytes
+17:39:55.394633 (80)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_10/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:55.394844 (80)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_10/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:55.395041 (80)  Mem 2097152 bytes of memory
+17:39:55.395268 (80)  Network:
+17:39:55.395470 (80)  	max 134217728/134217728 send/receive bytes
+17:39:55.395531 (80)  	max 32 tcp sockets
+17:39:55.395664 (80)  	ip 172.17.0.26
+17:39:55.396594 (80)  	ports 17981-17981
+17:39:55.396669 (80)  
+17:39:55.419277 (80)  >> Into sandbox !!!
+17:39:55.419551 (80)  > Memory: 169.1513671875 KBytes
+17:39:55.419709 (80)  > Checking sandbox...
+17:39:55.419773 (80)     > passed
+17:39:55.419832 (80)  
+17:39:55.439412 (61)  START_LOG
+17:39:55.439527 (61)  SPLAYD LUA EXEC
+17:39:55.498953 (61)  >> Job settings:
+17:39:55.556554 (61)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:55.556649 (61)  Name: 
+17:39:55.556710 (61)  Description: 
+17:39:55.556770 (61)  Disk:
+17:39:55.556854 (61)  	max 512 files
+17:39:55.556914 (61)  	max 32 file descriptors
+17:39:55.556975 (61)  	max 67108864 size in bytes
+17:39:55.557035 (61)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_6/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:55.557128 (61)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_6/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:55.557191 (61)  Mem 2097152 bytes of memory
+17:39:55.557251 (61)  Network:
+17:39:55.557311 (61)  	max 134217728/134217728 send/receive bytes
+17:39:55.557371 (61)  	max 32 tcp sockets
+17:39:55.557431 (61)  	ip 172.17.0.30
+17:39:55.557491 (61)  	ports 15843-15843
+17:39:55.557551 (61)  
+17:39:55.557611 (61)  >> Into sandbox !!!
+17:39:55.557671 (61)  > Memory: 169.1484375 KBytes
+17:39:55.558829 (61)  > Checking sandbox...
+17:39:55.558897 (61)     > passed
+17:39:55.558959 (61)  
+17:39:55.575491 (38)  waiting for 2.1649120921106 to desynchronize
+17:39:55.593040 (112)  waiting for 1.3005688606298 to desynchronize
+17:39:55.660076 (97)  START_LOG
+17:39:55.722985 (97)  SPLAYD LUA EXEC
+17:39:55.723158 (97)  >> Job settings:
+17:39:55.723224 (97)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:55.723286 (97)  Name: 
+17:39:55.723348 (97)  Description: 
+17:39:55.723409 (97)  Disk:
+17:39:55.723469 (97)  	max 512 files
+17:39:55.723529 (97)  	max 32 file descriptors
+17:39:55.723590 (97)  	max 67108864 size in bytes
+17:39:55.723651 (97)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_15/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:55.723713 (97)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_15/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:55.723776 (97)  Mem 2097152 bytes of memory
+17:39:55.723837 (97)  Network:
+17:39:55.723897 (97)  	max 134217728/134217728 send/receive bytes
+17:39:55.723989 (97)  	max 32 tcp sockets
+17:39:55.724053 (97)  	ip 172.17.0.27
+17:39:55.724114 (97)  	ports 20454-20454
+17:39:55.724177 (97)  
+17:39:55.742715 (97)  >> Into sandbox !!!
+17:39:55.743309 (97)  > Memory: 169.1513671875 KBytes
+17:39:55.743410 (97)  > Checking sandbox...
+17:39:55.743475 (97)     > passed
+17:39:55.743537 (97)  
+17:39:55.753437 (97)  [splay.urpc] W: setsockname(20454): address already in use
+17:39:55.783907 (95)  START_LOG
+17:39:55.784062 (95)  SPLAYD LUA EXEC
+17:39:55.784129 (95)  >> Job settings:
+17:39:55.784192 (95)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:55.784255 (95)  Name: 
+17:39:55.784317 (95)  Description: 
+17:39:55.784379 (95)  Disk:
+17:39:55.784441 (95)  	max 512 files
+17:39:55.784503 (95)  	max 32 file descriptors
+17:39:55.784565 (95)  	max 67108864 size in bytes
+17:39:55.784627 (95)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_11/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:55.784692 (95)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_11/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:55.784806 (95)  Mem 2097152 bytes of memory
+17:39:55.784895 (95)  Network:
+17:39:55.784962 (95)  	max 134217728/134217728 send/receive bytes
+17:39:55.785024 (95)  	max 32 tcp sockets
+17:39:55.785087 (95)  	ip 172.17.0.29
+17:39:55.785149 (95)  	ports 18276-18276
+17:39:55.785211 (95)  
+17:39:55.785272 (95)  >> Into sandbox !!!
+17:39:55.785334 (95)  > Memory: 169.1513671875 KBytes
+17:39:55.785396 (95)  > Checking sandbox...
+17:39:55.785458 (95)     > passed
+17:39:55.785520 (95)  
+17:39:55.785582 (95)  [splay.urpc] W: setsockname(18276): address already in use
+17:39:55.931319 (37)  waiting for 1.7500511029503 to desynchronize
+17:39:56.281008 (150)  START_LOG
+17:39:56.284361 (19)  START_LOG
+17:39:56.284545 (150)  SPLAYD LUA EXEC
+17:39:56.290039 (19)  SPLAYD LUA EXEC
+17:39:56.347272 (150)  >> Job settings:
+17:39:56.347438 (150)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:56.347593 (150)  Name: 
+17:39:56.347801 (150)  Description: 
+17:39:56.348001 (150)  Disk:
+17:39:56.348246 (150)  	max 512 files
+17:39:56.348462 (150)  	max 32 file descriptors
+17:39:56.348673 (150)  	max 67108864 size in bytes
+17:39:56.348957 (150)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_35/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:56.349274 (150)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_35/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:56.349880 (150)  Mem 2097152 bytes of memory
+17:39:56.350115 (150)  Network:
+17:39:56.350203 (150)  	max 134217728/134217728 send/receive bytes
+17:39:56.350316 (150)  	max 32 tcp sockets
+17:39:56.350438 (150)  	ip 172.17.0.36
+17:39:56.350693 (150)  	ports 30481-30481
+17:39:56.350844 (150)  
+17:39:56.356638 (76)  waiting for 0.37796247768121 to desynchronize
+17:39:56.365767 (98)  START_LOG
+17:39:56.404079 (98)  SPLAYD LUA EXEC
+17:39:56.426557 (18)  START_LOG
+17:39:56.426714 (18)  SPLAYD LUA EXEC
+17:39:56.427918 (75)  waiting for 1.1589222499909 to desynchronize
+17:39:56.447251 (6)  waiting for 1.9470530175357 to desynchronize
+17:39:56.449771 (150)  >> Into sandbox !!!
+17:39:56.449931 (150)  > Memory: 169.1513671875 KBytes
+17:39:56.449999 (150)  > Checking sandbox...
+17:39:56.450079 (150)     > passed
+17:39:56.450140 (150)  
+17:39:56.472657 (19)  >> Job settings:
+17:39:56.495668 (19)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:56.495799 (19)  Name: 
+17:39:56.495911 (19)  Description: 
+17:39:56.495965 (19)  Disk:
+17:39:56.496018 (19)  	max 512 files
+17:39:56.496184 (19)  	max 32 file descriptors
+17:39:56.496238 (19)  	max 67108864 size in bytes
+17:39:56.496291 (19)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:56.496345 (19)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:56.496398 (19)  Mem 2097152 bytes of memory
+17:39:56.496451 (19)  Network:
+17:39:56.496504 (19)  	max 134217728/134217728 send/receive bytes
+17:39:56.496583 (19)  	max 32 tcp sockets
+17:39:56.496639 (19)  	ip 172.17.0.29
+17:39:56.496764 (19)  	ports 14690-14690
+17:39:56.496839 (19)  
+17:39:56.532687 (19)  >> Into sandbox !!!
+17:39:56.532900 (19)  > Memory: 169.1484375 KBytes
+17:39:56.533054 (19)  > Checking sandbox...
+17:39:56.533157 (19)     > passed
+17:39:56.533213 (19)  
+17:39:56.553601 (18)  >> Job settings:
+17:39:56.553771 (18)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:56.553852 (18)  Name: 
+17:39:56.554048 (18)  Description: 
+17:39:56.554168 (18)  Disk:
+17:39:56.554226 (18)  	max 512 files
+17:39:56.554282 (18)  	max 32 file descriptors
+17:39:56.554609 (18)  	max 67108864 size in bytes
+17:39:56.554669 (18)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:56.554726 (18)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:56.555028 (18)  Mem 2097152 bytes of memory
+17:39:56.555087 (18)  Network:
+17:39:56.555177 (18)  	max 134217728/134217728 send/receive bytes
+17:39:56.555234 (18)  	max 32 tcp sockets
+17:39:56.555290 (18)  	ip 172.17.0.29
+17:39:56.555345 (18)  	ports 14497-14497
+17:39:56.555400 (18)  
+17:39:56.558604 (98)  >> Job settings:
+17:39:56.562849 (18)  >> Into sandbox !!!
+17:39:56.603609 (18)  > Memory: 169.1484375 KBytes
+17:39:56.603697 (18)  > Checking sandbox...
+17:39:56.603845 (18)     > passed
+17:39:56.603902 (18)  
+17:39:56.603957 (18)  [splay.urpc] W: setsockname(14497): address already in use
+17:39:56.628775 (98)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:39:56.628938 (98)  Name: 
+17:39:56.628991 (98)  Description: 
+17:39:56.629041 (98)  Disk:
+17:39:56.629092 (98)  	max 512 files
+17:39:56.629142 (98)  	max 32 file descriptors
+17:39:56.629193 (98)  	max 67108864 size in bytes
+17:39:56.629243 (98)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_13/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:39:56.629295 (98)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_13/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:39:56.629346 (98)  Mem 2097152 bytes of memory
+17:39:56.629498 (98)  Network:
+17:39:56.629553 (98)  	max 134217728/134217728 send/receive bytes
+17:39:56.629626 (98)  	max 32 tcp sockets
+17:39:56.629677 (98)  	ip 172.17.0.29
+17:39:56.629728 (98)  	ports 19230-19230
+17:39:56.629778 (98)  
+17:39:56.629829 (98)  >> Into sandbox !!!
+17:39:56.629879 (98)  > Memory: 169.1513671875 KBytes
+17:39:56.629929 (98)  > Checking sandbox...
+17:39:56.629979 (98)     > passed
+17:39:56.630029 (98)  
+17:39:56.630113 (19)  [splay.urpc] W: setsockname(14690): address already in use
+17:39:56.710971 (22)  waiting for 0.87082533206363 to desynchronize
+17:39:56.779621 (93)  waiting for 1.1721758968999 to desynchronize
+17:39:57.22717 (40)  waiting for 0.48236715862638 to desynchronize
+17:39:57.153987 (23)  waiting for 4.5740331358155 to desynchronize
+17:39:57.174513 (92)  waiting for 4.8040921170284 to desynchronize
+17:39:57.428996 (80)  waiting for 2.9416465284031 to desynchronize
+17:39:57.535227 (61)  waiting for 1.4817330131688 to desynchronize
+17:39:57.752325 (95)  waiting for 4.1980628642245 to desynchronize
+17:39:57.753843 (97)  waiting for 3.9428822085927 to desynchronize
+17:39:58.398301 (150)  waiting for 2.1460011332044 to desynchronize
+17:39:58.569079 (19)  waiting for 0.75866691803498 to desynchronize
+17:39:58.586397 (18)  waiting for 2.2650567150046 to desynchronize
+17:39:58.611763 (98)  waiting for 1.1336617619422 to desynchronize
+17:40:01.853982 (134)  START_LOG
+17:40:01.854121 (134)  SPLAYD LUA EXEC
+17:40:01.919312 (134)  >> Job settings:
+17:40:01.939353 (134)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:01.939505 (134)  Name: 
+17:40:01.939572 (134)  Description: 
+17:40:01.939697 (134)  Disk:
+17:40:01.939765 (134)  	max 512 files
+17:40:01.939828 (134)  	max 32 file descriptors
+17:40:01.939892 (134)  	max 67108864 size in bytes
+17:40:01.939956 (134)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_23/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:01.940079 (134)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_23/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:01.940148 (134)  Mem 2097152 bytes of memory
+17:40:01.940240 (134)  Network:
+17:40:01.940358 (134)  	max 134217728/134217728 send/receive bytes
+17:40:01.940426 (134)  	max 32 tcp sockets
+17:40:01.940491 (134)  	ip 172.17.0.36
+17:40:01.940555 (134)  	ports 24367-24367
+17:40:01.940619 (134)  
+17:40:01.954613 (134)  >> Into sandbox !!!
+17:40:01.954843 (134)  > Memory: 169.1513671875 KBytes
+17:40:01.955075 (134)  > Checking sandbox...
+17:40:01.955269 (134)     > passed
+17:40:01.955361 (134)  
+17:40:01.975751 (134)  [splay.urpc] W: setsockname(24367): address already in use
+17:40:03.326597 (116)  START_LOG
+17:40:03.326723 (116)  SPLAYD LUA EXEC
+17:40:03.390725 (116)  >> Job settings:
+17:40:03.420218 (116)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:03.420336 (116)  Name: 
+17:40:03.420403 (116)  Description: 
+17:40:03.420527 (116)  Disk:
+17:40:03.420595 (116)  	max 512 files
+17:40:03.420661 (116)  	max 32 file descriptors
+17:40:03.420772 (116)  	max 67108864 size in bytes
+17:40:03.420858 (116)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:03.420925 (116)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:03.420992 (116)  Mem 2097152 bytes of memory
+17:40:03.421085 (116)  Network:
+17:40:03.421153 (116)  	max 134217728/134217728 send/receive bytes
+17:40:03.421229 (116)  	max 32 tcp sockets
+17:40:03.421295 (116)  	ip 172.17.0.36
+17:40:03.421360 (116)  	ports 13794-13794
+17:40:03.421425 (116)  
+17:40:03.427172 (116)  >> Into sandbox !!!
+17:40:03.427355 (116)  > Memory: 169.1484375 KBytes
+17:40:03.427427 (116)  > Checking sandbox...
+17:40:03.427504 (116)     > passed
+17:40:03.427585 (116)  
+17:40:03.766754 (129)  START_LOG
+17:40:03.766860 (129)  SPLAYD LUA EXEC
+17:40:03.770695 (148)  START_LOG
+17:40:03.770823 (148)  SPLAYD LUA EXEC
+17:40:03.817568 (117)  START_LOG
+17:40:03.822953 (117)  SPLAYD LUA EXEC
+17:40:03.959660 (129)  >> Job settings:
+17:40:03.966961 (134)  waiting for 4.2371202047156 to desynchronize
+17:40:03.967201 (129)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:03.967326 (129)  Name: 
+17:40:03.967547 (129)  Description: 
+17:40:03.967748 (129)  Disk:
+17:40:03.967985 (129)  	max 512 files
+17:40:03.968217 (129)  	max 32 file descriptors
+17:40:03.968549 (129)  	max 67108864 size in bytes
+17:40:03.968778 (129)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_29/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:03.969081 (129)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_29/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:03.969276 (129)  Mem 2097152 bytes of memory
+17:40:03.969503 (129)  Network:
+17:40:03.971308 (148)  >> Job settings:
+17:40:03.971527 (129)  	max 134217728/134217728 send/receive bytes
+17:40:03.971750 (129)  	max 32 tcp sockets
+17:40:03.971973 (129)  	ip 172.17.0.36
+17:40:03.972190 (129)  	ports 27117-27117
+17:40:03.972423 (129)  
+17:40:03.976075 (148)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:03.976173 (148)  Name: 
+17:40:03.976374 (148)  Description: 
+17:40:03.976437 (148)  Disk:
+17:40:03.976575 (148)  	max 512 files
+17:40:03.976879 (148)  	max 32 file descriptors
+17:40:03.977016 (148)  	max 67108864 size in bytes
+17:40:03.977373 (148)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_31/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:03.977691 (148)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_31/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:03.977784 (148)  Mem 2097152 bytes of memory
+17:40:03.978056 (148)  Network:
+17:40:03.983684 (148)  	max 134217728/134217728 send/receive bytes
+17:40:03.983918 (148)  	max 32 tcp sockets
+17:40:03.984155 (148)  	ip 172.17.0.36
+17:40:03.984379 (148)  	ports 28020-28020
+17:40:03.984595 (148)  
+17:40:04.30382 (117)  >> Job settings:
+17:40:04.39824 (117)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:04.40008 (117)  Name: 
+17:40:04.40224 (117)  Description: 
+17:40:04.40401 (117)  Disk:
+17:40:04.40597 (117)  	max 512 files
+17:40:04.40855 (117)  	max 32 file descriptors
+17:40:04.41080 (117)  	max 67108864 size in bytes
+17:40:04.41363 (117)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:04.41679 (117)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:04.41874 (117)  Mem 2097152 bytes of memory
+17:40:04.42131 (117)  Network:
+17:40:04.42280 (117)  	max 134217728/134217728 send/receive bytes
+17:40:04.42515 (117)  	max 32 tcp sockets
+17:40:04.42744 (117)  	ip 172.17.0.36
+17:40:04.42968 (117)  	ports 13138-13138
+17:40:04.43173 (117)  
+17:40:04.67222 (129)  >> Into sandbox !!!
+17:40:04.67494 (129)  > Memory: 168.681640625 KBytes
+17:40:04.67909 (129)  > Checking sandbox...
+17:40:04.68039 (129)     > passed
+17:40:04.68116 (129)  
+17:40:04.79504 (148)  >> Into sandbox !!!
+17:40:04.79828 (148)  > Memory: 168.681640625 KBytes
+17:40:04.80046 (148)  > Checking sandbox...
+17:40:04.80123 (148)     > passed
+17:40:04.80274 (148)  
+17:40:04.103435 (129)  [splay.urpc] W: setsockname(27117): address already in use
+17:40:04.112539 (148)  [splay.urpc] W: setsockname(28020): address already in use
+17:40:04.121689 (117)  >> Into sandbox !!!
+17:40:04.121910 (117)  > Memory: 169.1484375 KBytes
+17:40:04.122144 (117)  > Checking sandbox...
+17:40:04.122375 (117)     > passed
+17:40:04.122465 (117)  
+17:40:04.553678 (39)  [splay.events] W: Periodic: thread: 0x8ef8060 from function: 0x8ed9380 is not dead, we wait
+17:40:05.440484 (116)  waiting for 3.4985874167171 to desynchronize
+17:40:06.112296 (129)  waiting for 2.3415634838592 to desynchronize
+17:40:06.113674 (148)  waiting for 2.2847979456581 to desynchronize
+17:40:06.134449 (117)  waiting for 2.5101472844883 to desynchronize
+17:40:06.495024 (114)  [splay.events] W: Periodic: thread: 0x9952208 from function: 0x994d2c0 is not dead, we wait
+17:40:06.785715 (112)  [splay.events] W: Periodic: thread: 0x8513bf0 from function: 0x8521428 is not dead, we wait
+17:40:06.963321 (21)  [splay.events] W: Periodic: thread: 0x9dec920 from function: 0x9e07220 is not dead, we wait
+17:40:07.473079 (75)  [splay.events] W: Periodic: thread: 0x86d37a8 from function: 0x86fd420 is not dead, we wait
+17:40:07.511920 (40)  [splay.events] W: Periodic: thread: 0x9cbdda0 from function: 0x9c52538 is not dead, we wait
+17:40:07.603426 (78)  [splay.events] W: Periodic: thread: 0x88f2e70 from function: 0x8938308 is not dead, we wait
+17:40:07.610311 (22)  [splay.events] W: Periodic: thread: 0x8223d28 from function: 0x8231378 is not dead, we wait
+17:40:07.687354 (37)  [splay.events] W: Periodic: thread: 0x831c800 from function: 0x8326b08 is not dead, we wait
+17:40:07.746603 (38)  [splay.events] W: Periodic: thread: 0x97fbf48 from function: 0x97f20c8 is not dead, we wait
+17:40:08.411392 (6)  [splay.events] W: Periodic: thread: 0x8dc0408 from function: 0x8df4250 is not dead, we wait
+17:40:09.25925 (61)  [splay.events] W: Periodic: thread: 0x91883f0 from function: 0x912d918 is not dead, we wait
+17:40:09.302478 (24)  [splay.events] W: Periodic: thread: 0x90734e8 from function: 0x9086f40 is not dead, we wait
+17:40:09.332732 (19)  [splay.events] W: Periodic: thread: 0x982ad80 from function: 0x9807610 is not dead, we wait
+17:40:09.472944 (96)  [splay.events] W: Periodic: thread: 0x9bbb328 from function: 0x9bee360 is not dead, we wait
+17:40:09.558804 (39)  [splay.events] W: Periodic: thread: 0x8ef8060 from function: 0x8ed9380 is not dead, we wait
+17:40:09.752620 (98)  [splay.events] W: Periodic: thread: 0x81fee10 from function: 0x81cb548 is not dead, we wait
+17:40:10.34435 (20)  [splay.events] W: Periodic: thread: 0x9ce0c18 from function: 0x9c84900 is not dead, we wait
+17:40:10.385128 (80)  [splay.events] W: Periodic: thread: 0x944a0a8 from function: 0x94555d8 is not dead, we wait
+17:40:10.857829 (18)  [splay.events] W: Periodic: thread: 0x9208620 from function: 0x9214620 is not dead, we wait
+17:40:11.473731 (114)  [splay.events] W: Periodic: thread: 0x9952208 from function: 0x994d2c0 is not dead, we wait
+17:40:11.673899 (23)  [splay.events] W: Periodic: thread: 0x8459508 from function: 0x8490900 is not dead, we wait
+17:40:11.703723 (97)  [splay.events] W: Periodic: thread: 0x8745338 from function: 0x8774d80 is not dead, we wait
+17:40:11.707817 (76)  [splay.events] W: Periodic: thread: 0x932d2d0 from function: 0x9314180 is not dead, we wait
+17:40:11.791685 (112)  [splay.events] W: Periodic: thread: 0x8513bf0 from function: 0x8521428 is not dead, we wait
+17:40:11.956682 (95)  [splay.events] W: Periodic: thread: 0x9a22a38 from function: 0x9a5fb98 is not dead, we wait
+17:40:11.968630 (21)  [splay.events] W: Periodic: thread: 0x9dec920 from function: 0x9e07220 is not dead, we wait
+17:40:11.993638 (92)  [splay.events] W: Periodic: thread: 0x8936aa8 from function: 0x8937058 is not dead, we wait
+17:40:12.478246 (75)  [splay.events] W: Periodic: thread: 0x86d37a8 from function: 0x86fd420 is not dead, we wait
+17:40:12.516986 (40)  [splay.events] W: Periodic: thread: 0x9cbdda0 from function: 0x9c52538 is not dead, we wait
+17:40:12.593348 (22)  [splay.events] W: Periodic: thread: 0x8223d28 from function: 0x8231378 is not dead, we wait
+17:40:12.608612 (78)  [splay.events] W: Periodic: thread: 0x88f2e70 from function: 0x8938308 is not dead, we wait
+17:40:12.692472 (37)  [splay.events] W: Periodic: thread: 0x831c800 from function: 0x8326b08 is not dead, we wait
+17:40:12.751643 (38)  [splay.events] W: Periodic: thread: 0x97fbf48 from function: 0x97f20c8 is not dead, we wait
+17:40:13.413030 (6)  [splay.events] W: Periodic: thread: 0x8dc0408 from function: 0x8df4250 is not dead, we wait
+17:40:14.31418 (61)  [splay.events] W: Periodic: thread: 0x91883f0 from function: 0x912d918 is not dead, we wait
+17:40:14.303615 (24)  [splay.events] W: Periodic: thread: 0x90734e8 from function: 0x9086f40 is not dead, we wait
+17:40:14.333043 (19)  [splay.events] W: Periodic: thread: 0x982ad80 from function: 0x9807610 is not dead, we wait
+17:40:14.481867 (96)  [splay.events] W: Periodic: thread: 0x9bbb328 from function: 0x9bee360 is not dead, we wait
+17:40:14.757629 (98)  [splay.events] W: Periodic: thread: 0x81fee10 from function: 0x81cb548 is not dead, we wait
+17:40:15.516266 (39)  [splay.events] W: Periodic: thread: 0x8ef8060 from function: 0x8ed9380 is not dead, we wait
+17:40:15.520525 (20)  [splay.events] W: Periodic: thread: 0x9ce0c18 from function: 0x9c84900 is not dead, we wait
+17:40:15.562448 (150)  [splay.events] W: Periodic: thread: 0x99ad138 from function: 0x9983308 is not dead, we wait
+17:40:15.570699 (80)  [splay.events] W: Periodic: thread: 0x944a0a8 from function: 0x94555d8 is not dead, we wait
+17:40:15.863136 (18)  [splay.events] W: Periodic: thread: 0x9208620 from function: 0x9214620 is not dead, we wait
+17:40:16.502510 (114)  [splay.events] W: Periodic: thread: 0x9952208 from function: 0x994d2c0 is not dead, we wait
+17:40:16.679063 (23)  [splay.events] W: Periodic: thread: 0x8459508 from function: 0x8490900 is not dead, we wait
+17:40:16.714402 (76)  [splay.events] W: Periodic: thread: 0x932d2d0 from function: 0x9314180 is not dead, we wait
+17:40:16.793165 (112)  [splay.events] W: Periodic: thread: 0x8513bf0 from function: 0x8521428 is not dead, we wait
+17:40:16.835459 (97)  [splay.events] W: Periodic: thread: 0x8745338 from function: 0x8774d80 is not dead, we wait
+17:40:16.961852 (95)  [splay.events] W: Periodic: thread: 0x9a22a38 from function: 0x9a5fb98 is not dead, we wait
+17:40:16.990448 (92)  [splay.events] W: Periodic: thread: 0x8936aa8 from function: 0x8937058 is not dead, we wait
+17:40:17.480320 (75)  [splay.events] W: Periodic: thread: 0x86d37a8 from function: 0x86fd420 is not dead, we wait
+17:40:17.518959 (40)  [splay.events] W: Periodic: thread: 0x9cbdda0 from function: 0x9c52538 is not dead, we wait
+17:40:17.610755 (78)  [splay.events] W: Periodic: thread: 0x88f2e70 from function: 0x8938308 is not dead, we wait
+17:40:17.691056 (22)  [splay.events] W: Periodic: thread: 0x8223d28 from function: 0x8231378 is not dead, we wait
+17:40:17.694340 (37)  [splay.events] W: Periodic: thread: 0x831c800 from function: 0x8326b08 is not dead, we wait
+17:40:17.753508 (38)  [splay.events] W: Periodic: thread: 0x97fbf48 from function: 0x97f20c8 is not dead, we wait
+17:40:17.968527 (93)  [splay.events] W: Periodic: thread: 0x96366a0 from function: 0x95a5790 is not dead, we wait
+17:40:18.210617 (134)  [splay.events] W: Periodic: thread: 0x9933bd0 from function: 0x992a1e8 is not dead, we wait
+17:40:18.414950 (6)  [splay.events] W: Periodic: thread: 0x8dc0408 from function: 0x8df4250 is not dead, we wait
+17:40:18.421055 (43)  START_LOG
+17:40:18.421981 (43)  SPLAYD LUA EXEC
+17:40:18.460321 (129)  [splay.events] W: Periodic: thread: 0x9c605f8 from function: 0x9c5fcf8 is not dead, we wait
+17:40:18.483491 (43)  >> Job settings:
+17:40:18.483933 (43)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:18.484009 (43)  Name: 
+17:40:18.484070 (43)  Description: 
+17:40:18.484295 (43)  Disk:
+17:40:18.484365 (43)  	max 512 files
+17:40:18.484579 (43)  	max 32 file descriptors
+17:40:18.484647 (43)  	max 67108864 size in bytes
+17:40:18.484877 (43)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_8/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:18.485111 (43)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_8/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:18.485349 (43)  Mem 2097152 bytes of memory
+17:40:18.485418 (43)  Network:
+17:40:18.485627 (43)  	max 134217728/134217728 send/receive bytes
+17:40:18.485878 (43)  	max 32 tcp sockets
+17:40:18.485946 (43)  	ip 172.17.0.25
+17:40:18.486162 (43)  	ports 16664-16664
+17:40:18.486230 (43)  
+17:40:18.506460 (43)  >> Into sandbox !!!
+17:40:18.522267 (43)  > Memory: 168.6064453125 KBytes
+17:40:18.522405 (43)  > Checking sandbox...
+17:40:18.522519 (43)     > passed
+17:40:18.522583 (43)  
+17:40:18.658566 (117)  [splay.events] W: Periodic: thread: 0x81dd290 from function: 0x81c98b8 is not dead, we wait
+17:40:18.949289 (116)  [splay.events] W: Periodic: thread: 0x81b4840 from function: 0x81b1308 is not dead, we wait
+17:40:19.33269 (61)  [splay.events] W: Periodic: thread: 0x91883f0 from function: 0x912d918 is not dead, we wait
+17:40:19.305658 (24)  [splay.events] W: Periodic: thread: 0x90734e8 from function: 0x9086f40 is not dead, we wait
+17:40:19.334987 (19)  [splay.events] W: Periodic: thread: 0x982ad80 from function: 0x9807610 is not dead, we wait
+17:40:19.434519 (172)  START_LOG
+17:40:19.436575 (172)  SPLAYD LUA EXEC
+17:40:19.480007 (96)  [splay.events] W: Periodic: thread: 0x9bbb328 from function: 0x9bee360 is not dead, we wait
+17:40:19.563008 (172)  >> Job settings:
+17:40:19.577718 (172)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:19.577814 (172)  Name: 
+17:40:19.577897 (172)  Description: 
+17:40:19.577958 (172)  Disk:
+17:40:19.578017 (172)  	max 512 files
+17:40:19.578126 (172)  	max 32 file descriptors
+17:40:19.578186 (172)  	max 67108864 size in bytes
+17:40:19.578247 (172)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_33/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:19.578328 (172)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_33/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:19.578391 (172)  Mem 2097152 bytes of memory
+17:40:19.578452 (172)  Network:
+17:40:19.578511 (172)  	max 134217728/134217728 send/receive bytes
+17:40:19.578571 (172)  	max 32 tcp sockets
+17:40:19.578631 (172)  	ip 172.17.0.40
+17:40:19.578691 (172)  	ports 29315-29315
+17:40:19.578750 (172)  
+17:40:19.578810 (172)  >> Into sandbox !!!
+17:40:19.578869 (172)  > Memory: 169.1552734375 KBytes
+17:40:19.578929 (172)  > Checking sandbox...
+17:40:19.578989 (172)     > passed
+17:40:19.579048 (172)  
+17:40:19.661514 (39)  [splay.events] W: Periodic: thread: 0x8ef8060 from function: 0x8ed9380 is not dead, we wait
+17:40:19.759480 (98)  [splay.events] W: Periodic: thread: 0x81fee10 from function: 0x81cb548 is not dead, we wait
+17:40:20.40730 (20)  [splay.events] W: Periodic: thread: 0x9ce0c18 from function: 0x9c84900 is not dead, we wait
+17:40:20.392332 (80)  [splay.events] W: Periodic: thread: 0x944a0a8 from function: 0x94555d8 is not dead, we wait
+17:40:20.520490 (43)  waiting for 3.6656925867618 to desynchronize
+17:40:20.567486 (150)  [splay.events] W: Periodic: thread: 0x99ad138 from function: 0x9983308 is not dead, we wait
+17:40:20.867163 (18)  [splay.events] W: Periodic: thread: 0x9208620 from function: 0x9214620 is not dead, we wait
+17:40:21.523053 (114)  [splay.events] W: Periodic: thread: 0x9952208 from function: 0x994d2c0 is not dead, we wait
+17:40:21.551296 (172)  waiting for 4.1557854898999 to desynchronize
+17:40:21.681219 (23)  [splay.events] W: Periodic: thread: 0x8459508 from function: 0x8490900 is not dead, we wait
+17:40:21.715175 (76)  [splay.events] W: Periodic: thread: 0x932d2d0 from function: 0x9314180 is not dead, we wait
+17:40:21.799276 (112)  [splay.events] W: Periodic: thread: 0x8513bf0 from function: 0x8521428 is not dead, we wait
+17:40:21.963816 (95)  [splay.events] W: Periodic: thread: 0x9a22a38 from function: 0x9a5fb98 is not dead, we wait
+17:40:21.967691 (97)  [splay.events] W: Periodic: thread: 0x8745338 from function: 0x8774d80 is not dead, we wait
+17:40:21.992358 (92)  [splay.events] W: Periodic: thread: 0x8936aa8 from function: 0x8937058 is not dead, we wait
+17:40:22.485653 (75)  [splay.events] W: Periodic: thread: 0x86d37a8 from function: 0x86fd420 is not dead, we wait
+17:40:22.524016 (40)  [splay.events] W: Periodic: thread: 0x9cbdda0 from function: 0x9c52538 is not dead, we wait
+17:40:22.669562 (22)  [splay.events] W: Periodic: thread: 0x8223d28 from function: 0x8231378 is not dead, we wait
+17:40:22.699507 (37)  [splay.events] W: Periodic: thread: 0x831c800 from function: 0x8326b08 is not dead, we wait
+17:40:22.744046 (78)  [splay.events] W: Periodic: thread: 0x88f2e70 from function: 0x8938308 is not dead, we wait
+17:40:22.758665 (38)  [splay.events] W: Periodic: thread: 0x97fbf48 from function: 0x97f20c8 is not dead, we wait
+17:40:22.973647 (93)  [splay.events] W: Periodic: thread: 0x96366a0 from function: 0x95a5790 is not dead, we wait
+17:40:23.215990 (134)  [splay.events] W: Periodic: thread: 0x9933bd0 from function: 0x992a1e8 is not dead, we wait
+17:40:23.420502 (6)  [splay.events] W: Periodic: thread: 0x8dc0408 from function: 0x8df4250 is not dead, we wait
+17:40:23.465636 (129)  [splay.events] W: Periodic: thread: 0x9c605f8 from function: 0x9c5fcf8 is not dead, we wait
+17:40:23.663914 (117)  [splay.events] W: Periodic: thread: 0x81dd290 from function: 0x81c98b8 is not dead, we wait
+17:40:23.954883 (116)  [splay.events] W: Periodic: thread: 0x81b4840 from function: 0x81b1308 is not dead, we wait
+17:40:24.38720 (61)  [splay.events] W: Periodic: thread: 0x91883f0 from function: 0x912d918 is not dead, we wait
+17:40:24.311072 (24)  [splay.events] W: Periodic: thread: 0x90734e8 from function: 0x9086f40 is not dead, we wait
+17:40:24.338652 (19)  [splay.events] W: Periodic: thread: 0x982ad80 from function: 0x9807610 is not dead, we wait
+17:40:24.485235 (96)  [splay.events] W: Periodic: thread: 0x9bbb328 from function: 0x9bee360 is not dead, we wait
+17:40:24.690436 (39)  [splay.events] W: Periodic: thread: 0x8ef8060 from function: 0x8ed9380 is not dead, we wait
+17:40:24.764679 (98)  [splay.events] W: Periodic: thread: 0x81fee10 from function: 0x81cb548 is not dead, we wait
+17:40:25.46000 (20)  [splay.events] W: Periodic: thread: 0x9ce0c18 from function: 0x9c84900 is not dead, we wait
+17:40:25.397666 (80)  [splay.events] W: Periodic: thread: 0x944a0a8 from function: 0x94555d8 is not dead, we wait
+17:40:25.569671 (150)  [splay.events] W: Periodic: thread: 0x99ad138 from function: 0x9983308 is not dead, we wait
+17:40:25.870007 (18)  [splay.events] W: Periodic: thread: 0x9208620 from function: 0x9214620 is not dead, we wait
+17:40:26.518585 (114)  [splay.events] W: Periodic: thread: 0x9952208 from function: 0x994d2c0 is not dead, we wait
+17:40:26.686557 (23)  [splay.events] W: Periodic: thread: 0x8459508 from function: 0x8490900 is not dead, we wait
+17:40:26.720411 (76)  [splay.events] W: Periodic: thread: 0x932d2d0 from function: 0x9314180 is not dead, we wait
+17:40:26.803772 (112)  [splay.events] W: Periodic: thread: 0x8513bf0 from function: 0x8521428 is not dead, we wait
+17:40:26.902661 (97)  [splay.events] W: Periodic: thread: 0x8745338 from function: 0x8774d80 is not dead, we wait
+17:40:26.968916 (95)  [splay.events] W: Periodic: thread: 0x9a22a38 from function: 0x9a5fb98 is not dead, we wait
+17:40:27.56725 (92)  [splay.events] W: Periodic: thread: 0x8936aa8 from function: 0x8937058 is not dead, we wait
+17:40:27.101663 (21)  [splay.events] W: Periodic: thread: 0x9e57130 from function: 0x9e07220 is not dead, we wait
+17:40:27.491042 (75)  [splay.events] W: Periodic: thread: 0x86d37a8 from function: 0x86fd420 is not dead, we wait
+17:40:27.529238 (40)  [splay.events] W: Periodic: thread: 0x9cbdda0 from function: 0x9c52538 is not dead, we wait
+17:40:27.642756 (78)  [splay.events] W: Periodic: thread: 0x88f2e70 from function: 0x8938308 is not dead, we wait
+17:40:27.656806 (22)  [splay.events] W: Periodic: thread: 0x8223d28 from function: 0x8231378 is not dead, we wait
+17:40:27.704674 (37)  [splay.events] W: Periodic: thread: 0x831c800 from function: 0x8326b08 is not dead, we wait
+17:40:27.763843 (38)  [splay.events] W: Periodic: thread: 0x97fbf48 from function: 0x97f20c8 is not dead, we wait
+17:40:27.976340 (93)  [splay.events] W: Periodic: thread: 0x96366a0 from function: 0x95a5790 is not dead, we wait
+17:40:28.217989 (134)  [splay.events] W: Periodic: thread: 0x9933bd0 from function: 0x992a1e8 is not dead, we wait
+17:40:28.775893 (148)  [splay.events] W: Periodic: thread: 0x8ed5b30 from function: 0x8ec35b8 is not dead, we wait
+17:40:28.786274 (117)  [splay.events] W: Periodic: thread: 0x81dd290 from function: 0x81c98b8 is not dead, we wait
+17:40:28.828709 (129)  [splay.events] W: Periodic: thread: 0x9c605f8 from function: 0x9c5fcf8 is not dead, we wait
+17:40:28.839299 (6)  [splay.events] W: Periodic: thread: 0x8dc0408 from function: 0x8df4250 is not dead, we wait
+17:40:28.956347 (116)  [splay.events] W: Periodic: thread: 0x81b4840 from function: 0x81b1308 is not dead, we wait
+17:40:29.971522 (96)  [splay.events] W: Periodic: thread: 0x9bbb328 from function: 0x9bee360 is not dead, we wait
+17:40:29.978088 (24)  [splay.events] W: Periodic: thread: 0x90734e8 from function: 0x9086f40 is not dead, we wait
+17:40:30.10423 (98)  [splay.events] W: Periodic: thread: 0x81fee10 from function: 0x81cb548 is not dead, we wait
+17:40:30.12774 (19)  [splay.events] W: Periodic: thread: 0x982ad80 from function: 0x9807610 is not dead, we wait
+17:40:30.13024 (61)  [splay.events] W: Periodic: thread: 0x91883f0 from function: 0x912d918 is not dead, we wait
+17:40:30.51160 (20)  [splay.events] W: Periodic: thread: 0x9ce0c18 from function: 0x9c84900 is not dead, we wait
+17:40:30.73178 (39)  [splay.events] W: Periodic: thread: 0x8ef8060 from function: 0x8ed9380 is not dead, we wait
+17:40:30.403058 (80)  [splay.events] W: Periodic: thread: 0x944a0a8 from function: 0x94555d8 is not dead, we wait
+17:40:30.598235 (150)  [splay.events] W: Periodic: thread: 0x99ad138 from function: 0x9983308 is not dead, we wait
+17:40:30.875248 (18)  [splay.events] W: Periodic: thread: 0x9208620 from function: 0x9214620 is not dead, we wait
+17:40:31.497015 (114)  [splay.events] W: Periodic: thread: 0x9952208 from function: 0x994d2c0 is not dead, we wait
+17:40:31.691777 (23)  [splay.events] W: Periodic: thread: 0x8459508 from function: 0x8490900 is not dead, we wait
+17:40:32.387388 (76)  [splay.events] W: Periodic: thread: 0x932d2d0 from function: 0x9314180 is not dead, we wait
+17:40:32.394730 (95)  [splay.events] W: Periodic: thread: 0x9a22a38 from function: 0x9a5fb98 is not dead, we wait
+17:40:32.402279 (97)  [splay.events] W: Periodic: thread: 0x8745338 from function: 0x8774d80 is not dead, we wait
+17:40:32.407601 (21)  [splay.events] W: Periodic: thread: 0x9e57130 from function: 0x9e07220 is not dead, we wait
+17:40:32.411674 (112)  [splay.events] W: Periodic: thread: 0x8513bf0 from function: 0x8521428 is not dead, we wait
+17:40:32.423623 (92)  [splay.events] W: Periodic: thread: 0x8936aa8 from function: 0x8937058 is not dead, we wait
+17:40:32.496420 (75)  [splay.events] W: Periodic: thread: 0x86d37a8 from function: 0x86fd420 is not dead, we wait
+17:40:32.534446 (40)  [splay.events] W: Periodic: thread: 0x9cbdda0 from function: 0x9c52538 is not dead, we wait
+17:40:32.693063 (78)  [splay.events] W: Periodic: thread: 0x88f2e70 from function: 0x8938308 is not dead, we wait
+17:40:32.708442 (37)  [splay.events] W: Periodic: thread: 0x831c800 from function: 0x8326b08 is not dead, we wait
+17:40:32.768955 (38)  [splay.events] W: Periodic: thread: 0x97fbf48 from function: 0x97f20c8 is not dead, we wait
+17:40:32.934950 (22)  [splay.events] W: Periodic: thread: 0x8223d28 from function: 0x8231378 is not dead, we wait
+17:40:33.281757 (93)  [splay.events] W: Periodic: thread: 0x96366a0 from function: 0x95a5790 is not dead, we wait
+17:40:33.283560 (134)  [splay.events] W: Periodic: thread: 0x9933bd0 from function: 0x992a1e8 is not dead, we wait
+17:40:33.420379 (148)  [splay.events] W: Periodic: thread: 0x8ed5b30 from function: 0x8ec35b8 is not dead, we wait
+17:40:33.430871 (6)  [splay.events] W: Periodic: thread: 0x8dc0408 from function: 0x8df4250 is not dead, we wait
+17:40:33.472955 (129)  [splay.events] W: Periodic: thread: 0x9c605f8 from function: 0x9c5fcf8 is not dead, we wait
+17:40:33.671230 (117)  [splay.events] W: Periodic: thread: 0x81dd290 from function: 0x81c98b8 is not dead, we wait
+17:40:33.957401 (116)  [splay.events] W: Periodic: thread: 0x81b4840 from function: 0x81b1308 is not dead, we wait
+17:40:34.49459 (61)  [splay.events] W: Periodic: thread: 0x91883f0 from function: 0x912d918 is not dead, we wait
+17:40:34.201340 (43)  [splay.events] W: Periodic: thread: 0x9d92a78 from function: 0x9d539c8 is not dead, we wait
+17:40:34.321754 (24)  [splay.events] W: Periodic: thread: 0x90734e8 from function: 0x9086f40 is not dead, we wait
+17:40:34.540765 (96)  [splay.events] W: Periodic: thread: 0x9bbb328 from function: 0x9bee360 is not dead, we wait
+17:40:34.541160 (19)  [splay.events] W: Periodic: thread: 0x982ad80 from function: 0x9807610 is not dead, we wait
+17:40:34.775552 (98)  [splay.events] W: Periodic: thread: 0x81fee10 from function: 0x81cb548 is not dead, we wait
+17:40:34.872632 (39)  [splay.events] W: Periodic: thread: 0x8ef8060 from function: 0x8ed9380 is not dead, we wait
+17:40:35.56298 (20)  [splay.events] W: Periodic: thread: 0x9ce0c18 from function: 0x9c84900 is not dead, we wait
+17:40:35.408465 (80)  [splay.events] W: Periodic: thread: 0x944a0a8 from function: 0x94555d8 is not dead, we wait
+17:40:35.662489 (150)  [splay.events] W: Periodic: thread: 0x99ad138 from function: 0x9983308 is not dead, we wait
+17:40:35.722994 (172)  [splay.events] W: Periodic: thread: 0x91e51b8 from function: 0x91e39f0 is not dead, we wait
+17:40:35.880427 (18)  [splay.events] W: Periodic: thread: 0x9208620 from function: 0x9214620 is not dead, we wait
+17:40:36.534216 (114)  [splay.events] W: Periodic: thread: 0x9952208 from function: 0x994d2c0 is not dead, we wait
+17:40:36.697193 (23)  [splay.events] W: Periodic: thread: 0x8459508 from function: 0x8490900 is not dead, we wait
+17:40:36.731288 (76)  [splay.events] W: Periodic: thread: 0x932d2d0 from function: 0x9314180 is not dead, we wait
+17:40:36.814391 (112)  [splay.events] W: Periodic: thread: 0x8513bf0 from function: 0x8521428 is not dead, we wait
+17:40:36.908534 (97)  [splay.events] W: Periodic: thread: 0x8745338 from function: 0x8774d80 is not dead, we wait
+17:40:36.977671 (95)  [splay.events] W: Periodic: thread: 0x9a22a38 from function: 0x9a5fb98 is not dead, we wait
+17:40:36.988689 (21)  [splay.events] W: Periodic: thread: 0x9e57130 from function: 0x9e07220 is not dead, we wait
+17:40:37.7080 (92)  [splay.events] W: Periodic: thread: 0x8936aa8 from function: 0x8937058 is not dead, we wait
+17:40:37.490322 (153)  START_LOG
+17:40:37.492873 (153)  SPLAYD LUA EXEC
+17:40:37.501580 (75)  [splay.events] W: Periodic: thread: 0x86d37a8 from function: 0x86fd420 is not dead, we wait
+17:40:37.539722 (40)  [splay.events] W: Periodic: thread: 0x9cbdda0 from function: 0x9c52538 is not dead, we wait
+17:40:37.557391 (153)  >> Job settings:
+17:40:37.557585 (153)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:37.557712 (153)  Name: 
+17:40:37.557903 (153)  Description: 
+17:40:37.558069 (153)  Disk:
+17:40:37.558346 (153)  	max 512 files
+17:40:37.558561 (153)  	max 32 file descriptors
+17:40:37.558815 (153)  	max 67108864 size in bytes
+17:40:37.559078 (153)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:37.559423 (153)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:37.559644 (153)  Mem 2097152 bytes of memory
+17:40:37.559845 (153)  Network:
+17:40:37.560077 (153)  	max 134217728/134217728 send/receive bytes
+17:40:37.560288 (153)  	max 32 tcp sockets
+17:40:37.560517 (153)  	ip 172.17.0.40
+17:40:37.560725 (153)  	ports 14086-14086
+17:40:37.560925 (153)  
+17:40:37.592704 (153)  >> Into sandbox !!!
+17:40:37.592951 (153)  > Memory: 169.1513671875 KBytes
+17:40:37.593191 (153)  > Checking sandbox...
+17:40:37.593374 (153)     > passed
+17:40:37.593532 (153)  
+17:40:37.694123 (78)  [splay.events] W: Periodic: thread: 0x88f2e70 from function: 0x8938308 is not dead, we wait
+17:40:37.710330 (37)  [splay.events] W: Periodic: thread: 0x831c800 from function: 0x8326b08 is not dead, we wait
+17:40:37.774313 (38)  [splay.events] W: Periodic: thread: 0x97fbf48 from function: 0x97f20c8 is not dead, we wait
+17:40:37.838964 (22)  [splay.events] W: Periodic: thread: 0x8223d28 from function: 0x8231378 is not dead, we wait
+17:40:37.986291 (93)  [splay.events] W: Periodic: thread: 0x96366a0 from function: 0x95a5790 is not dead, we wait
+17:40:38.34225 (190)  START_LOG
+17:40:38.34353 (190)  SPLAYD LUA EXEC
+17:40:38.89099 (190)  >> Job settings:
+17:40:38.89315 (190)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:38.89453 (190)  Name: 
+17:40:38.89656 (190)  Description: 
+17:40:38.89787 (190)  Disk:
+17:40:38.89910 (190)  	max 512 files
+17:40:38.90183 (190)  	max 32 file descriptors
+17:40:38.90488 (190)  	max 67108864 size in bytes
+17:40:38.90634 (190)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_50/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:38.91019 (190)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_50/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:38.91297 (190)  Mem 2097152 bytes of memory
+17:40:38.91427 (190)  Network:
+17:40:38.91619 (190)  	max 134217728/134217728 send/receive bytes
+17:40:38.91851 (190)  	max 32 tcp sockets
+17:40:38.92103 (190)  	ip 172.17.0.40
+17:40:38.92297 (190)  	ports 37970-37970
+17:40:38.92546 (190)  
+17:40:38.124922 (190)  >> Into sandbox !!!
+17:40:38.147011 (190)  > Memory: 169.1552734375 KBytes
+17:40:38.147233 (190)  > Checking sandbox...
+17:40:38.147351 (190)     > passed
+17:40:38.147519 (190)  
+17:40:38.224643 (134)  [splay.events] W: Periodic: thread: 0x9933bd0 from function: 0x992a1e8 is not dead, we wait
+17:40:38.422844 (148)  [splay.events] W: Periodic: thread: 0x8ed5b30 from function: 0x8ec35b8 is not dead, we wait
+17:40:38.436155 (6)  [splay.events] W: Periodic: thread: 0x8dc0408 from function: 0x8df4250 is not dead, we wait
+17:40:38.478259 (129)  [splay.events] W: Periodic: thread: 0x9c605f8 from function: 0x9c5fcf8 is not dead, we wait
+17:40:38.676562 (117)  [splay.events] W: Periodic: thread: 0x81dd290 from function: 0x81c98b8 is not dead, we wait
+17:40:38.958434 (116)  [splay.events] W: Periodic: thread: 0x81b4840 from function: 0x81b1308 is not dead, we wait
+17:40:39.54649 (61)  [splay.events] W: Periodic: thread: 0x91883f0 from function: 0x912d918 is not dead, we wait
+17:40:39.206718 (43)  [splay.events] W: Periodic: thread: 0x9d92a78 from function: 0x9d539c8 is not dead, we wait
+17:40:39.327586 (24)  [splay.events] W: Periodic: thread: 0x90734e8 from function: 0x9086f40 is not dead, we wait
+17:40:39.551936 (96)  [splay.events] W: Periodic: thread: 0x9bbb328 from function: 0x9bee360 is not dead, we wait
+17:40:39.552195 (19)  [splay.events] W: Periodic: thread: 0x982ad80 from function: 0x9807610 is not dead, we wait
+17:40:39.606828 (153)  waiting for 4.3317121147791 to desynchronize
+17:40:39.780406 (98)  [splay.events] W: Periodic: thread: 0x81fee10 from function: 0x81cb548 is not dead, we wait
+17:40:40.61622 (20)  [splay.events] W: Periodic: thread: 0x9ce0c18 from function: 0x9c84900 is not dead, we wait
+17:40:40.231024 (190)  waiting for 2.0032175732792 to desynchronize
+17:40:40.413599 (80)  [splay.events] W: Periodic: thread: 0x944a0a8 from function: 0x94555d8 is not dead, we wait
+17:40:40.728310 (172)  [splay.events] W: Periodic: thread: 0x91e51b8 from function: 0x91e39f0 is not dead, we wait
+17:40:40.737411 (150)  [splay.events] W: Periodic: thread: 0x99ad138 from function: 0x9983308 is not dead, we wait
+17:40:40.885624 (18)  [splay.events] W: Periodic: thread: 0x9208620 from function: 0x9214620 is not dead, we wait
+17:40:41.702554 (23)  [splay.events] W: Periodic: thread: 0x8459508 from function: 0x8490900 is not dead, we wait
+17:40:41.736706 (76)  [splay.events] W: Periodic: thread: 0x932d2d0 from function: 0x9314180 is not dead, we wait
+17:40:41.878301 (97)  [splay.events] W: Periodic: thread: 0x8745338 from function: 0x8774d80 is not dead, we wait
+17:40:41.982876 (95)  [splay.events] W: Periodic: thread: 0x9a22a38 from function: 0x9a5fb98 is not dead, we wait
+17:40:42.54193 (21)  [splay.events] W: Periodic: thread: 0x9e57130 from function: 0x9e07220 is not dead, we wait
+17:40:42.70723 (92)  [splay.events] W: Periodic: thread: 0x8936aa8 from function: 0x8937058 is not dead, we wait
+17:40:42.991709 (93)  [splay.events] W: Periodic: thread: 0x96366a0 from function: 0x95a5790 is not dead, we wait
+17:40:43.229975 (134)  [splay.events] W: Periodic: thread: 0x9933bd0 from function: 0x992a1e8 is not dead, we wait
+17:40:43.427548 (148)  [splay.events] W: Periodic: thread: 0x8ed5b30 from function: 0x8ec35b8 is not dead, we wait
+17:40:43.483566 (129)  [splay.events] W: Periodic: thread: 0x9c605f8 from function: 0x9c5fcf8 is not dead, we wait
+17:40:43.681915 (117)  [splay.events] W: Periodic: thread: 0x81dd290 from function: 0x81c98b8 is not dead, we wait
+17:40:43.959477 (116)  [splay.events] W: Periodic: thread: 0x81b4840 from function: 0x81b1308 is not dead, we wait
+17:40:44.208412 (43)  [splay.events] W: Periodic: thread: 0x9d92a78 from function: 0x9d539c8 is not dead, we wait
+17:40:44.587049 (39)  [splay.events] W: Periodic: thread: 0x8f61ee0 from function: 0x8ed9380 is not dead, we wait
+17:40:45.699235 (150)  [splay.events] W: Periodic: thread: 0x99ad138 from function: 0x9983308 is not dead, we wait
+17:40:45.820774 (172)  [splay.events] W: Periodic: thread: 0x91e51b8 from function: 0x91e39f0 is not dead, we wait
+17:40:46.820075 (112)  [splay.events] W: Periodic: thread: 0x84ece98 from function: 0x8521428 is not dead, we wait
+17:40:46.999455 (21)  [splay.events] W: Periodic: thread: 0x9e57130 from function: 0x9e07220 is not dead, we wait
+17:40:47.545057 (40)  [splay.events] W: Periodic: thread: 0x9d0a220 from function: 0x9c52538 is not dead, we wait
+17:40:47.745873 (37)  [splay.events] W: Periodic: thread: 0x8383250 from function: 0x8326b08 is not dead, we wait
+17:40:47.758171 (78)  [splay.events] W: Periodic: thread: 0x898af90 from function: 0x8938308 is not dead, we wait
+17:40:47.995263 (93)  [splay.events] W: Periodic: thread: 0x96366a0 from function: 0x95a5790 is not dead, we wait
+17:40:48.235831 (134)  [splay.events] W: Periodic: thread: 0x9933bd0 from function: 0x992a1e8 is not dead, we wait
+17:40:48.432854 (148)  [splay.events] W: Periodic: thread: 0x8ed5b30 from function: 0x8ec35b8 is not dead, we wait
+17:40:48.438783 (6)  [splay.events] W: Periodic: thread: 0x8dcdc20 from function: 0x8df4250 is not dead, we wait
+17:40:48.488864 (129)  [splay.events] W: Periodic: thread: 0x9c605f8 from function: 0x9c5fcf8 is not dead, we wait
+17:40:48.687313 (117)  [splay.events] W: Periodic: thread: 0x81dd290 from function: 0x81c98b8 is not dead, we wait
+17:40:48.960582 (116)  [splay.events] W: Periodic: thread: 0x81b4840 from function: 0x81b1308 is not dead, we wait
+17:40:49.56599 (61)  [splay.events] W: Periodic: thread: 0x91453f0 from function: 0x912d918 is not dead, we wait
+17:40:49.213786 (43)  [splay.events] W: Periodic: thread: 0x9d92a78 from function: 0x9d539c8 is not dead, we wait
+17:40:49.332706 (24)  [splay.events] W: Periodic: thread: 0x90932a8 from function: 0x9086f40 is not dead, we wait
+17:40:49.342886 (19)  [splay.events] W: Periodic: thread: 0x98725b0 from function: 0x9807610 is not dead, we wait
+17:40:49.506002 (96)  [splay.events] W: Periodic: thread: 0x9c41500 from function: 0x9bee360 is not dead, we wait
+17:40:49.592051 (39)  [splay.events] W: Periodic: thread: 0x8f61ee0 from function: 0x8ed9380 is not dead, we wait
+17:40:49.908853 (186)  START_LOG
+17:40:49.909194 (186)  SPLAYD LUA EXEC
+17:40:49.973610 (186)  >> Job settings:
+17:40:49.973864 (186)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:49.974150 (186)  Name: 
+17:40:49.974336 (186)  Description: 
+17:40:49.974443 (186)  Disk:
+17:40:49.974687 (186)  	max 512 files
+17:40:49.975288 (186)  	max 32 file descriptors
+17:40:49.975748 (186)  	max 67108864 size in bytes
+17:40:49.976288 (186)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_48/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:49.976434 (186)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_48/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:49.976591 (186)  Mem 2097152 bytes of memory
+17:40:49.976767 (186)  Network:
+17:40:49.977019 (186)  	max 134217728/134217728 send/receive bytes
+17:40:49.977234 (186)  	max 32 tcp sockets
+17:40:49.977426 (186)  	ip 172.17.0.40
+17:40:49.977710 (186)  	ports 36939-36939
+17:40:49.978164 (186)  
+17:40:50.9364 (186)  >> Into sandbox !!!
+17:40:50.9571 (186)  > Memory: 168.685546875 KBytes
+17:40:50.9777 (186)  > Checking sandbox...
+17:40:50.10069 (186)     > passed
+17:40:50.10198 (186)  
+17:40:50.419290 (80)  [splay.events] W: Periodic: thread: 0x947c438 from function: 0x94555d8 is not dead, we wait
+17:40:50.836101 (172)  [splay.events] W: Periodic: thread: 0x91e51b8 from function: 0x91e39f0 is not dead, we wait
+17:40:50.890981 (18)  [splay.events] W: Periodic: thread: 0x9259500 from function: 0x9214620 is not dead, we wait
+17:40:51.708140 (23)  [splay.events] W: Periodic: thread: 0x8464490 from function: 0x8490900 is not dead, we wait
+17:40:51.740306 (76)  [splay.events] W: Periodic: thread: 0x9309df8 from function: 0x9314180 is not dead, we wait
+17:40:51.976961 (112)  [splay.events] W: Periodic: thread: 0x84ece98 from function: 0x8521428 is not dead, we wait
+17:40:52.4674 (21)  [splay.events] W: Periodic: thread: 0x9e57130 from function: 0x9e07220 is not dead, we wait
+17:40:52.24459 (186)  waiting for 4.1142881098736 to desynchronize
+17:40:52.155009 (190)  [splay.events] W: Periodic: thread: 0x9739950 from function: 0x9702e98 is not dead, we wait
+17:40:52.160789 (92)  [splay.events] W: Periodic: thread: 0x893ff60 from function: 0x8937058 is not dead, we wait
+17:40:52.512583 (75)  [splay.events] W: Periodic: thread: 0x86ca240 from function: 0x86fd420 is not dead, we wait
+17:40:52.550202 (40)  [splay.events] W: Periodic: thread: 0x9d0a220 from function: 0x9c52538 is not dead, we wait
+17:40:52.627549 (22)  [splay.events] W: Periodic: thread: 0x8234fe0 from function: 0x8231378 is not dead, we wait
+17:40:52.702893 (78)  [splay.events] W: Periodic: thread: 0x898af90 from function: 0x8938308 is not dead, we wait
+17:40:52.776343 (37)  [splay.events] W: Periodic: thread: 0x8383250 from function: 0x8326b08 is not dead, we wait
+17:40:53.247286 (189)  START_LOG
+17:40:53.249740 (189)  SPLAYD LUA EXEC
+17:40:53.313672 (189)  >> Job settings:
+17:40:53.313865 (189)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:53.314004 (189)  Name: 
+17:40:53.314193 (189)  Description: 
+17:40:53.314361 (189)  Disk:
+17:40:53.314607 (189)  	max 512 files
+17:40:53.341057 (189)  	max 32 file descriptors
+17:40:53.341172 (189)  	max 67108864 size in bytes
+17:40:53.341238 (189)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_19/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:53.341300 (189)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_19/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:53.341435 (189)  Mem 2097152 bytes of memory
+17:40:53.341524 (189)  Network:
+17:40:53.341588 (189)  	max 134217728/134217728 send/receive bytes
+17:40:53.341659 (189)  	max 32 tcp sockets
+17:40:53.341736 (189)  	ip 172.17.0.40
+17:40:53.341798 (189)  	ports 22279-22279
+17:40:53.341859 (189)  
+17:40:53.349371 (189)  >> Into sandbox !!!
+17:40:53.349584 (189)  > Memory: 169.1552734375 KBytes
+17:40:53.349776 (189)  > Checking sandbox...
+17:40:53.349965 (189)     > passed
+17:40:53.350157 (189)  
+17:40:53.438359 (148)  [splay.events] W: Periodic: thread: 0x8ed5b30 from function: 0x8ec35b8 is not dead, we wait
+17:40:53.444589 (6)  [splay.events] W: Periodic: thread: 0x8dcdc20 from function: 0x8df4250 is not dead, we wait
+17:40:53.954366 (153)  [splay.events] W: Periodic: thread: 0x8c7a280 from function: 0x8c836d0 is not dead, we wait
+17:40:54.61896 (61)  [splay.events] W: Periodic: thread: 0x91453f0 from function: 0x912d918 is not dead, we wait
+17:40:54.219064 (43)  [splay.events] W: Periodic: thread: 0x9d92a78 from function: 0x9d539c8 is not dead, we wait
+17:40:54.338200 (24)  [splay.events] W: Periodic: thread: 0x90932a8 from function: 0x9086f40 is not dead, we wait
+17:40:54.343774 (19)  [splay.events] W: Periodic: thread: 0x98725b0 from function: 0x9807610 is not dead, we wait
+17:40:54.511262 (96)  [splay.events] W: Periodic: thread: 0x9c41500 from function: 0x9bee360 is not dead, we wait
+17:40:54.789074 (98)  [splay.events] W: Periodic: thread: 0x81ae068 from function: 0x81cb548 is not dead, we wait
+17:40:54.795085 (39)  [splay.events] W: Periodic: thread: 0x8f61ee0 from function: 0x8ed9380 is not dead, we wait
+17:40:55.363569 (189)  waiting for 3.1789858002118 to desynchronize
+17:40:55.424597 (80)  [splay.events] W: Periodic: thread: 0x947c438 from function: 0x94555d8 is not dead, we wait
+17:40:55.600715 (150)  [splay.events] W: Periodic: thread: 0x99972a8 from function: 0x9983308 is not dead, we wait
+17:40:55.763277 (172)  [splay.events] W: Periodic: thread: 0x91e51b8 from function: 0x91e39f0 is not dead, we wait
+17:40:55.896182 (18)  [splay.events] W: Periodic: thread: 0x9259500 from function: 0x9214620 is not dead, we wait
+17:40:56.414345 (114)  [splay.events] W: Periodic: thread: 0x9975720 from function: 0x994d2c0 is not dead, we wait
+17:40:56.713611 (23)  [splay.events] W: Periodic: thread: 0x8464490 from function: 0x8490900 is not dead, we wait
+17:40:56.736323 (97)  [splay.events] W: Periodic: thread: 0x8775250 from function: 0x8774d80 is not dead, we wait
+17:40:56.745149 (76)  [splay.events] W: Periodic: thread: 0x9309df8 from function: 0x9314180 is not dead, we wait
+17:40:56.897299 (112)  [splay.events] W: Periodic: thread: 0x84ece98 from function: 0x8521428 is not dead, we wait
+17:40:56.993422 (95)  [splay.events] W: Periodic: thread: 0x9a9a320 from function: 0x9a5fb98 is not dead, we wait
+17:40:57.6385 (21)  [splay.events] W: Periodic: thread: 0x9e57130 from function: 0x9e07220 is not dead, we wait
+17:40:57.147508 (92)  [splay.events] W: Periodic: thread: 0x893ff60 from function: 0x8937058 is not dead, we wait
+17:40:57.160734 (190)  [splay.events] W: Periodic: thread: 0x9739950 from function: 0x9702e98 is not dead, we wait
+17:40:57.389098 (188)  START_LOG
+17:40:57.389291 (188)  SPLAYD LUA EXEC
+17:40:57.453343 (188)  >> Job settings:
+17:40:57.453508 (188)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:57.453714 (188)  Name: 
+17:40:57.454055 (188)  Description: 
+17:40:57.454139 (188)  Disk:
+17:40:57.454245 (188)  	max 512 files
+17:40:57.454663 (188)  	max 32 file descriptors
+17:40:57.454749 (188)  	max 67108864 size in bytes
+17:40:57.454992 (188)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_47/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:57.455439 (188)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_47/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:57.455647 (188)  Mem 2097152 bytes of memory
+17:40:57.455762 (188)  Network:
+17:40:57.456003 (188)  	max 134217728/134217728 send/receive bytes
+17:40:57.456200 (188)  	max 32 tcp sockets
+17:40:57.456452 (188)  	ip 172.17.0.40
+17:40:57.456697 (188)  	ports 36098-36098
+17:40:57.456854 (188)  
+17:40:57.488805 (188)  >> Into sandbox !!!
+17:40:57.529550 (188)  > Memory: 169.1552734375 KBytes
+17:40:57.529648 (188)  > Checking sandbox...
+17:40:57.529711 (188)     > passed
+17:40:57.529830 (188)  
+17:40:57.551965 (40)  [splay.events] W: Periodic: thread: 0x9d0a220 from function: 0x9c52538 is not dead, we wait
+17:40:57.589687 (75)  [splay.events] W: Periodic: thread: 0x86ca240 from function: 0x86fd420 is not dead, we wait
+17:40:57.632800 (22)  [splay.events] W: Periodic: thread: 0x8234fe0 from function: 0x8231378 is not dead, we wait
+17:40:57.717373 (37)  [splay.events] W: Periodic: thread: 0x8383250 from function: 0x8326b08 is not dead, we wait
+17:40:57.735617 (78)  [splay.events] W: Periodic: thread: 0x898af90 from function: 0x8938308 is not dead, we wait
+17:40:57.995954 (93)  [splay.events] W: Periodic: thread: 0x961c4f0 from function: 0x95a5790 is not dead, we wait
+17:40:58.240916 (134)  [splay.events] W: Periodic: thread: 0x98e82d0 from function: 0x992a1e8 is not dead, we wait
+17:40:58.443495 (148)  [splay.events] W: Periodic: thread: 0x8ed5b30 from function: 0x8ec35b8 is not dead, we wait
+17:40:58.494479 (129)  [splay.events] W: Periodic: thread: 0x9cd8f30 from function: 0x9c5fcf8 is not dead, we wait
+17:40:58.647723 (171)  START_LOG
+17:40:58.651012 (171)  SPLAYD LUA EXEC
+17:40:58.692969 (117)  [splay.events] W: Periodic: thread: 0x82474f8 from function: 0x81c98b8 is not dead, we wait
+17:40:58.714773 (171)  >> Job settings:
+17:40:58.714936 (171)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:40:58.715139 (171)  Name: 
+17:40:58.715282 (171)  Description: 
+17:40:58.715477 (171)  Disk:
+17:40:58.715695 (171)  	max 512 files
+17:40:58.715918 (171)  	max 32 file descriptors
+17:40:58.716178 (171)  	max 67108864 size in bytes
+17:40:58.716448 (171)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_30/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:40:58.716775 (171)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_30/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:40:58.716988 (171)  Mem 2097152 bytes of memory
+17:40:58.717223 (171)  Network:
+17:40:58.719058 (171)  	max 134217728/134217728 send/receive bytes
+17:40:58.719252 (171)  	max 32 tcp sockets
+17:40:58.719317 (171)  	ip 172.17.0.40
+17:40:58.719502 (171)  	ports 27898-27898
+17:40:58.719567 (171)  
+17:40:58.750142 (171)  >> Into sandbox !!!
+17:40:58.750385 (171)  > Memory: 169.1552734375 KBytes
+17:40:58.750617 (171)  > Checking sandbox...
+17:40:58.750808 (171)     > passed
+17:40:58.750983 (171)  
+17:40:58.959711 (153)  [splay.events] W: Periodic: thread: 0x8c7a280 from function: 0x8c836d0 is not dead, we wait
+17:40:58.961375 (116)  [splay.events] W: Periodic: thread: 0x81d4d20 from function: 0x81b1308 is not dead, we wait
+17:40:59.64032 (61)  [splay.events] W: Periodic: thread: 0x91453f0 from function: 0x912d918 is not dead, we wait
+17:40:59.224422 (43)  [splay.events] W: Periodic: thread: 0x9d92a78 from function: 0x9d539c8 is not dead, we wait
+17:40:59.340062 (24)  [splay.events] W: Periodic: thread: 0x90932a8 from function: 0x9086f40 is not dead, we wait
+17:40:59.344982 (19)  [splay.events] W: Periodic: thread: 0x98725b0 from function: 0x9807610 is not dead, we wait
+17:40:59.503195 (188)  waiting for 3.8691498892704 to desynchronize
+17:40:59.513019 (96)  [splay.events] W: Periodic: thread: 0x9c41500 from function: 0x9bee360 is not dead, we wait
+17:40:59.673617 (39)  [splay.events] W: Periodic: thread: 0x8f61ee0 from function: 0x8ed9380 is not dead, we wait
+17:41:00.255296 (20)  [splay.events] W: Periodic: thread: 0x9ca1e98 from function: 0x9c84900 is not dead, we wait
+17:41:00.274861 (98)  [splay.events] W: Periodic: thread: 0x81ae068 from function: 0x81cb548 is not dead, we wait
+17:41:00.426567 (80)  [splay.events] W: Periodic: thread: 0x947c438 from function: 0x94555d8 is not dead, we wait
+17:41:00.605714 (150)  [splay.events] W: Periodic: thread: 0x99972a8 from function: 0x9983308 is not dead, we wait
+17:41:00.782485 (171)  waiting for 4.0140919778562 to desynchronize
+17:41:00.843319 (172)  [splay.events] W: Periodic: thread: 0x91e51b8 from function: 0x91e39f0 is not dead, we wait
+17:41:00.898105 (18)  [splay.events] W: Periodic: thread: 0x9259500 from function: 0x9214620 is not dead, we wait
+17:41:01.415710 (114)  [splay.events] W: Periodic: thread: 0x9975720 from function: 0x994d2c0 is not dead, we wait
+17:41:01.741588 (97)  [splay.events] W: Periodic: thread: 0x8775250 from function: 0x8774d80 is not dead, we wait
+17:41:02.116501 (112)  [splay.events] W: Periodic: thread: 0x84ece98 from function: 0x8521428 is not dead, we wait
+17:41:02.119259 (95)  [splay.events] W: Periodic: thread: 0x9a9a320 from function: 0x9a5fb98 is not dead, we wait
+17:41:02.127181 (92)  [splay.events] W: Periodic: thread: 0x893ff60 from function: 0x8937058 is not dead, we wait
+17:41:02.162368 (190)  [splay.events] W: Periodic: thread: 0x9739950 from function: 0x9702e98 is not dead, we wait
+17:41:02.519852 (75)  [splay.events] W: Periodic: thread: 0x86ca240 from function: 0x86fd420 is not dead, we wait
+17:41:02.557353 (40)  [splay.events] W: Periodic: thread: 0x9d0a220 from function: 0x9c52538 is not dead, we wait
+17:41:02.634924 (22)  [splay.events] W: Periodic: thread: 0x8234fe0 from function: 0x8231378 is not dead, we wait
+17:41:02.683351 (78)  [splay.events] W: Periodic: thread: 0x898af90 from function: 0x8938308 is not dead, we wait
+17:41:02.721971 (37)  [splay.events] W: Periodic: thread: 0x8383250 from function: 0x8326b08 is not dead, we wait
+17:41:03.1906 (93)  [splay.events] W: Periodic: thread: 0x961c4f0 from function: 0x95a5790 is not dead, we wait
+17:41:03.178399 (187)  START_LOG
+17:41:03.295864 (187)  SPLAYD LUA EXEC
+17:41:03.295959 (187)  >> Job settings:
+17:41:03.296023 (187)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:03.296086 (187)  Name: 
+17:41:03.296148 (187)  Description: 
+17:41:03.296210 (187)  Disk:
+17:41:03.296272 (187)  	max 512 files
+17:41:03.296334 (187)  	max 32 file descriptors
+17:41:03.296396 (187)  	max 67108864 size in bytes
+17:41:03.296458 (187)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_27/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:03.296521 (187)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_27/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:03.296585 (187)  Mem 2097152 bytes of memory
+17:41:03.296648 (187)  Network:
+17:41:03.296710 (187)  	max 134217728/134217728 send/receive bytes
+17:41:03.296772 (187)  	max 32 tcp sockets
+17:41:03.296857 (187)  	ip 172.17.0.40
+17:41:03.296920 (187)  	ports 26219-26219
+17:41:03.296983 (187)  
+17:41:03.297044 (187)  >> Into sandbox !!!
+17:41:03.297106 (187)  > Memory: 169.1552734375 KBytes
+17:41:03.297168 (187)  > Checking sandbox...
+17:41:03.297230 (187)     > passed
+17:41:03.297292 (187)  
+17:41:03.325635 (134)  [splay.events] W: Periodic: thread: 0x98e82d0 from function: 0x992a1e8 is not dead, we wait
+17:41:03.499825 (129)  [splay.events] W: Periodic: thread: 0x9cd8f30 from function: 0x9c5fcf8 is not dead, we wait
+17:41:03.698222 (117)  [splay.events] W: Periodic: thread: 0x82474f8 from function: 0x81c98b8 is not dead, we wait
+17:41:03.961686 (153)  [splay.events] W: Periodic: thread: 0x8c7a280 from function: 0x8c836d0 is not dead, we wait
+17:41:03.963426 (116)  [splay.events] W: Periodic: thread: 0x81d4d20 from function: 0x81b1308 is not dead, we wait
+17:41:04.69177 (61)  [splay.events] W: Periodic: thread: 0x91453f0 from function: 0x912d918 is not dead, we wait
+17:41:04.343004 (24)  [splay.events] W: Periodic: thread: 0x90932a8 from function: 0x9086f40 is not dead, we wait
+17:41:04.354000 (43)  [splay.events] W: Periodic: thread: 0x9d92a78 from function: 0x9d539c8 is not dead, we wait
+17:41:04.394840 (19)  [splay.events] W: Periodic: thread: 0x98725b0 from function: 0x9807610 is not dead, we wait
+17:41:04.518200 (96)  [splay.events] W: Periodic: thread: 0x9c41500 from function: 0x9bee360 is not dead, we wait
+17:41:04.702755 (39)  [splay.events] W: Periodic: thread: 0x8f61ee0 from function: 0x8ed9380 is not dead, we wait
+17:41:04.794243 (98)  [splay.events] W: Periodic: thread: 0x81ae068 from function: 0x81cb548 is not dead, we wait
+17:41:05.79758 (20)  [splay.events] W: Periodic: thread: 0x9ca1e98 from function: 0x9c84900 is not dead, we wait
+17:41:05.297008 (187)  waiting for 4.7483822795322 to desynchronize
+17:41:05.431857 (80)  [splay.events] W: Periodic: thread: 0x947c438 from function: 0x94555d8 is not dead, we wait
+17:41:05.607859 (150)  [splay.events] W: Periodic: thread: 0x99972a8 from function: 0x9983308 is not dead, we wait
+17:41:05.772459 (172)  [splay.events] W: Periodic: thread: 0x91e51b8 from function: 0x91e39f0 is not dead, we wait
+17:41:05.903332 (18)  [splay.events] W: Periodic: thread: 0x9259500 from function: 0x9214620 is not dead, we wait
+17:41:06.149346 (186)  [splay.events] W: Periodic: thread: 0x9b28c70 from function: 0x9b08c58 is not dead, we wait
+17:41:06.416986 (114)  [splay.events] W: Periodic: thread: 0x9975720 from function: 0x994d2c0 is not dead, we wait
+17:41:06.743525 (97)  [splay.events] W: Periodic: thread: 0x8775250 from function: 0x8774d80 is not dead, we wait
+17:41:06.752370 (76)  [splay.events] W: Periodic: thread: 0x9325bb8 from function: 0x9314180 is not dead, we wait
+17:41:06.906234 (112)  [splay.events] W: Periodic: thread: 0x84ece98 from function: 0x8521428 is not dead, we wait
+17:41:07.500 (95)  [splay.events] W: Periodic: thread: 0x9a9a320 from function: 0x9a5fb98 is not dead, we wait
+17:41:07.7878 (21)  [splay.events] W: Periodic: thread: 0x9dd75b8 from function: 0x9e07220 is not dead, we wait
+17:41:07.168548 (190)  [splay.events] W: Periodic: thread: 0x9739950 from function: 0x9702e98 is not dead, we wait
+17:41:07.196417 (92)  [splay.events] W: Periodic: thread: 0x893ff60 from function: 0x8937058 is not dead, we wait
+17:41:07.525154 (75)  [splay.events] W: Periodic: thread: 0x86ca240 from function: 0x86fd420 is not dead, we wait
+17:41:07.562349 (40)  [splay.events] W: Periodic: thread: 0x9d0a220 from function: 0x9c52538 is not dead, we wait
+17:41:07.724516 (37)  [splay.events] W: Periodic: thread: 0x8383250 from function: 0x8326b08 is not dead, we wait
+17:41:07.727748 (78)  [splay.events] W: Periodic: thread: 0x898af90 from function: 0x8938308 is not dead, we wait
+17:41:07.760750 (22)  [splay.events] W: Periodic: thread: 0x8234fe0 from function: 0x8231378 is not dead, we wait
+17:41:07.800143 (38)  [splay.events] W: Periodic: thread: 0x9830ab0 from function: 0x97f20c8 is not dead, we wait
+17:41:08.3626 (93)  [splay.events] W: Periodic: thread: 0x961c4f0 from function: 0x95a5790 is not dead, we wait
+17:41:08.449202 (148)  [splay.events] W: Periodic: thread: 0x8efc2c0 from function: 0x8ec35b8 is not dead, we wait
+17:41:08.456551 (6)  [splay.events] W: Periodic: thread: 0x8e16658 from function: 0x8df4250 is not dead, we wait
+17:41:08.501855 (129)  [splay.events] W: Periodic: thread: 0x9cd8f30 from function: 0x9c5fcf8 is not dead, we wait
+17:41:08.555790 (189)  [splay.events] W: Periodic: thread: 0x86cea90 from function: 0x866e510 is not dead, we wait
+17:41:08.700230 (117)  [splay.events] W: Periodic: thread: 0x82474f8 from function: 0x81c98b8 is not dead, we wait
+17:41:08.964584 (116)  [splay.events] W: Periodic: thread: 0x81d4d20 from function: 0x81b1308 is not dead, we wait
+17:41:08.967260 (153)  [splay.events] W: Periodic: thread: 0x8c7a280 from function: 0x8c836d0 is not dead, we wait
+17:41:09.74505 (61)  [splay.events] W: Periodic: thread: 0x91453f0 from function: 0x912d918 is not dead, we wait
+17:41:09.348267 (24)  [splay.events] W: Periodic: thread: 0x90932a8 from function: 0x9086f40 is not dead, we wait
+17:41:09.515515 (19)  [splay.events] W: Periodic: thread: 0x98725b0 from function: 0x9807610 is not dead, we wait
+17:41:09.523439 (96)  [splay.events] W: Periodic: thread: 0x9c41500 from function: 0x9bee360 is not dead, we wait
+17:41:09.732221 (39)  [splay.events] W: Periodic: thread: 0x8f61ee0 from function: 0x8ed9380 is not dead, we wait
+17:41:09.799440 (98)  [splay.events] W: Periodic: thread: 0x81ae068 from function: 0x81cb548 is not dead, we wait
+17:41:10.81568 (20)  [splay.events] W: Periodic: thread: 0x9ca1e98 from function: 0x9c84900 is not dead, we wait
+17:41:10.437129 (80)  [splay.events] W: Periodic: thread: 0x947c438 from function: 0x94555d8 is not dead, we wait
+17:41:10.613687 (150)  [splay.events] W: Periodic: thread: 0x99972a8 from function: 0x9983308 is not dead, we wait
+17:41:10.908458 (18)  [splay.events] W: Periodic: thread: 0x9259500 from function: 0x9214620 is not dead, we wait
+17:41:11.154794 (186)  [splay.events] W: Periodic: thread: 0x9b28c70 from function: 0x9b08c58 is not dead, we wait
+17:41:11.418268 (114)  [splay.events] W: Periodic: thread: 0x9975720 from function: 0x994d2c0 is not dead, we wait
+17:41:11.725961 (23)  [splay.events] W: Periodic: thread: 0x849c190 from function: 0x8490900 is not dead, we wait
+17:41:11.749089 (97)  [splay.events] W: Periodic: thread: 0x8775250 from function: 0x8774d80 is not dead, we wait
+17:41:11.757681 (76)  [splay.events] W: Periodic: thread: 0x9325bb8 from function: 0x9314180 is not dead, we wait
+17:41:11.917088 (112)  [splay.events] W: Periodic: thread: 0x84ece98 from function: 0x8521428 is not dead, we wait
+17:41:12.5784 (95)  [splay.events] W: Periodic: thread: 0x9a9a320 from function: 0x9a5fb98 is not dead, we wait
+17:41:12.9131 (21)  [splay.events] W: Periodic: thread: 0x9dd75b8 from function: 0x9e07220 is not dead, we wait
+17:41:12.173088 (190)  [splay.events] W: Periodic: thread: 0x9739950 from function: 0x9702e98 is not dead, we wait
+17:41:12.175207 (92)  [splay.events] W: Periodic: thread: 0x893ff60 from function: 0x8937058 is not dead, we wait
+17:41:12.530460 (75)  [splay.events] W: Periodic: thread: 0x86ca240 from function: 0x86fd420 is not dead, we wait
+17:41:12.567833 (40)  [splay.events] W: Periodic: thread: 0x9d0a220 from function: 0x9c52538 is not dead, we wait
+17:41:12.724467 (37)  [splay.events] W: Periodic: thread: 0x8383250 from function: 0x8326b08 is not dead, we wait
+17:41:12.744614 (78)  [splay.events] W: Periodic: thread: 0x898af90 from function: 0x8938308 is not dead, we wait
+17:41:12.789862 (22)  [splay.events] W: Periodic: thread: 0x8234fe0 from function: 0x8231378 is not dead, we wait
+17:41:12.805275 (38)  [splay.events] W: Periodic: thread: 0x9830ab0 from function: 0x97f20c8 is not dead, we wait
+17:41:13.9059 (93)  [splay.events] W: Periodic: thread: 0x961c4f0 from function: 0x95a5790 is not dead, we wait
+17:41:13.387424 (188)  [splay.events] W: Periodic: thread: 0xa0508f0 from function: 0xa01af70 is not dead, we wait
+17:41:13.461961 (6)  [splay.events] W: Periodic: thread: 0x8e16658 from function: 0x8df4250 is not dead, we wait
+17:41:13.482883 (148)  [splay.events] W: Periodic: thread: 0x8efc2c0 from function: 0x8ec35b8 is not dead, we wait
+17:41:13.507174 (129)  [splay.events] W: Periodic: thread: 0x9cd8f30 from function: 0x9c5fcf8 is not dead, we wait
+17:41:13.561425 (189)  [splay.events] W: Periodic: thread: 0x86cea90 from function: 0x866e510 is not dead, we wait
+17:41:13.705152 (117)  [splay.events] W: Periodic: thread: 0x82474f8 from function: 0x81c98b8 is not dead, we wait
+17:41:13.965722 (116)  [splay.events] W: Periodic: thread: 0x81d4d20 from function: 0x81b1308 is not dead, we wait
+17:41:13.971497 (153)  [splay.events] W: Periodic: thread: 0x8c7a280 from function: 0x8c836d0 is not dead, we wait
+17:41:14.80160 (61)  [splay.events] W: Periodic: thread: 0x91453f0 from function: 0x912d918 is not dead, we wait
+17:41:14.353708 (24)  [splay.events] W: Periodic: thread: 0x90932a8 from function: 0x9086f40 is not dead, we wait
+17:41:14.527232 (19)  [splay.events] W: Periodic: thread: 0x98725b0 from function: 0x9807610 is not dead, we wait
+17:41:14.528639 (96)  [splay.events] W: Periodic: thread: 0x9c41500 from function: 0x9bee360 is not dead, we wait
+17:41:14.751953 (39)  [splay.events] W: Periodic: thread: 0x8f61ee0 from function: 0x8ed9380 is not dead, we wait
+17:41:14.792275 (171)  [splay.events] W: Periodic: thread: 0x88a4510 from function: 0x8878658 is not dead, we wait
+17:41:14.804669 (98)  [splay.events] W: Periodic: thread: 0x81ae068 from function: 0x81cb548 is not dead, we wait
+17:41:15.86727 (20)  [splay.events] W: Periodic: thread: 0x9ca1e98 from function: 0x9c84900 is not dead, we wait
+17:41:15.442567 (80)  [splay.events] W: Periodic: thread: 0x947c438 from function: 0x94555d8 is not dead, we wait
+17:41:15.618444 (150)  [splay.events] W: Periodic: thread: 0x99972a8 from function: 0x9983308 is not dead, we wait
+17:41:15.750663 (172)  [splay.events] W: Periodic: thread: 0x924dd48 from function: 0x91e39f0 is not dead, we wait
+17:41:15.913503 (18)  [splay.events] W: Periodic: thread: 0x9259500 from function: 0x9214620 is not dead, we wait
+17:41:16.235246 (186)  [splay.events] W: Periodic: thread: 0x9b28c70 from function: 0x9b08c58 is not dead, we wait
+17:41:16.419541 (114)  [splay.events] W: Periodic: thread: 0x9975720 from function: 0x994d2c0 is not dead, we wait
+17:41:16.731655 (23)  [splay.events] W: Periodic: thread: 0x849c190 from function: 0x8490900 is not dead, we wait
+17:41:16.754085 (97)  [splay.events] W: Periodic: thread: 0x8775250 from function: 0x8774d80 is not dead, we wait
+17:41:16.759638 (76)  [splay.events] W: Periodic: thread: 0x9325bb8 from function: 0x9314180 is not dead, we wait
+17:41:16.920676 (112)  [splay.events] W: Periodic: thread: 0x84ece98 from function: 0x8521428 is not dead, we wait
+17:41:17.10434 (21)  [splay.events] W: Periodic: thread: 0x9dd75b8 from function: 0x9e07220 is not dead, we wait
+17:41:17.70915 (95)  [splay.events] W: Periodic: thread: 0x9a9a320 from function: 0x9a5fb98 is not dead, we wait
+17:41:17.162015 (92)  [splay.events] W: Periodic: thread: 0x893ff60 from function: 0x8937058 is not dead, we wait
+17:41:17.238561 (190)  [splay.events] W: Periodic: thread: 0x9739950 from function: 0x9702e98 is not dead, we wait
+17:41:17.535878 (75)  [splay.events] W: Periodic: thread: 0x86ca240 from function: 0x86fd420 is not dead, we wait
+17:41:17.693024 (40)  [splay.events] W: Periodic: thread: 0x9d0a220 from function: 0x9c52538 is not dead, we wait
+17:41:17.730380 (37)  [splay.events] W: Periodic: thread: 0x8383250 from function: 0x8326b08 is not dead, we wait
+17:41:17.744917 (78)  [splay.events] W: Periodic: thread: 0x898af90 from function: 0x8938308 is not dead, we wait
+17:41:17.801560 (22)  [splay.events] W: Periodic: thread: 0x8234fe0 from function: 0x8231378 is not dead, we wait
+17:41:17.807171 (38)  [splay.events] W: Periodic: thread: 0x9830ab0 from function: 0x97f20c8 is not dead, we wait
+17:41:18.14172 (93)  [splay.events] W: Periodic: thread: 0x961c4f0 from function: 0x95a5790 is not dead, we wait
+17:41:18.392797 (188)  [splay.events] W: Periodic: thread: 0xa0508f0 from function: 0xa01af70 is not dead, we wait
+17:41:18.463917 (6)  [splay.events] W: Periodic: thread: 0x8e16658 from function: 0x8df4250 is not dead, we wait
+17:41:18.514456 (129)  [splay.events] W: Periodic: thread: 0x9cd8f30 from function: 0x9c5fcf8 is not dead, we wait
+17:41:18.514656 (148)  [splay.events] W: Periodic: thread: 0x8efc2c0 from function: 0x8ec35b8 is not dead, we wait
+17:41:18.537932 (169)  START_LOG
+17:41:18.579505 (169)  SPLAYD LUA EXEC
+17:41:18.606359 (169)  >> Job settings:
+17:41:18.606485 (169)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:18.606551 (169)  Name: 
+17:41:18.606671 (169)  Description: 
+17:41:18.606746 (169)  Disk:
+17:41:18.606850 (169)  	max 512 files
+17:41:18.606915 (169)  	max 32 file descriptors
+17:41:18.606978 (169)  	max 67108864 size in bytes
+17:41:18.607042 (169)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_16/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:18.607173 (169)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_16/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:18.607266 (169)  Mem 2097152 bytes of memory
+17:41:18.607397 (169)  Network:
+17:41:18.607463 (169)  	max 134217728/134217728 send/receive bytes
+17:41:18.607601 (169)  	max 32 tcp sockets
+17:41:18.608868 (169)  	ip 172.17.0.40
+17:41:18.608991 (169)  	ports 20695-20695
+17:41:18.609059 (169)  
+17:41:18.639843 (189)  [splay.events] W: Periodic: thread: 0x86cea90 from function: 0x866e510 is not dead, we wait
+17:41:18.710577 (117)  [splay.events] W: Periodic: thread: 0x82474f8 from function: 0x81c98b8 is not dead, we wait
+17:41:18.734099 (169)  >> Into sandbox !!!
+17:41:18.764862 (169)  > Memory: 169.1552734375 KBytes
+17:41:18.764996 (169)  > Checking sandbox...
+17:41:18.765062 (169)     > passed
+17:41:18.765126 (169)  
+17:41:18.765190 (169)  [splay.urpc] W: setsockname(20695): address already in use
+17:41:18.966662 (116)  [splay.events] W: Periodic: thread: 0x81d4d20 from function: 0x81b1308 is not dead, we wait
+17:41:18.972630 (153)  [splay.events] W: Periodic: thread: 0x8c7a280 from function: 0x8c836d0 is not dead, we wait
+17:41:19.85229 (61)  [splay.events] W: Periodic: thread: 0x91453f0 from function: 0x912d918 is not dead, we wait
+17:41:19.240682 (43)  [splay.events] W: Periodic: thread: 0x9de3458 from function: 0x9d539c8 is not dead, we wait
+17:41:19.359212 (24)  [splay.events] W: Periodic: thread: 0x90932a8 from function: 0x9086f40 is not dead, we wait
+17:41:19.530756 (19)  [splay.events] W: Periodic: thread: 0x98725b0 from function: 0x9807610 is not dead, we wait
+17:41:19.533834 (96)  [splay.events] W: Periodic: thread: 0x9c41500 from function: 0x9bee360 is not dead, we wait
+17:41:19.797564 (171)  [splay.events] W: Periodic: thread: 0x88a4510 from function: 0x8878658 is not dead, we wait
+17:41:19.805441 (98)  [splay.events] W: Periodic: thread: 0x81ae068 from function: 0x81cb548 is not dead, we wait
+17:41:20.5773 (2)  START_LOG
+17:41:20.5956 (2)  SPLAYD LUA EXEC
+17:41:20.57672 (187)  [splay.events] W: Periodic: thread: 0x99556a8 from function: 0x99709f0 is not dead, we wait
+17:41:20.64644 (2)  >> Job settings:
+17:41:20.65024 (2)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:20.65164 (2)  Name: 
+17:41:20.65229 (2)  Description: 
+17:41:20.65531 (2)  Disk:
+17:41:20.65716 (2)  	max 512 files
+17:41:20.65923 (2)  	max 32 file descriptors
+17:41:20.66189 (2)  	max 67108864 size in bytes
+17:41:20.66325 (2)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:20.66390 (2)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:20.66511 (2)  Mem 2097152 bytes of memory
+17:41:20.68165 (2)  Network:
+17:41:20.68327 (2)  	max 134217728/134217728 send/receive bytes
+17:41:20.68392 (2)  	max 32 tcp sockets
+17:41:20.68511 (2)  	ip 172.17.0.25
+17:41:20.68575 (2)  	ports 13507-13507
+17:41:20.68694 (2)  
+17:41:20.86812 (2)  >> Into sandbox !!!
+17:41:20.87158 (2)  > Memory: 168.6064453125 KBytes
+17:41:20.87240 (2)  > Checking sandbox...
+17:41:20.87487 (2)     > passed
+17:41:20.87645 (2)  
+17:41:20.91962 (20)  [splay.events] W: Periodic: thread: 0x9ca1e98 from function: 0x9c84900 is not dead, we wait
+17:41:20.98219 (2)  [splay.urpc] W: setsockname(13507): address already in use
+17:41:20.317460 (152)  START_LOG
+17:41:20.317576 (152)  SPLAYD LUA EXEC
+17:41:20.378541 (152)  >> Job settings:
+17:41:20.378738 (152)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:20.378944 (152)  Name: 
+17:41:20.379056 (152)  Description: 
+17:41:20.379243 (152)  Disk:
+17:41:20.379508 (152)  	max 512 files
+17:41:20.381013 (152)  	max 32 file descriptors
+17:41:20.381109 (152)  	max 67108864 size in bytes
+17:41:20.381200 (152)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:20.381266 (152)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_2/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:20.381346 (152)  Mem 2097152 bytes of memory
+17:41:20.381436 (152)  Network:
+17:41:20.381501 (152)  	max 134217728/134217728 send/receive bytes
+17:41:20.383484 (152)  	max 32 tcp sockets
+17:41:20.383573 (152)  	ip 172.17.0.40
+17:41:20.383689 (152)  	ports 13669-13669
+17:41:20.383756 (152)  
+17:41:20.414246 (152)  >> Into sandbox !!!
+17:41:20.437045 (152)  > Memory: 169.1513671875 KBytes
+17:41:20.437408 (152)  > Checking sandbox...
+17:41:20.437519 (152)     > passed
+17:41:20.437607 (152)  
+17:41:20.437692 (152)  [splay.urpc] W: setsockname(13669): address already in use
+17:41:20.443674 (80)  [splay.events] W: Periodic: thread: 0x947c438 from function: 0x94555d8 is not dead, we wait
+17:41:20.623774 (150)  [splay.events] W: Periodic: thread: 0x99972a8 from function: 0x9983308 is not dead, we wait
+17:41:20.653053 (169)  waiting for 1.1536579235241 to desynchronize
+17:41:20.752199 (172)  [splay.events] W: Periodic: thread: 0x924dd48 from function: 0x91e39f0 is not dead, we wait
+17:41:20.918773 (18)  [splay.events] W: Periodic: thread: 0x9259500 from function: 0x9214620 is not dead, we wait
+17:41:21.21705 (151)  START_LOG
+17:41:21.23903 (151)  SPLAYD LUA EXEC
+17:41:21.88439 (151)  >> Job settings:
+17:41:21.110099 (151)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:21.110276 (151)  Name: 
+17:41:21.110343 (151)  Description: 
+17:41:21.110419 (151)  Disk:
+17:41:21.110480 (151)  	max 512 files
+17:41:21.110599 (151)  	max 32 file descriptors
+17:41:21.110663 (151)  	max 67108864 size in bytes
+17:41:21.110723 (151)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:21.110784 (151)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_1/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:21.110844 (151)  Mem 2097152 bytes of memory
+17:41:21.111019 (151)  Network:
+17:41:21.111081 (151)  	max 134217728/134217728 send/receive bytes
+17:41:21.111191 (151)  	max 32 tcp sockets
+17:41:21.111253 (151)  	ip 172.17.0.40
+17:41:21.111313 (151)  	ports 13169-13169
+17:41:21.111373 (151)  
+17:41:21.125899 (151)  >> Into sandbox !!!
+17:41:21.126095 (151)  > Memory: 169.1513671875 KBytes
+17:41:21.127461 (151)  > Checking sandbox...
+17:41:21.129285 (151)     > passed
+17:41:21.129385 (151)  
+17:41:21.146979 (151)  [splay.urpc] W: setsockname(13169): address already in use
+17:41:21.256562 (186)  [splay.events] W: Periodic: thread: 0x9b28c70 from function: 0x9b08c58 is not dead, we wait
+17:41:21.377864 (170)  START_LOG
+17:41:21.378849 (170)  SPLAYD LUA EXEC
+17:41:21.421316 (114)  [splay.events] W: Periodic: thread: 0x9975720 from function: 0x994d2c0 is not dead, we wait
+17:41:21.443280 (170)  >> Job settings:
+17:41:21.474740 (170)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:21.474855 (170)  Name: 
+17:41:21.475005 (170)  Description: 
+17:41:21.475164 (170)  Disk:
+17:41:21.475225 (170)  	max 512 files
+17:41:21.475283 (170)  	max 32 file descriptors
+17:41:21.475342 (170)  	max 67108864 size in bytes
+17:41:21.475400 (170)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_21/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:21.475459 (170)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_21/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:21.475518 (170)  Mem 2097152 bytes of memory
+17:41:21.475602 (170)  Network:
+17:41:21.475663 (170)  	max 134217728/134217728 send/receive bytes
+17:41:21.475732 (170)  	max 32 tcp sockets
+17:41:21.475859 (170)  	ip 172.17.0.40
+17:41:21.475918 (170)  	ports 23377-23377
+17:41:21.475976 (170)  
+17:41:21.478902 (170)  >> Into sandbox !!!
+17:41:21.479173 (170)  > Memory: 169.1552734375 KBytes
+17:41:21.479758 (170)  > Checking sandbox...
+17:41:21.479982 (170)     > passed
+17:41:21.480067 (170)  
+17:41:21.490705 (170)  [splay.urpc] W: setsockname(23377): address already in use
+17:41:21.733225 (23)  [splay.events] W: Periodic: thread: 0x849c190 from function: 0x8490900 is not dead, we wait
+17:41:21.759702 (97)  [splay.events] W: Periodic: thread: 0x8775250 from function: 0x8774d80 is not dead, we wait
+17:41:21.825194 (76)  [splay.events] W: Periodic: thread: 0x9325bb8 from function: 0x9314180 is not dead, we wait
+17:41:22.14520 (21)  [splay.events] W: Periodic: thread: 0x9dd75b8 from function: 0x9e07220 is not dead, we wait
+17:41:22.15998 (95)  [splay.events] W: Periodic: thread: 0x9a9a320 from function: 0x9a5fb98 is not dead, we wait
+17:41:22.99055 (2)  waiting for 1.6310948443744 to desynchronize
+17:41:22.184080 (190)  [splay.events] W: Periodic: thread: 0x9739950 from function: 0x9702e98 is not dead, we wait
+17:41:22.199060 (92)  [splay.events] W: Periodic: thread: 0x893ff60 from function: 0x8937058 is not dead, we wait
+17:41:22.426922 (152)  waiting for 0.8338542915107 to desynchronize
+17:41:22.541283 (75)  [splay.events] W: Periodic: thread: 0x86ca240 from function: 0x86fd420 is not dead, we wait
+17:41:22.805045 (22)  [splay.events] W: Periodic: thread: 0x8234fe0 from function: 0x8231378 is not dead, we wait
+17:41:22.812318 (38)  [splay.events] W: Periodic: thread: 0x9830ab0 from function: 0x97f20c8 is not dead, we wait
+17:41:23.15059 (93)  [splay.events] W: Periodic: thread: 0x961c4f0 from function: 0x95a5790 is not dead, we wait
+17:41:23.118950 (41)  START_LOG
+17:41:23.119056 (41)  SPLAYD LUA EXEC
+17:41:23.138449 (151)  waiting for 0.51007745345592 to desynchronize
+17:41:23.169802 (41)  >> Job settings:
+17:41:23.179394 (41)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:23.179488 (41)  Name: 
+17:41:23.179549 (41)  Description: 
+17:41:23.179608 (41)  Disk:
+17:41:23.179750 (41)  	max 512 files
+17:41:23.179809 (41)  	max 32 file descriptors
+17:41:23.179868 (41)  	max 67108864 size in bytes
+17:41:23.179927 (41)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_6/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:23.179986 (41)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_6/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:23.180045 (41)  Mem 2097152 bytes of memory
+17:41:23.180104 (41)  Network:
+17:41:23.180303 (41)  	max 134217728/134217728 send/receive bytes
+17:41:23.180382 (41)  	max 32 tcp sockets
+17:41:23.180878 (41)  	ip 172.17.0.25
+17:41:23.182217 (41)  	ports 15594-15594
+17:41:23.182374 (41)  
+17:41:23.192742 (41)  >> Into sandbox !!!
+17:41:23.193076 (41)  > Memory: 168.6064453125 KBytes
+17:41:23.193152 (41)  > Checking sandbox...
+17:41:23.193399 (41)     > passed
+17:41:23.193468 (41)  
+17:41:23.208625 (41)  [splay.urpc] W: setsockname(15594): address already in use
+17:41:23.231459 (4)  START_LOG
+17:41:23.254331 (4)  SPLAYD LUA EXEC
+17:41:23.264294 (134)  [splay.events] W: Periodic: thread: 0x997bd50 from function: 0x992a1e8 is not dead, we wait
+17:41:23.296471 (4)  >> Job settings:
+17:41:23.296647 (4)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:23.296807 (4)  Name: 
+17:41:23.297098 (4)  Description: 
+17:41:23.297359 (4)  Disk:
+17:41:23.297441 (4)  	max 512 files
+17:41:23.297695 (4)  	max 32 file descriptors
+17:41:23.297949 (4)  	max 67108864 size in bytes
+17:41:23.298028 (4)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:23.298286 (4)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_4/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:23.298563 (4)  Mem 2097152 bytes of memory
+17:41:23.298642 (4)  Network:
+17:41:23.298884 (4)  	max 134217728/134217728 send/receive bytes
+17:41:23.298964 (4)  	max 32 tcp sockets
+17:41:23.299207 (4)  	ip 172.17.0.25
+17:41:23.299288 (4)  	ports 14507-14507
+17:41:23.299395 (4)  
+17:41:23.319166 (4)  >> Into sandbox !!!
+17:41:23.329509 (4)  > Memory: 168.6064453125 KBytes
+17:41:23.329615 (4)  > Checking sandbox...
+17:41:23.329927 (4)     > passed
+17:41:23.330012 (4)  
+17:41:23.330965 (4)  [splay.urpc] W: setsockname(14507): address already in use
+17:41:23.395079 (188)  [splay.events] W: Periodic: thread: 0xa0508f0 from function: 0xa01af70 is not dead, we wait
+17:41:23.469290 (6)  [splay.events] W: Periodic: thread: 0x8e16658 from function: 0x8df4250 is not dead, we wait
+17:41:23.491423 (170)  waiting for 0.76944750536673 to desynchronize
+17:41:23.541760 (129)  [splay.events] W: Periodic: thread: 0x9cd8f30 from function: 0x9c5fcf8 is not dead, we wait
+17:41:23.541962 (148)  [splay.events] W: Periodic: thread: 0x8efc2c0 from function: 0x8ec35b8 is not dead, we wait
+17:41:23.568673 (189)  [splay.events] W: Periodic: thread: 0x86cea90 from function: 0x866e510 is not dead, we wait
+17:41:23.623165 (168)  START_LOG
+17:41:23.623428 (168)  SPLAYD LUA EXEC
+17:41:23.689579 (168)  >> Job settings:
+17:41:23.712435 (168)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:23.712610 (168)  Name: 
+17:41:23.712680 (168)  Description: 
+17:41:23.712862 (168)  Disk:
+17:41:23.712983 (168)  	max 512 files
+17:41:23.713046 (168)  	max 32 file descriptors
+17:41:23.713108 (168)  	max 67108864 size in bytes
+17:41:23.713469 (168)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_20/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:23.713534 (168)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_20/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:23.713596 (168)  Mem 2097152 bytes of memory
+17:41:23.713686 (168)  Network:
+17:41:23.713750 (168)  	max 134217728/134217728 send/receive bytes
+17:41:23.713823 (168)  	max 32 tcp sockets
+17:41:23.713885 (168)  	ip 172.17.0.40
+17:41:23.714011 (168)  	ports 22598-22598
+17:41:23.714077 (168)  
+17:41:23.725475 (168)  >> Into sandbox !!!
+17:41:23.725666 (168)  > Memory: 169.1552734375 KBytes
+17:41:23.725886 (168)  > Checking sandbox...
+17:41:23.726126 (168)     > passed
+17:41:23.726231 (168)  
+17:41:23.747945 (168)  [splay.urpc] W: setsockname(22598): address already in use
+17:41:23.771844 (117)  [splay.events] W: Periodic: thread: 0x82474f8 from function: 0x81c98b8 is not dead, we wait
+17:41:23.967704 (116)  [splay.events] W: Periodic: thread: 0x81d4d20 from function: 0x81b1308 is not dead, we wait
+17:41:23.973638 (153)  [splay.events] W: Periodic: thread: 0x8c7a280 from function: 0x8c836d0 is not dead, we wait
+17:41:24.256977 (166)  START_LOG
+17:41:24.257224 (166)  SPLAYD LUA EXEC
+17:41:24.321100 (166)  >> Job settings:
+17:41:24.321284 (166)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:24.321489 (166)  Name: 
+17:41:24.321569 (166)  Description: 
+17:41:24.321683 (166)  Disk:
+17:41:24.321835 (166)  	max 512 files
+17:41:24.322096 (166)  	max 32 file descriptors
+17:41:24.322300 (166)  	max 67108864 size in bytes
+17:41:24.322564 (166)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_18/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:24.322949 (166)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_18/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:24.323073 (166)  Mem 2097152 bytes of memory
+17:41:24.323309 (166)  Network:
+17:41:24.323526 (166)  	max 134217728/134217728 send/receive bytes
+17:41:24.323726 (166)  	max 32 tcp sockets
+17:41:24.323943 (166)  	ip 172.17.0.40
+17:41:24.324162 (166)  	ports 21656-21656
+17:41:24.326040 (166)  
+17:41:24.356891 (166)  >> Into sandbox !!!
+17:41:24.357121 (166)  > Memory: 168.685546875 KBytes
+17:41:24.363138 (166)  > Checking sandbox...
+17:41:24.363292 (166)     > passed
+17:41:24.363884 (166)  
+17:41:24.369293 (166)  [splay.urpc] W: setsockname(21656): address already in use
+17:41:24.451981 (43)  [splay.events] W: Periodic: thread: 0x9de3458 from function: 0x9d539c8 is not dead, we wait
+17:41:24.736080 (3)  START_LOG
+17:41:24.736220 (3)  SPLAYD LUA EXEC
+17:41:24.798834 (3)  >> Job settings:
+17:41:24.799158 (3)  Ref: c2f6228a682bbe24e8d5158b11eec158
+17:41:24.799245 (3)  Name: 
+17:41:24.800143 (171)  [splay.events] W: Periodic: thread: 0x88a4510 from function: 0x8878658 is not dead, we wait
+17:41:24.800489 (3)  Description: 
+17:41:24.800582 (3)  Disk:
+17:41:24.800656 (3)  	max 512 files
+17:41:24.800726 (3)  	max 32 file descriptors
+17:41:24.800798 (3)  	max 67108864 size in bytes
+17:41:24.800891 (3)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib
+17:41:24.800964 (3)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_3/jobs_fs/c2f6228a682bbe24e8d5158b11eec158/lib/?.so
+17:41:24.801035 (3)  Mem 2097152 bytes of memory
+17:41:24.801311 (3)  Network:
+17:41:24.801392 (3)  	max 134217728/134217728 send/receive bytes
+17:41:24.801463 (3)  	max 32 tcp sockets
+17:41:24.801534 (3)  	ip 172.17.0.25
+17:41:24.801605 (3)  	ports 14007-14007
+17:41:24.801676 (3)  
+17:41:24.812392 (98)  [splay.events] W: Periodic: thread: 0x81ae068 from function: 0x81cb548 is not dead, we wait
+17:41:24.822194 (3)  >> Into sandbox !!!
+17:41:24.822845 (3)  > Memory: 168.6064453125 KBytes
+17:41:24.823134 (3)  > Checking sandbox...
+17:41:24.823217 (3)     > passed
+17:41:24.823300 (3)  
+17:41:24.834601 (3)  [splay.urpc] W: setsockname(14007): address already in use
+17:41:25.62966 (187)  [splay.events] W: Periodic: thread: 0x99556a8 from function: 0x99709f0 is not dead, we wait
+17:41:25.97117 (20)  [splay.events] W: Periodic: thread: 0x9ca1e98 from function: 0x9c84900 is not dead, we wait
+17:41:25.206603 (41)  waiting for 2.4981641874174 to desynchronize
+17:41:25.331751 (4)  waiting for 1.1037343256659 to desynchronize
+17:41:25.629271 (150)  [splay.events] W: Periodic: thread: 0x99972a8 from function: 0x9983308 is not dead, we wait
+17:41:25.737969 (168)  waiting for 3.6833899508619 to desynchronize
+17:41:25.752706 (172)  [splay.events] W: Periodic: thread: 0x924dd48 from function: 0x91e39f0 is not dead, we wait
+17:41:26.209155 (186)  [splay.events] W: Periodic: thread: 0x9b28c70 from function: 0x9b08c58 is not dead, we wait
+17:41:26.370076 (166)  waiting for 2.8956941575258 to desynchronize
+17:41:26.422075 (114)  [splay.events] W: Periodic: thread: 0x9975720 from function: 0x994d2c0 is not dead, we wait
+17:41:26.738569 (23)  [splay.events] W: Periodic: thread: 0x849c190 from function: 0x8490900 is not dead, we wait
+17:41:26.764762 (97)  [splay.events] W: Periodic: thread: 0x8775250 from function: 0x8774d80 is not dead, we wait
+17:41:26.771313 (76)  [splay.events] W: Periodic: thread: 0x9325bb8 from function: 0x9314180 is not dead, we wait
+17:41:26.835451 (3)  waiting for 3.8729953225111 to desynchronize
+17:41:27.19745 (21)  [splay.events] W: Periodic: thread: 0x9dd75b8 from function: 0x9e07220 is not dead, we wait
+17:41:27.21172 (95)  [splay.events] W: Periodic: thread: 0x9a9a320 from function: 0x9a5fb98 is not dead, we wait
+17:41:27.874890 (38)  [splay.events] W: Periodic: thread: 0x9830ab0 from function: 0x97f20c8 is not dead, we wait
+17:41:28.141111 (93)  [splay.events] W: Periodic: thread: 0x961c4f0 from function: 0x95a5790 is not dead, we wait
+17:41:28.269495 (134)  [splay.events] W: Periodic: thread: 0x997bd50 from function: 0x992a1e8 is not dead, we wait
+17:41:28.400757 (188)  [splay.events] W: Periodic: thread: 0xa0508f0 from function: 0xa01af70 is not dead, we wait
+17:41:28.869877 (129)  [splay.events] W: Periodic: thread: 0x9cd8f30 from function: 0x9c5fcf8 is not dead, we wait
+17:41:28.878825 (189)  [splay.events] W: Periodic: thread: 0x86cea90 from function: 0x866e510 is not dead, we wait
+17:41:28.894933 (117)  [splay.events] W: Periodic: thread: 0x82474f8 from function: 0x81c98b8 is not dead, we wait
+17:41:28.898288 (6)  [splay.events] W: Periodic: thread: 0x8e16658 from function: 0x8df4250 is not dead, we wait
+17:41:28.967356 (148)  [splay.events] W: Periodic: thread: 0x8efc2c0 from function: 0x8ec35b8 is not dead, we wait
+17:41:28.968713 (116)  [splay.events] W: Periodic: thread: 0x81d4d20 from function: 0x81b1308 is not dead, we wait
+17:41:29.90771 (61)  [splay.events] W: Periodic: thread: 0x91184c0 from function: 0x912d918 is not dead, we wait
+17:41:29.296585 (43)  [splay.events] W: Periodic: thread: 0x9de3458 from function: 0x9d539c8 is not dead, we wait
+17:41:29.353256 (19)  [splay.events] W: Periodic: thread: 0x984bb08 from function: 0x9807610 is not dead, we wait
+17:41:29.364626 (24)  [splay.events] W: Periodic: thread: 0x90d5d00 from function: 0x9086f40 is not dead, we wait
+17:41:29.539362 (96)  [splay.events] W: Periodic: thread: 0x9c13b38 from function: 0x9bee360 is not dead, we wait
+17:41:29.625291 (39)  [splay.events] W: Periodic: thread: 0x8ed7460 from function: 0x8ed9380 is not dead, we wait
+17:41:29.805010 (171)  [splay.events] W: Periodic: thread: 0x88a4510 from function: 0x8878658 is not dead, we wait
+17:41:30.63453 (187)  [splay.events] W: Periodic: thread: 0x99556a8 from function: 0x99709f0 is not dead, we wait
+17:41:30.260977 (20)  [splay.events] W: Periodic: thread: 0x9ca1e98 from function: 0x9c84900 is not dead, we wait
+17:41:30.754241 (172)  [splay.events] W: Periodic: thread: 0x924dd48 from function: 0x91e39f0 is not dead, we wait
+17:41:30.924152 (18)  [splay.events] W: Periodic: thread: 0x922d190 from function: 0x9214620 is not dead, we wait
+17:41:31.207220 (186)  [splay.events] W: Periodic: thread: 0x9b28c70 from function: 0x9b08c58 is not dead, we wait
+17:41:31.743887 (23)  [splay.events] W: Periodic: thread: 0x849c190 from function: 0x8490900 is not dead, we wait
+17:41:31.896599 (76)  [splay.events] W: Periodic: thread: 0x9325bb8 from function: 0x9314180 is not dead, we wait
+17:41:32.606971 (75)  [splay.events] W: Periodic: thread: 0x87077f8 from function: 0x86fd420 is not dead, we wait
+17:41:32.623586 (169)  [splay.events] W: Periodic: thread: 0x8575250 from function: 0x85c6518 is not dead, we wait
+17:41:32.626693 (21)  [splay.events] W: Periodic: thread: 0x9dd75b8 from function: 0x9e07220 is not dead, we wait
+17:41:32.627881 (112)  [splay.events] W: Periodic: thread: 0x84e2310 from function: 0x8521428 is not dead, we wait
+17:41:32.643676 (40)  [splay.events] W: Periodic: thread: 0x9cc7ab0 from function: 0x9c52538 is not dead, we wait
+17:41:32.676765 (78)  [splay.events] W: Periodic: thread: 0x89523a8 from function: 0x8938308 is not dead, we wait
+17:41:32.734410 (37)  [splay.events] W: Periodic: thread: 0x8341608 from function: 0x8326b08 is not dead, we wait
+17:41:32.937419 (38)  [splay.events] W: Periodic: thread: 0x9830ab0 from function: 0x97f20c8 is not dead, we wait
+17:41:33.267088 (152)  [splay.events] W: Periodic: thread: 0x8386ed0 from function: 0x83aca60 is not dead, we wait
+17:41:33.271432 (134)  [splay.events] W: Periodic: thread: 0x997bd50 from function: 0x992a1e8 is not dead, we wait
+17:41:33.406002 (188)  [splay.events] W: Periodic: thread: 0xa0508f0 from function: 0xa01af70 is not dead, we wait
+17:41:33.525445 (148)  [splay.events] W: Periodic: thread: 0x8efc2c0 from function: 0x8ec35b8 is not dead, we wait
+17:41:33.542553 (6)  [splay.events] W: Periodic: thread: 0x8e16658 from function: 0x8df4250 is not dead, we wait
+17:41:33.579242 (189)  [splay.events] W: Periodic: thread: 0x86cea90 from function: 0x866e510 is not dead, we wait
+17:41:33.736951 (2)  [splay.events] W: Periodic: thread: 0x81d5230 from function: 0x81d7d70 is not dead, we wait
+17:41:33.975766 (153)  [splay.events] W: Periodic: thread: 0x8ce59f8 from function: 0x8c836d0 is not dead, we wait
+17:41:34.217019 (61)  [splay.events] W: Periodic: thread: 0x91184c0 from function: 0x912d918 is not dead, we wait
+17:41:34.270796 (170)  [splay.events] W: Periodic: thread: 0x8245688 from function: 0x827e5d8 is not dead, we wait
+17:41:34.354431 (19)  [splay.events] W: Periodic: thread: 0x984bb08 from function: 0x9807610 is not dead, we wait
+17:41:34.358380 (43)  [splay.events] W: Periodic: thread: 0x9de3458 from function: 0x9d539c8 is not dead, we wait
+17:41:34.370115 (24)  [splay.events] W: Periodic: thread: 0x90d5d00 from function: 0x9086f40 is not dead, we wait
+17:41:34.544476 (96)  [splay.events] W: Periodic: thread: 0x9c13b38 from function: 0x9bee360 is not dead, we wait
+17:41:34.630658 (39)  [splay.events] W: Periodic: thread: 0x8ed7460 from function: 0x8ed9380 is not dead, we wait
+17:41:34.809464 (171)  [splay.events] W: Periodic: thread: 0x88a4510 from function: 0x8878658 is not dead, we wait
+17:41:35.69307 (187)  [splay.events] W: Periodic: thread: 0x99556a8 from function: 0x99709f0 is not dead, we wait
+17:41:35.450666 (80)  [splay.events] W: Periodic: thread: 0x9472d68 from function: 0x94555d8 is not dead, we wait
+17:41:35.634817 (150)  [splay.events] W: Periodic: thread: 0x99e7ba0 from function: 0x9983308 is not dead, we wait
+17:41:35.755350 (172)  [splay.events] W: Periodic: thread: 0x924dd48 from function: 0x91e39f0 is not dead, we wait
+17:41:35.929292 (18)  [splay.events] W: Periodic: thread: 0x922d190 from function: 0x9214620 is not dead, we wait
+17:41:36.246913 (186)  [splay.events] W: Periodic: thread: 0x9b28c70 from function: 0x9b08c58 is not dead, we wait
+17:41:36.441843 (4)  [splay.events] W: Periodic: thread: 0x8addfc8 from function: 0x8ae1990 is not dead, we wait
+17:41:36.749189 (23)  [splay.events] W: Periodic: thread: 0x849c190 from function: 0x8490900 is not dead, we wait
+17:41:36.768926 (97)  [splay.events] W: Periodic: thread: 0x8752de0 from function: 0x8774d80 is not dead, we wait
+17:41:36.780798 (76)  [splay.events] W: Periodic: thread: 0x9325bb8 from function: 0x9314180 is not dead, we wait
+17:41:36.815075 (169)  [splay.events] W: Periodic: thread: 0x8575250 from function: 0x85c6518 is not dead, we wait
+17:41:36.885567 (112)  [splay.events] W: Periodic: thread: 0x84e2310 from function: 0x8521428 is not dead, we wait
+17:41:37.26590 (95)  [splay.events] W: Periodic: thread: 0x9a65318 from function: 0x9a5fb98 is not dead, we wait
+17:41:37.30759 (21)  [splay.events] W: Periodic: thread: 0x9dd75b8 from function: 0x9e07220 is not dead, we wait
+17:41:37.552143 (75)  [splay.events] W: Periodic: thread: 0x87077f8 from function: 0x86fd420 is not dead, we wait
+17:41:37.588503 (40)  [splay.events] W: Periodic: thread: 0x9cc7ab0 from function: 0x9c52538 is not dead, we wait
+17:41:37.682032 (78)  [splay.events] W: Periodic: thread: 0x89523a8 from function: 0x8938308 is not dead, we wait
+17:41:37.737762 (37)  [splay.events] W: Periodic: thread: 0x8341608 from function: 0x8326b08 is not dead, we wait
+17:41:38.25824 (93)  [splay.events] W: Periodic: thread: 0x962aad0 from function: 0x95a5790 is not dead, we wait
+17:41:38.49368 (38)  [splay.events] W: Periodic: thread: 0x9830ab0 from function: 0x97f20c8 is not dead, we wait
+17:41:38.272585 (152)  [splay.events] W: Periodic: thread: 0x8386ed0 from function: 0x83aca60 is not dead, we wait
+17:41:38.273442 (134)  [splay.events] W: Periodic: thread: 0x997bd50 from function: 0x992a1e8 is not dead, we wait
+17:41:38.409456 (188)  [splay.events] W: Periodic: thread: 0xa0508f0 from function: 0xa01af70 is not dead, we wait
+17:41:38.506933 (148)  [splay.events] W: Periodic: thread: 0x8efc2c0 from function: 0x8ec35b8 is not dead, we wait
+17:41:38.562466 (6)  [splay.events] W: Periodic: thread: 0x8e16658 from function: 0x8df4250 is not dead, we wait
+17:41:38.584511 (189)  [splay.events] W: Periodic: thread: 0x86cea90 from function: 0x866e510 is not dead, we wait
+17:41:38.587190 (129)  [splay.events] W: Periodic: thread: 0x9caeac0 from function: 0x9c5fcf8 is not dead, we wait
+17:41:38.659927 (151)  [splay.events] W: Periodic: thread: 0x8b2ec10 from function: 0x8b78ca8 is not dead, we wait
+17:41:38.742199 (2)  [splay.events] W: Periodic: thread: 0x81d5230 from function: 0x81d7d70 is not dead, we wait
+17:41:38.780124 (117)  [splay.events] W: Periodic: thread: 0x8229888 from function: 0x81c98b8 is not dead, we wait
+17:41:38.976994 (153)  [splay.events] W: Periodic: thread: 0x8ce59f8 from function: 0x8c836d0 is not dead, we wait
+17:41:39.145621 (61)  [splay.events] W: Periodic: thread: 0x91184c0 from function: 0x912d918 is not dead, we wait
+17:41:39.272387 (170)  [splay.events] W: Periodic: thread: 0x8245688 from function: 0x827e5d8 is not dead, we wait
+17:41:39.354771 (19)  [splay.events] W: Periodic: thread: 0x984bb08 from function: 0x9807610 is not dead, we wait
+17:41:39.362286 (43)  [splay.events] W: Periodic: thread: 0x9de3458 from function: 0x9d539c8 is not dead, we wait
+17:41:39.372075 (24)  [splay.events] W: Periodic: thread: 0x90d5d00 from function: 0x9086f40 is not dead, we wait
+17:41:39.546285 (96)  [splay.events] W: Periodic: thread: 0x9c13b38 from function: 0x9bee360 is not dead, we wait
+17:41:39.632943 (39)  [splay.events] W: Periodic: thread: 0x8ed7460 from function: 0x8ed9380 is not dead, we wait
+17:41:39.817990 (171)  [splay.events] W: Periodic: thread: 0x88a4510 from function: 0x8878658 is not dead, we wait
+17:41:39.818805 (98)  [splay.events] W: Periodic: thread: 0x82107b8 from function: 0x81cb548 is not dead, we wait
+17:41:40.74635 (187)  [splay.events] W: Periodic: thread: 0x99556a8 from function: 0x99709f0 is not dead, we wait
+17:41:40.107698 (20)  [splay.events] W: Periodic: thread: 0x9c46950 from function: 0x9c84900 is not dead, we wait
+17:41:40.456480 (80)  [splay.events] W: Periodic: thread: 0x9472d68 from function: 0x94555d8 is not dead, we wait
+17:41:40.640157 (150)  [splay.events] W: Periodic: thread: 0x99e7ba0 from function: 0x9983308 is not dead, we wait
+17:41:40.715134 (3)  [splay.events] W: Periodic: thread: 0x94af0e0 from function: 0x9491860 is not dead, we wait
+17:41:40.817019 (172)  [splay.events] W: Periodic: thread: 0x924dd48 from function: 0x91e39f0 is not dead, we wait
+17:41:41.66180 (18)  [splay.events] W: Periodic: thread: 0x922d190 from function: 0x9214620 is not dead, we wait
+17:41:41.426068 (114)  [splay.events] W: Periodic: thread: 0x998ebc8 from function: 0x994d2c0 is not dead, we wait
+17:41:41.447094 (4)  [splay.events] W: Periodic: thread: 0x8addfc8 from function: 0x8ae1990 is not dead, we wait
+17:41:41.754540 (23)  [splay.events] W: Periodic: thread: 0x849c190 from function: 0x8490900 is not dead, we wait
+17:41:41.872441 (97)  [splay.events] W: Periodic: thread: 0x8752de0 from function: 0x8774d80 is not dead, we wait
+17:41:41.894611 (169)  [splay.events] W: Periodic: thread: 0x8575250 from function: 0x85c6518 is not dead, we wait
+17:41:41.972401 (112)  [splay.events] W: Periodic: thread: 0x84e2310 from function: 0x8521428 is not dead, we wait
+17:41:42.31804 (95)  [splay.events] W: Periodic: thread: 0x9a65318 from function: 0x9a5fb98 is not dead, we wait
+17:41:42.197882 (190)  [splay.events] W: Periodic: thread: 0x9757760 from function: 0x9702e98 is not dead, we wait
+17:41:42.554182 (75)  [splay.events] W: Periodic: thread: 0x87077f8 from function: 0x86fd420 is not dead, we wait
+17:41:42.589876 (40)  [splay.events] W: Periodic: thread: 0x9cc7ab0 from function: 0x9c52538 is not dead, we wait
+17:41:42.672346 (22)  [splay.events] W: Periodic: thread: 0x823f9a8 from function: 0x8231378 is not dead, we wait
+17:41:42.683920 (78)  [splay.events] W: Periodic: thread: 0x89523a8 from function: 0x8938308 is not dead, we wait
+17:41:42.776478 (41)  [splay.events] W: Periodic: thread: 0x90d8540 from function: 0x9085110 is not dead, we wait
+17:41:42.799828 (37)  [splay.events] W: Periodic: thread: 0x8341608 from function: 0x8326b08 is not dead, we wait
+17:41:43.30892 (93)  [splay.events] W: Periodic: thread: 0x962aad0 from function: 0x95a5790 is not dead, we wait
+17:41:43.274702 (152)  [splay.events] W: Periodic: thread: 0x8386ed0 from function: 0x83aca60 is not dead, we wait
+17:41:43.278821 (134)  [splay.events] W: Periodic: thread: 0x997bd50 from function: 0x992a1e8 is not dead, we wait
+17:41:43.414915 (188)  [splay.events] W: Periodic: thread: 0xa0508f0 from function: 0xa01af70 is not dead, we wait
+17:41:43.596193 (129)  [splay.events] W: Periodic: thread: 0x9caeac0 from function: 0x9c5fcf8 is not dead, we wait
+17:41:43.665325 (151)  [splay.events] W: Periodic: thread: 0x8b2ec10 from function: 0x8b78ca8 is not dead, we wait
+17:41:43.724588 (117)  [splay.events] W: Periodic: thread: 0x8229888 from function: 0x81c98b8 is not dead, we wait
+17:41:43.744228 (2)  [splay.events] W: Periodic: thread: 0x81d5230 from function: 0x81d7d70 is not dead, we wait
+17:41:43.973636 (116)  [splay.events] W: Periodic: thread: 0x81c3730 from function: 0x81b1308 is not dead, we wait
+17:41:43.978150 (153)  [splay.events] W: Periodic: thread: 0x8ce59f8 from function: 0x8c836d0 is not dead, we wait
+17:41:44.274434 (166)  [splay.events] W: Periodic: thread: 0x9a5df00 from function: 0x9a9a738 is not dead, we wait
+17:41:44.274735 (170)  [splay.events] W: Periodic: thread: 0x8245688 from function: 0x827e5d8 is not dead, we wait
+17:41:44.274887 (61)  [splay.events] W: Periodic: thread: 0x91184c0 from function: 0x912d918 is not dead, we wait
+17:41:44.344451 (43)  [splay.events] W: Periodic: thread: 0x9de3458 from function: 0x9d539c8 is not dead, we wait
+17:41:44.356161 (19)  [splay.events] W: Periodic: thread: 0x984bb08 from function: 0x9807610 is not dead, we wait
+17:41:44.372973 (24)  [splay.events] W: Periodic: thread: 0x90d5d00 from function: 0x9086f40 is not dead, we wait
+17:41:45.244223 (171)  [splay.events] W: Periodic: thread: 0x88a4510 from function: 0x8878658 is not dead, we wait
+17:41:45.245598 (98)  [splay.events] W: Periodic: thread: 0x82107b8 from function: 0x81cb548 is not dead, we wait
+17:41:45.260677 (187)  [splay.events] W: Periodic: thread: 0x99556a8 from function: 0x99709f0 is not dead, we wait
+17:41:45.273039 (96)  [splay.events] W: Periodic: thread: 0x9c13b38 from function: 0x9bee360 is not dead, we wait
+17:41:45.293783 (20)  [splay.events] W: Periodic: thread: 0x9c46950 from function: 0x9c84900 is not dead, we wait
+17:41:45.299726 (39)  [splay.events] W: Periodic: thread: 0x8ed7460 from function: 0x8ed9380 is not dead, we wait
+17:41:45.458345 (80)  [splay.events] W: Periodic: thread: 0x9472d68 from function: 0x94555d8 is not dead, we wait
+17:41:45.645037 (150)  [splay.events] W: Periodic: thread: 0x99e7ba0 from function: 0x9983308 is not dead, we wait
+17:41:45.720481 (3)  [splay.events] W: Periodic: thread: 0x94af0e0 from function: 0x9491860 is not dead, we wait
+17:41:45.758131 (172)  [splay.events] W: Periodic: thread: 0x924dd48 from function: 0x91e39f0 is not dead, we wait
+17:41:46.169682 (18)  [splay.events] W: Periodic: thread: 0x922d190 from function: 0x9214620 is not dead, we wait
+17:41:46.427359 (114)  [splay.events] W: Periodic: thread: 0x998ebc8 from function: 0x994d2c0 is not dead, we wait
+17:41:46.449073 (4)  [splay.events] W: Periodic: thread: 0x8addfc8 from function: 0x8ae1990 is not dead, we wait
+17:41:46.875952 (169)  [splay.events] W: Periodic: thread: 0x8575250 from function: 0x85c6518 is not dead, we wait
+17:41:47.60855 (97)  [splay.events] W: Periodic: thread: 0x8752de0 from function: 0x8774d80 is not dead, we wait
+17:41:47.94686 (95)  [splay.events] W: Periodic: thread: 0x9a65318 from function: 0x9a5fb98 is not dead, we wait
+17:41:47.203365 (190)  [splay.events] W: Periodic: thread: 0x9757760 from function: 0x9702e98 is not dead, we wait
+17:41:47.216532 (21)  [splay.events] W: Periodic: thread: 0x9dd8d90 from function: 0x9e07220 is not dead, we wait
+17:41:47.219041 (112)  [splay.events] W: Periodic: thread: 0x84e2310 from function: 0x8521428 is not dead, we wait
+17:41:47.559493 (75)  [splay.events] W: Periodic: thread: 0x87077f8 from function: 0x86fd420 is not dead, we wait
+17:41:47.595162 (40)  [splay.events] W: Periodic: thread: 0x9cc7ab0 from function: 0x9c52538 is not dead, we wait
+17:41:47.677994 (22)  [splay.events] W: Periodic: thread: 0x823f9a8 from function: 0x8231378 is not dead, we wait
+17:41:47.689201 (78)  [splay.events] W: Periodic: thread: 0x89523a8 from function: 0x8938308 is not dead, we wait
+17:41:47.721922 (41)  [splay.events] W: Periodic: thread: 0x90d8540 from function: 0x9085110 is not dead, we wait
+17:41:47.804927 (37)  [splay.events] W: Periodic: thread: 0x8341608 from function: 0x8326b08 is not dead, we wait
+17:41:47.829760 (38)  [splay.events] W: Periodic: thread: 0x9831c70 from function: 0x97f20c8 is not dead, we wait
+17:41:48.32390 (93)  [splay.events] W: Periodic: thread: 0x962aad0 from function: 0x95a5790 is not dead, we wait
+17:41:48.280317 (152)  [splay.events] W: Periodic: thread: 0x8386ed0 from function: 0x83aca60 is not dead, we wait
+17:41:48.284192 (134)  [splay.events] W: Periodic: thread: 0x997bd50 from function: 0x992a1e8 is not dead, we wait
+17:41:48.483270 (148)  [splay.events] W: Periodic: thread: 0x8f13698 from function: 0x8ec35b8 is not dead, we wait
+17:41:48.487060 (6)  [splay.events] W: Periodic: thread: 0x8e4e200 from function: 0x8df4250 is not dead, we wait
+17:41:48.569240 (129)  [splay.events] W: Periodic: thread: 0x9caeac0 from function: 0x9c5fcf8 is not dead, we wait
+17:41:48.667284 (151)  [splay.events] W: Periodic: thread: 0x8b2ec10 from function: 0x8b78ca8 is not dead, we wait
+17:41:48.726415 (117)  [splay.events] W: Periodic: thread: 0x8229888 from function: 0x81c98b8 is not dead, we wait
+17:41:48.749540 (2)  [splay.events] W: Periodic: thread: 0x81d5230 from function: 0x81d7d70 is not dead, we wait
+17:41:48.979502 (116)  [splay.events] W: Periodic: thread: 0x81c3730 from function: 0x81b1308 is not dead, we wait
+17:41:48.979750 (153)  [splay.events] W: Periodic: thread: 0x8ce59f8 from function: 0x8c836d0 is not dead, we wait
+17:41:49.236746 (61)  [splay.events] W: Periodic: thread: 0x91184c0 from function: 0x912d918 is not dead, we wait
+17:41:49.280192 (170)  [splay.events] W: Periodic: thread: 0x8245688 from function: 0x827e5d8 is not dead, we wait
+17:41:49.280370 (166)  [splay.events] W: Periodic: thread: 0x9a5df00 from function: 0x9a9a738 is not dead, we wait
+17:41:49.356502 (19)  [splay.events] W: Periodic: thread: 0x984bb08 from function: 0x9807610 is not dead, we wait
+17:41:49.438134 (168)  [splay.events] W: Periodic: thread: 0x98f4958 from function: 0x98c2b80 is not dead, we wait
+17:41:49.438760 (24)  [splay.events] W: Periodic: thread: 0x90d5d00 from function: 0x9086f40 is not dead, we wait
+17:41:49.446417 (43)  [splay.events] W: Periodic: thread: 0x9de3458 from function: 0x9d539c8 is not dead, we wait
+17:41:49.556632 (96)  [splay.events] W: Periodic: thread: 0x9c13b38 from function: 0x9bee360 is not dead, we wait
+17:41:49.826706 (98)  [splay.events] W: Periodic: thread: 0x82107b8 from function: 0x81cb548 is not dead, we wait
+17:41:49.868082 (39)  [splay.events] W: Periodic: thread: 0x8ed7460 from function: 0x8ed9380 is not dead, we wait
+17:41:50.85390 (187)  [splay.events] W: Periodic: thread: 0x99556a8 from function: 0x99709f0 is not dead, we wait
+17:41:50.114598 (20)  [splay.events] W: Periodic: thread: 0x9c46950 from function: 0x9c84900 is not dead, we wait
+17:41:50.513835 (80)  [splay.events] W: Periodic: thread: 0x9472d68 from function: 0x94555d8 is not dead, we wait
+17:41:50.650382 (150)  [splay.events] W: Periodic: thread: 0x99e7ba0 from function: 0x9983308 is not dead, we wait
+17:41:50.722448 (3)  [splay.events] W: Periodic: thread: 0x94af0e0 from function: 0x9491860 is not dead, we wait
+17:41:51.185669 (186)  [splay.events] W: Periodic: thread: 0x9b6d258 from function: 0x9b08c58 is not dead, we wait
+17:41:51.189600 (18)  [splay.events] W: Periodic: thread: 0x922d190 from function: 0x9214620 is not dead, we wait
+17:41:51.428695 (114)  [splay.events] W: Periodic: thread: 0x998ebc8 from function: 0x994d2c0 is not dead, we wait
+17:41:51.454539 (4)  [splay.events] W: Periodic: thread: 0x8addfc8 from function: 0x8ae1990 is not dead, we wait
+17:41:51.759162 (23)  [splay.events] W: Periodic: thread: 0x846cb40 from function: 0x8490900 is not dead, we wait
+17:41:51.791692 (76)  [splay.events] W: Periodic: thread: 0x934f618 from function: 0x9314180 is not dead, we wait
+17:41:51.915801 (169)  [splay.events] W: Periodic: thread: 0x8575250 from function: 0x85c6518 is not dead, we wait
+17:41:51.938179 (97)  [splay.events] W: Periodic: thread: 0x8752de0 from function: 0x8774d80 is not dead, we wait
+17:41:52.12921 (112)  [splay.events] W: Periodic: thread: 0x84e2310 from function: 0x8521428 is not dead, we wait
+17:41:52.38835 (95)  [splay.events] W: Periodic: thread: 0x9a65318 from function: 0x9a5fb98 is not dead, we wait
+17:41:52.101608 (21)  [splay.events] W: Periodic: thread: 0x9dd8d90 from function: 0x9e07220 is not dead, we wait
+17:41:52.119279 (92)  [splay.events] W: Periodic: thread: 0x8922988 from function: 0x8937058 is not dead, we wait
+17:41:52.206726 (190)  [splay.events] W: Periodic: thread: 0x9757760 from function: 0x9702e98 is not dead, we wait
+17:41:52.564912 (75)  [splay.events] W: Periodic: thread: 0x87077f8 from function: 0x86fd420 is not dead, we wait
+17:41:52.600229 (40)  [splay.events] W: Periodic: thread: 0x9cc7ab0 from function: 0x9c52538 is not dead, we wait
+17:41:52.679697 (22)  [splay.events] W: Periodic: thread: 0x823f9a8 from function: 0x8231378 is not dead, we wait
+17:41:52.692686 (78)  [splay.events] W: Periodic: thread: 0x89523a8 from function: 0x8938308 is not dead, we wait
+17:41:52.724118 (41)  [splay.events] W: Periodic: thread: 0x90d8540 from function: 0x9085110 is not dead, we wait
+17:41:52.810264 (37)  [splay.events] W: Periodic: thread: 0x8341608 from function: 0x8326b08 is not dead, we wait
+17:41:52.834960 (38)  [splay.events] W: Periodic: thread: 0x9831c70 from function: 0x97f20c8 is not dead, we wait
+17:41:53.37909 (93)  [splay.events] W: Periodic: thread: 0x962aad0 from function: 0x95a5790 is not dead, we wait
+17:41:53.285450 (152)  [splay.events] W: Periodic: thread: 0x8386ed0 from function: 0x83aca60 is not dead, we wait
+17:41:53.289778 (134)  [splay.events] W: Periodic: thread: 0x997bd50 from function: 0x992a1e8 is not dead, we wait
+17:41:53.420564 (188)  [splay.events] W: Periodic: thread: 0xa0b6c98 from function: 0xa01af70 is not dead, we wait
+17:41:53.488633 (148)  [splay.events] W: Periodic: thread: 0x8f13698 from function: 0x8ec35b8 is not dead, we wait
+17:41:53.492575 (6)  [splay.events] W: Periodic: thread: 0x8e4e200 from function: 0x8df4250 is not dead, we wait
+17:41:53.595444 (189)  [splay.events] W: Periodic: thread: 0x8704038 from function: 0x866e510 is not dead, we wait
+17:41:53.626960 (129)  [splay.events] W: Periodic: thread: 0x9caeac0 from function: 0x9c5fcf8 is not dead, we wait
+17:41:53.669634 (151)  [splay.events] W: Periodic: thread: 0x8b2ec10 from function: 0x8b78ca8 is not dead, we wait
+17:41:53.731748 (117)  [splay.events] W: Periodic: thread: 0x8229888 from function: 0x81c98b8 is not dead, we wait
+17:41:53.754827 (2)  [splay.events] W: Periodic: thread: 0x81d5230 from function: 0x81d7d70 is not dead, we wait
+17:41:53.980199 (153)  [splay.events] W: Periodic: thread: 0x8ce59f8 from function: 0x8c836d0 is not dead, we wait
+17:41:53.980856 (116)  [splay.events] W: Periodic: thread: 0x81c3730 from function: 0x81b1308 is not dead, we wait
+17:41:54.265569 (61)  [splay.events] W: Periodic: thread: 0x91184c0 from function: 0x912d918 is not dead, we wait
+17:41:54.281819 (170)  [splay.events] W: Periodic: thread: 0x8245688 from function: 0x827e5d8 is not dead, we wait
+17:41:54.282135 (166)  [splay.events] W: Periodic: thread: 0x9a5df00 from function: 0x9a9a738 is not dead, we wait
+17:41:54.357325 (19)  [splay.events] W: Periodic: thread: 0x984bb08 from function: 0x9807610 is not dead, we wait
+17:41:54.443503 (168)  [splay.events] W: Periodic: thread: 0x98f4958 from function: 0x98c2b80 is not dead, we wait
+17:41:54.503997 (24)  [splay.events] W: Periodic: thread: 0x90d5d00 from function: 0x9086f40 is not dead, we wait
+17:41:54.553532 (39)  VIEW_CONTENT 19 22 37 44 7 39 47 18 36 
+17:41:54.557040 (39)  Closing node 19
+17:41:54.557162 (39)  END_LOG
+17:41:54.559990 (96)  [splay.events] W: Periodic: thread: 0x9c13b38 from function: 0x9bee360 is not dead, we wait
+17:41:54.829050 (171)  [splay.events] W: Periodic: thread: 0x88f1a80 from function: 0x8878658 is not dead, we wait
+17:41:54.831943 (98)  [splay.events] W: Periodic: thread: 0x82107b8 from function: 0x81cb548 is not dead, we wait
+17:41:55.32350 (20)  VIEW_CONTENT 14 1 49 9 16 5 6 37 12 
+17:41:55.32498 (20)  Closing node 14
+17:41:55.32566 (20)  END_LOG
+17:41:55.563948 (80)  [splay.events] W: Periodic: thread: 0x9472d68 from function: 0x94555d8 is not dead, we wait
+17:41:55.655683 (150)  [splay.events] W: Periodic: thread: 0x99e7ba0 from function: 0x9983308 is not dead, we wait
+17:41:55.727781 (3)  [splay.events] W: Periodic: thread: 0x94af0e0 from function: 0x9491860 is not dead, we wait
+17:41:55.819728 (172)  [splay.events] W: Periodic: thread: 0x91da570 from function: 0x91e39f0 is not dead, we wait
+17:41:56.151992 (18)  [splay.events] W: Periodic: thread: 0x922d190 from function: 0x9214620 is not dead, we wait
+17:41:56.190978 (186)  [splay.events] W: Periodic: thread: 0x9b6d258 from function: 0x9b08c58 is not dead, we wait
+17:41:56.373388 (114)  VIEW_CONTENT 27 49 15 39 48 14 42 4 16 
+17:41:56.373502 (114)  Closing node 27
+17:41:56.373566 (114)  END_LOG
+17:41:56.464318 (4)  [splay.events] W: Periodic: thread: 0x8addfc8 from function: 0x8ae1990 is not dead, we wait
+17:41:56.705395 (76)  VIEW_CONTENT 16 35 47 24 26 12 9 36 49 
+17:41:56.705508 (76)  Closing node 16
+17:41:56.705575 (76)  END_LOG
+17:41:56.789061 (112)  VIEW_CONTENT 11 32 41 47 48 43 33 24 17 
+17:41:56.792674 (112)  Closing node 11
+17:41:56.792792 (112)  END_LOG
+17:41:56.793110 (23)  [splay.events] W: Periodic: thread: 0x846cb40 from function: 0x8490900 is not dead, we wait
+17:41:56.933097 (97)  [splay.events] W: Periodic: thread: 0x8752de0 from function: 0x8774d80 is not dead, we wait
+17:41:56.961379 (21)  VIEW_CONTENT 22 1 40 7 48 44 43 37 2 
+17:41:57.364 (21)  Closing node 22
+17:41:57.463 (21)  END_LOG
+17:41:57.44033 (95)  [splay.events] W: Periodic: thread: 0x9a65318 from function: 0x9a5fb98 is not dead, we wait
+17:41:57.50933 (169)  [splay.events] W: Periodic: thread: 0x8575250 from function: 0x85c6518 is not dead, we wait
+17:41:57.124543 (92)  [splay.events] W: Periodic: thread: 0x8922988 from function: 0x8937058 is not dead, we wait
+17:41:57.209772 (190)  [splay.events] W: Periodic: thread: 0x9757760 from function: 0x9702e98 is not dead, we wait
+17:41:57.475469 (75)  VIEW_CONTENT 10 9 45 32 18 41 1 28 22 
+17:41:57.475584 (75)  Closing node 10
+17:41:57.475651 (75)  END_LOG
+17:41:57.512058 (40)  VIEW_CONTENT 24 7 44 39 3 8 18 22 20 
+17:41:57.540854 (40)  Closing node 24
+17:41:57.540995 (40)  END_LOG
+17:41:57.589854 (22)  VIEW_CONTENT 29 47 35 45 12 27 15 24 30 
+17:41:57.590013 (22)  Closing node 29
+17:41:57.590548 (22)  END_LOG
+17:41:57.605648 (78)  VIEW_CONTENT 35 45 7 42 12 11 19 29 35 
+17:41:57.605759 (78)  Closing node 35
+17:41:57.614270 (78)  END_LOG
+17:41:57.687103 (37)  VIEW_CONTENT 5 50 7 23 32 25 26 36 21 
+17:41:57.687246 (37)  Closing node 5
+17:41:57.687310 (37)  END_LOG
+17:41:57.729526 (41)  [splay.events] W: Periodic: thread: 0x90d8540 from function: 0x9085110 is not dead, we wait
+17:41:57.742829 (38)  VIEW_CONTENT 12 7 9 44 22 40 42 35 1 
+17:41:57.742945 (38)  Closing node 12
+17:41:57.743009 (38)  END_LOG
+17:41:57.962028 (93)  VIEW_CONTENT 7 39 24 22 12 42 3 31 9 
+17:41:58.347887 (93)  Closing node 7
+17:41:58.347989 (93)  END_LOG
+17:41:58.351203 (152)  [splay.events] W: Periodic: thread: 0x8386ed0 from function: 0x83aca60 is not dead, we wait
+17:41:58.400432 (6)  VIEW_CONTENT 49 2 40 6 44 18 20 8 29 
+17:41:58.400595 (6)  Closing node 49
+17:41:58.401687 (6)  END_LOG
+17:41:58.431510 (188)  [splay.events] W: Periodic: thread: 0xa0b6c98 from function: 0xa01af70 is not dead, we wait
+17:41:59.142474 (189)  [splay.events] W: Periodic: thread: 0x8704038 from function: 0x866e510 is not dead, we wait
+17:41:59.142796 (61)  VIEW_CONTENT 45 29 27 35 24 12 47 9 39 
+17:41:59.142915 (61)  Closing node 45
+17:41:59.143002 (61)  END_LOG
+17:41:59.146734 (129)  [splay.events] W: Periodic: thread: 0x9caeac0 from function: 0x9c5fcf8 is not dead, we wait
+17:41:59.156161 (151)  [splay.events] W: Periodic: thread: 0x8b2ec10 from function: 0x8b78ca8 is not dead, we wait
+17:41:59.158099 (117)  [splay.events] W: Periodic: thread: 0x8229888 from function: 0x81c98b8 is not dead, we wait
+17:41:59.161744 (153)  [splay.events] W: Periodic: thread: 0x8ce59f8 from function: 0x8c836d0 is not dead, we wait
+17:41:59.166687 (116)  [splay.events] W: Periodic: thread: 0x81c3730 from function: 0x81b1308 is not dead, we wait
+17:41:59.173300 (148)  [splay.events] W: Periodic: thread: 0x8f13698 from function: 0x8ec35b8 is not dead, we wait
+17:41:59.233488 (2)  [splay.events] W: Periodic: thread: 0x81d5230 from function: 0x81d7d70 is not dead, we wait
+17:41:59.268793 (43)  [splay.events] W: Periodic: thread: 0x9dd2e40 from function: 0x9d539c8 is not dead, we wait
+17:41:59.287583 (166)  [splay.events] W: Periodic: thread: 0x9a5df00 from function: 0x9a9a738 is not dead, we wait
+17:41:59.287743 (170)  [splay.events] W: Periodic: thread: 0x8245688 from function: 0x827e5d8 is not dead, we wait
+17:41:59.333752 (19)  VIEW_CONTENT 8 45 1 43 2 30 18 15 32 
+17:41:59.333862 (19)  Closing node 8
+17:41:59.333924 (19)  END_LOG
+17:41:59.445596 (168)  [splay.events] W: Periodic: thread: 0x98f4958 from function: 0x98c2b80 is not dead, we wait
+17:41:59.451959 (24)  VIEW_CONTENT 43 17 44 6 38 32 20 47 2 
+17:41:59.452156 (24)  Closing node 43
+17:41:59.452223 (24)  END_LOG
+17:41:59.473332 (96)  VIEW_CONTENT 30 20 37 33 1 4 42 35 39 
+17:41:59.473438 (96)  Closing node 30
+17:41:59.473501 (96)  END_LOG
+17:41:59.752940 (98)  VIEW_CONTENT 44 29 15 20 27 2 19 40 22 
+17:41:59.753050 (98)  Closing node 44
+17:41:59.753110 (98)  END_LOG
+17:41:59.834406 (171)  [splay.events] W: Periodic: thread: 0x88f1a80 from function: 0x8878658 is not dead, we wait
+17:42:00.437468 (80)  VIEW_CONTENT 47 26 35 24 4 40 42 2 16 
+17:42:00.437693 (80)  Closing node 47
+17:42:00.437850 (80)  END_LOG
+17:42:00.554048 (150)  VIEW_CONTENT 17 20 29 38 42 3 23 45 49 
+17:42:01.190618 (150)  Closing node 17
+17:42:01.190720 (150)  END_LOG
+17:42:01.192918 (186)  [splay.events] W: Periodic: thread: 0x9b6d258 from function: 0x9b08c58 is not dead, we wait
+17:42:01.214453 (3)  [splay.events] W: Periodic: thread: 0x94af0e0 from function: 0x9491860 is not dead, we wait
+17:42:01.219216 (18)  VIEW_CONTENT 1 13 40 46 22 33 42 16 1 
+17:42:01.219326 (18)  Closing node 1
+17:42:01.219473 (18)  END_LOG
+17:42:01.242186 (172)  [splay.events] W: Periodic: thread: 0x91da570 from function: 0x91e39f0 is not dead, we wait
+17:42:01.464945 (4)  [splay.events] W: Periodic: thread: 0x8addfc8 from function: 0x8ae1990 is not dead, we wait
+17:42:01.671811 (23)  VIEW_CONTENT 38 36 32 46 20 11 43 39 5 
+17:42:01.671992 (23)  Closing node 38
+17:42:01.672750 (23)  END_LOG
+17:42:01.705957 (97)  VIEW_CONTENT 37 49 7 10 44 24 48 22 32 
+17:42:01.706066 (97)  Closing node 37
+17:42:01.706128 (97)  END_LOG
+17:42:01.956958 (95)  VIEW_CONTENT 20 17 28 14 18 9 37 46 50 
+17:42:01.957075 (95)  Closing node 20
+17:42:01.957141 (95)  END_LOG
+17:42:02.39902 (169)  [splay.events] W: Periodic: thread: 0x8575250 from function: 0x85c6518 is not dead, we wait
+17:42:02.102742 (92)  VIEW_CONTENT 2 44 40 49 15 27 20 29 48 
+17:42:02.102904 (92)  Closing node 2
+17:42:02.103060 (92)  END_LOG
+17:42:02.215041 (190)  [splay.events] W: Periodic: thread: 0x9757760 from function: 0x9702e98 is not dead, we wait
+17:42:02.734947 (41)  [splay.events] W: Periodic: thread: 0x90d8540 from function: 0x9085110 is not dead, we wait
+17:42:03.296197 (152)  [splay.events] W: Periodic: thread: 0x8386ed0 from function: 0x83aca60 is not dead, we wait
+17:42:03.427845 (188)  [splay.events] W: Periodic: thread: 0xa0b6c98 from function: 0xa01af70 is not dead, we wait
+17:42:03.495970 (148)  [splay.events] W: Periodic: thread: 0x8f13698 from function: 0x8ec35b8 is not dead, we wait
+17:42:03.550518 (129)  [splay.events] W: Periodic: thread: 0x9caeac0 from function: 0x9c5fcf8 is not dead, we wait
+17:42:03.602883 (189)  [splay.events] W: Periodic: thread: 0x8704038 from function: 0x866e510 is not dead, we wait
+17:42:03.680323 (151)  [splay.events] W: Periodic: thread: 0x8b2ec10 from function: 0x8b78ca8 is not dead, we wait
+17:42:03.765753 (2)  [splay.events] W: Periodic: thread: 0x81d5230 from function: 0x81d7d70 is not dead, we wait
+17:42:03.854941 (117)  [splay.events] W: Periodic: thread: 0x8229888 from function: 0x81c98b8 is not dead, we wait
+17:42:03.982313 (153)  [splay.events] W: Periodic: thread: 0x8ce59f8 from function: 0x8c836d0 is not dead, we wait
+17:42:03.991612 (116)  [splay.events] W: Periodic: thread: 0x81c3730 from function: 0x81b1308 is not dead, we wait
+17:42:04.274044 (43)  [splay.events] W: Periodic: thread: 0x9dd2e40 from function: 0x9d539c8 is not dead, we wait
+17:42:04.293085 (166)  [splay.events] W: Periodic: thread: 0x9a5df00 from function: 0x9a9a738 is not dead, we wait
+17:42:04.293276 (170)  [splay.events] W: Periodic: thread: 0x8245688 from function: 0x827e5d8 is not dead, we wait
+17:42:04.451088 (168)  [splay.events] W: Periodic: thread: 0x98f4958 from function: 0x98c2b80 is not dead, we wait
+17:42:04.836541 (171)  [splay.events] W: Periodic: thread: 0x88f1a80 from function: 0x8878658 is not dead, we wait
+17:42:05.738315 (3)  [splay.events] W: Periodic: thread: 0x94af0e0 from function: 0x9491860 is not dead, we wait
+17:42:05.762513 (172)  [splay.events] W: Periodic: thread: 0x91da570 from function: 0x91e39f0 is not dead, we wait
+17:42:06.198248 (186)  [splay.events] W: Periodic: thread: 0x9b6d258 from function: 0x9b08c58 is not dead, we wait
+17:42:06.470188 (4)  [splay.events] W: Periodic: thread: 0x8addfc8 from function: 0x8ae1990 is not dead, we wait
+17:42:07.353733 (190)  [splay.events] W: Periodic: thread: 0x9757760 from function: 0x9702e98 is not dead, we wait
+17:42:07.741467 (41)  [splay.events] W: Periodic: thread: 0x90d8540 from function: 0x9085110 is not dead, we wait
+17:42:08.211489 (134)  VIEW_CONTENT 39 29 27 45 35 7 44 9 3 
+17:42:08.211652 (134)  Closing node 39
+17:42:08.213118 (134)  END_LOG
+17:42:08.406784 (148)  VIEW_CONTENT 6 40 21 8 27 6 49 31 35 
+17:42:08.406898 (148)  Closing node 6
+17:42:08.407044 (148)  END_LOG
+17:42:08.433291 (188)  [splay.events] W: Periodic: thread: 0xa0b6c98 from function: 0xa01af70 is not dead, we wait
+17:42:08.462523 (129)  VIEW_CONTENT 3 12 46 38 3 24 40 34 45 
+17:42:08.462633 (129)  Closing node 3
+17:42:08.462695 (129)  END_LOG
+17:42:08.607735 (189)  [splay.events] W: Periodic: thread: 0x8704038 from function: 0x866e510 is not dead, we wait
+17:42:08.655840 (117)  VIEW_CONTENT 50 42 50 21 29 13 18 43 49 
+17:42:08.661987 (117)  Closing node 50
+17:42:08.662123 (117)  END_LOG
+17:42:08.685650 (151)  [splay.events] W: Periodic: thread: 0x8b2ec10 from function: 0x8b78ca8 is not dead, we wait
+17:42:08.946642 (116)  VIEW_CONTENT 40 2 47 48 24 42 49 44 19 
+17:42:08.946759 (116)  Closing node 40
+17:42:08.947739 (116)  END_LOG
+17:42:09.276098 (43)  [splay.events] W: Periodic: thread: 0x9dd2e40 from function: 0x9d539c8 is not dead, we wait
+17:42:09.298279 (166)  [splay.events] W: Periodic: thread: 0x9a5df00 from function: 0x9a9a738 is not dead, we wait
+17:42:09.453861 (168)  [splay.events] W: Periodic: thread: 0x98f4958 from function: 0x98c2b80 is not dead, we wait
+17:42:09.841914 (171)  [splay.events] W: Periodic: thread: 0x88f1a80 from function: 0x8878658 is not dead, we wait
+17:42:10.100424 (187)  [splay.events] W: Periodic: thread: 0x9997430 from function: 0x99709f0 is not dead, we wait
+17:42:10.743626 (3)  [splay.events] W: Periodic: thread: 0x94af0e0 from function: 0x9491860 is not dead, we wait
+17:42:10.765980 (172)  [splay.events] W: Periodic: thread: 0x91da570 from function: 0x91e39f0 is not dead, we wait
+17:42:11.203632 (186)  [splay.events] W: Periodic: thread: 0x9b6d258 from function: 0x9b08c58 is not dead, we wait
+17:42:11.838081 (169)  [splay.events] W: Periodic: thread: 0x85908c8 from function: 0x85c6518 is not dead, we wait
+17:42:12.366809 (190)  [splay.events] W: Periodic: thread: 0x9757760 from function: 0x9702e98 is not dead, we wait
+17:42:12.745578 (41)  [splay.events] W: Periodic: thread: 0x90d8540 from function: 0x9085110 is not dead, we wait
+17:42:13.301950 (152)  [splay.events] W: Periodic: thread: 0x837c9d8 from function: 0x83aca60 is not dead, we wait
+17:42:13.438650 (188)  [splay.events] W: Periodic: thread: 0xa0b6c98 from function: 0xa01af70 is not dead, we wait
+17:42:14.91308 (189)  [splay.events] W: Periodic: thread: 0x8704038 from function: 0x866e510 is not dead, we wait
+17:42:14.106086 (153)  [splay.events] W: Periodic: thread: 0x8cd9ad8 from function: 0x8c836d0 is not dead, we wait
+17:42:14.149761 (2)  [splay.events] W: Periodic: thread: 0x821ac78 from function: 0x81d7d70 is not dead, we wait
+17:42:14.281444 (43)  [splay.events] W: Periodic: thread: 0x9dd2e40 from function: 0x9d539c8 is not dead, we wait
+17:42:14.298866 (170)  [splay.events] W: Periodic: thread: 0x82d3f80 from function: 0x827e5d8 is not dead, we wait
+17:42:14.303477 (166)  [splay.events] W: Periodic: thread: 0x9a5df00 from function: 0x9a9a738 is not dead, we wait
+17:42:14.459633 (168)  [splay.events] W: Periodic: thread: 0x98f4958 from function: 0x98c2b80 is not dead, we wait
+17:42:14.847313 (171)  [splay.events] W: Periodic: thread: 0x88f1a80 from function: 0x8878658 is not dead, we wait
+17:42:15.105117 (187)  [splay.events] W: Periodic: thread: 0x9997430 from function: 0x99709f0 is not dead, we wait
+17:42:15.771339 (172)  [splay.events] W: Periodic: thread: 0x91da570 from function: 0x91e39f0 is not dead, we wait
+17:42:16.389459 (186)  [splay.events] W: Periodic: thread: 0x9b6d258 from function: 0x9b08c58 is not dead, we wait
+17:42:16.475798 (4)  [splay.events] W: Periodic: thread: 0x8b2c6e0 from function: 0x8ae1990 is not dead, we wait
+17:42:16.843944 (169)  [splay.events] W: Periodic: thread: 0x85908c8 from function: 0x85c6518 is not dead, we wait
+17:42:18.307621 (152)  [splay.events] W: Periodic: thread: 0x837c9d8 from function: 0x83aca60 is not dead, we wait
+17:42:18.444058 (188)  [splay.events] W: Periodic: thread: 0xa0b6c98 from function: 0xa01af70 is not dead, we wait
+17:42:18.615447 (189)  [splay.events] W: Periodic: thread: 0x8704038 from function: 0x866e510 is not dead, we wait
+17:42:18.691274 (151)  [splay.events] W: Periodic: thread: 0x8bc9380 from function: 0x8b78ca8 is not dead, we wait
+17:42:18.776671 (2)  [splay.events] W: Periodic: thread: 0x821ac78 from function: 0x81d7d70 is not dead, we wait
+17:42:18.985729 (153)  [splay.events] W: Periodic: thread: 0x8cd9ad8 from function: 0x8c836d0 is not dead, we wait
+17:42:19.287190 (43)  [splay.events] W: Periodic: thread: 0x9dd2e40 from function: 0x9d539c8 is not dead, we wait
+17:42:19.303616 (170)  [splay.events] W: Periodic: thread: 0x82d3f80 from function: 0x827e5d8 is not dead, we wait
+17:42:19.464797 (168)  [splay.events] W: Periodic: thread: 0x98f4958 from function: 0x98c2b80 is not dead, we wait
+17:42:19.852714 (171)  [splay.events] W: Periodic: thread: 0x88f1a80 from function: 0x8878658 is not dead, we wait
+17:42:20.107092 (187)  [splay.events] W: Periodic: thread: 0x9997430 from function: 0x99709f0 is not dead, we wait
+17:42:20.749334 (3)  [splay.events] W: Periodic: thread: 0x94f7be8 from function: 0x9491860 is not dead, we wait
+17:42:20.776594 (172)  [splay.events] W: Periodic: thread: 0x91da570 from function: 0x91e39f0 is not dead, we wait
+17:42:21.211782 (186)  [splay.events] W: Periodic: thread: 0x9b6d258 from function: 0x9b08c58 is not dead, we wait
+17:42:21.481002 (4)  [splay.events] W: Periodic: thread: 0x8b2c6e0 from function: 0x8ae1990 is not dead, we wait
+17:42:21.847080 (169)  [splay.events] W: Periodic: thread: 0x85908c8 from function: 0x85c6518 is not dead, we wait
+17:42:22.621575 (190)  [splay.events] W: Periodic: thread: 0x9761f58 from function: 0x9702e98 is not dead, we wait
+17:42:22.748544 (41)  [splay.events] W: Periodic: thread: 0x90d99d8 from function: 0x9085110 is not dead, we wait
+17:42:23.310009 (152)  [splay.events] W: Periodic: thread: 0x837c9d8 from function: 0x83aca60 is not dead, we wait
+17:42:23.449357 (188)  [splay.events] W: Periodic: thread: 0xa0b6c98 from function: 0xa01af70 is not dead, we wait
+17:42:23.620766 (189)  [splay.events] W: Periodic: thread: 0x8704038 from function: 0x866e510 is not dead, we wait
+17:42:23.696579 (151)  [splay.events] W: Periodic: thread: 0x8bc9380 from function: 0x8b78ca8 is not dead, we wait
+17:42:23.778661 (2)  [splay.events] W: Periodic: thread: 0x821ac78 from function: 0x81d7d70 is not dead, we wait
+17:42:23.986562 (153)  [splay.events] W: Periodic: thread: 0x8cd9ad8 from function: 0x8c836d0 is not dead, we wait
+17:42:24.197863 (43)  VIEW_CONTENT 48 34 27 4 24 12 39 15 29 
+17:42:24.198024 (43)  Closing node 48
+17:42:24.198094 (43)  END_LOG
+17:42:24.306285 (170)  [splay.events] W: Periodic: thread: 0x82d3f80 from function: 0x827e5d8 is not dead, we wait
+17:42:24.858160 (171)  [splay.events] W: Periodic: thread: 0x88f1a80 from function: 0x8878658 is not dead, we wait
+17:42:25.533538 (187)  [splay.events] W: Periodic: thread: 0x9997430 from function: 0x99709f0 is not dead, we wait
+17:42:25.720960 (172)  VIEW_CONTENT 46 9 42 38 6 15 29 39 24 
+17:42:25.721069 (172)  Closing node 46
+17:42:25.721133 (172)  END_LOG
+17:42:25.755044 (3)  [splay.events] W: Periodic: thread: 0x94f7be8 from function: 0x9491860 is not dead, we wait
+17:42:26.483152 (4)  [splay.events] W: Periodic: thread: 0x8b2c6e0 from function: 0x8ae1990 is not dead, we wait
+17:42:26.850935 (169)  [splay.events] W: Periodic: thread: 0x85908c8 from function: 0x85c6518 is not dead, we wait
+17:42:27.360487 (190)  [splay.events] W: Periodic: thread: 0x9761f58 from function: 0x9702e98 is not dead, we wait
+17:42:27.753921 (41)  [splay.events] W: Periodic: thread: 0x90d99d8 from function: 0x9085110 is not dead, we wait
+17:42:28.315698 (152)  [splay.events] W: Periodic: thread: 0x837c9d8 from function: 0x83aca60 is not dead, we wait
+17:42:28.783824 (2)  [splay.events] W: Periodic: thread: 0x821ac78 from function: 0x81d7d70 is not dead, we wait
+17:42:28.818877 (151)  [splay.events] W: Periodic: thread: 0x8bc9380 from function: 0x8b78ca8 is not dead, we wait
+17:42:28.987969 (153)  [splay.events] W: Periodic: thread: 0x8cd9ad8 from function: 0x8c836d0 is not dead, we wait
+17:42:29.310384 (170)  [splay.events] W: Periodic: thread: 0x82d3f80 from function: 0x827e5d8 is not dead, we wait
+17:42:29.310769 (166)  [splay.events] W: Periodic: thread: 0x9ad60c0 from function: 0x9a9a738 is not dead, we wait
+17:42:29.470916 (168)  [splay.events] W: Periodic: thread: 0x9908700 from function: 0x98c2b80 is not dead, we wait
+17:42:30.118014 (187)  [splay.events] W: Periodic: thread: 0x9997430 from function: 0x99709f0 is not dead, we wait
+17:42:31.116028 (3)  [splay.events] W: Periodic: thread: 0x94f7be8 from function: 0x9491860 is not dead, we wait
+17:42:31.214261 (186)  [splay.events] W: Periodic: thread: 0x9b74a60 from function: 0x9b08c58 is not dead, we wait
+17:42:31.488449 (4)  [splay.events] W: Periodic: thread: 0x8b2c6e0 from function: 0x8ae1990 is not dead, we wait
+17:42:31.856307 (169)  [splay.events] W: Periodic: thread: 0x85908c8 from function: 0x85c6518 is not dead, we wait
+17:42:32.399948 (190)  [splay.events] W: Periodic: thread: 0x9761f58 from function: 0x9702e98 is not dead, we wait
+17:42:32.756104 (41)  [splay.events] W: Periodic: thread: 0x90d99d8 from function: 0x9085110 is not dead, we wait
+17:42:33.321279 (152)  [splay.events] W: Periodic: thread: 0x837c9d8 from function: 0x83aca60 is not dead, we wait
+17:42:33.454369 (188)  [splay.events] W: Periodic: thread: 0xa03fd68 from function: 0xa01af70 is not dead, we wait
+17:42:33.626364 (189)  [splay.events] W: Periodic: thread: 0x86fcdb8 from function: 0x866e510 is not dead, we wait
+17:42:33.703855 (151)  [splay.events] W: Periodic: thread: 0x8bc9380 from function: 0x8b78ca8 is not dead, we wait
+17:42:33.788385 (2)  [splay.events] W: Periodic: thread: 0x821ac78 from function: 0x81d7d70 is not dead, we wait
+17:42:33.990347 (153)  [splay.events] W: Periodic: thread: 0x8cd9ad8 from function: 0x8c836d0 is not dead, we wait
+17:42:34.315794 (170)  [splay.events] W: Periodic: thread: 0x82d3f80 from function: 0x827e5d8 is not dead, we wait
+17:42:34.316193 (166)  [splay.events] W: Periodic: thread: 0x9ad60c0 from function: 0x9a9a738 is not dead, we wait
+17:42:34.476693 (168)  [splay.events] W: Periodic: thread: 0x9908700 from function: 0x98c2b80 is not dead, we wait
+17:42:34.863898 (171)  [splay.events] W: Periodic: thread: 0x88df860 from function: 0x8878658 is not dead, we wait
+17:42:35.123265 (187)  [splay.events] W: Periodic: thread: 0x9997430 from function: 0x99709f0 is not dead, we wait
+17:42:36.123316 (3)  [splay.events] W: Periodic: thread: 0x94f7be8 from function: 0x9491860 is not dead, we wait
+17:42:36.219674 (186)  [splay.events] W: Periodic: thread: 0x9b74a60 from function: 0x9b08c58 is not dead, we wait
+17:42:36.493634 (4)  [splay.events] W: Periodic: thread: 0x8b2c6e0 from function: 0x8ae1990 is not dead, we wait
+17:42:36.861830 (169)  [splay.events] W: Periodic: thread: 0x85908c8 from function: 0x85c6518 is not dead, we wait
+17:42:37.397956 (190)  [splay.events] W: Periodic: thread: 0x9761f58 from function: 0x9702e98 is not dead, we wait
+17:42:37.761604 (41)  [splay.events] W: Periodic: thread: 0x90d99d8 from function: 0x9085110 is not dead, we wait
+17:42:38.326974 (152)  [splay.events] W: Periodic: thread: 0x837c9d8 from function: 0x83aca60 is not dead, we wait
+17:42:38.460003 (188)  [splay.events] W: Periodic: thread: 0xa03fd68 from function: 0xa01af70 is not dead, we wait
+17:42:38.631690 (189)  [splay.events] W: Periodic: thread: 0x86fcdb8 from function: 0x866e510 is not dead, we wait
+17:42:38.709308 (151)  [splay.events] W: Periodic: thread: 0x8bc9380 from function: 0x8b78ca8 is not dead, we wait
+17:42:38.793773 (2)  [splay.events] W: Periodic: thread: 0x821ac78 from function: 0x81d7d70 is not dead, we wait
+17:42:38.995014 (153)  [splay.events] W: Periodic: thread: 0x8cd9ad8 from function: 0x8c836d0 is not dead, we wait
+17:42:39.318311 (170)  [splay.events] W: Periodic: thread: 0x82d3f80 from function: 0x827e5d8 is not dead, we wait
+17:42:39.318675 (166)  [splay.events] W: Periodic: thread: 0x9ad60c0 from function: 0x9a9a738 is not dead, we wait
+17:42:39.477821 (168)  [splay.events] W: Periodic: thread: 0x9908700 from function: 0x98c2b80 is not dead, we wait
+17:42:39.872318 (171)  [splay.events] W: Periodic: thread: 0x88df860 from function: 0x8878658 is not dead, we wait
+17:42:40.128808 (187)  [splay.events] W: Periodic: thread: 0x9997430 from function: 0x99709f0 is not dead, we wait
+17:42:41.169107 (3)  [splay.events] W: Periodic: thread: 0x94f7be8 from function: 0x9491860 is not dead, we wait
+17:42:41.221714 (186)  [splay.events] W: Periodic: thread: 0x9b74a60 from function: 0x9b08c58 is not dead, we wait
+17:42:41.498855 (4)  [splay.events] W: Periodic: thread: 0x8b2c6e0 from function: 0x8ae1990 is not dead, we wait
+17:42:41.867078 (169)  [splay.events] W: Periodic: thread: 0x85908c8 from function: 0x85c6518 is not dead, we wait
+17:42:42.153347 (190)  VIEW_CONTENT 42 14 43 13 48 50 5 42 17 
+17:42:42.153466 (190)  Closing node 42
+17:42:42.153529 (190)  END_LOG
+17:42:42.767343 (41)  [splay.events] W: Periodic: thread: 0x90d99d8 from function: 0x9085110 is not dead, we wait
+17:42:43.332773 (152)  [splay.events] W: Periodic: thread: 0x837c9d8 from function: 0x83aca60 is not dead, we wait
+17:42:43.462382 (188)  [splay.events] W: Periodic: thread: 0xa03fd68 from function: 0xa01af70 is not dead, we wait
+17:42:43.994838 (189)  [splay.events] W: Periodic: thread: 0x86fcdb8 from function: 0x866e510 is not dead, we wait
+17:42:44.12086 (153)  VIEW_CONTENT 41 15 22 36 24 4 35 47 41 
+17:42:44.12201 (153)  Closing node 41
+17:42:44.12267 (153)  END_LOG
+17:42:44.15442 (151)  [splay.events] W: Periodic: thread: 0x8bc9380 from function: 0x8b78ca8 is not dead, we wait
+17:42:44.31568 (2)  [splay.events] W: Periodic: thread: 0x821ac78 from function: 0x81d7d70 is not dead, we wait
+17:42:45.587031 (166)  [splay.events] W: Periodic: thread: 0x9ad60c0 from function: 0x9a9a738 is not dead, we wait
+17:42:45.587287 (170)  [splay.events] W: Periodic: thread: 0x82d3f80 from function: 0x827e5d8 is not dead, we wait
+17:42:45.597608 (171)  [splay.events] W: Periodic: thread: 0x88df860 from function: 0x8878658 is not dead, we wait
+17:42:45.626108 (168)  [splay.events] W: Periodic: thread: 0x9908700 from function: 0x98c2b80 is not dead, we wait
+17:42:46.107596 (3)  [splay.events] W: Periodic: thread: 0x94f7be8 from function: 0x9491860 is not dead, we wait
+17:42:46.347347 (186)  [splay.events] W: Periodic: thread: 0x9b74a60 from function: 0x9b08c58 is not dead, we wait
+17:42:46.500398 (4)  [splay.events] W: Periodic: thread: 0x8b2c6e0 from function: 0x8ae1990 is not dead, we wait
+17:42:47.772989 (41)  [splay.events] W: Periodic: thread: 0x90d99d8 from function: 0x9085110 is not dead, we wait
+17:42:48.569667 (188)  [splay.events] W: Periodic: thread: 0xa03fd68 from function: 0xa01af70 is not dead, we wait
+17:42:48.635969 (189)  [splay.events] W: Periodic: thread: 0x86fcdb8 from function: 0x866e510 is not dead, we wait
+17:42:48.719950 (151)  [splay.events] W: Periodic: thread: 0x8bc9380 from function: 0x8b78ca8 is not dead, we wait
+17:42:49.324689 (166)  [splay.events] W: Periodic: thread: 0x9ad60c0 from function: 0x9a9a738 is not dead, we wait
+17:42:49.488828 (168)  [splay.events] W: Periodic: thread: 0x9908700 from function: 0x98c2b80 is not dead, we wait
+17:42:49.880107 (171)  [splay.events] W: Periodic: thread: 0x88df860 from function: 0x8878658 is not dead, we wait
+17:42:50.134344 (187)  [splay.events] W: Periodic: thread: 0x9982c20 from function: 0x99709f0 is not dead, we wait
+17:42:51.19453 (3)  [splay.events] W: Periodic: thread: 0x94f7be8 from function: 0x9491860 is not dead, we wait
+17:42:51.232748 (186)  [splay.events] W: Periodic: thread: 0x9b74a60 from function: 0x9b08c58 is not dead, we wait
+17:42:52.778320 (41)  [splay.events] W: Periodic: thread: 0x90d99d8 from function: 0x9085110 is not dead, we wait
+17:42:53.338861 (152)  [splay.events] W: Periodic: thread: 0x84047c8 from function: 0x83aca60 is not dead, we wait
+17:42:53.592484 (188)  [splay.events] W: Periodic: thread: 0xa03fd68 from function: 0xa01af70 is not dead, we wait
+17:42:53.641352 (189)  [splay.events] W: Periodic: thread: 0x86fcdb8 from function: 0x866e510 is not dead, we wait
+17:42:53.804324 (2)  [splay.events] W: Periodic: thread: 0x822cb38 from function: 0x81d7d70 is not dead, we wait
+17:42:54.330054 (166)  [splay.events] W: Periodic: thread: 0x9ad60c0 from function: 0x9a9a738 is not dead, we wait
+17:42:54.330368 (170)  [splay.events] W: Periodic: thread: 0x82aa060 from function: 0x827e5d8 is not dead, we wait
+17:42:54.493889 (168)  [splay.events] W: Periodic: thread: 0x9908700 from function: 0x98c2b80 is not dead, we wait
+17:42:54.885102 (171)  [splay.events] W: Periodic: thread: 0x88df860 from function: 0x8878658 is not dead, we wait
+17:42:55.138616 (187)  [splay.events] W: Periodic: thread: 0x9982c20 from function: 0x99709f0 is not dead, we wait
+17:42:56.151412 (186)  VIEW_CONTENT 9 1 4 46 6 18 27 36 12 
+17:42:56.151555 (186)  Closing node 9
+17:42:56.151683 (186)  END_LOG
+17:42:56.877898 (169)  [splay.events] W: Periodic: thread: 0x85de5c0 from function: 0x85c6518 is not dead, we wait
+17:42:58.344501 (152)  [splay.events] W: Periodic: thread: 0x84047c8 from function: 0x83aca60 is not dead, we wait
+17:42:58.597412 (189)  VIEW_CONTENT 32 43 20 25 31 21 4 28 1 
+17:42:58.597533 (189)  Closing node 32
+17:42:58.597597 (189)  END_LOG
+17:42:58.597962 (188)  [splay.events] W: Periodic: thread: 0xa03fd68 from function: 0xa01af70 is not dead, we wait
+17:42:58.725837 (151)  [splay.events] W: Periodic: thread: 0x8b2fb48 from function: 0x8b78ca8 is not dead, we wait
+17:42:58.809977 (2)  [splay.events] W: Periodic: thread: 0x822cb38 from function: 0x81d7d70 is not dead, we wait
+17:42:59.335406 (166)  [splay.events] W: Periodic: thread: 0x9ad60c0 from function: 0x9a9a738 is not dead, we wait
+17:42:59.396071 (170)  [splay.events] W: Periodic: thread: 0x82aa060 from function: 0x827e5d8 is not dead, we wait
+17:42:59.499331 (168)  [splay.events] W: Periodic: thread: 0x9908700 from function: 0x98c2b80 is not dead, we wait
+17:42:59.890547 (171)  [splay.events] W: Periodic: thread: 0x88df860 from function: 0x8878658 is not dead, we wait
+17:43:00.140953 (187)  [splay.events] W: Periodic: thread: 0x9982c20 from function: 0x99709f0 is not dead, we wait
+17:43:00.786991 (3)  [splay.events] W: Periodic: thread: 0x9509a08 from function: 0x9491860 is not dead, we wait
+17:43:01.510988 (4)  [splay.events] W: Periodic: thread: 0x8af7f30 from function: 0x8ae1990 is not dead, we wait
+17:43:01.883625 (169)  [splay.events] W: Periodic: thread: 0x85de5c0 from function: 0x85c6518 is not dead, we wait
+17:43:02.988364 (41)  [splay.events] W: Periodic: thread: 0x90bc850 from function: 0x9085110 is not dead, we wait
+17:43:03.346849 (152)  [splay.events] W: Periodic: thread: 0x84047c8 from function: 0x83aca60 is not dead, we wait
+17:43:03.385715 (188)  VIEW_CONTENT 23 19 1 18 36 26 3 15 33 
+17:43:03.385915 (188)  Closing node 23
+17:43:03.386080 (188)  END_LOG
+17:43:03.810598 (151)  [splay.events] W: Periodic: thread: 0x8b2fb48 from function: 0x8b78ca8 is not dead, we wait
+17:43:03.811930 (2)  [splay.events] W: Periodic: thread: 0x822cb38 from function: 0x81d7d70 is not dead, we wait
+17:43:04.338022 (170)  [splay.events] W: Periodic: thread: 0x82aa060 from function: 0x827e5d8 is not dead, we wait
+17:43:04.790284 (171)  VIEW_CONTENT 36 27 15 9 46 36 25 30 38 
+17:43:04.790406 (171)  Closing node 36
+17:43:04.790468 (171)  END_LOG
+17:43:05.147288 (187)  [splay.events] W: Periodic: thread: 0x9982c20 from function: 0x99709f0 is not dead, we wait
+17:43:05.788462 (3)  [splay.events] W: Periodic: thread: 0x9509a08 from function: 0x9491860 is not dead, we wait
+17:43:06.516209 (4)  [splay.events] W: Periodic: thread: 0x8af7f30 from function: 0x8ae1990 is not dead, we wait
+17:43:06.885722 (169)  [splay.events] W: Periodic: thread: 0x85de5c0 from function: 0x85c6518 is not dead, we wait
+17:43:08.24862 (41)  [splay.events] W: Periodic: thread: 0x90bc850 from function: 0x9085110 is not dead, we wait
+17:43:08.351640 (152)  [splay.events] W: Periodic: thread: 0x84047c8 from function: 0x83aca60 is not dead, we wait
+17:43:08.808166 (151)  [splay.events] W: Periodic: thread: 0x8b2fb48 from function: 0x8b78ca8 is not dead, we wait
+17:43:08.818147 (2)  [splay.events] W: Periodic: thread: 0x822cb38 from function: 0x81d7d70 is not dead, we wait
+17:43:09.341008 (166)  [splay.events] W: Periodic: thread: 0x9afb058 from function: 0x9a9a738 is not dead, we wait
+17:43:09.342843 (170)  [splay.events] W: Periodic: thread: 0x82aa060 from function: 0x827e5d8 is not dead, we wait
+17:43:09.502967 (168)  [splay.events] W: Periodic: thread: 0x9917b48 from function: 0x98c2b80 is not dead, we wait
+17:43:10.53928 (187)  VIEW_CONTENT 15 10 36 46 30 31 15 32 6 
+17:43:10.54090 (187)  Closing node 15
+17:43:10.55601 (187)  END_LOG
+17:43:10.790404 (3)  [splay.events] W: Periodic: thread: 0x9509a08 from function: 0x9491860 is not dead, we wait
+17:43:11.518039 (4)  [splay.events] W: Periodic: thread: 0x8af7f30 from function: 0x8ae1990 is not dead, we wait
+17:43:11.892238 (169)  [splay.events] W: Periodic: thread: 0x85de5c0 from function: 0x85c6518 is not dead, we wait
+17:43:13.89427 (41)  [splay.events] W: Periodic: thread: 0x90bc850 from function: 0x9085110 is not dead, we wait
+17:43:13.356872 (152)  [splay.events] W: Periodic: thread: 0x84047c8 from function: 0x83aca60 is not dead, we wait
+17:43:13.822370 (2)  [splay.events] W: Periodic: thread: 0x822cb38 from function: 0x81d7d70 is not dead, we wait
+17:43:13.850866 (151)  [splay.events] W: Periodic: thread: 0x8b2fb48 from function: 0x8b78ca8 is not dead, we wait
+17:43:14.347595 (170)  [splay.events] W: Periodic: thread: 0x82aa060 from function: 0x827e5d8 is not dead, we wait
+17:43:14.347739 (166)  [splay.events] W: Periodic: thread: 0x9afb058 from function: 0x9a9a738 is not dead, we wait
+17:43:14.508719 (168)  [splay.events] W: Periodic: thread: 0x9917b48 from function: 0x98c2b80 is not dead, we wait
+17:43:15.795597 (3)  [splay.events] W: Periodic: thread: 0x9509a08 from function: 0x9491860 is not dead, we wait
+17:43:16.523301 (4)  [splay.events] W: Periodic: thread: 0x8af7f30 from function: 0x8ae1990 is not dead, we wait
+17:43:16.897039 (169)  [splay.events] W: Periodic: thread: 0x85de5c0 from function: 0x85c6518 is not dead, we wait
+17:43:18.131242 (41)  [splay.events] W: Periodic: thread: 0x90bc850 from function: 0x9085110 is not dead, we wait
+17:43:18.358878 (152)  [splay.events] W: Periodic: thread: 0x84047c8 from function: 0x83aca60 is not dead, we wait
+17:43:18.819856 (151)  [splay.events] W: Periodic: thread: 0x8b2fb48 from function: 0x8b78ca8 is not dead, we wait
+17:43:18.827490 (2)  [splay.events] W: Periodic: thread: 0x822cb38 from function: 0x81d7d70 is not dead, we wait
+17:43:19.348914 (170)  [splay.events] W: Periodic: thread: 0x82aa060 from function: 0x827e5d8 is not dead, we wait
+17:43:19.349163 (166)  [splay.events] W: Periodic: thread: 0x9afb058 from function: 0x9a9a738 is not dead, we wait
+17:43:19.510720 (168)  [splay.events] W: Periodic: thread: 0x9917b48 from function: 0x98c2b80 is not dead, we wait
+17:43:20.800892 (3)  [splay.events] W: Periodic: thread: 0x9509a08 from function: 0x9491860 is not dead, we wait
+17:43:21.528555 (4)  [splay.events] W: Periodic: thread: 0x8af7f30 from function: 0x8ae1990 is not dead, we wait
+17:43:21.812539 (169)  VIEW_CONTENT 21 32 12 46 36 4 34 43 26 
+17:43:21.812671 (169)  Closing node 21
+17:43:21.812735 (169)  END_LOG
+17:43:23.126733 (41)  [splay.events] W: Periodic: thread: 0x90bc850 from function: 0x9085110 is not dead, we wait
+17:43:23.268452 (152)  VIEW_CONTENT 33 11 7 21 28 1 34 32 33 
+17:43:23.301193 (152)  Closing node 33
+17:43:23.301323 (152)  END_LOG
+17:43:23.657411 (151)  VIEW_CONTENT 25 10 19 44 12 11 29 37 2 
+17:43:23.657602 (151)  Closing node 25
+17:43:23.657667 (151)  END_LOG
+17:43:23.737409 (2)  VIEW_CONTENT 18 7 3 26 14 35 11 31 43 
+17:43:23.737516 (2)  Closing node 18
+17:43:23.737578 (2)  END_LOG
+17:43:24.270009 (170)  VIEW_CONTENT 28 3 43 39 42 22 8 24 40 
+17:43:24.270144 (170)  Closing node 28
+17:43:24.270206 (170)  END_LOG
+17:43:24.354997 (166)  [splay.events] W: Periodic: thread: 0x9afb058 from function: 0x9a9a738 is not dead, we wait
+17:43:24.516804 (168)  [splay.events] W: Periodic: thread: 0x9917b48 from function: 0x98c2b80 is not dead, we wait
+17:43:25.806142 (3)  [splay.events] W: Periodic: thread: 0x9509a08 from function: 0x9491860 is not dead, we wait
+17:43:26.442479 (4)  VIEW_CONTENT 31 23 32 28 15 27 36 21 30 
+17:43:26.442687 (4)  Closing node 31
+17:43:26.442753 (4)  END_LOG
+17:43:27.710331 (41)  VIEW_CONTENT 34 6 2 37 22 25 27 4 48 
+17:43:27.711509 (41)  Closing node 34
+17:43:27.711703 (41)  END_LOG
+17:43:29.320216 (166)  VIEW_CONTENT 4 26 16 41 44 49 9 3 40 
+17:43:29.320327 (166)  Closing node 4
+17:43:29.320386 (166)  END_LOG
+17:43:29.430266 (168)  VIEW_CONTENT 13 50 42 7 28 18 49 48 14 
+17:43:29.430396 (168)  Closing node 13
+17:43:29.430460 (168)  END_LOG
+17:43:30.716836 (3)  VIEW_CONTENT 26 37 23 35 40 13 1 34 18 
+17:43:30.716946 (3)  Closing node 26
+17:43:30.717010 (3)  END_LOG

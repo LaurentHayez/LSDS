@@ -1,0 +1,4 @@
+at 20 minutes stop
+at 0s join 60
+at 0s set maximum population 150
+from 0s to 20 minutes const churn 10% per 1 minute

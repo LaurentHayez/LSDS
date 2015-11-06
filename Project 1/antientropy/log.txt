@@ -1,0 +1,1149 @@
+16:03:45.782523 (22)  START_LOG
+16:03:45.785250 (21)  START_LOG
+16:03:45.785496 (21)  SPLAYD LUA EXEC
+16:03:45.796905 (22)  SPLAYD LUA EXEC
+16:03:45.968845 (22)  >> Job settings:
+16:03:45.980500 (22)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:45.980643 (22)  Name: 
+16:03:45.980721 (22)  Description: 
+16:03:45.980798 (22)  Disk:
+16:03:45.980943 (22)  	max 512 files
+16:03:45.981027 (22)  	max 32 file descriptors
+16:03:45.981219 (22)  	max 67108864 size in bytes
+16:03:45.981312 (22)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_4/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:45.981390 (22)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_4/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:45.981466 (22)  Mem 2097152 bytes of memory
+16:03:45.981588 (22)  Network:
+16:03:45.982261 (22)  	max 134217728/134217728 send/receive bytes
+16:03:45.982338 (22)  	max 32 tcp sockets
+16:03:45.982417 (22)  	ip 172.17.0.30
+16:03:45.982492 (22)  	ports 14693-14693
+16:03:45.982568 (22)  
+16:03:45.988856 (21)  >> Job settings:
+16:03:45.989049 (21)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:45.989130 (21)  Name: 
+16:03:45.989207 (21)  Description: 
+16:03:45.989284 (21)  Disk:
+16:03:45.989360 (21)  	max 512 files
+16:03:45.989436 (21)  	max 32 file descriptors
+16:03:45.989511 (21)  	max 67108864 size in bytes
+16:03:45.989587 (21)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:45.989663 (21)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:45.989740 (21)  Mem 2097152 bytes of memory
+16:03:45.989862 (21)  Network:
+16:03:45.989947 (21)  	max 134217728/134217728 send/receive bytes
+16:03:45.990023 (21)  	max 32 tcp sockets
+16:03:45.990098 (21)  	ip 172.17.0.30
+16:03:45.990173 (21)  	ports 14456-14456
+16:03:45.990249 (21)  
+16:03:46.71217 (21)  >> Into sandbox !!!
+16:03:46.72603 (21)  > Memory: 158.63671875 KBytes
+16:03:46.72851 (21)  > Checking sandbox...
+16:03:46.72943 (21)     > passed
+16:03:46.73020 (21)  
+16:03:46.78111 (22)  >> Into sandbox !!!
+16:03:46.79695 (22)  > Memory: 158.63671875 KBytes
+16:03:46.79916 (22)  > Checking sandbox...
+16:03:46.80005 (22)     > passed
+16:03:46.80279 (22)  
+16:03:46.376947 (40)  START_LOG
+16:03:46.377219 (40)  SPLAYD LUA EXEC
+16:03:46.408901 (77)  START_LOG
+16:03:46.414644 (77)  SPLAYD LUA EXEC
+16:03:46.446550 (40)  >> Job settings:
+16:03:46.447096 (40)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:46.447237 (40)  Name: 
+16:03:46.447316 (40)  Description: 
+16:03:46.447391 (40)  Disk:
+16:03:46.448370 (40)  	max 512 files
+16:03:46.448463 (40)  	max 32 file descriptors
+16:03:46.448540 (40)  	max 67108864 size in bytes
+16:03:46.448617 (40)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_5/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:46.448707 (40)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_5/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:46.448785 (40)  Mem 2097152 bytes of memory
+16:03:46.448969 (40)  Network:
+16:03:46.449057 (40)  	max 134217728/134217728 send/receive bytes
+16:03:46.449134 (40)  	max 32 tcp sockets
+16:03:46.449210 (40)  	ip 172.17.0.33
+16:03:46.449285 (40)  	ports 15334-15334
+16:03:46.449360 (40)  
+16:03:46.467156 (76)  START_LOG
+16:03:46.467536 (40)  >> Into sandbox !!!
+16:03:46.468356 (40)  > Memory: 158.63671875 KBytes
+16:03:46.468464 (40)  > Checking sandbox...
+16:03:46.468543 (40)     > passed
+16:03:46.468620 (40)  
+16:03:46.470519 (76)  SPLAYD LUA EXEC
+16:03:46.567592 (77)  >> Job settings:
+16:03:46.567841 (77)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:46.567958 (77)  Name: 
+16:03:46.568036 (77)  Description: 
+16:03:46.568114 (77)  Disk:
+16:03:46.568191 (77)  	max 512 files
+16:03:46.568268 (77)  	max 32 file descriptors
+16:03:46.568346 (77)  	max 67108864 size in bytes
+16:03:46.568424 (77)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_7/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:46.568503 (77)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_7/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:46.568582 (77)  Mem 2097152 bytes of memory
+16:03:46.568777 (77)  Network:
+16:03:46.573338 (77)  	max 134217728/134217728 send/receive bytes
+16:03:46.573427 (77)  	max 32 tcp sockets
+16:03:46.573506 (77)  	ip 172.17.0.26
+16:03:46.573585 (77)  	ports 16372-16372
+16:03:46.573663 (77)  
+16:03:46.611214 (76)  >> Job settings:
+16:03:46.613166 (76)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:46.617125 (76)  Name: 
+16:03:46.617241 (76)  Description: 
+16:03:46.623383 (76)  Disk:
+16:03:46.623565 (76)  	max 512 files
+16:03:46.623643 (76)  	max 32 file descriptors
+16:03:46.623930 (76)  	max 67108864 size in bytes
+16:03:46.624007 (76)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_6/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:46.624083 (76)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_6/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:46.624158 (76)  Mem 2097152 bytes of memory
+16:03:46.624282 (76)  Network:
+16:03:46.624367 (76)  	max 134217728/134217728 send/receive bytes
+16:03:46.624493 (76)  	max 32 tcp sockets
+16:03:46.625784 (76)  	ip 172.17.0.26
+16:03:46.625996 (76)  	ports 15872-15872
+16:03:46.626083 (76)  
+16:03:46.665965 (77)  >> Into sandbox !!!
+16:03:46.678883 (77)  > Memory: 158.63671875 KBytes
+16:03:46.679000 (77)  > Checking sandbox...
+16:03:46.679081 (77)     > passed
+16:03:46.679198 (77)  
+16:03:46.712508 (76)  >> Into sandbox !!!
+16:03:46.712762 (76)  > Memory: 158.63671875 KBytes
+16:03:46.712866 (76)  > Checking sandbox...
+16:03:46.712943 (76)     > passed
+16:03:46.713019 (76)  
+16:03:46.751508 (20)  START_LOG
+16:03:46.770442 (20)  SPLAYD LUA EXEC
+16:03:46.839613 (20)  >> Job settings:
+16:03:46.860898 (20)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:46.861004 (20)  Name: 
+16:03:46.861079 (20)  Description: 
+16:03:46.861154 (20)  Disk:
+16:03:46.861229 (20)  	max 512 files
+16:03:46.861394 (20)  	max 32 file descriptors
+16:03:46.861484 (20)  	max 67108864 size in bytes
+16:03:46.861621 (20)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_1/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:46.861700 (20)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_1/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:46.861776 (20)  Mem 2097152 bytes of memory
+16:03:46.861895 (20)  Network:
+16:03:46.861977 (20)  	max 134217728/134217728 send/receive bytes
+16:03:46.862052 (20)  	max 32 tcp sockets
+16:03:46.862126 (20)  	ip 172.17.0.29
+16:03:46.862201 (20)  	ports 13410-13410
+16:03:46.862349 (20)  
+16:03:46.904056 (20)  >> Into sandbox !!!
+16:03:46.904314 (20)  > Memory: 158.63671875 KBytes
+16:03:46.904400 (20)  > Checking sandbox...
+16:03:46.904477 (20)     > passed
+16:03:46.904552 (20)  
+16:03:47.107298 (19)  START_LOG
+16:03:47.107468 (19)  SPLAYD LUA EXEC
+16:03:47.183132 (19)  >> Job settings:
+16:03:47.196306 (19)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:47.269901 (19)  Name: 
+16:03:47.270015 (19)  Description: 
+16:03:47.270131 (19)  Disk:
+16:03:47.270232 (19)  	max 512 files
+16:03:47.270310 (19)  	max 32 file descriptors
+16:03:47.270388 (19)  	max 67108864 size in bytes
+16:03:47.270499 (19)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_4/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:47.270577 (19)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_4/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:47.270656 (19)  Mem 2097152 bytes of memory
+16:03:47.270733 (19)  Network:
+16:03:47.270811 (19)  	max 134217728/134217728 send/receive bytes
+16:03:47.270889 (19)  	max 32 tcp sockets
+16:03:47.270966 (19)  	ip 172.17.0.29
+16:03:47.271043 (19)  	ports 14987-14987
+16:03:47.271237 (19)  
+16:03:47.271337 (19)  >> Into sandbox !!!
+16:03:47.271519 (19)  > Memory: 158.63671875 KBytes
+16:03:47.271606 (19)  > Checking sandbox...
+16:03:47.271685 (19)     > passed
+16:03:47.271762 (19)  
+16:03:47.348062 (56)  START_LOG
+16:03:47.352688 (56)  SPLAYD LUA EXEC
+16:03:47.460644 (56)  >> Job settings:
+16:03:47.483922 (56)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:47.484195 (56)  Name: 
+16:03:47.484277 (56)  Description: 
+16:03:47.484354 (56)  Disk:
+16:03:47.484445 (56)  	max 512 files
+16:03:47.484522 (56)  	max 32 file descriptors
+16:03:47.484598 (56)  	max 67108864 size in bytes
+16:03:47.484674 (56)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_6_6/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:47.484751 (56)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_6_6/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:47.484896 (56)  Mem 2097152 bytes of memory
+16:03:47.484976 (56)  Network:
+16:03:47.485052 (56)  	max 134217728/134217728 send/receive bytes
+16:03:47.485129 (56)  	max 32 tcp sockets
+16:03:47.485205 (56)  	ip 172.17.0.31
+16:03:47.485281 (56)  	ports 15548-15548
+16:03:47.485357 (56)  
+16:03:47.521946 (38)  START_LOG
+16:03:47.522186 (38)  SPLAYD LUA EXEC
+16:03:47.576699 (56)  >> Into sandbox !!!
+16:03:47.592785 (56)  > Memory: 158.63671875 KBytes
+16:03:47.592915 (56)  > Checking sandbox...
+16:03:47.592993 (56)     > passed
+16:03:47.593069 (56)  
+16:03:47.637035 (38)  >> Job settings:
+16:03:47.637196 (38)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:47.637274 (38)  Name: 
+16:03:47.637351 (38)  Description: 
+16:03:47.637428 (38)  Disk:
+16:03:47.637503 (38)  	max 512 files
+16:03:47.637579 (38)  	max 32 file descriptors
+16:03:47.637654 (38)  	max 67108864 size in bytes
+16:03:47.637729 (38)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:47.637805 (38)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:47.637881 (38)  Mem 2097152 bytes of memory
+16:03:47.637956 (38)  Network:
+16:03:47.638044 (38)  	max 134217728/134217728 send/receive bytes
+16:03:47.638120 (38)  	max 32 tcp sockets
+16:03:47.638195 (38)  	ip 172.17.0.33
+16:03:47.638270 (38)  	ports 14461-14461
+16:03:47.638346 (38)  
+16:03:47.656269 (38)  >> Into sandbox !!!
+16:03:47.683836 (38)  > Memory: 158.63671875 KBytes
+16:03:47.683952 (38)  > Checking sandbox...
+16:03:47.684029 (38)     > passed
+16:03:47.684106 (38)  
+16:03:47.745092 (37)  START_LOG
+16:03:47.758650 (37)  SPLAYD LUA EXEC
+16:03:47.794180 (39)  START_LOG
+16:03:47.795778 (39)  SPLAYD LUA EXEC
+16:03:47.881993 (57)  START_LOG
+16:03:47.883518 (37)  >> Job settings:
+16:03:47.883702 (57)  SPLAYD LUA EXEC
+16:03:47.892264 (37)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:47.892426 (37)  Name: 
+16:03:47.892505 (37)  Description: 
+16:03:47.892583 (37)  Disk:
+16:03:47.892660 (37)  	max 512 files
+16:03:47.892737 (37)  	max 32 file descriptors
+16:03:47.892833 (37)  	max 67108864 size in bytes
+16:03:47.892911 (37)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_2/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:47.893022 (37)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_2/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:47.893100 (37)  Mem 2097152 bytes of memory
+16:03:47.893177 (37)  Network:
+16:03:47.904073 (37)  	max 134217728/134217728 send/receive bytes
+16:03:47.924941 (37)  	max 32 tcp sockets
+16:03:47.925060 (37)  	ip 172.17.0.33
+16:03:47.925139 (37)  	ports 13503-13503
+16:03:47.925218 (37)  
+16:03:47.964332 (39)  >> Job settings:
+16:03:47.964522 (39)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:47.964601 (39)  Name: 
+16:03:47.964677 (39)  Description: 
+16:03:47.964753 (39)  Disk:
+16:03:47.964840 (39)  	max 512 files
+16:03:47.964916 (39)  	max 32 file descriptors
+16:03:47.964992 (39)  	max 67108864 size in bytes
+16:03:47.965067 (39)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_4/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:47.965144 (39)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_4/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:47.965219 (39)  Mem 2097152 bytes of memory
+16:03:47.965295 (39)  Network:
+16:03:47.965370 (39)  	max 134217728/134217728 send/receive bytes
+16:03:47.965446 (39)  	max 32 tcp sockets
+16:03:47.965522 (39)  	ip 172.17.0.33
+16:03:47.965597 (39)  	ports 14834-14834
+16:03:47.965760 (39)  
+16:03:47.987766 (37)  >> Into sandbox !!!
+16:03:48.5882 (57)  >> Job settings:
+16:03:48.10544 (57)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.10651 (57)  Name: 
+16:03:48.10729 (57)  Description: 
+16:03:48.10808 (57)  Disk:
+16:03:48.10948 (57)  	max 512 files
+16:03:48.11029 (57)  	max 32 file descriptors
+16:03:48.11181 (57)  	max 67108864 size in bytes
+16:03:48.11264 (57)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_6_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.11344 (57)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_6_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.11424 (57)  Mem 2097152 bytes of memory
+16:03:48.11547 (57)  Network:
+16:03:48.11628 (57)  	max 134217728/134217728 send/receive bytes
+16:03:48.11705 (57)  	max 32 tcp sockets
+16:03:48.11783 (57)  	ip 172.17.0.31
+16:03:48.11860 (57)  	ports 16676-16676
+16:03:48.11938 (57)  
+16:03:48.23974 (39)  >> Into sandbox !!!
+16:03:48.43791 (39)  > Memory: 158.63671875 KBytes
+16:03:48.43947 (39)  > Checking sandbox...
+16:03:48.44025 (39)     > passed
+16:03:48.44102 (39)  
+16:03:48.51436 (78)  START_LOG
+16:03:48.91248 (78)  SPLAYD LUA EXEC
+16:03:48.95574 (57)  >> Into sandbox !!!
+16:03:48.96408 (57)  > Memory: 158.63671875 KBytes
+16:03:48.96905 (57)  > Checking sandbox...
+16:03:48.97114 (57)     > passed
+16:03:48.97199 (57)  
+16:03:48.116795 (21)  waiting for 4.8827923810495 to desynchronize
+16:03:48.124108 (22)  waiting for 4.0924475454224 to desynchronize
+16:03:48.130739 (37)  > Memory: 158.63671875 KBytes
+16:03:48.130906 (37)  > Checking sandbox...
+16:03:48.130987 (37)     > passed
+16:03:48.131064 (37)  
+16:03:48.167708 (95)  START_LOG
+16:03:48.178805 (95)  SPLAYD LUA EXEC
+16:03:48.209889 (55)  START_LOG
+16:03:48.213878 (55)  SPLAYD LUA EXEC
+16:03:48.230059 (111)  START_LOG
+16:03:48.249482 (111)  SPLAYD LUA EXEC
+16:03:48.257477 (95)  >> Job settings:
+16:03:48.260447 (95)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.261459 (95)  Name: 
+16:03:48.264939 (95)  Description: 
+16:03:48.265057 (95)  Disk:
+16:03:48.265138 (95)  	max 512 files
+16:03:48.265269 (95)  	max 32 file descriptors
+16:03:48.265351 (95)  	max 67108864 size in bytes
+16:03:48.265764 (95)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_11/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.265886 (95)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_11/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.265967 (95)  Mem 2097152 bytes of memory
+16:03:48.266101 (95)  Network:
+16:03:48.266183 (95)  	max 134217728/134217728 send/receive bytes
+16:03:48.266263 (95)  	max 32 tcp sockets
+16:03:48.266343 (95)  	ip 172.17.0.29
+16:03:48.266422 (95)  	ports 18354-18354
+16:03:48.266711 (95)  
+16:03:48.294967 (78)  >> Job settings:
+16:03:48.295265 (78)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.295351 (78)  Name: 
+16:03:48.295431 (78)  Description: 
+16:03:48.295510 (78)  Disk:
+16:03:48.295588 (78)  	max 512 files
+16:03:48.295666 (78)  	max 32 file descriptors
+16:03:48.295744 (78)  	max 67108864 size in bytes
+16:03:48.295823 (78)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.295904 (78)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.295982 (78)  Mem 2097152 bytes of memory
+16:03:48.296060 (78)  Network:
+16:03:48.296138 (78)  	max 134217728/134217728 send/receive bytes
+16:03:48.296216 (78)  	max 32 tcp sockets
+16:03:48.296297 (78)  	ip 172.17.0.26
+16:03:48.296375 (78)  	ports 16981-16981
+16:03:48.296454 (78)  
+16:03:48.296531 (78)  >> Into sandbox !!!
+16:03:48.296719 (78)  > Memory: 158.63671875 KBytes
+16:03:48.296800 (78)  > Checking sandbox...
+16:03:48.296905 (78)     > passed
+16:03:48.296984 (78)  
+16:03:48.327835 (95)  >> Into sandbox !!!
+16:03:48.328228 (95)  > Memory: 158.6396484375 KBytes
+16:03:48.328450 (95)  > Checking sandbox...
+16:03:48.328537 (95)     > passed
+16:03:48.328619 (95)  
+16:03:48.451279 (149)  START_LOG
+16:03:48.454316 (149)  SPLAYD LUA EXEC
+16:03:48.459429 (132)  START_LOG
+16:03:48.459591 (132)  SPLAYD LUA EXEC
+16:03:48.477030 (111)  >> Job settings:
+16:03:48.492565 (132)  >> Job settings:
+16:03:48.493611 (132)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.494010 (132)  Name: 
+16:03:48.494118 (132)  Description: 
+16:03:48.494272 (132)  Disk:
+16:03:48.494355 (132)  	max 512 files
+16:03:48.494447 (132)  	max 32 file descriptors
+16:03:48.494595 (132)  	max 67108864 size in bytes
+16:03:48.494679 (132)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_18/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.494835 (132)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_18/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.494980 (132)  Mem 2097152 bytes of memory
+16:03:48.495072 (132)  Network:
+16:03:48.495271 (132)  	max 134217728/134217728 send/receive bytes
+16:03:48.495472 (132)  	max 32 tcp sockets
+16:03:48.495916 (132)  	ip 172.17.0.36
+16:03:48.496124 (132)  	ports 21719-21719
+16:03:48.496212 (132)  
+16:03:48.507035 (58)  START_LOG
+16:03:48.510911 (58)  SPLAYD LUA EXEC
+16:03:48.517576 (149)  >> Job settings:
+16:03:48.522880 (149)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.529089 (149)  Name: 
+16:03:48.529206 (149)  Description: 
+16:03:48.529286 (149)  Disk:
+16:03:48.529365 (149)  	max 512 files
+16:03:48.529775 (149)  	max 32 file descriptors
+16:03:48.529931 (149)  	max 67108864 size in bytes
+16:03:48.530012 (149)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_34/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.530091 (149)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_34/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.530205 (149)  Mem 2097152 bytes of memory
+16:03:48.530350 (149)  Network:
+16:03:48.530431 (149)  	max 134217728/134217728 send/receive bytes
+16:03:48.530509 (149)  	max 32 tcp sockets
+16:03:48.530588 (149)  	ip 172.17.0.36
+16:03:48.530666 (149)  	ports 29975-29975
+16:03:48.530745 (149)  
+16:03:48.538578 (40)  waiting for 2.1085457350633 to desynchronize
+16:03:48.553517 (111)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.566688 (111)  Name: 
+16:03:48.566803 (111)  Description: 
+16:03:48.566883 (111)  Disk:
+16:03:48.566962 (111)  	max 512 files
+16:03:48.567040 (111)  	max 32 file descriptors
+16:03:48.567152 (111)  	max 67108864 size in bytes
+16:03:48.567234 (111)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_11/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.567314 (111)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_11/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.567393 (111)  Mem 2097152 bytes of memory
+16:03:48.567472 (111)  Network:
+16:03:48.567551 (111)  	max 134217728/134217728 send/receive bytes
+16:03:48.567630 (111)  	max 32 tcp sockets
+16:03:48.567709 (111)  	ip 172.17.0.32
+16:03:48.567790 (111)  	ports 18130-18130
+16:03:48.567869 (111)  
+16:03:48.597143 (55)  >> Job settings:
+16:03:48.597906 (149)  >> Into sandbox !!!
+16:03:48.598125 (149)  > Memory: 158.7119140625 KBytes
+16:03:48.598485 (149)  > Checking sandbox...
+16:03:48.598686 (149)     > passed
+16:03:48.598782 (149)  
+16:03:48.609288 (55)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.609445 (55)  Name: 
+16:03:48.609524 (55)  Description: 
+16:03:48.609601 (55)  Disk:
+16:03:48.609677 (55)  	max 512 files
+16:03:48.609784 (55)  	max 32 file descriptors
+16:03:48.609861 (55)  	max 67108864 size in bytes
+16:03:48.609937 (55)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.610014 (55)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.610091 (55)  Mem 2097152 bytes of memory
+16:03:48.610166 (55)  Network:
+16:03:48.610242 (55)  	max 134217728/134217728 send/receive bytes
+16:03:48.610318 (55)  	max 32 tcp sockets
+16:03:48.610393 (55)  	ip 172.17.0.32
+16:03:48.610470 (55)  	ports 16771-16771
+16:03:48.610546 (55)  
+16:03:48.611772 (58)  >> Job settings:
+16:03:48.619232 (132)  >> Into sandbox !!!
+16:03:48.640712 (132)  > Memory: 158.7119140625 KBytes
+16:03:48.640844 (132)  > Checking sandbox...
+16:03:48.640928 (132)     > passed
+16:03:48.641009 (132)  
+16:03:48.681934 (150)  START_LOG
+16:03:48.682206 (150)  SPLAYD LUA EXEC
+16:03:48.682291 (150)  >> Job settings:
+16:03:48.682372 (150)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.682450 (150)  Name: 
+16:03:48.682584 (150)  Description: 
+16:03:48.682663 (150)  Disk:
+16:03:48.682741 (150)  	max 512 files
+16:03:48.682819 (150)  	max 32 file descriptors
+16:03:48.682896 (150)  	max 67108864 size in bytes
+16:03:48.682974 (150)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_35/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.683053 (150)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_35/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.683166 (150)  Mem 2097152 bytes of memory
+16:03:48.683292 (150)  Network:
+16:03:48.683372 (150)  	max 134217728/134217728 send/receive bytes
+16:03:48.683451 (150)  	max 32 tcp sockets
+16:03:48.683646 (150)  	ip 172.17.0.36
+16:03:48.683725 (150)  	ports 30475-30475
+16:03:48.683803 (150)  
+16:03:48.689250 (55)  >> Into sandbox !!!
+16:03:48.689489 (150)  >> Into sandbox !!!
+16:03:48.689706 (58)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:48.689811 (58)  Name: 
+16:03:48.689889 (58)  Description: 
+16:03:48.689967 (58)  Disk:
+16:03:48.690043 (58)  	max 512 files
+16:03:48.690134 (58)  	max 32 file descriptors
+16:03:48.690243 (58)  	max 67108864 size in bytes
+16:03:48.690381 (58)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_6_7/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:48.690520 (58)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_6_7/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:48.690627 (58)  Mem 2097152 bytes of memory
+16:03:48.690716 (58)  Network:
+16:03:48.690793 (58)  	max 134217728/134217728 send/receive bytes
+16:03:48.690870 (58)  	max 32 tcp sockets
+16:03:48.690947 (58)  	ip 172.17.0.31
+16:03:48.691023 (58)  	ports 16496-16496
+16:03:48.691560 (58)  
+16:03:48.697268 (55)  > Memory: 158.63671875 KBytes
+16:03:48.705315 (55)  > Checking sandbox...
+16:03:48.731219 (55)     > passed
+16:03:48.731360 (55)  
+16:03:48.744110 (111)  >> Into sandbox !!!
+16:03:48.744311 (111)  > Memory: 158.6396484375 KBytes
+16:03:48.744395 (111)  > Checking sandbox...
+16:03:48.744474 (111)     > passed
+16:03:48.744553 (111)  
+16:03:48.747551 (76)  waiting for 0.90218636714955 to desynchronize
+16:03:48.751687 (150)  > Memory: 158.7119140625 KBytes
+16:03:48.751798 (150)  > Checking sandbox...
+16:03:48.751878 (150)     > passed
+16:03:48.751986 (150)  
+16:03:48.766488 (77)  waiting for 1.7321036088896 to desynchronize
+16:03:48.767753 (58)  >> Into sandbox !!!
+16:03:48.767970 (58)  > Memory: 158.63671875 KBytes
+16:03:48.768053 (58)  > Checking sandbox...
+16:03:48.768132 (58)     > passed
+16:03:48.768209 (58)  
+16:03:48.932640 (20)  waiting for 1.8279909211341 to desynchronize
+16:03:49.58247 (75)  START_LOG
+16:03:49.97544 (75)  SPLAYD LUA EXEC
+16:03:49.280651 (19)  waiting for 0.40655001085557 to desynchronize
+16:03:49.600642 (56)  waiting for 2.1843901612723 to desynchronize
+16:03:49.696037 (75)  >> Job settings:
+16:03:49.706495 (75)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:49.706662 (75)  Name: 
+16:03:49.706743 (75)  Description: 
+16:03:49.711033 (75)  Disk:
+16:03:49.711494 (75)  	max 512 files
+16:03:49.711593 (75)  	max 32 file descriptors
+16:03:49.711685 (75)  	max 67108864 size in bytes
+16:03:49.711764 (75)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:49.716056 (75)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_8/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:49.716237 (75)  Mem 2097152 bytes of memory
+16:03:49.716345 (75)  Network:
+16:03:49.716426 (75)  	max 134217728/134217728 send/receive bytes
+16:03:49.716506 (75)  	max 32 tcp sockets
+16:03:49.716585 (75)  	ip 172.17.0.27
+16:03:49.716664 (75)  	ports 16674-16674
+16:03:49.716742 (75)  
+16:03:49.723813 (38)  waiting for 2.894004475276 to desynchronize
+16:03:49.986371 (92)  START_LOG
+16:03:49.986523 (92)  SPLAYD LUA EXEC
+16:03:50.11498 (37)  waiting for 0.60741136577325 to desynchronize
+16:03:50.14020 (75)  >> Into sandbox !!!
+16:03:50.14247 (75)  > Memory: 158.63671875 KBytes
+16:03:50.14333 (75)  > Checking sandbox...
+16:03:50.14413 (75)     > passed
+16:03:50.14492 (75)  
+16:03:50.45894 (39)  waiting for 1.9642586223615 to desynchronize
+16:03:50.805574 (55)  i_am_infected
+16:03:50.805726 (55)  waiting for 0 to desynchronize
+16:03:50.823671 (150)  waiting for 1.4882745880113 to desynchronize
+16:03:50.825909 (132)  waiting for 0.46574490865029 to desynchronize
+16:03:50.829425 (58)  waiting for 2.844917188792 to desynchronize
+16:03:50.838270 (95)  waiting for 4.4586952866328 to desynchronize
+16:03:50.849368 (111)  waiting for 2.3506735392616 to desynchronize
+16:03:50.860846 (149)  waiting for 2.2234194200595 to desynchronize
+16:03:50.921383 (57)  waiting for 1.5657037666839 to desynchronize
+16:03:50.925982 (92)  >> Job settings:
+16:03:50.926148 (92)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:50.926230 (92)  Name: 
+16:03:50.926308 (92)  Description: 
+16:03:50.926387 (92)  Disk:
+16:03:50.926466 (92)  	max 512 files
+16:03:50.926544 (92)  	max 32 file descriptors
+16:03:50.926622 (92)  	max 67108864 size in bytes
+16:03:50.926701 (92)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_12/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:50.926781 (92)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_12/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:50.926860 (92)  Mem 2097152 bytes of memory
+16:03:50.926938 (92)  Network:
+16:03:50.927015 (92)  	max 134217728/134217728 send/receive bytes
+16:03:50.927093 (92)  	max 32 tcp sockets
+16:03:50.930930 (92)  	ip 172.17.0.27
+16:03:50.931022 (92)  	ports 18526-18526
+16:03:50.931151 (92)  
+16:03:50.931234 (92)  >> Into sandbox !!!
+16:03:50.931313 (92)  > Memory: 158.6396484375 KBytes
+16:03:50.931392 (92)  > Checking sandbox...
+16:03:50.931471 (92)     > passed
+16:03:50.931549 (92)  
+16:03:50.962269 (18)  START_LOG
+16:03:50.966262 (18)  SPLAYD LUA EXEC
+16:03:50.971933 (148)  START_LOG
+16:03:50.977719 (148)  SPLAYD LUA EXEC
+16:03:50.986113 (78)  waiting for 1.9537930991285 to desynchronize
+16:03:51.31460 (133)  START_LOG
+16:03:51.31701 (133)  SPLAYD LUA EXEC
+16:03:51.39507 (148)  >> Job settings:
+16:03:51.39702 (148)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:51.39861 (148)  Name: 
+16:03:51.40039 (148)  Description: 
+16:03:51.40213 (148)  Disk:
+16:03:51.40541 (148)  	max 512 files
+16:03:51.40784 (148)  	max 32 file descriptors
+16:03:51.40930 (148)  	max 67108864 size in bytes
+16:03:51.41159 (148)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_31/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:51.41505 (148)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_31/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:51.41697 (148)  Mem 2097152 bytes of memory
+16:03:51.41891 (148)  Network:
+16:03:51.42454 (148)  	max 134217728/134217728 send/receive bytes
+16:03:51.42664 (148)  	max 32 tcp sockets
+16:03:51.42760 (148)  	ip 172.17.0.36
+16:03:51.42886 (148)  	ports 28223-28223
+16:03:51.43098 (148)  
+16:03:51.50391 (18)  >> Job settings:
+16:03:51.54742 (18)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:51.54850 (18)  Name: 
+16:03:51.54967 (18)  Description: 
+16:03:51.55051 (18)  Disk:
+16:03:51.55191 (18)  	max 512 files
+16:03:51.55273 (18)  	max 32 file descriptors
+16:03:51.55354 (18)  	max 67108864 size in bytes
+16:03:51.55435 (18)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:51.55515 (18)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:51.55596 (18)  Mem 2097152 bytes of memory
+16:03:51.55701 (18)  Network:
+16:03:51.55783 (18)  	max 134217728/134217728 send/receive bytes
+16:03:51.55863 (18)  	max 32 tcp sockets
+16:03:51.55943 (18)  	ip 172.17.0.29
+16:03:51.56023 (18)  	ports 14075-14075
+16:03:51.56103 (18)  
+16:03:51.73152 (133)  >> Job settings:
+16:03:51.77017 (133)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:51.77216 (133)  Name: 
+16:03:51.77375 (133)  Description: 
+16:03:51.77560 (133)  Disk:
+16:03:51.77727 (133)  	max 512 files
+16:03:51.78874 (133)  	max 32 file descriptors
+16:03:51.79028 (133)  	max 67108864 size in bytes
+16:03:51.79147 (133)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_27/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:51.79233 (133)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_27/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:51.79340 (133)  Mem 2097152 bytes of memory
+16:03:51.79706 (133)  Network:
+16:03:51.79818 (133)  	max 134217728/134217728 send/receive bytes
+16:03:51.79951 (133)  	max 32 tcp sockets
+16:03:51.80036 (133)  	ip 172.17.0.36
+16:03:51.80163 (133)  	ports 26228-26228
+16:03:51.80387 (133)  
+16:03:51.105345 (148)  >> Into sandbox !!!
+16:03:51.105604 (148)  > Memory: 158.6259765625 KBytes
+16:03:51.105701 (148)  > Checking sandbox...
+16:03:51.105784 (148)     > passed
+16:03:51.105865 (148)  
+16:03:51.111833 (18)  >> Into sandbox !!!
+16:03:51.112607 (18)  > Memory: 158.63671875 KBytes
+16:03:51.112839 (18)  > Checking sandbox...
+16:03:51.112943 (18)     > passed
+16:03:51.113026 (18)  
+16:03:51.135649 (133)  >> Into sandbox !!!
+16:03:51.135912 (133)  > Memory: 158.7119140625 KBytes
+16:03:51.136256 (133)  > Checking sandbox...
+16:03:51.136765 (133)     > passed
+16:03:51.136896 (133)  
+16:03:52.528959 (75)  waiting for 4.1480834289212 to desynchronize
+16:03:52.761628 (92)  waiting for 2.3088460496202 to desynchronize
+16:03:52.855435 (94)  START_LOG
+16:03:53.11142 (94)  SPLAYD LUA EXEC
+16:03:53.126546 (148)  waiting for 0.91608095723953 to desynchronize
+16:03:53.140584 (18)  waiting for 2.4421755980897 to desynchronize
+16:03:53.149942 (133)  waiting for 2.0830156919933 to desynchronize
+16:03:53.320580 (94)  >> Job settings:
+16:03:53.325140 (94)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:53.329378 (94)  Name: 
+16:03:53.341447 (94)  Description: 
+16:03:53.341616 (94)  Disk:
+16:03:53.341700 (94)  	max 512 files
+16:03:53.341782 (94)  	max 32 file descriptors
+16:03:53.341863 (94)  	max 67108864 size in bytes
+16:03:53.341944 (94)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_14/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:53.342026 (94)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_14/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:53.342107 (94)  Mem 2097152 bytes of memory
+16:03:53.342188 (94)  Network:
+16:03:53.342268 (94)  	max 134217728/134217728 send/receive bytes
+16:03:53.342349 (94)  	max 32 tcp sockets
+16:03:53.342430 (94)  	ip 172.17.0.27
+16:03:53.342510 (94)  	ports 19873-19873
+16:03:53.342591 (94)  
+16:03:53.953447 (94)  >> Into sandbox !!!
+16:03:53.964995 (94)  > Memory: 158.6396484375 KBytes
+16:03:53.965122 (94)  > Checking sandbox...
+16:03:53.965205 (94)     > passed
+16:03:53.965287 (94)  
+16:03:54.59983 (93)  START_LOG
+16:03:54.75718 (93)  SPLAYD LUA EXEC
+16:03:54.288012 (96)  START_LOG
+16:03:54.289990 (96)  SPLAYD LUA EXEC
+16:03:54.300175 (113)  START_LOG
+16:03:54.350617 (113)  SPLAYD LUA EXEC
+16:03:54.371136 (96)  >> Job settings:
+16:03:54.390512 (96)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:54.390830 (96)  Name: 
+16:03:54.391623 (96)  Description: 
+16:03:54.391731 (96)  Disk:
+16:03:54.391813 (96)  	max 512 files
+16:03:54.391895 (96)  	max 32 file descriptors
+16:03:54.391976 (96)  	max 67108864 size in bytes
+16:03:54.392058 (96)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_12/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:54.393870 (96)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_12/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:54.393982 (96)  Mem 2097152 bytes of memory
+16:03:54.394204 (96)  Network:
+16:03:54.394304 (96)  	max 134217728/134217728 send/receive bytes
+16:03:54.394386 (96)  	max 32 tcp sockets
+16:03:54.394467 (96)  	ip 172.17.0.29
+16:03:54.394548 (96)  	ports 18854-18854
+16:03:54.394630 (96)  
+16:03:54.432348 (96)  >> Into sandbox !!!
+16:03:54.441692 (96)  > Memory: 158.6396484375 KBytes
+16:03:54.441819 (96)  > Checking sandbox...
+16:03:54.442433 (96)     > passed
+16:03:54.442532 (96)  
+16:03:54.499669 (114)  START_LOG
+16:03:54.533590 (114)  SPLAYD LUA EXEC
+16:03:54.591756 (93)  >> Job settings:
+16:03:54.616592 (93)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:54.616725 (93)  Name: 
+16:03:54.616930 (93)  Description: 
+16:03:54.617015 (93)  Disk:
+16:03:54.617097 (93)  	max 512 files
+16:03:54.617180 (93)  	max 32 file descriptors
+16:03:54.617264 (93)  	max 67108864 size in bytes
+16:03:54.617347 (93)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_13/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:54.617430 (93)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_13/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:54.617514 (93)  Mem 2097152 bytes of memory
+16:03:54.619294 (93)  Network:
+16:03:54.619431 (93)  	max 134217728/134217728 send/receive bytes
+16:03:54.619515 (93)  	max 32 tcp sockets
+16:03:54.619598 (93)  	ip 172.17.0.27
+16:03:54.619680 (93)  	ports 19175-19175
+16:03:54.619763 (93)  
+16:03:54.691148 (113)  >> Job settings:
+16:03:54.703362 (114)  >> Job settings:
+16:03:54.727729 (114)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:54.728238 (114)  Name: 
+16:03:54.728409 (114)  Description: 
+16:03:54.728599 (114)  Disk:
+16:03:54.728835 (114)  	max 512 files
+16:03:54.728929 (114)  	max 32 file descriptors
+16:03:54.729052 (114)  	max 67108864 size in bytes
+16:03:54.729133 (114)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_14/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:54.729211 (114)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_14/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:54.729333 (114)  Mem 2097152 bytes of memory
+16:03:54.729417 (114)  Network:
+16:03:54.729540 (114)  	max 134217728/134217728 send/receive bytes
+16:03:54.729617 (114)  	max 32 tcp sockets
+16:03:54.729694 (114)  	ip 172.17.0.32
+16:03:54.729811 (114)  	ports 19596-19596
+16:03:54.730487 (113)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:54.730610 (113)  Name: 
+16:03:54.730704 (113)  Description: 
+16:03:54.730785 (113)  Disk:
+16:03:54.730865 (113)  	max 512 files
+16:03:54.730944 (113)  	max 32 file descriptors
+16:03:54.731025 (113)  	max 67108864 size in bytes
+16:03:54.731143 (113)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_13/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:54.731227 (113)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_13/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:54.731308 (113)  Mem 2097152 bytes of memory
+16:03:54.731388 (113)  Network:
+16:03:54.731468 (113)  	max 134217728/134217728 send/receive bytes
+16:03:54.731548 (113)  	max 32 tcp sockets
+16:03:54.731628 (113)  	ip 172.17.0.32
+16:03:54.731708 (113)  	ports 19096-19096
+16:03:54.751636 (113)  
+16:03:54.758020 (114)  
+16:03:54.810524 (112)  START_LOG
+16:03:54.810692 (112)  SPLAYD LUA EXEC
+16:03:54.827484 (113)  >> Into sandbox !!!
+16:03:54.828510 (113)  > Memory: 158.6396484375 KBytes
+16:03:54.828614 (113)  > Checking sandbox...
+16:03:54.828723 (113)     > passed
+16:03:54.828804 (113)  
+16:03:54.845107 (114)  >> Into sandbox !!!
+16:03:54.845361 (114)  > Memory: 158.6396484375 KBytes
+16:03:54.845448 (114)  > Checking sandbox...
+16:03:54.845559 (114)     > passed
+16:03:54.845637 (114)  
+16:03:54.912145 (112)  >> Job settings:
+16:03:54.920025 (112)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:54.920182 (112)  Name: 
+16:03:54.920264 (112)  Description: 
+16:03:54.920344 (112)  Disk:
+16:03:54.920423 (112)  	max 512 files
+16:03:54.920502 (112)  	max 32 file descriptors
+16:03:54.920581 (112)  	max 67108864 size in bytes
+16:03:54.927726 (112)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_12/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:54.927954 (112)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_12/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:54.928039 (112)  Mem 2097152 bytes of memory
+16:03:54.928164 (112)  Network:
+16:03:54.928251 (112)  	max 134217728/134217728 send/receive bytes
+16:03:54.928332 (112)  	max 32 tcp sockets
+16:03:54.928414 (112)  	ip 172.17.0.32
+16:03:54.928493 (112)  	ports 18596-18596
+16:03:54.928571 (112)  
+16:03:54.961106 (93)  >> Into sandbox !!!
+16:03:54.974383 (93)  > Memory: 158.6396484375 KBytes
+16:03:54.974517 (93)  > Checking sandbox...
+16:03:54.974601 (93)     > passed
+16:03:54.974685 (93)  
+16:03:55.864 (112)  >> Into sandbox !!!
+16:03:55.1114 (112)  > Memory: 158.6396484375 KBytes
+16:03:55.1239 (112)  > Checking sandbox...
+16:03:55.1383 (112)     > passed
+16:03:55.1492 (112)  
+16:03:55.872522 (96)  i_am_infected
+16:03:56.141204 (94)  waiting for 0.08844576314485 to desynchronize
+16:03:56.459382 (96)  waiting for 3.5830359177585 to desynchronize
+16:03:56.881990 (113)  waiting for 4.7388267748704 to desynchronize
+16:03:56.897254 (114)  waiting for 0.59546544477132 to desynchronize
+16:03:57.41230 (112)  waiting for 2.8151427432034 to desynchronize
+16:03:57.226818 (93)  waiting for 3.3651363585913 to desynchronize
+16:03:57.419521 (151)  START_LOG
+16:03:57.421682 (151)  SPLAYD LUA EXEC
+16:03:57.451430 (151)  >> Job settings:
+16:03:57.451754 (151)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:57.451852 (151)  Name: 
+16:03:57.452355 (151)  Description: 
+16:03:57.452453 (151)  Disk:
+16:03:57.452605 (151)  	max 512 files
+16:03:57.452707 (151)  	max 32 file descriptors
+16:03:57.452895 (151)  	max 67108864 size in bytes
+16:03:57.453060 (151)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_1/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:57.453429 (151)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_1/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:57.453612 (151)  Mem 2097152 bytes of memory
+16:03:57.453804 (151)  Network:
+16:03:57.454025 (151)  	max 134217728/134217728 send/receive bytes
+16:03:57.454250 (151)  	max 32 tcp sockets
+16:03:57.454464 (151)  	ip 172.17.0.40
+16:03:57.454686 (151)  	ports 13447-13447
+16:03:57.455218 (151)  
+16:03:57.485876 (151)  >> Into sandbox !!!
+16:03:57.486134 (151)  > Memory: 158.7119140625 KBytes
+16:03:57.486333 (151)  > Checking sandbox...
+16:03:57.486526 (151)     > passed
+16:03:57.486722 (151)  
+16:03:57.569374 (169)  START_LOG
+16:03:57.570963 (169)  SPLAYD LUA EXEC
+16:03:57.601187 (169)  >> Job settings:
+16:03:57.601511 (169)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:57.601680 (169)  Name: 
+16:03:57.601789 (169)  Description: 
+16:03:57.601961 (169)  Disk:
+16:03:57.602132 (169)  	max 512 files
+16:03:57.602374 (169)  	max 32 file descriptors
+16:03:57.602597 (169)  	max 67108864 size in bytes
+16:03:57.602847 (169)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_16/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:57.603156 (169)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_16/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:57.603369 (169)  Mem 2097152 bytes of memory
+16:03:57.603560 (169)  Network:
+16:03:57.603752 (169)  	max 134217728/134217728 send/receive bytes
+16:03:57.603960 (169)  	max 32 tcp sockets
+16:03:57.604175 (169)  	ip 172.17.0.40
+16:03:57.604410 (169)  	ports 20949-20949
+16:03:57.604596 (169)  
+16:03:57.636033 (169)  >> Into sandbox !!!
+16:03:57.636301 (169)  > Memory: 158.71484375 KBytes
+16:03:57.636502 (169)  > Checking sandbox...
+16:03:57.636695 (169)     > passed
+16:03:57.636791 (169)  
+16:03:58.227787 (188)  START_LOG
+16:03:58.229635 (188)  SPLAYD LUA EXEC
+16:03:58.260002 (188)  >> Job settings:
+16:03:58.260324 (188)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:58.260489 (188)  Name: 
+16:03:58.260667 (188)  Description: 
+16:03:58.260771 (188)  Disk:
+16:03:58.260972 (188)  	max 512 files
+16:03:58.261144 (188)  	max 32 file descriptors
+16:03:58.261399 (188)  	max 67108864 size in bytes
+16:03:58.261646 (188)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_47/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:58.261972 (188)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_47/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:58.262150 (188)  Mem 2097152 bytes of memory
+16:03:58.262427 (188)  Network:
+16:03:58.262611 (188)  	max 134217728/134217728 send/receive bytes
+16:03:58.262801 (188)  	max 32 tcp sockets
+16:03:58.263016 (188)  	ip 172.17.0.40
+16:03:58.263224 (188)  	ports 36043-36043
+16:03:58.263412 (188)  
+16:03:58.293734 (188)  >> Into sandbox !!!
+16:03:58.315181 (188)  > Memory: 158.71484375 KBytes
+16:03:58.315315 (188)  > Checking sandbox...
+16:03:58.315425 (188)     > passed
+16:03:58.315509 (188)  
+16:03:58.532354 (168)  START_LOG
+16:03:58.533014 (168)  SPLAYD LUA EXEC
+16:03:58.562319 (168)  >> Job settings:
+16:03:58.562647 (168)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:58.563602 (168)  Name: 
+16:03:58.563788 (168)  Description: 
+16:03:58.565269 (168)  Disk:
+16:03:58.565371 (168)  	max 512 files
+16:03:58.565453 (168)  	max 32 file descriptors
+16:03:58.565534 (168)  	max 67108864 size in bytes
+16:03:58.565691 (168)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_20/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:58.565787 (168)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_20/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:58.565928 (168)  Mem 2097152 bytes of memory
+16:03:58.566054 (168)  Network:
+16:03:58.566141 (168)  	max 134217728/134217728 send/receive bytes
+16:03:58.566222 (168)  	max 32 tcp sockets
+16:03:58.566303 (168)  	ip 172.17.0.40
+16:03:58.566383 (168)  	ports 22782-22782
+16:03:58.566463 (168)  
+16:03:58.596285 (168)  >> Into sandbox !!!
+16:03:58.596573 (168)  > Memory: 158.71484375 KBytes
+16:03:58.597066 (168)  > Checking sandbox...
+16:03:58.597225 (168)     > passed
+16:03:58.597565 (168)  
+16:03:59.500416 (151)  waiting for 4.8814382613084 to desynchronize
+16:03:59.612470 (129)  START_LOG
+16:03:59.612609 (129)  SPLAYD LUA EXEC
+16:03:59.617880 (129)  >> Job settings:
+16:03:59.618097 (129)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:59.618275 (129)  Name: 
+16:03:59.618451 (129)  Description: 
+16:03:59.618652 (129)  Disk:
+16:03:59.618905 (129)  	max 512 files
+16:03:59.619167 (129)  	max 32 file descriptors
+16:03:59.619380 (129)  	max 67108864 size in bytes
+16:03:59.619630 (129)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_29/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:59.619966 (129)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_29/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:59.620279 (129)  Mem 2097152 bytes of memory
+16:03:59.620473 (129)  Network:
+16:03:59.620669 (129)  	max 134217728/134217728 send/receive bytes
+16:03:59.620878 (129)  	max 32 tcp sockets
+16:03:59.621056 (129)  	ip 172.17.0.36
+16:03:59.621245 (129)  	ports 27446-27446
+16:03:59.621432 (129)  
+16:03:59.650881 (169)  waiting for 3.1038714377693 to desynchronize
+16:03:59.651232 (129)  >> Into sandbox !!!
+16:03:59.651479 (129)  > Memory: 158.6259765625 KBytes
+16:03:59.652774 (129)  > Checking sandbox...
+16:03:59.654100 (129)     > passed
+16:03:59.654204 (129)  
+16:03:59.821623 (95)  i_am_infected
+16:03:59.886811 (130)  START_LOG
+16:03:59.887154 (130)  SPLAYD LUA EXEC
+16:03:59.918385 (130)  >> Job settings:
+16:03:59.920304 (130)  Ref: 4c871290056f13a01710153bd083f7fa
+16:03:59.920413 (130)  Name: 
+16:03:59.920498 (130)  Description: 
+16:03:59.920581 (130)  Disk:
+16:03:59.920665 (130)  	max 512 files
+16:03:59.920749 (130)  	max 32 file descriptors
+16:03:59.921023 (130)  	max 67108864 size in bytes
+16:03:59.921113 (130)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_30/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:03:59.921241 (130)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_30/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:03:59.921328 (130)  Mem 2097152 bytes of memory
+16:03:59.921457 (130)  Network:
+16:03:59.921545 (130)  	max 134217728/134217728 send/receive bytes
+16:03:59.921629 (130)  	max 32 tcp sockets
+16:03:59.921713 (130)  	ip 172.17.0.36
+16:03:59.921797 (130)  	ports 27723-27723
+16:03:59.921904 (130)  
+16:03:59.950242 (130)  >> Into sandbox !!!
+16:03:59.950485 (130)  > Memory: 158.6259765625 KBytes
+16:03:59.950692 (130)  > Checking sandbox...
+16:03:59.950902 (130)     > passed
+16:03:59.951096 (130)  
+16:04:00.306414 (188)  waiting for 4.2974361727468 to desynchronize
+16:04:00.610994 (168)  waiting for 3.5844445059004 to desynchronize
+16:04:00.750471 (133)  i_am_infected
+16:04:01.667627 (129)  waiting for 4.0329786525261 to desynchronize
+16:04:01.670156 (131)  START_LOG
+16:04:01.670298 (131)  SPLAYD LUA EXEC
+16:04:01.698924 (131)  >> Job settings:
+16:04:01.723996 (131)  Ref: 4c871290056f13a01710153bd083f7fa
+16:04:01.724120 (131)  Name: 
+16:04:01.724200 (131)  Description: 
+16:04:01.724345 (131)  Disk:
+16:04:01.724425 (131)  	max 512 files
+16:04:01.724503 (131)  	max 32 file descriptors
+16:04:01.724581 (131)  	max 67108864 size in bytes
+16:04:01.724659 (131)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_15/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:04:01.724739 (131)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_15/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:04:01.724842 (131)  Mem 2097152 bytes of memory
+16:04:01.724967 (131)  Network:
+16:04:01.725051 (131)  	max 134217728/134217728 send/receive bytes
+16:04:01.725130 (131)  	max 32 tcp sockets
+16:04:01.725207 (131)  	ip 172.17.0.36
+16:04:01.725285 (131)  	ports 20019-20019
+16:04:01.725363 (131)  
+16:04:01.733886 (131)  >> Into sandbox !!!
+16:04:01.734115 (131)  > Memory: 158.7119140625 KBytes
+16:04:01.734328 (131)  > Checking sandbox...
+16:04:01.734535 (131)     > passed
+16:04:01.734736 (131)  
+16:04:01.964904 (130)  waiting for 3.1713081072882 to desynchronize
+16:04:03.9491 (21)  [splay.events] W: Periodic: thread: 0x9adb9c8 from function: 0x9a9be88 is not dead, we wait
+16:04:03.747596 (131)  waiting for 2.7176022309426 to desynchronize
+16:04:04.881294 (40)  i_am_infected
+16:04:05.71479 (19)  i_am_infected
+16:04:05.82046 (92)  [splay.events] W: Periodic: thread: 0x994fc08 from function: 0x9911e48 is not dead, we wait
+16:04:05.261373 (92)  i_am_infected
+16:04:05.453246 (77)  i_am_infected
+16:04:05.597246 (130)  i_am_infected
+16:04:05.765612 (113)  i_am_infected
+16:04:06.646014 (168)  i_am_infected
+16:04:07.241662 (22)  [splay.events] W: Periodic: thread: 0x98d6788 from function: 0x984e2b8 is not dead, we wait
+16:04:07.814525 (169)  i_am_infected
+16:04:08.33737 (21)  [splay.events] W: Periodic: thread: 0x9adb9c8 from function: 0x9a9be88 is not dead, we wait
+16:04:09.52889 (148)  [splay.events] W: Periodic: thread: 0x8378fd8 from function: 0x8392f28 is not dead, we wait
+16:04:09.708005 (38)  i_am_infected
+16:04:09.829469 (149)  i_am_infected
+16:04:10.125750 (92)  [splay.events] W: Periodic: thread: 0x994fc08 from function: 0x9911e48 is not dead, we wait
+16:04:10.150158 (112)  i_am_infected
+16:04:10.252356 (114)  i_am_infected
+16:04:10.758336 (129)  i_am_infected
+16:04:11.73129 (132)  i_am_infected
+16:04:11.297713 (94)  i_am_infected
+16:04:11.715203 (57)  i_am_infected
+16:04:12.207291 (150)  i_am_infected
+16:04:12.236417 (22)  [splay.events] W: Periodic: thread: 0x98d6788 from function: 0x984e2b8 is not dead, we wait
+16:04:12.262322 (78)  i_am_infected
+16:04:12.500396 (39)  i_am_infected
+16:04:12.770621 (18)  i_am_infected
+16:04:12.964892 (3)  START_LOG
+16:04:12.968427 (3)  SPLAYD LUA EXEC
+16:04:13.43651 (21)  i_am_infected
+16:04:13.73683 (3)  >> Job settings:
+16:04:13.109758 (3)  Ref: 4c871290056f13a01710153bd083f7fa
+16:04:13.109956 (3)  Name: 
+16:04:13.110044 (3)  Description: 
+16:04:13.110129 (3)  Disk:
+16:04:13.110213 (3)  	max 512 files
+16:04:13.110298 (3)  	max 32 file descriptors
+16:04:13.110382 (3)  	max 67108864 size in bytes
+16:04:13.110466 (3)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:04:13.110552 (3)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_3/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:04:13.110637 (3)  Mem 2097152 bytes of memory
+16:04:13.110774 (3)  Network:
+16:04:13.110863 (3)  	max 134217728/134217728 send/receive bytes
+16:04:13.110946 (3)  	max 32 tcp sockets
+16:04:13.111030 (3)  	ip 172.17.0.25
+16:04:13.111395 (3)  	ports 14131-14131
+16:04:13.111495 (3)  
+16:04:13.151438 (111)  i_am_infected
+16:04:13.170282 (3)  >> Into sandbox !!!
+16:04:13.184711 (3)  > Memory: 158.63671875 KBytes
+16:04:13.184951 (3)  > Checking sandbox...
+16:04:13.185045 (3)     > passed
+16:04:13.185207 (3)  
+16:04:13.591972 (41)  START_LOG
+16:04:13.596042 (41)  SPLAYD LUA EXEC
+16:04:13.599249 (58)  i_am_infected
+16:04:13.708883 (41)  >> Job settings:
+16:04:13.722939 (41)  Ref: 4c871290056f13a01710153bd083f7fa
+16:04:13.728777 (41)  Name: 
+16:04:13.728892 (41)  Description: 
+16:04:13.728976 (41)  Disk:
+16:04:13.729167 (41)  	max 512 files
+16:04:13.729299 (41)  	max 32 file descriptors
+16:04:13.729385 (41)  	max 67108864 size in bytes
+16:04:13.729468 (41)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_6/jobs_fs/4c871290056f13a01710153bd083f7fa/lib
+16:04:13.729553 (41)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_6/jobs_fs/4c871290056f13a01710153bd083f7fa/lib/?.so
+16:04:13.729635 (41)  Mem 2097152 bytes of memory
+16:04:13.729772 (41)  Network:
+16:04:13.729858 (41)  	max 134217728/134217728 send/receive bytes
+16:04:13.729941 (41)  	max 32 tcp sockets
+16:04:13.730022 (41)  	ip 172.17.0.25
+16:04:13.730104 (41)  	ports 15631-15631
+16:04:13.730185 (41)  
+16:04:13.800116 (41)  >> Into sandbox !!!
+16:04:13.800375 (41)  > Memory: 158.63671875 KBytes
+16:04:13.800467 (41)  > Checking sandbox...
+16:04:13.800550 (41)     > passed
+16:04:13.800632 (41)  
+16:04:14.58002 (148)  [splay.events] W: Periodic: thread: 0x8378fd8 from function: 0x8392f28 is not dead, we wait
+16:04:14.623536 (188)  i_am_infected
+16:04:14.668327 (76)  i_am_infected
+16:04:14.711502 (93)  i_am_infected
+16:04:15.56987 (41)  i_am_infected
+16:04:15.126687 (92)  [splay.events] W: Periodic: thread: 0x994fc08 from function: 0x9911e48 is not dead, we wait
+16:04:15.213802 (3)  waiting for 3.1532125049984 to desynchronize
+16:04:15.455219 (148)  i_am_infected
+16:04:15.618358 (56)  i_am_infected
+16:04:15.641634 (37)  i_am_infected
+16:04:15.829875 (41)  waiting for 1.1362012434454 to desynchronize
+16:04:16.495264 (131)  i_am_infected
+16:04:16.651044 (20)  i_am_infected
+16:04:16.682181 (75)  [splay.events] W: Periodic: thread: 0x83c7ac8 from function: 0x8364d40 is not dead, we wait
+16:04:17.282471 (22)  i_am_infected
+16:04:19.405556 (151)  i_am_infected
+16:04:20.86850 (92)  [splay.events] W: Periodic: thread: 0x994fc08 from function: 0x9911e48 is not dead, we wait
+16:04:21.686903 (75)  [splay.events] W: Periodic: thread: 0x83c7ac8 from function: 0x8364d40 is not dead, we wait
+16:04:21.726670 (3)  i_am_infected
+16:04:21.972181 (75)  i_am_infected
+16:04:25.97894 (92)  [splay.events] W: Periodic: thread: 0x994fc08 from function: 0x9911e48 is not dead, we wait
+16:04:30.92075 (92)  [splay.events] W: Periodic: thread: 0x994fc08 from function: 0x9911e48 is not dead, we wait
+16:04:35.169725 (92)  [splay.events] W: Periodic: thread: 0x994fc08 from function: 0x9911e48 is not dead, we wait
+16:05:49.656266 (76)  FINAL: node 24 yes
+16:05:49.656437 (76)  END_LOG
+16:05:49.688904 (19)  FINAL: node 11 yes
+16:05:49.689098 (19)  END_LOG
+16:05:50.444314 (77)  FINAL: node 32 yes
+16:05:50.444481 (77)  END_LOG
+16:05:50.592079 (40)  FINAL: node 30 yes
+16:05:50.769926 (40)  END_LOG
+16:05:50.799911 (37)  FINAL: node 6 yes
+16:05:50.800088 (37)  END_LOG
+16:05:50.807763 (55)  FINAL: node 1 yes
+16:05:50.807911 (55)  END_LOG
+16:05:50.825190 (20)  FINAL: node 20 yes
+16:05:50.825356 (20)  END_LOG
+16:05:51.56103 (132)  FINAL: node 26 yes
+16:05:51.57197 (132)  END_LOG
+16:05:51.709300 (57)  FINAL: node 17 yes
+16:05:51.709504 (57)  END_LOG
+16:05:51.789240 (56)  FINAL: node 9 yes
+16:05:51.789417 (56)  END_LOG
+16:05:52.16207 (39)  FINAL: node 22 yes
+16:05:52.16372 (39)  END_LOG
+16:05:52.201884 (150)  FINAL: node 21 yes
+16:05:52.202054 (150)  END_LOG
+16:05:52.231629 (22)  FINAL: node 36 yes
+16:05:52.231797 (22)  END_LOG
+16:05:52.252273 (78)  FINAL: node 40 yes
+16:05:52.252470 (78)  END_LOG
+16:05:52.625562 (38)  FINAL: node 15 yes
+16:05:52.626263 (38)  END_LOG
+16:05:52.854264 (149)  FINAL: node 12 yes
+16:05:52.854434 (149)  END_LOG
+16:05:53.15616 (21)  FINAL: node 25 yes
+16:05:53.15784 (21)  END_LOG
+16:05:53.143595 (111)  FINAL: node 5 yes
+16:05:53.143805 (111)  END_LOG
+16:05:53.585271 (58)  FINAL: node 28 yes
+16:05:53.585443 (58)  END_LOG
+16:05:54.51055 (148)  FINAL: node 7 yes
+16:05:54.51900 (148)  END_LOG
+16:05:54.901661 (95)  FINAL: node 29 yes
+16:05:54.901836 (95)  END_LOG
+16:05:55.79805 (92)  FINAL: node 3 yes
+16:05:55.79965 (92)  END_LOG
+16:05:55.243557 (133)  FINAL: node 38 yes
+16:05:55.243726 (133)  END_LOG
+16:05:55.586052 (18)  FINAL: node 2 yes
+16:05:55.586225 (18)  END_LOG
+16:05:56.241913 (94)  FINAL: node 16 yes
+16:05:56.242088 (94)  END_LOG
+16:05:56.613462 (131)  [splay.events] W: Periodic: thread: 0x9bb1028 from function: 0x9b914a8 is not dead, we wait
+16:05:56.670670 (75)  FINAL: node 13 yes
+16:05:56.670834 (75)  END_LOG
+16:05:56.703673 (113)  [splay.events] W: Periodic: thread: 0x84afb78 from function: 0x8476af8 is not dead, we wait
+16:05:57.18900 (41)  [splay.events] W: Periodic: thread: 0x8f0a8b0 from function: 0x8f3d3b0 is not dead, we wait
+16:05:57.499735 (114)  FINAL: node 35 yes
+16:05:57.499904 (114)  END_LOG
+16:05:59.276910 (168)  [splay.events] W: Periodic: thread: 0x9b9f400 from function: 0x9b08df8 is not dead, we wait
+16:05:59.484500 (151)  [splay.events] W: Periodic: thread: 0x9811f48 from function: 0x97dbde0 is not dead, we wait
+16:05:59.867758 (112)  FINAL: node 14 yes
+16:05:59.867927 (112)  END_LOG
+16:06:00.129988 (96)  FINAL: node 37 yes
+16:06:00.130164 (96)  END_LOG
+16:06:00.215834 (130)  [splay.events] W: Periodic: thread: 0x85ee098 from function: 0x85ba7c0 is not dead, we wait
+16:06:00.705405 (93)  FINAL: node 10 yes
+16:06:00.705603 (93)  END_LOG
+16:06:00.791404 (129)  [splay.events] W: Periodic: thread: 0x965f4e0 from function: 0x95d5640 is not dead, we wait
+16:06:01.612504 (131)  [splay.events] W: Periodic: thread: 0x9bb1028 from function: 0x9b914a8 is not dead, we wait
+16:06:01.628799 (113)  FINAL: node 23 yes
+16:06:01.628963 (113)  END_LOG
+16:06:02.127510 (41)  [splay.events] W: Periodic: thread: 0x8f0a8b0 from function: 0x8f3d3b0 is not dead, we wait
+16:06:02.765476 (169)  FINAL: node 27 yes
+16:06:02.766900 (169)  END_LOG
+16:06:04.205310 (168)  FINAL: node 19 yes
+16:06:04.206374 (168)  END_LOG
+16:06:04.402577 (151)  FINAL: node 31 yes
+16:06:04.402742 (151)  END_LOG
+16:06:04.613959 (188)  FINAL: node 33 yes
+16:06:04.679426 (188)  END_LOG
+16:06:05.147269 (130)  FINAL: node 8 yes
+16:06:05.147672 (130)  END_LOG
+16:06:05.711844 (129)  FINAL: node 4 yes
+16:06:05.712011 (129)  END_LOG
+16:06:06.471892 (131)  FINAL: node 18 yes
+16:06:06.473304 (131)  END_LOG
+16:06:07.140051 (41)  [splay.events] W: Periodic: thread: 0x8f0a8b0 from function: 0x8f3d3b0 is not dead, we wait
+16:06:08.427303 (3)  [splay.events] W: Periodic: thread: 0x90c2a10 from function: 0x90ad778 is not dead, we wait
+16:06:12.175795 (41)  [splay.events] W: Periodic: thread: 0x8f0a8b0 from function: 0x8f3d3b0 is not dead, we wait
+16:06:13.430503 (3)  [splay.events] W: Periodic: thread: 0x90c2a10 from function: 0x90ad778 is not dead, we wait
+16:06:16.971711 (41)  FINAL: node 39 yes
+16:06:16.971935 (41)  END_LOG
+16:06:18.370883 (3)  FINAL: node 34 yes
+16:06:18.371050 (3)  END_LOG
+

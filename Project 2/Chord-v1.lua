@@ -253,11 +253,12 @@ function main()
         join(n0)
     end
 
+    if on_cluster then
+        -- wait 3 minutes for latency.
+        events.sleep(180)
+    end
+
     if job.position == 1 then
-        if on_cluster then
-            -- wait 3 minutes for latency.
-            events.sleep(180)
-        end
         events.sleep(15)
         rpc.call(successor, { "test" })
     end
@@ -270,7 +271,4 @@ end
 -- execute the main function
 events.thread(main)
 events.run()
-
-
-
 

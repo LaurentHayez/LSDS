@@ -1,0 +1,3041 @@
+20:16:52.172193 (22)  START_LOG
+20:16:52.223513 (21)  START_LOG
+20:16:52.236239 (74)  START_LOG
+20:16:52.242727 (22)  SPLAYD LUA EXEC
+20:16:52.256091 (77)  START_LOG
+20:16:52.256178 (77)  SPLAYD LUA EXEC
+20:16:52.263619 (21)  SPLAYD LUA EXEC
+20:16:52.304991 (74)  SPLAYD LUA EXEC
+20:16:52.444761 (77)  >> Job settings:
+20:16:52.444949 (77)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:52.445004 (77)  Name: 
+20:16:52.445054 (77)  Description: 
+20:16:52.445105 (77)  Disk:
+20:16:52.445155 (77)  	max 512 files
+20:16:52.445206 (77)  	max 32 file descriptors
+20:16:52.445258 (77)  	max 67108864 size in bytes
+20:16:52.445309 (77)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_7/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:52.445361 (77)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_7/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:52.445411 (77)  Mem 2097152 bytes of memory
+20:16:52.445506 (77)  Network:
+20:16:52.445561 (77)  	max 134217728/134217728 send/receive bytes
+20:16:52.445622 (77)  	max 32 tcp sockets
+20:16:52.445673 (77)  	ip 172.17.0.26
+20:16:52.445724 (77)  	ports 16367-16367
+20:16:52.445775 (77)  
+20:16:52.547685 (77)  >> Into sandbox !!!
+20:16:52.547896 (77)  > Memory: 159.1513671875 KBytes
+20:16:52.547961 (77)  > Checking sandbox...
+20:16:52.548016 (77)     > passed
+20:16:52.548066 (77)  
+20:16:52.657865 (21)  >> Job settings:
+20:16:52.660531 (21)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:52.660620 (21)  Name: 
+20:16:52.660672 (21)  Description: 
+20:16:52.660722 (21)  Disk:
+20:16:52.660772 (21)  	max 512 files
+20:16:52.660840 (21)  	max 32 file descriptors
+20:16:52.660891 (21)  	max 67108864 size in bytes
+20:16:52.665809 (21)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:52.666260 (21)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:52.667207 (21)  Mem 2097152 bytes of memory
+20:16:52.667271 (21)  Network:
+20:16:52.667369 (21)  	max 134217728/134217728 send/receive bytes
+20:16:52.667424 (21)  	max 32 tcp sockets
+20:16:52.667537 (21)  	ip 172.17.0.30
+20:16:52.667632 (21)  	ports 14280-14280
+20:16:52.667686 (21)  
+20:16:52.687554 (22)  >> Job settings:
+20:16:52.690658 (22)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:52.690729 (22)  Name: 
+20:16:52.690781 (22)  Description: 
+20:16:52.690832 (22)  Disk:
+20:16:52.690883 (22)  	max 512 files
+20:16:52.690975 (22)  	max 32 file descriptors
+20:16:52.691154 (22)  	max 67108864 size in bytes
+20:16:52.691303 (22)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_5_4/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:52.691358 (22)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_5_4/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:52.691410 (22)  Mem 2097152 bytes of memory
+20:16:52.691461 (22)  Network:
+20:16:52.691511 (22)  	max 134217728/134217728 send/receive bytes
+20:16:52.691562 (22)  	max 32 tcp sockets
+20:16:52.691613 (22)  	ip 172.17.0.30
+20:16:52.691707 (22)  	ports 14740-14740
+20:16:52.691762 (22)  
+20:16:52.824256 (22)  >> Into sandbox !!!
+20:16:52.832120 (22)  > Memory: 159.1513671875 KBytes
+20:16:52.832243 (22)  > Checking sandbox...
+20:16:52.832296 (22)     > passed
+20:16:52.834100 (21)  >> Into sandbox !!!
+20:16:52.837078 (21)  > Memory: 159.1513671875 KBytes
+20:16:52.837289 (21)  > Checking sandbox...
+20:16:52.837355 (21)     > passed
+20:16:52.837409 (21)  
+20:16:52.865584 (22)  
+20:16:52.940083 (38)  START_LOG
+20:16:52.953399 (38)  SPLAYD LUA EXEC
+20:16:52.996654 (38)  >> Job settings:
+20:16:52.996780 (38)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:52.996850 (38)  Name: 
+20:16:52.996902 (38)  Description: 
+20:16:53.2107 (38)  Disk:
+20:16:53.2265 (38)  	max 512 files
+20:16:53.2399 (38)  	max 32 file descriptors
+20:16:53.28303 (38)  	max 67108864 size in bytes
+20:16:53.28407 (38)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:53.28461 (38)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:53.28513 (38)  Mem 2097152 bytes of memory
+20:16:53.28564 (38)  Network:
+20:16:53.28614 (38)  	max 134217728/134217728 send/receive bytes
+20:16:53.28665 (38)  	max 32 tcp sockets
+20:16:53.28715 (38)  	ip 172.17.0.33
+20:16:53.28766 (38)  	ports 14140-14140
+20:16:53.28835 (38)  
+20:16:53.46331 (38)  >> Into sandbox !!!
+20:16:53.46479 (38)  > Memory: 159.1513671875 KBytes
+20:16:53.46577 (38)  > Checking sandbox...
+20:16:53.46634 (38)     > passed
+20:16:53.46695 (38)  
+20:16:53.61695 (74)  >> Job settings:
+20:16:53.99251 (74)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:53.118477 (74)  Name: 
+20:16:53.118653 (74)  Description: 
+20:16:53.118720 (74)  Disk:
+20:16:53.118844 (74)  	max 512 files
+20:16:53.118898 (74)  	max 32 file descriptors
+20:16:53.118950 (74)  	max 67108864 size in bytes
+20:16:53.119001 (74)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_10/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:53.119052 (74)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_10/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:53.119143 (74)  Mem 2097152 bytes of memory
+20:16:53.119197 (74)  Network:
+20:16:53.119247 (74)  	max 134217728/134217728 send/receive bytes
+20:16:53.119297 (74)  	max 32 tcp sockets
+20:16:53.119348 (74)  	ip 172.17.0.27
+20:16:53.119443 (74)  	ports 17916-17916
+20:16:53.119497 (74)  
+20:16:53.237071 (59)  START_LOG
+20:16:53.244605 (59)  SPLAYD LUA EXEC
+20:16:53.328179 (95)  START_LOG
+20:16:53.343741 (95)  SPLAYD LUA EXEC
+20:16:53.400728 (39)  START_LOG
+20:16:53.418833 (39)  SPLAYD LUA EXEC
+20:16:53.448505 (95)  >> Job settings:
+20:16:53.450030 (74)  >> Into sandbox !!!
+20:16:53.455651 (74)  > Memory: 159.154296875 KBytes
+20:16:53.455727 (74)  > Checking sandbox...
+20:16:53.455779 (74)     > passed
+20:16:53.455830 (74)  
+20:16:53.477265 (39)  >> Job settings:
+20:16:53.509117 (39)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:53.509204 (39)  Name: 
+20:16:53.509258 (39)  Description: 
+20:16:53.509310 (39)  Disk:
+20:16:53.509363 (39)  	max 512 files
+20:16:53.509415 (39)  	max 32 file descriptors
+20:16:53.509468 (39)  	max 67108864 size in bytes
+20:16:53.509521 (39)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_8_4/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:53.509573 (39)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_8_4/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:53.509626 (39)  Mem 2097152 bytes of memory
+20:16:53.509755 (39)  Network:
+20:16:53.509810 (39)  	max 134217728/134217728 send/receive bytes
+20:16:53.509877 (39)  	max 32 tcp sockets
+20:16:53.509930 (39)  	ip 172.17.0.33
+20:16:53.509984 (39)  	ports 14665-14665
+20:16:53.510037 (39)  
+20:16:53.515049 (95)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:53.515165 (95)  Name: 
+20:16:53.515222 (95)  Description: 
+20:16:53.515277 (95)  Disk:
+20:16:53.515331 (95)  	max 512 files
+20:16:53.515386 (95)  	max 32 file descriptors
+20:16:53.515440 (95)  	max 67108864 size in bytes
+20:16:53.515494 (95)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_11/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:53.515564 (95)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_11/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:53.515621 (95)  Mem 2097152 bytes of memory
+20:16:53.515686 (95)  Network:
+20:16:53.516279 (95)  	max 134217728/134217728 send/receive bytes
+20:16:53.516337 (95)  	max 32 tcp sockets
+20:16:53.516392 (95)  	ip 172.17.0.29
+20:16:53.516447 (95)  	ports 18039-18039
+20:16:53.516501 (95)  
+20:16:53.521155 (39)  >> Into sandbox !!!
+20:16:53.521311 (39)  > Memory: 159.1513671875 KBytes
+20:16:53.521527 (39)  > Checking sandbox...
+20:16:53.521597 (39)     > passed
+20:16:53.521651 (39)  
+20:16:53.543684 (95)  >> Into sandbox !!!
+20:16:53.543907 (95)  > Memory: 159.154296875 KBytes
+20:16:53.545655 (95)  > Checking sandbox...
+20:16:53.545774 (95)     > passed
+20:16:53.545831 (95)  
+20:16:53.603953 (59)  >> Job settings:
+20:16:53.604168 (59)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:53.604240 (59)  Name: 
+20:16:53.604296 (59)  Description: 
+20:16:53.604351 (59)  Disk:
+20:16:53.604404 (59)  	max 512 files
+20:16:53.604459 (59)  	max 32 file descriptors
+20:16:53.604513 (59)  	max 67108864 size in bytes
+20:16:53.604567 (59)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_6_10/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:53.604621 (59)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_6_10/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:53.604674 (59)  Mem 2097152 bytes of memory
+20:16:53.604728 (59)  Network:
+20:16:53.604781 (59)  	max 134217728/134217728 send/receive bytes
+20:16:53.604850 (59)  	max 32 tcp sockets
+20:16:53.604904 (59)  	ip 172.17.0.31
+20:16:53.604957 (59)  	ports 17954-17954
+20:16:53.605010 (59)  
+20:16:53.720019 (59)  >> Into sandbox !!!
+20:16:53.720182 (59)  > Memory: 159.154296875 KBytes
+20:16:53.720252 (59)  > Checking sandbox...
+20:16:53.720360 (59)     > passed
+20:16:53.720456 (59)  
+20:16:53.724334 (56)  START_LOG
+20:16:53.728856 (56)  SPLAYD LUA EXEC
+20:16:53.820790 (18)  START_LOG
+20:16:53.842429 (18)  SPLAYD LUA EXEC
+20:16:53.892992 (18)  >> Job settings:
+20:16:53.933425 (18)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:53.933513 (18)  Name: 
+20:16:53.933569 (18)  Description: 
+20:16:53.933622 (18)  Disk:
+20:16:53.933675 (18)  	max 512 files
+20:16:53.933728 (18)  	max 32 file descriptors
+20:16:53.933867 (18)  	max 67108864 size in bytes
+20:16:53.933934 (18)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:53.933991 (18)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:53.934046 (18)  Mem 2097152 bytes of memory
+20:16:53.934099 (18)  Network:
+20:16:53.934151 (18)  	max 134217728/134217728 send/receive bytes
+20:16:53.934203 (18)  	max 32 tcp sockets
+20:16:53.934255 (18)  	ip 172.17.0.29
+20:16:53.934307 (18)  	ports 14108-14108
+20:16:53.934360 (18)  
+20:16:53.953246 (78)  START_LOG
+20:16:53.953373 (78)  SPLAYD LUA EXEC
+20:16:53.953463 (76)  START_LOG
+20:16:53.953541 (76)  SPLAYD LUA EXEC
+20:16:53.963041 (18)  >> Into sandbox !!!
+20:16:53.963238 (18)  > Memory: 159.1513671875 KBytes
+20:16:53.964182 (18)  > Checking sandbox...
+20:16:53.964683 (18)     > passed
+20:16:53.964742 (18)  
+20:16:53.965288 (58)  START_LOG
+20:16:53.965363 (58)  SPLAYD LUA EXEC
+20:16:53.968369 (57)  START_LOG
+20:16:53.968501 (57)  SPLAYD LUA EXEC
+20:16:54.1584 (56)  >> Job settings:
+20:16:54.8561 (56)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:54.8643 (56)  Name: 
+20:16:54.8694 (56)  Description: 
+20:16:54.8743 (56)  Disk:
+20:16:54.8792 (56)  	max 512 files
+20:16:54.8872 (56)  	max 32 file descriptors
+20:16:54.8923 (56)  	max 67108864 size in bytes
+20:16:54.8973 (56)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_6_6/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:54.9023 (56)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_6_6/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:54.9073 (56)  Mem 2097152 bytes of memory
+20:16:54.9123 (56)  Network:
+20:16:54.9172 (56)  	max 134217728/134217728 send/receive bytes
+20:16:54.9221 (56)  	max 32 tcp sockets
+20:16:54.9270 (56)  	ip 172.17.0.31
+20:16:54.9402 (56)  	ports 15587-15587
+20:16:54.9455 (56)  
+20:16:54.40540 (76)  >> Job settings:
+20:16:54.40711 (76)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:54.40766 (76)  Name: 
+20:16:54.40833 (76)  Description: 
+20:16:54.40885 (76)  Disk:
+20:16:54.40935 (76)  	max 512 files
+20:16:54.40984 (76)  	max 32 file descriptors
+20:16:54.41035 (76)  	max 67108864 size in bytes
+20:16:54.41086 (76)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_6/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:54.41136 (76)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_6/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:54.41186 (76)  Mem 2097152 bytes of memory
+20:16:54.41281 (76)  Network:
+20:16:54.41334 (76)  	max 134217728/134217728 send/receive bytes
+20:16:54.41394 (76)  	max 32 tcp sockets
+20:16:54.41448 (76)  	ip 172.17.0.26
+20:16:54.41498 (76)  	ports 15867-15867
+20:16:54.49395 (76)  
+20:16:54.105568 (78)  >> Job settings:
+20:16:54.105684 (78)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:54.105740 (78)  Name: 
+20:16:54.105794 (78)  Description: 
+20:16:54.105848 (78)  Disk:
+20:16:54.106004 (78)  	max 512 files
+20:16:54.106076 (78)  	max 32 file descriptors
+20:16:54.106133 (78)  	max 67108864 size in bytes
+20:16:54.106186 (78)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_2_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:54.106240 (78)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_2_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:54.106295 (78)  Mem 2097152 bytes of memory
+20:16:54.106348 (78)  Network:
+20:16:54.106402 (78)  	max 134217728/134217728 send/receive bytes
+20:16:54.106456 (78)  	max 32 tcp sockets
+20:16:54.106511 (78)  	ip 172.17.0.26
+20:16:54.106565 (78)  	ports 16990-16990
+20:16:54.106619 (78)  
+20:16:54.150811 (78)  >> Into sandbox !!!
+20:16:54.191223 (78)  > Memory: 159.1513671875 KBytes
+20:16:54.191314 (78)  > Checking sandbox...
+20:16:54.191369 (78)     > passed
+20:16:54.191424 (78)  
+20:16:54.248014 (76)  >> Into sandbox !!!
+20:16:54.282808 (76)  > Memory: 159.1513671875 KBytes
+20:16:54.282907 (76)  > Checking sandbox...
+20:16:54.282959 (76)     > passed
+20:16:54.283010 (76)  
+20:16:54.344676 (57)  >> Job settings:
+20:16:54.344795 (57)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:54.344873 (57)  Name: 
+20:16:54.344930 (57)  Description: 
+20:16:54.344986 (57)  Disk:
+20:16:54.345041 (57)  	max 512 files
+20:16:54.345096 (57)  	max 32 file descriptors
+20:16:54.345151 (57)  	max 67108864 size in bytes
+20:16:54.345206 (57)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_6_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:54.345262 (57)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_6_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:54.345317 (57)  Mem 2097152 bytes of memory
+20:16:54.345373 (57)  Network:
+20:16:54.345442 (57)  	max 134217728/134217728 send/receive bytes
+20:16:54.345498 (57)  	max 32 tcp sockets
+20:16:54.345553 (57)  	ip 172.17.0.31
+20:16:54.345608 (57)  	ports 16954-16954
+20:16:54.345663 (57)  
+20:16:54.345760 (56)  >> Into sandbox !!!
+20:16:54.345827 (56)  > Memory: 159.1513671875 KBytes
+20:16:54.345876 (56)  > Checking sandbox...
+20:16:54.345926 (56)     > passed
+20:16:54.345975 (56)  
+20:16:54.350278 (58)  >> Job settings:
+20:16:54.474092 (58)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:54.474180 (58)  Name: 
+20:16:54.474232 (58)  Description: 
+20:16:54.474282 (58)  Disk:
+20:16:54.474354 (58)  	max 512 files
+20:16:54.474405 (58)  	max 32 file descriptors
+20:16:54.474455 (58)  	max 67108864 size in bytes
+20:16:54.474504 (58)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_6_7/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:54.474555 (58)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_6_7/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:54.474606 (58)  Mem 2097152 bytes of memory
+20:16:54.474656 (58)  Network:
+20:16:54.474706 (58)  	max 134217728/134217728 send/receive bytes
+20:16:54.474756 (58)  	max 32 tcp sockets
+20:16:54.474808 (58)  	ip 172.17.0.31
+20:16:54.474858 (58)  	ports 16030-16030
+20:16:54.474908 (58)  
+20:16:54.529554 (92)  START_LOG
+20:16:54.530118 (92)  SPLAYD LUA EXEC
+20:16:54.605675 (77)  waiting for 4.4637795698195 to desynchronize
+20:16:54.713751 (111)  START_LOG
+20:16:54.714272 (111)  SPLAYD LUA EXEC
+20:16:54.867142 (111)  >> Job settings:
+20:16:54.873097 (111)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:54.873173 (111)  Name: 
+20:16:54.877613 (111)  Description: 
+20:16:54.878420 (111)  Disk:
+20:16:54.878853 (111)  	max 512 files
+20:16:54.880052 (111)  	max 32 file descriptors
+20:16:54.880109 (111)  	max 67108864 size in bytes
+20:16:54.880212 (111)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_11/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:54.880269 (111)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_11/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:54.880322 (111)  Mem 2097152 bytes of memory
+20:16:54.887717 (111)  Network:
+20:16:54.887950 (111)  	max 134217728/134217728 send/receive bytes
+20:16:54.888011 (111)  	max 32 tcp sockets
+20:16:54.888064 (111)  	ip 172.17.0.32
+20:16:54.888117 (111)  	ports 18096-18096
+20:16:54.888170 (111)  
+20:16:54.892205 (22)  waiting for 0.43575871523272 to desynchronize
+20:16:54.928904 (21)  waiting for 4.2687301753409 to desynchronize
+20:16:55.71439 (111)  >> Into sandbox !!!
+20:16:55.72526 (111)  > Memory: 159.154296875 KBytes
+20:16:55.72733 (111)  > Checking sandbox...
+20:16:55.72794 (111)     > passed
+20:16:55.72906 (111)  
+20:16:55.283480 (92)  >> Job settings:
+20:16:55.283759 (92)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:55.284383 (92)  Name: 
+20:16:55.284471 (92)  Description: 
+20:16:55.284836 (92)  Disk:
+20:16:55.285277 (92)  	max 512 files
+20:16:55.297946 (92)  	max 32 file descriptors
+20:16:55.298349 (92)  	max 67108864 size in bytes
+20:16:55.303558 (92)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_12/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:55.303741 (92)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_12/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:55.303802 (92)  Mem 2097152 bytes of memory
+20:16:55.303858 (92)  Network:
+20:16:55.309727 (92)  	max 134217728/134217728 send/receive bytes
+20:16:55.309912 (92)  	max 32 tcp sockets
+20:16:55.309975 (92)  	ip 172.17.0.27
+20:16:55.310031 (92)  	ports 18911-18911
+20:16:55.310087 (92)  
+20:16:55.594556 (57)  >> Into sandbox !!!
+20:16:55.595565 (57)  > Memory: 159.1513671875 KBytes
+20:16:55.595827 (57)  > Checking sandbox...
+20:16:55.595886 (57)     > passed
+20:16:55.595950 (57)  
+20:16:55.599143 (58)  >> Into sandbox !!!
+20:16:55.599756 (58)  > Memory: 159.1513671875 KBytes
+20:16:55.600352 (58)  > Checking sandbox...
+20:16:55.600415 (58)     > passed
+20:16:55.600466 (58)  
+20:16:55.737905 (74)  waiting for 4.2646244071725 to desynchronize
+20:16:55.791012 (59)  waiting for 0.96741082424643 to desynchronize
+20:16:55.816712 (92)  >> Into sandbox !!!
+20:16:55.816842 (92)  > Memory: 159.154296875 KBytes
+20:16:55.816900 (92)  > Checking sandbox...
+20:16:55.816956 (92)     > passed
+20:16:55.817011 (92)  
+20:16:55.957708 (112)  START_LOG
+20:16:55.960141 (112)  SPLAYD LUA EXEC
+20:16:55.977581 (39)  waiting for 0.25898076838766 to desynchronize
+20:16:55.977735 (38)  waiting for 3.2685913556575 to desynchronize
+20:16:56.8616 (75)  START_LOG
+20:16:56.28603 (75)  SPLAYD LUA EXEC
+20:16:56.54028 (95)  waiting for 2.9042262504363 to desynchronize
+20:16:56.54231 (18)  20:17:08
+20:16:56.54302 (18)  i_am_infected
+20:16:56.54356 (18)  waiting for 0 to desynchronize
+20:16:56.60222 (114)  START_LOG
+20:16:56.76119 (20)  START_LOG
+20:16:56.84916 (20)  SPLAYD LUA EXEC
+20:16:56.124562 (55)  START_LOG
+20:16:56.128136 (94)  START_LOG
+20:16:56.136529 (55)  SPLAYD LUA EXEC
+20:16:56.137592 (114)  SPLAYD LUA EXEC
+20:16:56.152687 (94)  SPLAYD LUA EXEC
+20:16:56.203496 (20)  >> Job settings:
+20:16:56.210856 (20)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:56.211026 (20)  Name: 
+20:16:56.211084 (20)  Description: 
+20:16:56.211175 (20)  Disk:
+20:16:56.211230 (20)  	max 512 files
+20:16:56.211283 (20)  	max 32 file descriptors
+20:16:56.211337 (20)  	max 67108864 size in bytes
+20:16:56.211444 (20)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_4_1/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:56.211503 (20)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_4_1/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:56.211880 (20)  Mem 2097152 bytes of memory
+20:16:56.211986 (20)  Network:
+20:16:56.212044 (20)  	max 134217728/134217728 send/receive bytes
+20:16:56.212098 (20)  	max 32 tcp sockets
+20:16:56.212151 (20)  	ip 172.17.0.29
+20:16:56.212204 (20)  	ports 13006-13006
+20:16:56.212258 (20)  
+20:16:56.220005 (78)  waiting for 4.564586800786 to desynchronize
+20:16:56.240357 (76)  waiting for 3.4519742282349 to desynchronize
+20:16:56.327947 (112)  >> Job settings:
+20:16:56.328059 (112)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:56.328113 (112)  Name: 
+20:16:56.328166 (112)  Description: 
+20:16:56.328217 (112)  Disk:
+20:16:56.328269 (112)  	max 512 files
+20:16:56.328321 (112)  	max 32 file descriptors
+20:16:56.328373 (112)  	max 67108864 size in bytes
+20:16:56.328426 (112)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_12/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:56.328479 (112)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_12/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:56.328531 (112)  Mem 2097152 bytes of memory
+20:16:56.328583 (112)  Network:
+20:16:56.328634 (112)  	max 134217728/134217728 send/receive bytes
+20:16:56.328686 (112)  	max 32 tcp sockets
+20:16:56.328737 (112)  	ip 172.17.0.32
+20:16:56.328789 (112)  	ports 18550-18550
+20:16:56.328864 (112)  
+20:16:56.332867 (55)  >> Job settings:
+20:16:56.345658 (20)  >> Into sandbox !!!
+20:16:56.345813 (20)  > Memory: 159.1513671875 KBytes
+20:16:56.345872 (20)  > Checking sandbox...
+20:16:56.345927 (20)     > passed
+20:16:56.345980 (20)  
+20:16:56.353082 (55)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:56.356964 (55)  Name: 
+20:16:56.357693 (55)  Description: 
+20:16:56.362275 (55)  Disk:
+20:16:56.362403 (55)  	max 512 files
+20:16:56.362475 (55)  	max 32 file descriptors
+20:16:56.362528 (55)  	max 67108864 size in bytes
+20:16:56.362629 (55)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:56.362682 (55)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:56.362734 (55)  Mem 2097152 bytes of memory
+20:16:56.362830 (55)  Network:
+20:16:56.362885 (55)  	max 134217728/134217728 send/receive bytes
+20:16:56.362937 (55)  	max 32 tcp sockets
+20:16:56.362988 (55)  	ip 172.17.0.32
+20:16:56.363039 (55)  	ports 16522-16522
+20:16:56.363090 (55)  
+20:16:56.390517 (56)  waiting for 4.1788771232492 to desynchronize
+20:16:56.396617 (114)  >> Job settings:
+20:16:56.416544 (114)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:56.417291 (114)  Name: 
+20:16:56.417736 (114)  Description: 
+20:16:56.418169 (114)  Disk:
+20:16:56.419988 (114)  	max 512 files
+20:16:56.421499 (114)  	max 32 file descriptors
+20:16:56.421557 (114)  	max 67108864 size in bytes
+20:16:56.421664 (114)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_7_14/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:56.421721 (114)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_7_14/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:56.421774 (114)  Mem 2097152 bytes of memory
+20:16:56.421873 (114)  Network:
+20:16:56.421926 (114)  	max 134217728/134217728 send/receive bytes
+20:16:56.421981 (114)  	max 32 tcp sockets
+20:16:56.422033 (114)  	ip 172.17.0.32
+20:16:56.422128 (114)  	ports 19550-19550
+20:16:56.422183 (114)  
+20:16:56.428570 (112)  >> Into sandbox !!!
+20:16:56.502663 (112)  > Memory: 159.154296875 KBytes
+20:16:56.502754 (112)  > Checking sandbox...
+20:16:56.502809 (112)     > passed
+20:16:56.502861 (112)  
+20:16:56.548765 (55)  >> Into sandbox !!!
+20:16:56.548980 (55)  > Memory: 159.1513671875 KBytes
+20:16:56.549038 (55)  > Checking sandbox...
+20:16:56.549091 (55)     > passed
+20:16:56.549142 (55)  
+20:16:56.568652 (114)  >> Into sandbox !!!
+20:16:56.569224 (114)  > Memory: 159.154296875 KBytes
+20:16:56.569440 (114)  > Checking sandbox...
+20:16:56.569501 (114)     > passed
+20:16:56.569554 (114)  
+20:16:56.675884 (75)  >> Job settings:
+20:16:56.693883 (75)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:56.693971 (75)  Name: 
+20:16:56.694025 (75)  Description: 
+20:16:56.694078 (75)  Disk:
+20:16:56.694130 (75)  	max 512 files
+20:16:56.694183 (75)  	max 32 file descriptors
+20:16:56.694235 (75)  	max 67108864 size in bytes
+20:16:56.694288 (75)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:56.694341 (75)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_8/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:56.694395 (75)  Mem 2097152 bytes of memory
+20:16:56.694447 (75)  Network:
+20:16:56.694499 (75)  	max 134217728/134217728 send/receive bytes
+20:16:56.694552 (75)  	max 32 tcp sockets
+20:16:56.694606 (75)  	ip 172.17.0.27
+20:16:56.694659 (75)  	ports 16839-16839
+20:16:56.694711 (75)  
+20:16:57.56310 (94)  >> Job settings:
+20:16:57.56983 (94)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:57.57067 (94)  Name: 
+20:16:57.57126 (94)  Description: 
+20:16:57.57183 (94)  Disk:
+20:16:57.61820 (94)  	max 512 files
+20:16:57.61925 (94)  	max 32 file descriptors
+20:16:57.61985 (94)  	max 67108864 size in bytes
+20:16:57.62042 (94)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_3_14/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:57.62101 (94)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_3_14/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:57.62172 (94)  Mem 2097152 bytes of memory
+20:16:57.62229 (94)  Network:
+20:16:57.62286 (94)  	max 134217728/134217728 send/receive bytes
+20:16:57.62343 (94)  	max 32 tcp sockets
+20:16:57.69787 (94)  	ip 172.17.0.27
+20:16:57.69999 (94)  	ports 19852-19852
+20:16:57.70064 (94)  
+20:16:57.173920 (111)  waiting for 2.5906222837933 to desynchronize
+20:16:57.242393 (75)  >> Into sandbox !!!
+20:16:57.243294 (75)  > Memory: 159.1513671875 KBytes
+20:16:57.243365 (75)  > Checking sandbox...
+20:16:57.243419 (75)     > passed
+20:16:57.243472 (75)  
+20:16:57.412645 (94)  >> Into sandbox !!!
+20:16:57.413265 (94)  > Memory: 159.154296875 KBytes
+20:16:57.413345 (94)  > Checking sandbox...
+20:16:57.413404 (94)     > passed
+20:16:57.413462 (94)  
+20:16:57.663029 (57)  waiting for 1.7057031936504 to desynchronize
+20:16:57.681338 (58)  waiting for 0.37526923016425 to desynchronize
+20:16:57.882912 (132)  START_LOG
+20:16:57.883901 (132)  SPLAYD LUA EXEC
+20:16:57.916051 (132)  >> Job settings:
+20:16:57.932126 (132)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:57.932210 (132)  Name: 
+20:16:57.932265 (132)  Description: 
+20:16:57.932319 (132)  Disk:
+20:16:57.932479 (132)  	max 512 files
+20:16:57.932539 (132)  	max 32 file descriptors
+20:16:57.932593 (132)  	max 67108864 size in bytes
+20:16:57.932647 (132)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_18/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:57.932702 (132)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_18/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:57.932757 (132)  Mem 2097152 bytes of memory
+20:16:57.932874 (132)  Network:
+20:16:57.932933 (132)  	max 134217728/134217728 send/receive bytes
+20:16:57.932988 (132)  	max 32 tcp sockets
+20:16:57.933044 (132)  	ip 172.17.0.36
+20:16:57.933099 (132)  	ports 21680-21680
+20:16:57.933156 (132)  
+20:16:57.949597 (132)  >> Into sandbox !!!
+20:16:57.949809 (132)  > Memory: 159.2265625 KBytes
+20:16:57.950015 (132)  > Checking sandbox...
+20:16:57.950216 (132)     > passed
+20:16:57.950409 (132)  
+20:16:58.14072 (92)  waiting for 2.7005288180432 to desynchronize
+20:16:58.318766 (20)  waiting for 2.7053306893005 to desynchronize
+20:16:58.375681 (131)  START_LOG
+20:16:58.377002 (131)  SPLAYD LUA EXEC
+20:16:58.408787 (131)  >> Job settings:
+20:16:58.430977 (131)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:58.431068 (131)  Name: 
+20:16:58.431168 (131)  Description: 
+20:16:58.431224 (131)  Disk:
+20:16:58.431330 (131)  	max 512 files
+20:16:58.431385 (131)  	max 32 file descriptors
+20:16:58.431439 (131)  	max 67108864 size in bytes
+20:16:58.431493 (131)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_15/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:58.431547 (131)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_15/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:58.431602 (131)  Mem 2097152 bytes of memory
+20:16:58.431703 (131)  Network:
+20:16:58.431759 (131)  	max 134217728/134217728 send/receive bytes
+20:16:58.431812 (131)  	max 32 tcp sockets
+20:16:58.431865 (131)  	ip 172.17.0.36
+20:16:58.431919 (131)  	ports 20129-20129
+20:16:58.431972 (131)  
+20:16:58.443136 (131)  >> Into sandbox !!!
+20:16:58.443322 (131)  > Memory: 159.2265625 KBytes
+20:16:58.443529 (131)  > Checking sandbox...
+20:16:58.443794 (131)     > passed
+20:16:58.443988 (131)  
+20:16:58.485926 (112)  waiting for 3.7073010386467 to desynchronize
+20:16:58.546363 (55)  waiting for 0.91163550546003 to desynchronize
+20:16:58.605269 (114)  waiting for 2.458937516184 to desynchronize
+20:16:58.663178 (130)  START_LOG
+20:16:58.680215 (130)  SPLAYD LUA EXEC
+20:16:58.695794 (130)  >> Job settings:
+20:16:58.695989 (130)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:58.696171 (130)  Name: 
+20:16:58.696376 (130)  Description: 
+20:16:58.696558 (130)  Disk:
+20:16:58.696794 (130)  	max 512 files
+20:16:58.697023 (130)  	max 32 file descriptors
+20:16:58.697291 (130)  	max 67108864 size in bytes
+20:16:58.697503 (130)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_30/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:58.698990 (130)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_30/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:58.699095 (130)  Mem 2097152 bytes of memory
+20:16:58.699299 (130)  Network:
+20:16:58.699367 (130)  	max 134217728/134217728 send/receive bytes
+20:16:58.699426 (130)  	max 32 tcp sockets
+20:16:58.699484 (130)  	ip 172.17.0.36
+20:16:58.699539 (130)  	ports 27814-27814
+20:16:58.699595 (130)  
+20:16:58.733314 (130)  >> Into sandbox !!!
+20:16:58.733559 (130)  > Memory: 159.2265625 KBytes
+20:16:58.733630 (130)  > Checking sandbox...
+20:16:58.733689 (130)     > passed
+20:16:58.733744 (130)  
+20:16:58.869637 (133)  START_LOG
+20:16:58.871994 (133)  SPLAYD LUA EXEC
+20:16:58.903566 (133)  >> Job settings:
+20:16:58.929635 (133)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:58.929739 (133)  Name: 
+20:16:58.929794 (133)  Description: 
+20:16:58.929917 (133)  Disk:
+20:16:58.929975 (133)  	max 512 files
+20:16:58.930028 (133)  	max 32 file descriptors
+20:16:58.930083 (133)  	max 67108864 size in bytes
+20:16:58.930137 (133)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_27/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:58.930191 (133)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_27/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:58.930245 (133)  Mem 2097152 bytes of memory
+20:16:58.930342 (133)  Network:
+20:16:58.930399 (133)  	max 134217728/134217728 send/receive bytes
+20:16:58.930463 (133)  	max 32 tcp sockets
+20:16:58.930517 (133)  	ip 172.17.0.36
+20:16:58.930570 (133)  	ports 26319-26319
+20:16:58.930623 (133)  
+20:16:58.938357 (133)  >> Into sandbox !!!
+20:16:58.938568 (133)  > Memory: 159.2265625 KBytes
+20:16:58.938778 (133)  > Checking sandbox...
+20:16:58.938980 (133)     > passed
+20:16:58.939174 (133)  
+20:16:59.147581 (129)  START_LOG
+20:16:59.147687 (129)  SPLAYD LUA EXEC
+20:16:59.178852 (129)  >> Job settings:
+20:16:59.179080 (129)  Ref: 549185a5be970f883c01dca62bb10a67
+20:16:59.179266 (129)  Name: 
+20:16:59.179402 (129)  Description: 
+20:16:59.179467 (129)  Disk:
+20:16:59.179542 (129)  	max 512 files
+20:16:59.179713 (129)  	max 32 file descriptors
+20:16:59.179927 (129)  	max 67108864 size in bytes
+20:16:59.180184 (129)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_29/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:16:59.180794 (129)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_29/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:16:59.180975 (129)  Mem 2097152 bytes of memory
+20:16:59.181190 (129)  Network:
+20:16:59.181252 (129)  	max 134217728/134217728 send/receive bytes
+20:16:59.181401 (129)  	max 32 tcp sockets
+20:16:59.181596 (129)  	ip 172.17.0.36
+20:16:59.181795 (129)  	ports 27372-27372
+20:16:59.181986 (129)  
+20:16:59.213191 (129)  >> Into sandbox !!!
+20:16:59.213405 (129)  > Memory: 159.2265625 KBytes
+20:16:59.213607 (129)  > Checking sandbox...
+20:16:59.213803 (129)     > passed
+20:16:59.213998 (129)  
+20:16:59.755087 (75)  waiting for 4.5307840544408 to desynchronize
+20:16:59.867077 (94)  waiting for 3.7733100325676 to desynchronize
+20:16:59.964532 (132)  waiting for 0.2124969895056 to desynchronize
+20:17:00.457898 (131)  waiting for 1.1953249183462 to desynchronize
+20:17:00.652753 (148)  START_LOG
+20:17:00.653414 (148)  SPLAYD LUA EXEC
+20:17:00.687521 (148)  >> Job settings:
+20:17:00.687698 (148)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:00.687763 (148)  Name: 
+20:17:00.687817 (148)  Description: 
+20:17:00.687870 (148)  Disk:
+20:17:00.687922 (148)  	max 512 files
+20:17:00.687975 (148)  	max 32 file descriptors
+20:17:00.688029 (148)  	max 67108864 size in bytes
+20:17:00.688083 (148)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_31/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:00.688138 (148)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_31/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:00.688193 (148)  Mem 2097152 bytes of memory
+20:17:00.688291 (148)  Network:
+20:17:00.688347 (148)  	max 134217728/134217728 send/receive bytes
+20:17:00.688411 (148)  	max 32 tcp sockets
+20:17:00.688560 (148)  	ip 172.17.0.36
+20:17:00.688616 (148)  	ports 28314-28314
+20:17:00.688679 (148)  
+20:17:00.719418 (148)  >> Into sandbox !!!
+20:17:00.719625 (148)  > Memory: 159.2265625 KBytes
+20:17:00.720399 (148)  > Checking sandbox...
+20:17:00.720615 (148)     > passed
+20:17:00.720687 (148)  
+20:17:00.745069 (130)  waiting for 0.24659873929182 to desynchronize
+20:17:00.953205 (133)  waiting for 3.9351799287531 to desynchronize
+20:17:01.5592 (18)  1 proceeds to forwarding to 2 peers
+20:17:01.122067 (94)  node 20 (no) was notified with hops 0 (HTL=5)
+20:17:01.122186 (94)  i_am_infected
+20:17:01.228015 (129)  waiting for 0.3074960481876 to desynchronize
+20:17:02.734114 (148)  waiting for 0.99862661492016 to desynchronize
+20:17:06.48859 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:07.592470 (149)  START_LOG
+20:17:07.594718 (149)  SPLAYD LUA EXEC
+20:17:07.626431 (149)  >> Job settings:
+20:17:07.641440 (149)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:07.641585 (149)  Name: 
+20:17:07.641645 (149)  Description: 
+20:17:07.641701 (149)  Disk:
+20:17:07.641757 (149)  	max 512 files
+20:17:07.641858 (149)  	max 32 file descriptors
+20:17:07.652037 (149)  	max 67108864 size in bytes
+20:17:07.652102 (149)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_9_34/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:07.652241 (149)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_9_34/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:07.653226 (149)  Mem 2097152 bytes of memory
+20:17:07.653415 (149)  Network:
+20:17:07.653476 (149)  	max 134217728/134217728 send/receive bytes
+20:17:07.653533 (149)  	max 32 tcp sockets
+20:17:07.653589 (149)  	ip 172.17.0.36
+20:17:07.653644 (149)  	ports 29996-29996
+20:17:07.653700 (149)  
+20:17:07.660766 (149)  >> Into sandbox !!!
+20:17:07.660989 (149)  > Memory: 159.2265625 KBytes
+20:17:07.661206 (149)  > Checking sandbox...
+20:17:07.661404 (149)     > passed
+20:17:07.661602 (149)  
+20:17:08.652077 (94)  20 proceeds to forwarding to 2 peers
+20:17:09.676193 (149)  waiting for 1.3592048531208 to desynchronize
+20:17:11.53481 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:13.685181 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:16.55906 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:18.678791 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:21.42888 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:23.706422 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:26.55038 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:28.718310 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:31.475249 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:33.706807 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:35.385595 (187)  START_LOG
+20:17:35.386388 (187)  SPLAYD LUA EXEC
+20:17:35.417627 (187)  >> Job settings:
+20:17:35.417834 (187)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:35.418011 (187)  Name: 
+20:17:35.418230 (187)  Description: 
+20:17:35.418440 (187)  Disk:
+20:17:35.418603 (187)  	max 512 files
+20:17:35.418831 (187)  	max 32 file descriptors
+20:17:35.419052 (187)  	max 67108864 size in bytes
+20:17:35.419294 (187)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_27/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:35.419642 (187)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_27/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:35.419826 (187)  Mem 2097152 bytes of memory
+20:17:35.420103 (187)  Network:
+20:17:35.420304 (187)  	max 134217728/134217728 send/receive bytes
+20:17:35.420505 (187)  	max 32 tcp sockets
+20:17:35.420705 (187)  	ip 172.17.0.40
+20:17:35.420916 (187)  	ports 26261-26261
+20:17:35.421108 (187)  
+20:17:35.450977 (187)  >> Into sandbox !!!
+20:17:35.451220 (187)  > Memory: 159.2294921875 KBytes
+20:17:35.451423 (187)  > Checking sandbox...
+20:17:35.451630 (187)     > passed
+20:17:35.451700 (187)  
+20:17:36.86972 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:37.465596 (187)  waiting for 0.63234836358221 to desynchronize
+20:17:38.363517 (2)  START_LOG
+20:17:38.364081 (2)  SPLAYD LUA EXEC
+20:17:38.519020 (2)  >> Job settings:
+20:17:38.550760 (2)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:38.550875 (2)  Name: 
+20:17:38.550941 (2)  Description: 
+20:17:38.551006 (2)  Disk:
+20:17:38.552862 (2)  	max 512 files
+20:17:38.553001 (2)  	max 32 file descriptors
+20:17:38.553071 (2)  	max 67108864 size in bytes
+20:17:38.553138 (2)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_2/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:38.553205 (2)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_2/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:38.553271 (2)  Mem 2097152 bytes of memory
+20:17:38.553336 (2)  Network:
+20:17:38.553400 (2)  	max 134217728/134217728 send/receive bytes
+20:17:38.553465 (2)  	max 32 tcp sockets
+20:17:38.553531 (2)  	ip 172.17.0.25
+20:17:38.553595 (2)  	ports 13623-13623
+20:17:38.553660 (2)  
+20:17:38.625352 (2)  >> Into sandbox !!!
+20:17:38.675657 (2)  > Memory: 159.1513671875 KBytes
+20:17:38.675832 (2)  > Checking sandbox...
+20:17:38.675902 (2)     > passed
+20:17:38.675968 (2)  
+20:17:38.746993 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:38.854536 (188)  START_LOG
+20:17:38.925747 (188)  SPLAYD LUA EXEC
+20:17:38.925850 (188)  >> Job settings:
+20:17:38.925919 (188)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:38.926077 (188)  Name: 
+20:17:38.926144 (188)  Description: 
+20:17:38.926208 (188)  Disk:
+20:17:38.926273 (188)  	max 512 files
+20:17:38.926338 (188)  	max 32 file descriptors
+20:17:38.926417 (188)  	max 67108864 size in bytes
+20:17:38.926481 (188)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_47/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:38.926546 (188)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_47/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:38.926612 (188)  Mem 2097152 bytes of memory
+20:17:38.926688 (188)  Network:
+20:17:38.926752 (188)  	max 134217728/134217728 send/receive bytes
+20:17:38.926816 (188)  	max 32 tcp sockets
+20:17:38.926879 (188)  	ip 172.17.0.40
+20:17:38.926943 (188)  	ports 36038-36038
+20:17:38.927008 (188)  
+20:17:38.927071 (188)  >> Into sandbox !!!
+20:17:38.927179 (188)  > Memory: 159.2294921875 KBytes
+20:17:38.927244 (188)  > Checking sandbox...
+20:17:38.927309 (188)     > passed
+20:17:38.927373 (188)  
+20:17:39.151468 (1)  START_LOG
+20:17:39.159005 (1)  SPLAYD LUA EXEC
+20:17:39.319334 (1)  >> Job settings:
+20:17:39.320113 (1)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:39.320195 (1)  Name: 
+20:17:39.320252 (1)  Description: 
+20:17:39.320308 (1)  Disk:
+20:17:39.320364 (1)  	max 512 files
+20:17:39.320420 (1)  	max 32 file descriptors
+20:17:39.320476 (1)  	max 67108864 size in bytes
+20:17:39.320533 (1)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_1/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:39.320589 (1)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_1/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:39.320645 (1)  Mem 2097152 bytes of memory
+20:17:39.320701 (1)  Network:
+20:17:39.320756 (1)  	max 134217728/134217728 send/receive bytes
+20:17:39.320833 (1)  	max 32 tcp sockets
+20:17:39.320891 (1)  	ip 172.17.0.25
+20:17:39.320946 (1)  	ports 13437-13437
+20:17:39.321002 (1)  
+20:17:39.405002 (1)  >> Into sandbox !!!
+20:17:39.416731 (1)  > Memory: 159.1513671875 KBytes
+20:17:39.416836 (1)  > Checking sandbox...
+20:17:39.416897 (1)     > passed
+20:17:39.416953 (1)  
+20:17:39.628869 (167)  START_LOG
+20:17:39.631167 (167)  SPLAYD LUA EXEC
+20:17:39.662579 (167)  >> Job settings:
+20:17:39.755783 (167)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:39.755880 (167)  Name: 
+20:17:39.755945 (167)  Description: 
+20:17:39.756007 (167)  Disk:
+20:17:39.756070 (167)  	max 512 files
+20:17:39.756132 (167)  	max 32 file descriptors
+20:17:39.756194 (167)  	max 67108864 size in bytes
+20:17:39.756258 (167)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_22/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:39.756321 (167)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_22/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:39.756385 (167)  Mem 2097152 bytes of memory
+20:17:39.756448 (167)  Network:
+20:17:39.756512 (167)  	max 134217728/134217728 send/receive bytes
+20:17:39.756574 (167)  	max 32 tcp sockets
+20:17:39.756637 (167)  	ip 172.17.0.40
+20:17:39.756699 (167)  	ports 23698-23698
+20:17:39.756762 (167)  
+20:17:39.756846 (167)  >> Into sandbox !!!
+20:17:39.756910 (167)  > Memory: 159.2294921875 KBytes
+20:17:39.756973 (167)  > Checking sandbox...
+20:17:39.757036 (167)     > passed
+20:17:39.757098 (167)  
+20:17:40.634826 (168)  START_LOG
+20:17:40.738373 (168)  SPLAYD LUA EXEC
+20:17:40.738466 (168)  >> Job settings:
+20:17:40.738526 (168)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:40.738584 (168)  Name: 
+20:17:40.738641 (168)  Description: 
+20:17:40.738699 (168)  Disk:
+20:17:40.738756 (168)  	max 512 files
+20:17:40.738813 (168)  	max 32 file descriptors
+20:17:40.738870 (168)  	max 67108864 size in bytes
+20:17:40.738942 (168)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_20/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:40.739000 (168)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_20/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:40.739058 (168)  Mem 2097152 bytes of memory
+20:17:40.739155 (168)  Network:
+20:17:40.739215 (168)  	max 134217728/134217728 send/receive bytes
+20:17:40.739272 (168)  	max 32 tcp sockets
+20:17:40.739329 (168)  	ip 172.17.0.40
+20:17:40.739387 (168)  	ports 22894-22894
+20:17:40.739445 (168)  
+20:17:40.739502 (168)  >> Into sandbox !!!
+20:17:40.739558 (168)  > Memory: 159.2294921875 KBytes
+20:17:40.739616 (168)  > Checking sandbox...
+20:17:40.739673 (168)     > passed
+20:17:40.739730 (168)  
+20:17:40.789877 (2)  waiting for 0.46468983658808 to desynchronize
+20:17:40.935867 (188)  waiting for 3.3380013044635 to desynchronize
+20:17:41.107276 (18)  [splay.events] W: Periodic: thread: 0x97a11c8 from function: 0x97699d0 is not dead, we wait
+20:17:41.449368 (1)  waiting for 0.11747402144478 to desynchronize
+20:17:41.659078 (166)  START_LOG
+20:17:41.661312 (166)  SPLAYD LUA EXEC
+20:17:41.693290 (166)  >> Job settings:
+20:17:41.717476 (166)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:41.717574 (166)  Name: 
+20:17:41.717633 (166)  Description: 
+20:17:41.717692 (166)  Disk:
+20:17:41.717806 (166)  	max 512 files
+20:17:41.717866 (166)  	max 32 file descriptors
+20:17:41.717924 (166)  	max 67108864 size in bytes
+20:17:41.717982 (166)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_18/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:41.718040 (166)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_18/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:41.718099 (166)  Mem 2097152 bytes of memory
+20:17:41.718202 (166)  Network:
+20:17:41.718264 (166)  	max 134217728/134217728 send/receive bytes
+20:17:41.718321 (166)  	max 32 tcp sockets
+20:17:41.718379 (166)  	ip 172.17.0.40
+20:17:41.718437 (166)  	ports 21687-21687
+20:17:41.718494 (166)  
+20:17:41.728682 (166)  >> Into sandbox !!!
+20:17:41.728919 (166)  > Memory: 159.2294921875 KBytes
+20:17:41.729117 (166)  > Checking sandbox...
+20:17:41.729318 (166)     > passed
+20:17:41.729550 (166)  
+20:17:41.771495 (167)  waiting for 0.12566172058026 to desynchronize
+20:17:41.903077 (41)  START_LOG
+20:17:41.907482 (41)  SPLAYD LUA EXEC
+20:17:42.52955 (41)  >> Job settings:
+20:17:42.69445 (41)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:42.92987 (41)  Name: 
+20:17:42.93081 (41)  Description: 
+20:17:42.93136 (41)  Disk:
+20:17:42.93189 (41)  	max 512 files
+20:17:42.93243 (41)  	max 32 file descriptors
+20:17:42.93296 (41)  	max 67108864 size in bytes
+20:17:42.93349 (41)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_6/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:42.93404 (41)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_6/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:42.93458 (41)  Mem 2097152 bytes of memory
+20:17:42.93511 (41)  Network:
+20:17:42.93565 (41)  	max 134217728/134217728 send/receive bytes
+20:17:42.93619 (41)  	max 32 tcp sockets
+20:17:42.93672 (41)  	ip 172.17.0.25
+20:17:42.93725 (41)  	ports 15587-15587
+20:17:42.93777 (41)  
+20:17:42.157500 (41)  >> Into sandbox !!!
+20:17:42.199605 (41)  > Memory: 159.1513671875 KBytes
+20:17:42.199693 (41)  > Checking sandbox...
+20:17:42.199748 (41)     > passed
+20:17:42.199801 (41)  
+20:17:42.328976 (185)  START_LOG
+20:17:42.330011 (185)  SPLAYD LUA EXEC
+20:17:42.361700 (185)  >> Job settings:
+20:17:42.361896 (185)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:42.361958 (185)  Name: 
+20:17:42.362025 (185)  Description: 
+20:17:42.362149 (185)  Disk:
+20:17:42.362214 (185)  	max 512 files
+20:17:42.362347 (185)  	max 32 file descriptors
+20:17:42.363264 (185)  	max 67108864 size in bytes
+20:17:42.363377 (185)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_49/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:42.363439 (185)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_49/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:42.363543 (185)  Mem 2097152 bytes of memory
+20:17:42.363761 (185)  Network:
+20:17:42.363824 (185)  	max 134217728/134217728 send/receive bytes
+20:17:42.363961 (185)  	max 32 tcp sockets
+20:17:42.364169 (185)  	ip 172.17.0.40
+20:17:42.364387 (185)  	ports 37345-37345
+20:17:42.364577 (185)  
+20:17:42.396278 (185)  >> Into sandbox !!!
+20:17:42.396473 (185)  > Memory: 159.2294921875 KBytes
+20:17:42.396674 (185)  > Checking sandbox...
+20:17:42.396886 (185)     > passed
+20:17:42.397079 (185)  
+20:17:42.717131 (168)  waiting for 2.9617561623276 to desynchronize
+20:17:42.907051 (3)  START_LOG
+20:17:42.920304 (3)  SPLAYD LUA EXEC
+20:17:43.72330 (3)  >> Job settings:
+20:17:43.89270 (3)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:43.89404 (3)  Name: 
+20:17:43.89471 (3)  Description: 
+20:17:43.89583 (3)  Disk:
+20:17:43.89648 (3)  	max 512 files
+20:17:43.89714 (3)  	max 32 file descriptors
+20:17:43.89809 (3)  	max 67108864 size in bytes
+20:17:43.89875 (3)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_1_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:43.95927 (3)  	cpath : /home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_1_3/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:43.96096 (3)  Mem 2097152 bytes of memory
+20:17:43.96217 (3)  Network:
+20:17:43.96289 (3)  	max 134217728/134217728 send/receive bytes
+20:17:43.96356 (3)  	max 32 tcp sockets
+20:17:43.96421 (3)  	ip 172.17.0.25
+20:17:43.96485 (3)  	ports 14123-14123
+20:17:43.96550 (3)  
+20:17:43.185600 (3)  >> Into sandbox !!!
+20:17:43.198270 (3)  > Memory: 159.1513671875 KBytes
+20:17:43.198525 (3)  > Checking sandbox...
+20:17:43.198602 (3)     > passed
+20:17:43.198668 (3)  
+20:17:43.252912 (151)  START_LOG
+20:17:43.254771 (151)  SPLAYD LUA EXEC
+20:17:43.286432 (151)  >> Job settings:
+20:17:43.305301 (151)  Ref: 549185a5be970f883c01dca62bb10a67
+20:17:43.305408 (151)  Name: 
+20:17:43.305476 (151)  Description: 
+20:17:43.305543 (151)  Disk:
+20:17:43.305656 (151)  	max 512 files
+20:17:43.305724 (151)  	max 32 file descriptors
+20:17:43.305791 (151)  	max 67108864 size in bytes
+20:17:43.305858 (151)  	lib directoy /home/splayd/local_splay_cluster/hosts/host_11_1/jobs_fs/549185a5be970f883c01dca62bb10a67/lib
+20:17:43.305925 (151)  	cpath : /home/splayd/local/lualibs/clib/?.so;/home/splayd/local/lualibs/clib/?.so;./?.so;/usr/local/lib/lua/5.1/?.so;/usr/lib/i386-linux-gnu/lua/5.1/?.so;/usr/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;/home/splayd/local_splay_cluster/hosts/host_11_1/jobs_fs/549185a5be970f883c01dca62bb10a67/lib/?.so
+20:17:43.305995 (151)  Mem 2097152 bytes of memory
+20:17:43.306088 (151)  Network:
+20:17:43.306156 (151)  	max 134217728/134217728 send/receive bytes
+20:17:43.306223 (151)  	max 32 tcp sockets
+20:17:43.306289 (151)  	ip 172.17.0.40
+20:17:43.306355 (151)  	ports 13243-13243
+20:17:43.306421 (151)  
+20:17:43.320635 (151)  >> Into sandbox !!!
+20:17:43.321378 (151)  > Memory: 159.2265625 KBytes
+20:17:43.322053 (151)  > Checking sandbox...
+20:17:43.322138 (151)     > passed
+20:17:43.322206 (151)  
+20:17:43.743889 (166)  waiting for 3.4155673386602 to desynchronize
+20:17:43.814204 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:44.201417 (41)  waiting for 1.009657001593 to desynchronize
+20:17:44.411096 (185)  waiting for 4.0245757992494 to desynchronize
+20:17:45.241116 (3)  waiting for 3.7831175810579 to desynchronize
+20:17:45.335778 (151)  waiting for 2.9849487719987 to desynchronize
+20:17:48.658475 (95)  node 30 (no) was notified with hops 1 (HTL=5)
+20:17:48.757734 (95)  i_am_infected
+20:17:48.817876 (94)  [splay.events] W: Periodic: thread: 0x8434d20 from function: 0x83d1350 is not dead, we wait
+20:17:53.531024 (95)  30 proceeds to forwarding to 2 peers
+20:17:53.535194 (187)  node 23 (no) was notified with hops 2 (HTL=5)
+20:17:53.535306 (187)  i_am_infected
+20:17:53.579696 (74)  node 9 (no) was notified with hops 2 (HTL=5)
+20:17:53.579794 (74)  i_am_infected
+20:17:55.79067 (74)  9 proceeds to forwarding to 2 peers
+20:17:55.213994 (57)  node 18 (no) was notified with hops 3 (HTL=5)
+20:17:55.214357 (57)  i_am_infected
+20:17:55.343351 (95)  node 30 (yes) was notified with hops 3 (HTL=5)
+20:17:55.343475 (95)  20:18:07 duplicate_received
+20:17:58.120416 (187)  23 proceeds to forwarding to 2 peers
+20:17:58.124703 (130)  node 11 (no) was notified with hops 3 (HTL=5)
+20:17:58.175611 (130)  i_am_infected
+20:17:58.238418 (38)  node 17 (no) was notified with hops 3 (HTL=5)
+20:17:58.275619 (38)  i_am_infected
+20:17:58.398402 (38)  17 proceeds to forwarding to 2 peers
+20:17:58.465289 (78)  node 40 (no) was notified with hops 4 (HTL=5)
+20:17:58.491560 (78)  i_am_infected
+20:17:58.534294 (95)  30 proceeds to forwarding to 2 peers
+20:17:58.536027 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:17:58.536115 (187)  20:17:41 duplicate_received
+20:17:58.541967 (76)  node 26 (no) was notified with hops 4 (HTL=5)
+20:17:58.591776 (76)  i_am_infected
+20:17:58.643792 (74)  node 9 (yes) was notified with hops 4 (HTL=5)
+20:17:58.708048 (74)  20:17:03 duplicate_received
+20:17:59.419178 (57)  18 proceeds to forwarding to 2 peers
+20:17:59.420505 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:17:59.420640 (95)  20:18:11 duplicate_received
+20:17:59.425377 (77)  node 31 (no) was notified with hops 4 (HTL=5)
+20:17:59.425491 (77)  i_am_infected
+20:17:59.743049 (76)  26 proceeds to forwarding to 2 peers
+20:17:59.745361 (1)  node 16 (no) was notified with hops 5 (HTL=5)
+20:17:59.745468 (1)  i_am_infected
+20:17:59.897978 (56)  node 10 (no) was notified with hops 5 (HTL=5)
+20:17:59.898095 (56)  i_am_infected
+20:18:00.87591 (74)  9 proceeds to forwarding to 2 peers
+20:18:00.87832 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:00.87914 (94)  20:17:04 duplicate_received
+20:18:00.147842 (92)  node 5 (no) was notified with hops 5 (HTL=5)
+20:18:00.147967 (92)  i_am_infected
+20:18:00.612602 (130)  node 11 (yes) was notified with hops 4 (HTL=5)
+20:18:00.613357 (130)  20:17:46 duplicate_received
+20:18:00.619433 (131)  node 19 (no) was notified with hops 4 (HTL=5)
+20:18:00.619522 (131)  i_am_infected
+20:18:00.755976 (56)  10 proceeds to forwarding to 2 peers
+20:18:00.770927 (92)  5 proceeds to forwarding to 2 peers
+20:18:00.836738 (78)  40 proceeds to forwarding to 2 peers
+20:18:00.959013 (58)  node 29 (no) was notified with hops 5 (HTL=5)
+20:18:00.959170 (58)  i_am_infected
+20:18:01.22661 (55)  node 4 (no) was notified with hops 5 (HTL=5)
+20:18:01.51882 (55)  i_am_infected
+20:18:01.55516 (39)  node 25 (no) was notified with hops 5 (HTL=5)
+20:18:01.55609 (39)  i_am_infected
+20:18:01.111693 (130)  11 proceeds to forwarding to 2 peers
+20:18:01.119296 (168)  node 21 (no) was notified with hops 5 (HTL=5)
+20:18:01.119435 (168)  i_am_infected
+20:18:01.583697 (1)  16 proceeds to forwarding to 2 peers
+20:18:01.651159 (151)  node 33 (no) was notified with hops 4 (HTL=5)
+20:18:01.683144 (151)  i_am_infected
+20:18:01.695140 (133)  node 38 (no) was notified with hops 4 (HTL=5)
+20:18:01.695256 (133)  i_am_infected
+20:18:01.711833 (131)  19 proceeds to forwarding to 2 peers
+20:18:01.713506 (58)  node 29 (yes) was notified with hops 5 (HTL=5)
+20:18:01.713612 (58)  20:18:13 duplicate_received
+20:18:01.721562 (188)  node 34 (no) was notified with hops 5 (HTL=5)
+20:18:01.721730 (188)  i_am_infected
+20:18:01.864698 (3)  node 35 (no) was notified with hops 4 (HTL=5)
+20:18:02.324652 (3)  i_am_infected
+20:18:02.324894 (21)  node 28 (no) was notified with hops 4 (HTL=5)
+20:18:02.325122 (21)  i_am_infected
+20:18:03.104696 (58)  29 proceeds to forwarding to 2 peers
+20:18:03.109042 (149)  node 15 (no) was notified with hops 4 (HTL=5)
+20:18:03.109260 (149)  i_am_infected
+20:18:03.123832 (187)  23 proceeds to forwarding to 2 peers
+20:18:03.124190 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:03.125017 (188)  20:17:46 duplicate_received
+20:18:03.126641 (39)  node 25 (yes) was notified with hops 5 (HTL=5)
+20:18:03.127398 (39)  20:18:15 duplicate_received
+20:18:03.150854 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:03.151037 (1)  20:18:03 duplicate_received
+20:18:03.335260 (151)  33 proceeds to forwarding to 2 peers
+20:18:03.403441 (55)  node 4 (yes) was notified with hops 5 (HTL=5)
+20:18:03.403603 (55)  20:17:08 duplicate_received
+20:18:03.445502 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:03.445686 (95)  20:18:15 duplicate_received
+20:18:03.535802 (95)  30 proceeds to forwarding to 2 peers
+20:18:03.536040 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:03.536150 (1)  20:18:03 duplicate_received
+20:18:03.537952 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:03.538583 (151)  20:17:46 duplicate_received
+20:18:03.716872 (94)  20 proceeds to forwarding to 2 peers
+20:18:03.971338 (56)  node 10 (yes) was notified with hops 4 (HTL=5)
+20:18:03.971493 (56)  20:18:16 duplicate_received
+20:18:04.24044 (111)  node 7 (no) was notified with hops 4 (HTL=5)
+20:18:04.24251 (111)  i_am_infected
+20:18:04.35985 (3)  35 proceeds to forwarding to 2 peers
+20:18:04.37254 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:04.37403 (187)  20:17:47 duplicate_received
+20:18:04.39403 (2)  node 24 (no) was notified with hops 5 (HTL=5)
+20:18:04.39576 (2)  i_am_infected
+20:18:04.121990 (77)  31 proceeds to forwarding to 2 peers
+20:18:04.123545 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:04.123679 (57)  20:18:16 duplicate_received
+20:18:04.135729 (114)  node 32 (no) was notified with hops 5 (HTL=5)
+20:18:04.135976 (114)  i_am_infected
+20:18:04.258805 (21)  28 proceeds to forwarding to 2 peers
+20:18:04.289051 (22)  node 36 (no) was notified with hops 5 (HTL=5)
+20:18:04.289212 (22)  i_am_infected
+20:18:04.295243 (188)  34 proceeds to forwarding to 2 peers
+20:18:04.299943 (148)  node 8 (no) was notified with hops 4 (HTL=5)
+20:18:04.300090 (148)  i_am_infected
+20:18:04.337266 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:04.337427 (149)  20:17:50 duplicate_received
+20:18:04.419630 (57)  18 proceeds to forwarding to 2 peers
+20:18:04.420099 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:04.420346 (149)  20:17:50 duplicate_received
+20:18:04.423290 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:04.423910 (148)  20:17:50 duplicate_received
+20:18:04.519336 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:04.519501 (92)  20:17:09 duplicate_received
+20:18:04.541288 (55)  4 proceeds to forwarding to 2 peers
+20:18:04.542847 (18)  node 1 (yes) was notified with hops 4 (HTL=5)
+20:18:04.542995 (18)  20:18:16 duplicate_received
+20:18:04.545550 (58)  node 29 (yes) was notified with hops 4 (HTL=5)
+20:18:04.545700 (58)  20:18:16 duplicate_received
+20:18:04.815355 (111)  7 proceeds to forwarding to 2 peers
+20:18:05.69585 (130)  node 11 (yes) was notified with hops 5 (HTL=5)
+20:18:05.69751 (130)  20:17:50 duplicate_received
+20:18:05.77260 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:05.77478 (38)  20:18:17 duplicate_received
+20:18:05.80493 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:05.80699 (56)  20:18:17 duplicate_received
+20:18:05.86301 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:05.86465 (74)  20:17:09 duplicate_received
+20:18:05.86648 (133)  38 proceeds to forwarding to 2 peers
+20:18:05.88040 (74)  9 proceeds to forwarding to 2 peers
+20:18:05.89482 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:05.89584 (95)  20:18:17 duplicate_received
+20:18:05.94911 (59)  node 37 (no) was notified with hops 4 (HTL=5)
+20:18:05.117906 (59)  i_am_infected
+20:18:05.390255 (22)  36 proceeds to forwarding to 2 peers
+20:18:05.614790 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:06.74278 (77)  20:17:19 duplicate_received
+20:18:06.77427 (132)  node 27 (no) was notified with hops 4 (HTL=5)
+20:18:06.77537 (132)  i_am_infected
+20:18:06.77661 (56)  10 proceeds to forwarding to 2 peers
+20:18:06.88504 (129)  node 3 (no) was notified with hops 4 (HTL=5)
+20:18:06.88620 (129)  i_am_infected
+20:18:06.88695 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:06.88754 (129)  20:17:51 duplicate_received
+20:18:06.90292 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:06.90380 (133)  20:17:51 duplicate_received
+20:18:06.108829 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:06.108945 (114)  20:17:10 duplicate_received
+20:18:06.113224 (130)  11 proceeds to forwarding to 2 peers
+20:18:06.117280 (166)  node 2 (no) was notified with hops 4 (HTL=5)
+20:18:06.117393 (166)  i_am_infected
+20:18:06.118389 (39)  25 proceeds to forwarding to 2 peers
+20:18:06.119593 (168)  21 proceeds to forwarding to 2 peers
+20:18:06.121753 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:06.121884 (131)  20:17:51 duplicate_received
+20:18:06.122195 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:06.122283 (3)  20:18:06 duplicate_received
+20:18:06.124568 (58)  node 29 (yes) was notified with hops 4 (HTL=5)
+20:18:06.124660 (58)  20:18:18 duplicate_received
+20:18:06.124765 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:06.124863 (94)  20:17:10 duplicate_received
+20:18:06.125840 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:06.125911 (38)  20:18:17 duplicate_received
+20:18:06.127248 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:06.127325 (76)  20:17:19 duplicate_received
+20:18:06.130236 (92)  5 proceeds to forwarding to 2 peers
+20:18:06.130334 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:06.130395 (92)  20:17:10 duplicate_received
+20:18:06.134330 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:06.134438 (149)  20:17:51 duplicate_received
+20:18:06.134509 (149)  15 proceeds to forwarding to 2 peers
+20:18:06.153315 (2)  24 proceeds to forwarding to 2 peers
+20:18:06.194515 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:06.198493 (148)  20:17:51 duplicate_received
+20:18:06.216713 (18)  1 proceeds to forwarding to 2 peers
+20:18:06.251648 (111)  node 7 (yes) was notified with hops 5 (HTL=5)
+20:18:06.251764 (111)  20:17:10 duplicate_received
+20:18:06.251889 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:06.251959 (114)  20:17:10 duplicate_received
+20:18:06.255605 (114)  32 proceeds to forwarding to 2 peers
+20:18:06.299414 (112)  node 13 (no) was notified with hops 4 (HTL=5)
+20:18:06.299527 (112)  i_am_infected
+20:18:06.432300 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:06.432421 (168)  20:17:49 duplicate_received
+20:18:06.585620 (1)  16 proceeds to forwarding to 2 peers
+20:18:06.587005 (76)  node 26 (yes) was notified with hops 5 (HTL=5)
+20:18:06.587135 (76)  20:17:20 duplicate_received
+20:18:06.589395 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:06.589497 (187)  20:17:49 duplicate_received
+20:18:06.600144 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:06.600250 (1)  20:18:06 duplicate_received
+20:18:06.603143 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:06.603245 (151)  20:17:49 duplicate_received
+20:18:06.684394 (129)  3 proceeds to forwarding to 2 peers
+20:18:06.713261 (131)  19 proceeds to forwarding to 2 peers
+20:18:06.714355 (55)  node 4 (yes) was notified with hops 5 (HTL=5)
+20:18:06.714473 (55)  20:17:11 duplicate_received
+20:18:06.717635 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:06.717752 (59)  20:18:18 duplicate_received
+20:18:06.812517 (59)  37 proceeds to forwarding to 2 peers
+20:18:06.878112 (41)  node 39 (no) was notified with hops 5 (HTL=5)
+20:18:06.878236 (41)  i_am_infected
+20:18:06.957883 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:06.958002 (57)  20:18:19 duplicate_received
+20:18:07.198875 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:07.199003 (151)  20:17:50 duplicate_received
+20:18:07.199176 (166)  2 proceeds to forwarding to 2 peers
+20:18:07.257101 (112)  13 proceeds to forwarding to 2 peers
+20:18:07.276799 (185)  node 6 (no) was notified with hops 5 (HTL=5)
+20:18:07.276929 (185)  i_am_infected
+20:18:07.277965 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:07.278056 (21)  20:17:11 duplicate_received
+20:18:07.319550 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:07.335467 (74)  20:17:12 duplicate_received
+20:18:08.107012 (58)  29 proceeds to forwarding to 2 peers
+20:18:08.107562 (130)  node 11 (yes) was notified with hops 5 (HTL=5)
+20:18:08.107731 (130)  20:17:53 duplicate_received
+20:18:08.110852 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:08.110946 (151)  20:17:51 duplicate_received
+20:18:08.125910 (187)  23 proceeds to forwarding to 2 peers
+20:18:08.135381 (55)  node 4 (yes) was notified with hops 4 (HTL=5)
+20:18:08.135490 (55)  20:17:12 duplicate_received
+20:18:08.149938 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:08.174445 (3)  20:18:08 duplicate_received
+20:18:08.335619 (151)  33 proceeds to forwarding to 2 peers
+20:18:08.335925 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:08.336006 (168)  20:17:51 duplicate_received
+20:18:08.338748 (22)  node 36 (yes) was notified with hops 4 (HTL=5)
+20:18:08.338858 (22)  20:17:13 duplicate_received
+20:18:08.400703 (38)  17 proceeds to forwarding to 2 peers
+20:18:08.453262 (185)  6 proceeds to forwarding to 2 peers
+20:18:08.455507 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:08.455602 (95)  20:18:20 duplicate_received
+20:18:08.459617 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:08.459722 (41)  20:18:08 duplicate_received
+20:18:08.461869 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:08.461973 (188)  20:17:51 duplicate_received
+20:18:08.465064 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:08.465154 (1)  20:18:08 duplicate_received
+20:18:08.534724 (95)  30 proceeds to forwarding to 2 peers
+20:18:08.544192 (55)  node 4 (yes) was notified with hops 5 (HTL=5)
+20:18:08.544293 (55)  20:17:13 duplicate_received
+20:18:08.556657 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:08.556875 (112)  20:17:13 duplicate_received
+20:18:08.720743 (94)  20 proceeds to forwarding to 2 peers
+20:18:08.720952 (75)  node 14 (no) was notified with hops 5 (HTL=5)
+20:18:08.721025 (75)  i_am_infected
+20:18:08.722646 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:08.722819 (151)  20:17:52 duplicate_received
+20:18:08.800608 (148)  8 proceeds to forwarding to 2 peers
+20:18:08.862020 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:08.862136 (38)  20:18:20 duplicate_received
+20:18:08.874665 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:08.874782 (56)  20:18:20 duplicate_received
+20:18:09.37047 (3)  35 proceeds to forwarding to 2 peers
+20:18:09.38654 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:09.38760 (57)  20:18:21 duplicate_received
+20:18:09.41148 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:09.41247 (95)  20:18:21 duplicate_received
+20:18:09.127488 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:09.127605 (166)  20:17:52 duplicate_received
+20:18:09.129938 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:09.130025 (168)  20:17:52 duplicate_received
+20:18:09.248895 (77)  31 proceeds to forwarding to 2 peers
+20:18:09.260391 (78)  node 40 (yes) was notified with hops 4 (HTL=5)
+20:18:09.260517 (78)  20:17:22 duplicate_received
+20:18:09.260612 (21)  28 proceeds to forwarding to 2 peers
+20:18:09.263540 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:09.304794 (76)  20:17:22 duplicate_received
+20:18:09.305011 (188)  34 proceeds to forwarding to 2 peers
+20:18:09.330429 (22)  node 36 (yes) was notified with hops 4 (HTL=5)
+20:18:09.330541 (22)  20:17:14 duplicate_received
+20:18:09.419906 (57)  18 proceeds to forwarding to 2 peers
+20:18:09.421403 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:18:09.421509 (187)  20:17:52 duplicate_received
+20:18:09.424138 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:09.424250 (76)  20:17:23 duplicate_received
+20:18:09.544084 (55)  4 proceeds to forwarding to 2 peers
+20:18:09.605742 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:09.605860 (56)  20:18:21 duplicate_received
+20:18:09.608655 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:09.608782 (95)  20:18:21 duplicate_received
+20:18:09.635286 (75)  14 proceeds to forwarding to 2 peers
+20:18:09.695594 (74)  node 9 (yes) was notified with hops 4 (HTL=5)
+20:18:09.695715 (74)  20:17:14 duplicate_received
+20:18:09.746374 (76)  26 proceeds to forwarding to 2 peers
+20:18:09.756334 (55)  node 4 (yes) was notified with hops 5 (HTL=5)
+20:18:09.756447 (55)  20:17:14 duplicate_received
+20:18:09.759092 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:09.759235 (59)  20:18:21 duplicate_received
+20:18:09.820237 (111)  7 proceeds to forwarding to 2 peers
+20:18:09.820889 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:09.821287 (168)  20:17:53 duplicate_received
+20:18:09.823659 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:09.824393 (185)  20:17:53 duplicate_received
+20:18:09.959022 (133)  38 proceeds to forwarding to 2 peers
+20:18:09.959582 (188)  node 34 (yes) was notified with hops 4 (HTL=5)
+20:18:09.959768 (188)  20:17:53 duplicate_received
+20:18:09.971569 (74)  node 9 (yes) was notified with hops 4 (HTL=5)
+20:18:09.986789 (74)  20:17:14 duplicate_received
+20:18:10.88631 (74)  9 proceeds to forwarding to 2 peers
+20:18:10.90023 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:10.90126 (1)  20:18:09 duplicate_received
+20:18:10.101463 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:10.101676 (188)  20:17:53 duplicate_received
+20:18:10.231682 (41)  39 proceeds to forwarding to 2 peers
+20:18:10.233240 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:10.233336 (151)  20:17:53 duplicate_received
+20:18:10.236666 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:10.236775 (78)  20:17:23 duplicate_received
+20:18:10.250904 (132)  27 proceeds to forwarding to 2 peers
+20:18:10.253060 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:10.253165 (18)  20:18:22 duplicate_received
+20:18:10.256741 (132)  node 27 (yes) was notified with hops 4 (HTL=5)
+20:18:10.256907 (132)  20:17:55 duplicate_received
+20:18:10.257051 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:10.257126 (22)  20:17:15 duplicate_received
+20:18:10.368992 (2)  node 24 (yes) was notified with hops 4 (HTL=5)
+20:18:10.369131 (2)  20:18:10 duplicate_received
+20:18:10.391706 (22)  36 proceeds to forwarding to 2 peers
+20:18:10.393510 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:10.393651 (168)  20:17:53 duplicate_received
+20:18:10.399869 (3)  node 35 (yes) was notified with hops 5 (HTL=5)
+20:18:10.400002 (3)  20:18:10 duplicate_received
+20:18:10.617108 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:10.617311 (185)  20:17:53 duplicate_received
+20:18:10.698396 (168)  21 proceeds to forwarding to 2 peers
+20:18:10.699708 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:10.699797 (77)  20:17:24 duplicate_received
+20:18:10.702341 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:10.702448 (114)  20:17:15 duplicate_received
+20:18:10.777362 (39)  node 25 (yes) was notified with hops 5 (HTL=5)
+20:18:10.817813 (39)  20:18:22 duplicate_received
+20:18:10.830126 (56)  10 proceeds to forwarding to 2 peers
+20:18:10.830314 (58)  node 29 (yes) was notified with hops 5 (HTL=5)
+20:18:10.830383 (58)  20:18:22 duplicate_received
+20:18:10.830525 (57)  node 18 (yes) was notified with hops 4 (HTL=5)
+20:18:10.830601 (57)  20:18:22 duplicate_received
+20:18:10.837730 (92)  5 proceeds to forwarding to 2 peers
+20:18:10.839205 (76)  node 26 (yes) was notified with hops 5 (HTL=5)
+20:18:10.839296 (76)  20:17:24 duplicate_received
+20:18:10.839452 (78)  40 proceeds to forwarding to 2 peers
+20:18:10.840987 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:10.841068 (185)  20:17:54 duplicate_received
+20:18:10.877760 (39)  25 proceeds to forwarding to 2 peers
+20:18:10.880064 (188)  node 34 (yes) was notified with hops 4 (HTL=5)
+20:18:10.880155 (188)  20:17:54 duplicate_received
+20:18:10.888339 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:10.888452 (112)  20:17:15 duplicate_received
+20:18:11.57547 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:11.67207 (94)  20:17:15 duplicate_received
+20:18:11.67401 (130)  11 proceeds to forwarding to 2 peers
+20:18:11.120377 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:11.120505 (168)  20:17:54 duplicate_received
+20:18:11.127947 (188)  node 34 (yes) was notified with hops 4 (HTL=5)
+20:18:11.130071 (188)  20:17:54 duplicate_received
+20:18:11.131802 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:11.131914 (129)  20:17:56 duplicate_received
+20:18:11.156043 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:11.208257 (38)  20:18:23 duplicate_received
+20:18:11.218936 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:11.219069 (151)  20:17:54 duplicate_received
+20:18:11.255417 (18)  1 proceeds to forwarding to 2 peers
+20:18:11.255612 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:11.255695 (95)  20:18:23 duplicate_received
+20:18:11.367490 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:11.425239 (112)  20:17:15 duplicate_received
+20:18:11.427811 (114)  32 proceeds to forwarding to 2 peers
+20:18:11.436945 (2)  24 proceeds to forwarding to 2 peers
+20:18:11.587444 (1)  16 proceeds to forwarding to 2 peers
+20:18:11.590984 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:11.591155 (95)  20:18:23 duplicate_received
+20:18:11.596551 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:11.596658 (92)  20:17:16 duplicate_received
+20:18:11.601230 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:11.601340 (166)  20:17:54 duplicate_received
+20:18:11.733939 (129)  3 proceeds to forwarding to 2 peers
+20:18:11.797980 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:11.817978 (133)  20:17:57 duplicate_received
+20:18:11.818341 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:11.818416 (148)  20:17:57 duplicate_received
+20:18:11.873598 (59)  37 proceeds to forwarding to 2 peers
+20:18:11.876187 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:11.876475 (111)  20:17:16 duplicate_received
+20:18:12.184565 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:12.184686 (133)  20:17:57 duplicate_received
+20:18:12.245008 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:12.245131 (188)  20:17:55 duplicate_received
+20:18:12.245272 (166)  2 proceeds to forwarding to 2 peers
+20:18:12.259934 (112)  13 proceeds to forwarding to 2 peers
+20:18:12.283624 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:12.322768 (92)  20:17:17 duplicate_received
+20:18:12.340481 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:12.340592 (1)  20:18:12 duplicate_received
+20:18:13.107187 (58)  29 proceeds to forwarding to 2 peers
+20:18:13.130035 (187)  23 proceeds to forwarding to 2 peers
+20:18:13.131633 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:13.131734 (95)  20:18:25 duplicate_received
+20:18:13.134749 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:13.134839 (21)  20:17:17 duplicate_received
+20:18:13.168593 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:13.168727 (3)  20:18:12 duplicate_received
+20:18:13.170926 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:13.171088 (148)  20:17:58 duplicate_received
+20:18:13.338702 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:13.338814 (168)  20:17:56 duplicate_received
+20:18:13.338955 (151)  33 proceeds to forwarding to 2 peers
+20:18:13.341388 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:13.341495 (1)  20:18:13 duplicate_received
+20:18:13.401639 (38)  17 proceeds to forwarding to 2 peers
+20:18:13.407545 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:13.407657 (94)  20:17:18 duplicate_received
+20:18:13.426032 (56)  node 10 (yes) was notified with hops 4 (HTL=5)
+20:18:13.426142 (56)  20:18:25 duplicate_received
+20:18:13.456562 (185)  6 proceeds to forwarding to 2 peers
+20:18:13.517928 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:13.518049 (21)  20:17:18 duplicate_received
+20:18:13.520937 (58)  node 29 (yes) was notified with hops 5 (HTL=5)
+20:18:13.521049 (58)  20:18:25 duplicate_received
+20:18:13.534976 (95)  30 proceeds to forwarding to 2 peers
+20:18:13.535860 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:13.536052 (148)  20:17:59 duplicate_received
+20:18:13.539439 (167)  node 12 (no) was notified with hops 5 (HTL=5)
+20:18:13.539538 (167)  i_am_infected
+20:18:13.724499 (94)  20 proceeds to forwarding to 2 peers
+20:18:13.732387 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:13.732495 (21)  20:17:18 duplicate_received
+20:18:13.741471 (130)  node 11 (yes) was notified with hops 5 (HTL=5)
+20:18:13.741662 (130)  20:17:59 duplicate_received
+20:18:13.800789 (148)  8 proceeds to forwarding to 2 peers
+20:18:13.802979 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:13.803068 (75)  20:17:18 duplicate_received
+20:18:13.805447 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:13.806467 (167)  20:17:57 duplicate_received
+20:18:14.37727 (3)  35 proceeds to forwarding to 2 peers
+20:18:14.39039 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:14.39191 (77)  20:17:27 duplicate_received
+20:18:14.41194 (2)  node 24 (yes) was notified with hops 5 (HTL=5)
+20:18:14.41315 (2)  20:18:13 duplicate_received
+20:18:14.127511 (18)  node 1 (yes) was notified with hops 4 (HTL=5)
+20:18:14.134828 (18)  20:18:26 duplicate_received
+20:18:14.182408 (77)  31 proceeds to forwarding to 2 peers
+20:18:14.190959 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:14.191064 (168)  20:17:57 duplicate_received
+20:18:14.259555 (21)  28 proceeds to forwarding to 2 peers
+20:18:14.292425 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:14.292546 (129)  20:17:59 duplicate_received
+20:18:14.297474 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:14.297622 (166)  20:17:57 duplicate_received
+20:18:14.299236 (188)  34 proceeds to forwarding to 2 peers
+20:18:14.299416 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:14.299495 (187)  20:17:57 duplicate_received
+20:18:14.301800 (58)  node 29 (yes) was notified with hops 5 (HTL=5)
+20:18:14.301904 (58)  20:18:26 duplicate_received
+20:18:14.370374 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:14.370754 (38)  20:18:26 duplicate_received
+20:18:14.423184 (57)  18 proceeds to forwarding to 2 peers
+20:18:14.485054 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:18:14.485181 (187)  20:17:57 duplicate_received
+20:18:14.488152 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:14.488276 (1)  20:18:14 duplicate_received
+20:18:14.519349 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:14.519471 (95)  20:18:26 duplicate_received
+20:18:14.551467 (55)  4 proceeds to forwarding to 2 peers
+20:18:14.570573 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:14.570690 (3)  20:18:14 duplicate_received
+20:18:14.620738 (56)  node 10 (yes) was notified with hops 4 (HTL=5)
+20:18:14.620869 (56)  20:18:26 duplicate_received
+20:18:14.725292 (75)  14 proceeds to forwarding to 2 peers
+20:18:14.750150 (76)  26 proceeds to forwarding to 2 peers
+20:18:14.754230 (20)  node 22 (no) was notified with hops 4 (HTL=5)
+20:18:14.754324 (20)  i_am_infected
+20:18:14.827708 (111)  7 proceeds to forwarding to 2 peers
+20:18:14.827897 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:14.827969 (114)  20:17:19 duplicate_received
+20:18:14.843865 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:14.907967 (129)  20:18:00 duplicate_received
+20:18:14.908148 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:14.908212 (129)  20:18:00 duplicate_received
+20:18:14.961978 (133)  38 proceeds to forwarding to 2 peers
+20:18:14.966011 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:14.966115 (95)  20:18:27 duplicate_received
+20:18:14.969396 (58)  node 29 (yes) was notified with hops 4 (HTL=5)
+20:18:14.969501 (58)  20:18:27 duplicate_received
+20:18:15.700731 (168)  21 proceeds to forwarding to 2 peers
+20:18:15.702563 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:15.702669 (18)  20:18:27 duplicate_received
+20:18:15.712333 (111)  node 7 (yes) was notified with hops 5 (HTL=5)
+20:18:15.712446 (111)  20:17:20 duplicate_received
+20:18:15.777334 (92)  5 proceeds to forwarding to 2 peers
+20:18:15.867559 (39)  node 25 (yes) was notified with hops 5 (HTL=5)
+20:18:15.867987 (39)  20:18:27 duplicate_received
+20:18:15.878024 (39)  25 proceeds to forwarding to 2 peers
+20:18:15.879926 (188)  node 34 (yes) was notified with hops 4 (HTL=5)
+20:18:15.880048 (188)  20:17:59 duplicate_received
+20:18:15.884945 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:18:15.885058 (187)  20:17:59 duplicate_received
+20:18:15.898929 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:15.899048 (132)  20:18:01 duplicate_received
+20:18:16.897 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:16.1053 (59)  20:18:27 duplicate_received
+20:18:16.1194 (56)  10 proceeds to forwarding to 2 peers
+20:18:16.1265 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:16.1319 (56)  20:18:27 duplicate_received
+20:18:16.51336 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:16.121118 (92)  20:17:20 duplicate_received
+20:18:16.135873 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:16.135989 (21)  20:17:20 duplicate_received
+20:18:16.153631 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:16.153755 (1)  20:18:16 duplicate_received
+20:18:16.155386 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:16.155496 (22)  20:17:20 duplicate_received
+20:18:16.165926 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:16.166048 (94)  20:17:20 duplicate_received
+20:18:16.168225 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:16.168330 (21)  20:17:20 duplicate_received
+20:18:16.181063 (130)  11 proceeds to forwarding to 2 peers
+20:18:16.181309 (78)  node 40 (yes) was notified with hops 4 (HTL=5)
+20:18:16.181391 (78)  20:17:29 duplicate_received
+20:18:16.181449 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:16.181507 (78)  20:17:29 duplicate_received
+20:18:16.241526 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:16.241652 (187)  20:17:59 duplicate_received
+20:18:16.341219 (18)  1 proceeds to forwarding to 2 peers
+20:18:16.376028 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:16.376139 (111)  20:17:20 duplicate_received
+20:18:16.376272 (114)  32 proceeds to forwarding to 2 peers
+20:18:16.401758 (20)  22 proceeds to forwarding to 2 peers
+20:18:16.437551 (2)  24 proceeds to forwarding to 2 peers
+20:18:16.590149 (1)  16 proceeds to forwarding to 2 peers
+20:18:16.598252 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:16.598368 (78)  20:17:30 duplicate_received
+20:18:16.602992 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:16.603135 (151)  20:17:59 duplicate_received
+20:18:16.605744 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:16.605847 (188)  20:17:59 duplicate_received
+20:18:16.713955 (129)  3 proceeds to forwarding to 2 peers
+20:18:16.714348 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:16.714425 (132)  20:18:02 duplicate_received
+20:18:16.814746 (59)  37 proceeds to forwarding to 2 peers
+20:18:16.815604 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:16.815785 (168)  20:18:00 duplicate_received
+20:18:16.823605 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:16.823711 (112)  20:17:21 duplicate_received
+20:18:16.867634 (167)  12 proceeds to forwarding to 2 peers
+20:18:16.868615 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:16.868704 (131)  20:18:02 duplicate_received
+20:18:16.875692 (55)  node 4 (yes) was notified with hops 4 (HTL=5)
+20:18:16.875804 (55)  20:17:21 duplicate_received
+20:18:17.186888 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:17.187014 (57)  20:18:29 duplicate_received
+20:18:17.189965 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:17.190051 (133)  20:18:02 duplicate_received
+20:18:17.257904 (166)  2 proceeds to forwarding to 2 peers
+20:18:17.263820 (112)  13 proceeds to forwarding to 2 peers
+20:18:17.283728 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:17.283841 (21)  20:17:22 duplicate_received
+20:18:17.332026 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:17.332284 (188)  20:18:00 duplicate_received
+20:18:18.110585 (58)  29 proceeds to forwarding to 2 peers
+20:18:19.55393 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:19.55632 (149)  20:18:04 duplicate_received
+20:18:19.65234 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:18:19.65370 (41)  20:18:18 duplicate_received
+20:18:19.65623 (151)  33 proceeds to forwarding to 2 peers
+20:18:19.67889 (38)  17 proceeds to forwarding to 2 peers
+20:18:19.67996 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:19.68050 (38)  20:18:30 duplicate_received
+20:18:19.72373 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:19.72544 (94)  20:17:23 duplicate_received
+20:18:19.72687 (94)  20 proceeds to forwarding to 2 peers
+20:18:19.72779 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:19.72904 (94)  20:17:23 duplicate_received
+20:18:19.74849 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:19.74949 (112)  20:17:22 duplicate_received
+20:18:19.76789 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:19.76915 (185)  20:18:02 duplicate_received
+20:18:19.77258 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:19.77357 (133)  20:18:03 duplicate_received
+20:18:19.77417 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:19.77476 (133)  20:18:03 duplicate_received
+20:18:19.80466 (95)  30 proceeds to forwarding to 2 peers
+20:18:19.81420 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:19.81534 (114)  20:17:23 duplicate_received
+20:18:19.81656 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:19.81736 (59)  20:18:30 duplicate_received
+20:18:19.83734 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:19.83838 (188)  20:18:02 duplicate_received
+20:18:19.99178 (187)  23 proceeds to forwarding to 2 peers
+20:18:19.99369 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:19.99448 (168)  20:18:01 duplicate_received
+20:18:19.102355 (3)  35 proceeds to forwarding to 2 peers
+20:18:19.133757 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:19.133895 (129)  20:18:04 duplicate_received
+20:18:19.261769 (21)  28 proceeds to forwarding to 2 peers
+20:18:19.263693 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:19.304935 (20)  20:18:31 duplicate_received
+20:18:19.317972 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:19.318090 (92)  20:17:24 duplicate_received
+20:18:19.330159 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:19.330282 (94)  20:17:24 duplicate_received
+20:18:19.333949 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:19.334065 (133)  20:18:05 duplicate_received
+20:18:19.364957 (188)  34 proceeds to forwarding to 2 peers
+20:18:19.425552 (57)  18 proceeds to forwarding to 2 peers
+20:18:19.491900 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:19.492013 (41)  20:18:19 duplicate_received
+20:18:19.492110 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:19.492187 (166)  20:18:02 duplicate_received
+20:18:19.551254 (55)  4 proceeds to forwarding to 2 peers
+20:18:19.552886 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:19.552993 (57)  20:18:31 duplicate_received
+20:18:19.556439 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:19.556549 (59)  20:18:31 duplicate_received
+20:18:19.827519 (111)  7 proceeds to forwarding to 2 peers
+20:18:19.830080 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:19.830195 (1)  20:18:19 duplicate_received
+20:18:19.839707 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:19.839818 (21)  20:17:24 duplicate_received
+20:18:19.962604 (133)  38 proceeds to forwarding to 2 peers
+20:18:19.965092 (39)  node 25 (yes) was notified with hops 4 (HTL=5)
+20:18:19.965211 (39)  20:18:32 duplicate_received
+20:18:19.972630 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:19.972764 (111)  20:17:24 duplicate_received
+20:18:20.234667 (41)  39 proceeds to forwarding to 2 peers
+20:18:20.901057 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:20.901329 (95)  20:18:32 duplicate_received
+20:18:20.901647 (133)  node 38 (yes) was notified with hops 4 (HTL=5)
+20:18:20.901728 (133)  20:18:06 duplicate_received
+20:18:20.904667 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:20.904771 (166)  20:18:04 duplicate_received
+20:18:20.905028 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:20.905235 (74)  20:17:25 duplicate_received
+20:18:20.911466 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:20.911582 (76)  20:17:34 duplicate_received
+20:18:20.922700 (132)  27 proceeds to forwarding to 2 peers
+20:18:20.927785 (111)  node 7 (yes) was notified with hops 5 (HTL=5)
+20:18:20.927865 (111)  20:17:25 duplicate_received
+20:18:20.927982 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:20.928058 (1)  20:18:20 duplicate_received
+20:18:20.929312 (55)  node 4 (yes) was notified with hops 4 (HTL=5)
+20:18:20.929402 (55)  20:17:25 duplicate_received
+20:18:20.939779 (39)  25 proceeds to forwarding to 2 peers
+20:18:20.943398 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:20.943510 (114)  20:17:25 duplicate_received
+20:18:20.943975 (168)  21 proceeds to forwarding to 2 peers
+20:18:20.944082 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:20.944143 (168)  20:18:04 duplicate_received
+20:18:20.945052 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:20.945155 (77)  20:17:34 duplicate_received
+20:18:20.953469 (75)  node 14 (yes) was notified with hops 4 (HTL=5)
+20:18:20.953581 (75)  20:17:25 duplicate_received
+20:18:20.961535 (22)  36 proceeds to forwarding to 2 peers
+20:18:20.961645 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:20.961705 (22)  20:17:25 duplicate_received
+20:18:20.965273 (92)  5 proceeds to forwarding to 2 peers
+20:18:20.983247 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:20.983376 (21)  20:17:25 duplicate_received
+20:18:21.3582 (56)  10 proceeds to forwarding to 2 peers
+20:18:21.21769 (2)  node 24 (yes) was notified with hops 4 (HTL=5)
+20:18:21.21891 (2)  20:18:20 duplicate_received
+20:18:21.25423 (78)  node 40 (yes) was notified with hops 4 (HTL=5)
+20:18:21.25533 (78)  20:17:34 duplicate_received
+20:18:21.25606 (78)  40 proceeds to forwarding to 2 peers
+20:18:21.87607 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:21.87740 (3)  20:18:20 duplicate_received
+20:18:21.90648 (58)  node 29 (yes) was notified with hops 4 (HTL=5)
+20:18:21.90752 (58)  20:18:33 duplicate_received
+20:18:21.99685 (149)  15 proceeds to forwarding to 2 peers
+20:18:21.103206 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:21.103314 (129)  20:18:06 duplicate_received
+20:18:21.133971 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:21.134118 (1)  20:18:21 duplicate_received
+20:18:21.157256 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:21.157384 (151)  20:18:04 duplicate_received
+20:18:21.162107 (130)  node 11 (yes) was notified with hops 5 (HTL=5)
+20:18:21.162231 (130)  20:18:06 duplicate_received
+20:18:21.245642 (20)  22 proceeds to forwarding to 2 peers
+20:18:21.246074 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:21.246291 (18)  20:18:33 duplicate_received
+20:18:21.246351 (18)  node 1 (yes) was notified with hops 4 (HTL=5)
+20:18:21.246411 (18)  20:18:33 duplicate_received
+20:18:21.436551 (114)  32 proceeds to forwarding to 2 peers
+20:18:21.590393 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:21.590526 (188)  20:18:04 duplicate_received
+20:18:21.598205 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:21.598327 (77)  20:17:35 duplicate_received
+20:18:21.599902 (1)  16 proceeds to forwarding to 2 peers
+20:18:21.600156 (2)  24 proceeds to forwarding to 2 peers
+20:18:21.604544 (77)  node 31 (yes) was notified with hops 4 (HTL=5)
+20:18:21.604652 (77)  20:17:35 duplicate_received
+20:18:21.697071 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:21.697182 (131)  20:18:07 duplicate_received
+20:18:21.697335 (129)  3 proceeds to forwarding to 2 peers
+20:18:21.723954 (131)  19 proceeds to forwarding to 2 peers
+20:18:21.725113 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:21.725210 (187)  20:18:05 duplicate_received
+20:18:21.728476 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:21.728623 (78)  20:17:35 duplicate_received
+20:18:21.815096 (59)  37 proceeds to forwarding to 2 peers
+20:18:21.815948 (188)  node 34 (yes) was notified with hops 4 (HTL=5)
+20:18:21.816096 (188)  20:18:05 duplicate_received
+20:18:21.819517 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:21.819629 (129)  20:18:07 duplicate_received
+20:18:22.191592 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:22.230315 (112)  20:17:27 duplicate_received
+20:18:22.266711 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:22.266840 (18)  20:18:34 duplicate_received
+20:18:22.268020 (112)  13 proceeds to forwarding to 2 peers
+20:18:22.281045 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:22.438192 (95)  20:18:34 duplicate_received
+20:18:22.444715 (167)  node 12 (yes) was notified with hops 4 (HTL=5)
+20:18:22.444851 (167)  20:18:05 duplicate_received
+20:18:22.468652 (166)  2 proceeds to forwarding to 2 peers
+20:18:23.111818 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:23.111937 (59)  20:18:35 duplicate_received
+20:18:23.112070 (58)  29 proceeds to forwarding to 2 peers
+20:18:23.113651 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:23.113754 (56)  20:18:35 duplicate_received
+20:18:23.133882 (187)  23 proceeds to forwarding to 2 peers
+20:18:23.135855 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:23.136024 (131)  20:18:08 duplicate_received
+20:18:23.140377 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:23.140481 (41)  20:18:23 duplicate_received
+20:18:23.342936 (151)  33 proceeds to forwarding to 2 peers
+20:18:23.348778 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:23.348904 (92)  20:17:28 duplicate_received
+20:18:23.352364 (114)  node 32 (yes) was notified with hops 4 (HTL=5)
+20:18:23.352458 (114)  20:17:28 duplicate_received
+20:18:23.406388 (38)  17 proceeds to forwarding to 2 peers
+20:18:23.411149 (78)  node 40 (yes) was notified with hops 4 (HTL=5)
+20:18:23.411246 (78)  20:17:37 duplicate_received
+20:18:23.414755 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:23.414862 (1)  20:18:23 duplicate_received
+20:18:23.466556 (185)  6 proceeds to forwarding to 2 peers
+20:18:23.467795 (133)  node 38 (yes) was notified with hops 4 (HTL=5)
+20:18:23.468022 (133)  20:18:09 duplicate_received
+20:18:23.480070 (55)  node 4 (yes) was notified with hops 4 (HTL=5)
+20:18:23.480175 (55)  20:17:28 duplicate_received
+20:18:23.538882 (95)  30 proceeds to forwarding to 2 peers
+20:18:23.600542 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:18:23.634714 (41)  20:18:23 duplicate_received
+20:18:23.664207 (76)  node 26 (yes) was notified with hops 5 (HTL=5)
+20:18:23.664327 (76)  20:17:37 duplicate_received
+20:18:23.744518 (94)  20 proceeds to forwarding to 2 peers
+20:18:23.745981 (77)  node 31 (yes) was notified with hops 4 (HTL=5)
+20:18:23.746069 (77)  20:17:37 duplicate_received
+20:18:23.758347 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:23.758458 (185)  20:18:07 duplicate_received
+20:18:24.45293 (3)  35 proceeds to forwarding to 2 peers
+20:18:24.46852 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:24.46950 (114)  20:17:28 duplicate_received
+20:18:24.51004 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:24.91915 (112)  20:17:28 duplicate_received
+20:18:24.131305 (77)  31 proceeds to forwarding to 2 peers
+20:18:24.132285 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:24.132407 (167)  20:18:07 duplicate_received
+20:18:24.134238 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:24.134346 (78)  20:17:37 duplicate_received
+20:18:24.280271 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:24.291803 (167)  20:18:07 duplicate_received
+20:18:24.302598 (188)  34 proceeds to forwarding to 2 peers
+20:18:24.302788 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:24.302864 (166)  20:18:07 duplicate_received
+20:18:24.304944 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:18:24.305040 (41)  20:18:24 duplicate_received
+20:18:24.324796 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:24.324932 (132)  20:18:10 duplicate_received
+20:18:24.374866 (21)  28 proceeds to forwarding to 2 peers
+20:18:24.427853 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:24.428125 (59)  20:18:36 duplicate_received
+20:18:24.430288 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:24.430372 (149)  20:18:10 duplicate_received
+20:18:24.437249 (75)  14 proceeds to forwarding to 2 peers
+20:18:24.437857 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:24.437961 (167)  20:18:07 duplicate_received
+20:18:24.459775 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:24.460021 (22)  20:17:29 duplicate_received
+20:18:24.488227 (57)  18 proceeds to forwarding to 2 peers
+20:18:24.551739 (55)  4 proceeds to forwarding to 2 peers
+20:18:24.613655 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:24.613789 (133)  20:18:10 duplicate_received
+20:18:24.626795 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:24.626947 (57)  20:18:36 duplicate_received
+20:18:24.755716 (76)  26 proceeds to forwarding to 2 peers
+20:18:24.757215 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:24.757319 (95)  20:18:36 duplicate_received
+20:18:24.759595 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:24.759816 (129)  20:18:10 duplicate_received
+20:18:24.831620 (111)  7 proceeds to forwarding to 2 peers
+20:18:24.896499 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:24.896626 (57)  20:18:36 duplicate_received
+20:18:24.917210 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:24.917339 (167)  20:18:08 duplicate_received
+20:18:24.964931 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:24.965177 (129)  20:18:10 duplicate_received
+20:18:24.979772 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:24.979884 (74)  20:17:29 duplicate_received
+20:18:25.26087 (133)  38 proceeds to forwarding to 2 peers
+20:18:25.100220 (74)  9 proceeds to forwarding to 2 peers
+20:18:25.112480 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:25.131411 (149)  20:18:10 duplicate_received
+20:18:25.156986 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:25.157095 (129)  20:18:10 duplicate_received
+20:18:25.235809 (41)  39 proceeds to forwarding to 2 peers
+20:18:25.261832 (132)  27 proceeds to forwarding to 2 peers
+20:18:25.263081 (39)  node 25 (yes) was notified with hops 4 (HTL=5)
+20:18:25.263214 (39)  20:18:37 duplicate_received
+20:18:25.267474 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:25.267669 (129)  20:18:10 duplicate_received
+20:18:25.297943 (111)  node 7 (yes) was notified with hops 5 (HTL=5)
+20:18:25.298062 (111)  20:17:30 duplicate_received
+20:18:25.301166 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:25.301256 (56)  20:18:37 duplicate_received
+20:18:25.407975 (22)  36 proceeds to forwarding to 2 peers
+20:18:25.455731 (58)  node 29 (yes) was notified with hops 4 (HTL=5)
+20:18:25.455843 (58)  20:18:37 duplicate_received
+20:18:25.499544 (20)  node 22 (yes) was notified with hops 4 (HTL=5)
+20:18:25.499657 (20)  20:18:37 duplicate_received
+20:18:25.622143 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:25.663212 (41)  20:18:25 duplicate_received
+20:18:25.688312 (55)  node 4 (yes) was notified with hops 4 (HTL=5)
+20:18:25.688418 (55)  20:17:30 duplicate_received
+20:18:25.704260 (168)  21 proceeds to forwarding to 2 peers
+20:18:25.705072 (132)  node 27 (yes) was notified with hops 4 (HTL=5)
+20:18:25.705304 (132)  20:18:11 duplicate_received
+20:18:25.783745 (92)  5 proceeds to forwarding to 2 peers
+20:18:25.788735 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:25.788876 (167)  20:18:09 duplicate_received
+20:18:25.832582 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:25.862679 (131)  20:18:11 duplicate_received
+20:18:25.882283 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:25.882504 (131)  20:18:11 duplicate_received
+20:18:25.899932 (78)  40 proceeds to forwarding to 2 peers
+20:18:25.906937 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:25.907038 (112)  20:17:30 duplicate_received
+20:18:25.909449 (39)  node 25 (yes) was notified with hops 5 (HTL=5)
+20:18:25.909563 (39)  20:18:37 duplicate_received
+20:18:25.909636 (39)  25 proceeds to forwarding to 2 peers
+20:18:25.960291 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:25.962257 (92)  20:17:30 duplicate_received
+20:18:26.15200 (56)  10 proceeds to forwarding to 2 peers
+20:18:26.15403 (57)  node 18 (yes) was notified with hops 4 (HTL=5)
+20:18:26.15484 (57)  20:18:37 duplicate_received
+20:18:26.57008 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:26.62451 (148)  20:18:11 duplicate_received
+20:18:26.69495 (130)  11 proceeds to forwarding to 2 peers
+20:18:26.70978 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:18:26.71070 (187)  20:18:09 duplicate_received
+20:18:26.74484 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:26.74583 (59)  20:18:38 duplicate_received
+20:18:26.87793 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:26.87906 (133)  20:18:11 duplicate_received
+20:18:26.91379 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:26.91519 (114)  20:17:30 duplicate_received
+20:18:26.101038 (149)  15 proceeds to forwarding to 2 peers
+20:18:26.102040 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:26.102264 (168)  20:18:09 duplicate_received
+20:18:26.106190 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:26.106299 (78)  20:17:39 duplicate_received
+20:18:26.121388 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:26.161766 (56)  20:18:38 duplicate_received
+20:18:26.191091 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:26.191247 (166)  20:18:09 duplicate_received
+20:18:26.200900 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:26.201051 (92)  20:17:30 duplicate_received
+20:18:26.273509 (18)  1 proceeds to forwarding to 2 peers
+20:18:26.273817 (20)  22 proceeds to forwarding to 2 peers
+20:18:26.386732 (114)  32 proceeds to forwarding to 2 peers
+20:18:26.591767 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:26.593997 (114)  20:17:31 duplicate_received
+20:18:26.595098 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:26.595314 (166)  20:18:09 duplicate_received
+20:18:26.607843 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:26.607950 (38)  20:18:38 duplicate_received
+20:18:26.735899 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:26.736012 (75)  20:17:31 duplicate_received
+20:18:26.752295 (149)  node 15 (yes) was notified with hops 5 (HTL=5)
+20:18:26.835150 (149)  20:18:12 duplicate_received
+20:18:26.835245 (149)  node 15 (yes) was notified with hops 5 (HTL=5)
+20:18:26.835305 (149)  20:18:12 duplicate_received
+20:18:26.873377 (131)  19 proceeds to forwarding to 2 peers
+20:18:26.873998 (167)  12 proceeds to forwarding to 2 peers
+20:18:26.876905 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:26.877034 (151)  20:18:10 duplicate_received
+20:18:26.879852 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:26.879962 (22)  20:17:31 duplicate_received
+20:18:26.881606 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:26.881708 (168)  20:18:10 duplicate_received
+20:18:26.893819 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:26.894008 (131)  20:18:12 duplicate_received
+20:18:26.895147 (129)  3 proceeds to forwarding to 2 peers
+20:18:26.937066 (59)  37 proceeds to forwarding to 2 peers
+20:18:26.976368 (1)  16 proceeds to forwarding to 2 peers
+20:18:27.190262 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:27.190461 (3)  20:18:27 duplicate_received
+20:18:27.194565 (20)  node 22 (yes) was notified with hops 4 (HTL=5)
+20:18:27.194666 (20)  20:18:39 duplicate_received
+20:18:27.266428 (112)  13 proceeds to forwarding to 2 peers
+20:18:27.327960 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:27.328085 (95)  20:18:39 duplicate_received
+20:18:27.347212 (166)  2 proceeds to forwarding to 2 peers
+20:18:27.347401 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:27.347483 (185)  20:18:10 duplicate_received
+20:18:28.113897 (58)  29 proceeds to forwarding to 2 peers
+20:18:28.119709 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:28.119812 (75)  20:17:32 duplicate_received
+20:18:28.130546 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:28.130700 (20)  20:18:40 duplicate_received
+20:18:28.136989 (187)  23 proceeds to forwarding to 2 peers
+20:18:28.198898 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:28.199019 (114)  20:17:32 duplicate_received
+20:18:28.202218 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:28.202305 (133)  20:18:13 duplicate_received
+20:18:28.344910 (151)  33 proceeds to forwarding to 2 peers
+20:18:28.346588 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:28.346697 (95)  20:18:40 duplicate_received
+20:18:28.350656 (39)  node 25 (yes) was notified with hops 4 (HTL=5)
+20:18:28.389587 (39)  20:18:40 duplicate_received
+20:18:28.407874 (38)  17 proceeds to forwarding to 2 peers
+20:18:28.410099 (22)  node 36 (yes) was notified with hops 4 (HTL=5)
+20:18:28.410210 (22)  20:17:33 duplicate_received
+20:18:28.419929 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:28.420044 (92)  20:17:33 duplicate_received
+20:18:28.468147 (185)  6 proceeds to forwarding to 2 peers
+20:18:28.528558 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:28.528704 (187)  20:18:11 duplicate_received
+20:18:28.531232 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:28.531325 (95)  20:18:40 duplicate_received
+20:18:28.539856 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:28.539968 (20)  20:18:40 duplicate_received
+20:18:28.542168 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:28.542281 (129)  20:18:14 duplicate_received
+20:18:28.543492 (95)  30 proceeds to forwarding to 2 peers
+20:18:28.813905 (148)  8 proceeds to forwarding to 2 peers
+20:18:28.875669 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:28.875793 (111)  20:17:33 duplicate_received
+20:18:28.879216 (55)  node 4 (yes) was notified with hops 4 (HTL=5)
+20:18:28.879323 (55)  20:17:33 duplicate_received
+20:18:29.46319 (3)  35 proceeds to forwarding to 2 peers
+20:18:29.48223 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:29.48320 (112)  20:17:33 duplicate_received
+20:18:29.51957 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:29.52071 (57)  20:18:41 duplicate_received
+20:18:29.378828 (75)  14 proceeds to forwarding to 2 peers
+20:18:29.380261 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:29.380349 (76)  20:17:43 duplicate_received
+20:18:29.383798 (56)  node 10 (yes) was notified with hops 4 (HTL=5)
+20:18:29.383890 (56)  20:18:41 duplicate_received
+20:18:29.427728 (57)  18 proceeds to forwarding to 2 peers
+20:18:29.435773 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:29.437860 (112)  20:17:34 duplicate_received
+20:18:29.498142 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:29.503049 (56)  20:18:41 duplicate_received
+20:18:29.553482 (55)  4 proceeds to forwarding to 2 peers
+20:18:29.554138 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:29.554230 (132)  20:18:15 duplicate_received
+20:18:29.557551 (130)  node 11 (yes) was notified with hops 5 (HTL=5)
+20:18:29.557680 (130)  20:18:15 duplicate_received
+20:18:29.756700 (76)  26 proceeds to forwarding to 2 peers
+20:18:29.758039 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:29.758138 (57)  20:18:41 duplicate_received
+20:18:29.761372 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:29.761489 (167)  20:18:13 duplicate_received
+20:18:29.835832 (111)  7 proceeds to forwarding to 2 peers
+20:18:29.852781 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:29.852915 (95)  20:18:41 duplicate_received
+20:18:29.896779 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:29.935364 (20)  20:18:42 duplicate_received
+20:18:29.965541 (133)  38 proceeds to forwarding to 2 peers
+20:18:29.966483 (130)  node 11 (yes) was notified with hops 4 (HTL=5)
+20:18:29.966662 (130)  20:18:15 duplicate_received
+20:18:29.968777 (151)  node 33 (yes) was notified with hops 4 (HTL=5)
+20:18:29.968982 (151)  20:18:13 duplicate_received
+20:18:30.238257 (41)  39 proceeds to forwarding to 2 peers
+20:18:30.238886 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:30.239146 (131)  20:18:15 duplicate_received
+20:18:30.242858 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:30.242971 (167)  20:18:13 duplicate_received
+20:18:30.263069 (132)  27 proceeds to forwarding to 2 peers
+20:18:30.264926 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:30.265029 (75)  20:17:35 duplicate_received
+20:18:30.268439 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:30.268562 (57)  20:18:42 duplicate_received
+20:18:30.402656 (22)  36 proceeds to forwarding to 2 peers
+20:18:30.404191 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:30.404278 (77)  20:17:44 duplicate_received
+20:18:30.411837 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:30.411936 (168)  20:18:13 duplicate_received
+20:18:30.622736 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:30.622861 (188)  20:18:13 duplicate_received
+20:18:30.625799 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:18:30.625900 (41)  20:18:30 duplicate_received
+20:18:30.704296 (168)  21 proceeds to forwarding to 2 peers
+20:18:30.709006 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:30.709410 (148)  20:18:16 duplicate_received
+20:18:30.766631 (130)  node 11 (yes) was notified with hops 4 (HTL=5)
+20:18:30.766750 (130)  20:18:16 duplicate_received
+20:18:30.792284 (92)  5 proceeds to forwarding to 2 peers
+20:18:30.840702 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:30.841034 (167)  20:18:14 duplicate_received
+20:18:30.856009 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:30.856129 (94)  20:17:35 duplicate_received
+20:18:30.870628 (39)  node 25 (yes) was notified with hops 4 (HTL=5)
+20:18:30.870745 (39)  20:18:42 duplicate_received
+20:18:30.879548 (39)  25 proceeds to forwarding to 2 peers
+20:18:30.933065 (78)  40 proceeds to forwarding to 2 peers
+20:18:30.933255 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:30.933326 (77)  20:17:44 duplicate_received
+20:18:31.11520 (56)  10 proceeds to forwarding to 2 peers
+20:18:31.69793 (130)  11 proceeds to forwarding to 2 peers
+20:18:31.72153 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:31.72274 (77)  20:17:44 duplicate_received
+20:18:31.72377 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:31.72462 (59)  20:18:42 duplicate_received
+20:18:31.72523 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:31.72584 (59)  20:18:42 duplicate_received
+20:18:31.75561 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:31.75668 (188)  20:18:14 duplicate_received
+20:18:31.89824 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:31.89924 (59)  20:18:43 duplicate_received
+20:18:31.100970 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:31.101086 (75)  20:17:35 duplicate_received
+20:18:31.105728 (149)  15 proceeds to forwarding to 2 peers
+20:18:31.108415 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:31.108523 (166)  20:18:14 duplicate_received
+20:18:31.110668 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:31.110779 (59)  20:18:43 duplicate_received
+20:18:31.133041 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:31.173999 (166)  20:18:14 duplicate_received
+20:18:31.197733 (130)  node 11 (yes) was notified with hops 4 (HTL=5)
+20:18:31.197903 (130)  20:18:16 duplicate_received
+20:18:31.327247 (20)  22 proceeds to forwarding to 2 peers
+20:18:31.357134 (114)  32 proceeds to forwarding to 2 peers
+20:18:31.610167 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:31.610364 (166)  20:18:14 duplicate_received
+20:18:31.614511 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:31.614622 (76)  20:17:45 duplicate_received
+20:18:31.743954 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:31.744068 (112)  20:17:36 duplicate_received
+20:18:31.759131 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:31.797460 (95)  20:18:43 duplicate_received
+20:18:31.817198 (59)  37 proceeds to forwarding to 2 peers
+20:18:31.818533 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:31.818627 (167)  20:18:15 duplicate_received
+20:18:31.821900 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:31.821989 (185)  20:18:15 duplicate_received
+20:18:31.826532 (131)  19 proceeds to forwarding to 2 peers
+20:18:31.826680 (129)  3 proceeds to forwarding to 2 peers
+20:18:31.873952 (167)  12 proceeds to forwarding to 2 peers
+20:18:31.875632 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:31.875882 (131)  20:18:17 duplicate_received
+20:18:31.880942 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:31.922083 (59)  20:18:43 duplicate_received
+20:18:32.204076 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:32.204199 (94)  20:17:36 duplicate_received
+20:18:32.267339 (112)  13 proceeds to forwarding to 2 peers
+20:18:32.292889 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:32.293033 (151)  20:18:15 duplicate_received
+20:18:32.293198 (166)  2 proceeds to forwarding to 2 peers
+20:18:32.344070 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:32.603069 (94)  20:17:37 duplicate_received
+20:18:32.663164 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:32.677148 (74)  20:17:37 duplicate_received
+20:18:33.141751 (187)  23 proceeds to forwarding to 2 peers
+20:18:33.143056 (77)  node 31 (yes) was notified with hops 4 (HTL=5)
+20:18:33.143196 (77)  20:17:46 duplicate_received
+20:18:33.145287 (151)  node 33 (yes) was notified with hops 4 (HTL=5)
+20:18:33.202701 (151)  20:18:16 duplicate_received
+20:18:33.346440 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:33.346634 (129)  20:18:19 duplicate_received
+20:18:33.346767 (151)  33 proceeds to forwarding to 2 peers
+20:18:33.350087 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:33.350206 (167)  20:18:16 duplicate_received
+20:18:33.468806 (185)  6 proceeds to forwarding to 2 peers
+20:18:33.470148 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:33.470255 (76)  20:17:47 duplicate_received
+20:18:33.483967 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:33.484091 (94)  20:17:38 duplicate_received
+20:18:33.541597 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:33.541712 (20)  20:18:45 duplicate_received
+20:18:33.541853 (95)  30 proceeds to forwarding to 2 peers
+20:18:33.542999 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:33.543093 (18)  20:18:45 duplicate_received
+20:18:33.757080 (94)  20 proceeds to forwarding to 2 peers
+20:18:33.772848 (111)  node 7 (yes) was notified with hops 5 (HTL=5)
+20:18:33.772963 (111)  20:17:38 duplicate_received
+20:18:33.786566 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:33.786749 (57)  20:18:45 duplicate_received
+20:18:33.817320 (148)  8 proceeds to forwarding to 2 peers
+20:18:33.817697 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:33.818127 (131)  20:18:19 duplicate_received
+20:18:33.820479 (39)  node 25 (yes) was notified with hops 5 (HTL=5)
+20:18:33.820573 (39)  20:18:45 duplicate_received
+20:18:34.136398 (77)  31 proceeds to forwarding to 2 peers
+20:18:34.137482 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:34.137579 (21)  20:17:38 duplicate_received
+20:18:34.140735 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:34.140863 (22)  20:17:38 duplicate_received
+20:18:34.287408 (39)  node 25 (yes) was notified with hops 4 (HTL=5)
+20:18:34.287522 (39)  20:18:46 duplicate_received
+20:18:34.293384 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:34.293507 (3)  20:18:34 duplicate_received
+20:18:34.311429 (188)  34 proceeds to forwarding to 2 peers
+20:18:34.313115 (75)  node 14 (yes) was notified with hops 4 (HTL=5)
+20:18:34.313219 (75)  20:17:39 duplicate_received
+20:18:34.380343 (75)  14 proceeds to forwarding to 2 peers
+20:18:34.381846 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:34.381954 (59)  20:18:46 duplicate_received
+20:18:34.382944 (21)  28 proceeds to forwarding to 2 peers
+20:18:34.383204 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:34.383265 (21)  20:17:39 duplicate_received
+20:18:34.385046 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:34.385149 (148)  20:18:20 duplicate_received
+20:18:34.428238 (57)  18 proceeds to forwarding to 2 peers
+20:18:34.429679 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:34.429786 (185)  20:18:17 duplicate_received
+20:18:34.432912 (18)  node 1 (yes) was notified with hops 4 (HTL=5)
+20:18:34.433025 (18)  20:18:46 duplicate_received
+20:18:34.758423 (76)  26 proceeds to forwarding to 2 peers
+20:18:35.275557 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:35.275660 (76)  20:17:48 duplicate_received
+20:18:35.284900 (74)  9 proceeds to forwarding to 2 peers
+20:18:35.286424 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:35.286521 (38)  20:18:47 duplicate_received
+20:18:35.289031 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:35.289142 (92)  20:17:39 duplicate_received
+20:18:35.302846 (41)  39 proceeds to forwarding to 2 peers
+20:18:35.317457 (39)  node 25 (yes) was notified with hops 4 (HTL=5)
+20:18:35.317586 (39)  20:18:47 duplicate_received
+20:18:35.335357 (3)  node 35 (yes) was notified with hops 5 (HTL=5)
+20:18:35.335618 (3)  20:18:34 duplicate_received
+20:18:35.335789 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:35.335872 (167)  20:18:18 duplicate_received
+20:18:35.395486 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:35.395613 (94)  20:17:39 duplicate_received
+20:18:35.396360 (111)  7 proceeds to forwarding to 2 peers
+20:18:35.405035 (22)  36 proceeds to forwarding to 2 peers
+20:18:35.406265 (130)  node 11 (yes) was notified with hops 4 (HTL=5)
+20:18:35.406365 (130)  20:18:21 duplicate_received
+20:18:35.455630 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:35.455756 (59)  20:18:47 duplicate_received
+20:18:35.463931 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:35.464039 (112)  20:17:40 duplicate_received
+20:18:35.795050 (92)  5 proceeds to forwarding to 2 peers
+20:18:35.812694 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:35.812878 (168)  20:18:19 duplicate_received
+20:18:35.855372 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:35.855529 (94)  20:17:40 duplicate_received
+20:18:35.880088 (39)  25 proceeds to forwarding to 2 peers
+20:18:35.881504 (130)  node 11 (yes) was notified with hops 5 (HTL=5)
+20:18:35.881699 (130)  20:18:21 duplicate_received
+20:18:35.885065 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:35.885246 (114)  20:17:40 duplicate_received
+20:18:36.60741 (18)  1 proceeds to forwarding to 2 peers
+20:18:36.367054 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:36.367215 (77)  20:17:49 duplicate_received
+20:18:36.371670 (114)  32 proceeds to forwarding to 2 peers
+20:18:36.371844 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:36.371918 (111)  20:17:40 duplicate_received
+20:18:36.381145 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:36.381261 (74)  20:17:40 duplicate_received
+20:18:36.403013 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:36.403177 (166)  20:18:19 duplicate_received
+20:18:36.403370 (130)  11 proceeds to forwarding to 2 peers
+20:18:36.403546 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:36.403785 (133)  20:18:21 duplicate_received
+20:18:36.413199 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:36.413319 (57)  20:18:48 duplicate_received
+20:18:36.416248 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:36.416382 (92)  20:17:40 duplicate_received
+20:18:36.463709 (132)  node 27 (yes) was notified with hops 4 (HTL=5)
+20:18:36.463835 (132)  20:18:21 duplicate_received
+20:18:36.496489 (20)  22 proceeds to forwarding to 2 peers
+20:18:36.613983 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:36.614136 (59)  20:18:48 duplicate_received
+20:18:36.620980 (75)  node 14 (yes) was notified with hops 4 (HTL=5)
+20:18:36.621089 (75)  20:17:41 duplicate_received
+20:18:36.730344 (129)  3 proceeds to forwarding to 2 peers
+20:18:36.730767 (131)  19 proceeds to forwarding to 2 peers
+20:18:36.733057 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:36.733241 (151)  20:18:20 duplicate_received
+20:18:36.735679 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:36.735781 (56)  20:18:48 duplicate_received
+20:18:36.817383 (59)  37 proceeds to forwarding to 2 peers
+20:18:36.818029 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:36.818203 (166)  20:18:20 duplicate_received
+20:18:36.822145 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:36.822249 (148)  20:18:22 duplicate_received
+20:18:36.876658 (167)  12 proceeds to forwarding to 2 peers
+20:18:36.879651 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:36.879761 (38)  20:18:48 duplicate_received
+20:18:36.888151 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:36.888303 (92)  20:17:41 duplicate_received
+20:18:37.190886 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:37.639890 (38)  20:18:49 duplicate_received
+20:18:37.640687 (112)  13 proceeds to forwarding to 2 peers
+20:18:37.640852 (55)  node 4 (yes) was notified with hops 5 (HTL=5)
+20:18:37.640927 (55)  20:17:42 duplicate_received
+20:18:37.651005 (166)  2 proceeds to forwarding to 2 peers
+20:18:37.678337 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:37.678452 (20)  20:18:49 duplicate_received
+20:18:37.700125 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:37.715006 (18)  20:18:49 duplicate_received
+20:18:38.347504 (151)  33 proceeds to forwarding to 2 peers
+20:18:38.348888 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:38.348987 (92)  20:17:43 duplicate_received
+20:18:38.352744 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:38.352875 (21)  20:17:43 duplicate_received
+20:18:38.409103 (38)  17 proceeds to forwarding to 2 peers
+20:18:38.413175 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:38.413287 (22)  20:17:43 duplicate_received
+20:18:38.415845 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:38.415956 (95)  20:18:50 duplicate_received
+20:18:38.473224 (185)  6 proceeds to forwarding to 2 peers
+20:18:38.474509 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:38.474613 (92)  20:17:43 duplicate_received
+20:18:38.476650 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:38.476757 (168)  20:18:21 duplicate_received
+20:18:38.542338 (95)  30 proceeds to forwarding to 2 peers
+20:18:38.542613 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:38.542689 (148)  20:18:24 duplicate_received
+20:18:38.544702 (20)  node 22 (yes) was notified with hops 4 (HTL=5)
+20:18:38.544809 (20)  20:18:50 duplicate_received
+20:18:38.768908 (94)  20 proceeds to forwarding to 2 peers
+20:18:38.770273 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:38.770375 (57)  20:18:50 duplicate_received
+20:18:38.773165 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:38.773279 (188)  20:18:22 duplicate_received
+20:18:38.817663 (148)  8 proceeds to forwarding to 2 peers
+20:18:38.818635 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:38.818722 (131)  20:18:24 duplicate_received
+20:18:38.821001 (76)  node 26 (yes) was notified with hops 5 (HTL=5)
+20:18:38.821129 (76)  20:17:52 duplicate_received
+20:18:39.53985 (3)  35 proceeds to forwarding to 2 peers
+20:18:39.55794 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:39.55899 (20)  20:18:51 duplicate_received
+20:18:39.72077 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:39.72188 (75)  20:17:43 duplicate_received
+20:18:39.139344 (77)  31 proceeds to forwarding to 2 peers
+20:18:39.199649 (78)  node 40 (yes) was notified with hops 4 (HTL=5)
+20:18:39.199780 (78)  20:17:52 duplicate_received
+20:18:39.213082 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:39.227843 (149)  20:18:24 duplicate_received
+20:18:39.289323 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:39.302836 (185)  20:18:22 duplicate_received
+20:18:39.311878 (188)  34 proceeds to forwarding to 2 peers
+20:18:39.313147 (58)  node 29 (yes) was notified with hops 4 (HTL=5)
+20:18:39.313809 (58)  20:18:51 duplicate_received
+20:18:39.316735 (130)  node 11 (yes) was notified with hops 4 (HTL=5)
+20:18:39.316921 (130)  20:18:25 duplicate_received
+20:18:39.384967 (75)  14 proceeds to forwarding to 2 peers
+20:18:39.386119 (21)  28 proceeds to forwarding to 2 peers
+20:18:39.386494 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:39.386575 (22)  20:17:44 duplicate_received
+20:18:39.386713 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:39.386791 (167)  20:18:22 duplicate_received
+20:18:39.398777 (2)  node 24 (yes) was notified with hops 5 (HTL=5)
+20:18:39.398896 (2)  20:18:39 duplicate_received
+20:18:39.429008 (57)  18 proceeds to forwarding to 2 peers
+20:18:39.490665 (78)  node 40 (yes) was notified with hops 4 (HTL=5)
+20:18:39.490784 (78)  20:17:53 duplicate_received
+20:18:39.493317 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:39.493404 (1)  20:18:39 duplicate_received
+20:18:39.559997 (55)  4 proceeds to forwarding to 2 peers
+20:18:39.573228 (18)  node 1 (yes) was notified with hops 4 (HTL=5)
+20:18:39.573346 (18)  20:18:51 duplicate_received
+20:18:39.620854 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:39.620976 (94)  20:17:44 duplicate_received
+20:18:39.758948 (76)  26 proceeds to forwarding to 2 peers
+20:18:39.760146 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:39.760278 (74)  20:17:44 duplicate_received
+20:18:39.762860 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:39.762972 (59)  20:18:51 duplicate_received
+20:18:39.844510 (111)  7 proceeds to forwarding to 2 peers
+20:18:39.857139 (3)  node 35 (yes) was notified with hops 5 (HTL=5)
+20:18:39.857257 (3)  20:18:39 duplicate_received
+20:18:39.900877 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:39.900969 (77)  20:17:53 duplicate_received
+20:18:39.975380 (133)  38 proceeds to forwarding to 2 peers
+20:18:39.976223 (151)  node 33 (yes) was notified with hops 4 (HTL=5)
+20:18:39.976463 (151)  20:18:23 duplicate_received
+20:18:39.978605 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:39.978780 (131)  20:18:25 duplicate_received
+20:18:40.109361 (74)  9 proceeds to forwarding to 2 peers
+20:18:40.120080 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:40.120226 (21)  20:17:44 duplicate_received
+20:18:40.177012 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:40.184377 (59)  20:18:52 duplicate_received
+20:18:40.272996 (132)  27 proceeds to forwarding to 2 peers
+20:18:40.277591 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:40.277691 (168)  20:18:23 duplicate_received
+20:18:40.335309 (111)  node 7 (yes) was notified with hops 5 (HTL=5)
+20:18:40.350014 (111)  20:17:45 duplicate_received
+20:18:40.408612 (22)  36 proceeds to forwarding to 2 peers
+20:18:40.473640 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:40.473753 (149)  20:18:26 duplicate_received
+20:18:40.480636 (132)  node 27 (yes) was notified with hops 4 (HTL=5)
+20:18:40.500558 (132)  20:18:26 duplicate_received
+20:18:40.627416 (57)  node 18 (yes) was notified with hops 4 (HTL=5)
+20:18:40.627536 (57)  20:18:52 duplicate_received
+20:18:40.627664 (56)  10 proceeds to forwarding to 2 peers
+20:18:40.707297 (168)  21 proceeds to forwarding to 2 peers
+20:18:40.707736 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:40.713596 (185)  20:18:24 duplicate_received
+20:18:40.770379 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:40.780720 (111)  20:17:45 duplicate_received
+20:18:40.852383 (78)  40 proceeds to forwarding to 2 peers
+20:18:40.863898 (55)  node 4 (yes) was notified with hops 5 (HTL=5)
+20:18:40.864005 (55)  20:17:45 duplicate_received
+20:18:40.889042 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:40.889157 (75)  20:17:45 duplicate_received
+20:18:40.889295 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:40.889404 (92)  20:17:45 duplicate_received
+20:18:40.889465 (92)  5 proceeds to forwarding to 2 peers
+20:18:41.29364 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:41.29564 (168)  20:18:24 duplicate_received
+20:18:41.63356 (18)  1 proceeds to forwarding to 2 peers
+20:18:41.93916 (149)  node 15 (yes) was notified with hops 5 (HTL=5)
+20:18:41.94245 (149)  20:18:26 duplicate_received
+20:18:41.101110 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:41.101207 (112)  20:17:45 duplicate_received
+20:18:41.111025 (149)  15 proceeds to forwarding to 2 peers
+20:18:41.115406 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:41.115614 (132)  20:18:26 duplicate_received
+20:18:41.123964 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:41.124087 (95)  20:18:53 duplicate_received
+20:18:41.135439 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:41.156058 (133)  20:18:26 duplicate_received
+20:18:41.165695 (2)  24 proceeds to forwarding to 2 peers
+20:18:41.201372 (130)  11 proceeds to forwarding to 2 peers
+20:18:41.202109 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:41.202192 (77)  20:17:54 duplicate_received
+20:18:41.202248 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:41.202303 (77)  20:17:54 duplicate_received
+20:18:41.300358 (20)  22 proceeds to forwarding to 2 peers
+20:18:41.331917 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:41.332025 (111)  20:17:45 duplicate_received
+20:18:41.433502 (39)  node 25 (yes) was notified with hops 5 (HTL=5)
+20:18:41.433614 (39)  20:18:53 duplicate_received
+20:18:41.600170 (1)  16 proceeds to forwarding to 2 peers
+20:18:41.600370 (3)  node 35 (yes) was notified with hops 5 (HTL=5)
+20:18:41.600458 (3)  20:18:41 duplicate_received
+20:18:41.601786 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:41.601991 (151)  20:18:24 duplicate_received
+20:18:41.624951 (58)  node 29 (yes) was notified with hops 5 (HTL=5)
+20:18:41.625058 (58)  20:18:53 duplicate_received
+20:18:41.625297 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:41.625377 (59)  20:18:53 duplicate_received
+20:18:41.733895 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:41.734093 (185)  20:18:25 duplicate_received
+20:18:41.818015 (59)  37 proceeds to forwarding to 2 peers
+20:18:41.819165 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:41.819255 (38)  20:18:53 duplicate_received
+20:18:41.831318 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:41.846342 (1)  20:18:41 duplicate_received
+20:18:41.853204 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:41.853294 (148)  20:18:27 duplicate_received
+20:18:41.853447 (131)  19 proceeds to forwarding to 2 peers
+20:18:41.879580 (167)  12 proceeds to forwarding to 2 peers
+20:18:41.880887 (77)  node 31 (yes) was notified with hops 4 (HTL=5)
+20:18:41.880986 (77)  20:17:55 duplicate_received
+20:18:41.882772 (151)  node 33 (yes) was notified with hops 4 (HTL=5)
+20:18:41.882958 (151)  20:18:25 duplicate_received
+20:18:42.269270 (112)  13 proceeds to forwarding to 2 peers
+20:18:42.385187 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:42.385366 (3)  20:18:42 duplicate_received
+20:18:42.388850 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:42.388939 (166)  20:18:25 duplicate_received
+20:18:43.120934 (58)  29 proceeds to forwarding to 2 peers
+20:18:43.121865 (149)  node 15 (yes) was notified with hops 5 (HTL=5)
+20:18:43.122143 (149)  20:18:28 duplicate_received
+20:18:43.125778 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:43.125885 (20)  20:18:55 duplicate_received
+20:18:43.348597 (151)  33 proceeds to forwarding to 2 peers
+20:18:43.350340 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:43.391162 (131)  20:18:29 duplicate_received
+20:18:43.410112 (38)  17 proceeds to forwarding to 2 peers
+20:18:43.414996 (2)  node 24 (yes) was notified with hops 5 (HTL=5)
+20:18:43.415153 (2)  20:18:43 duplicate_received
+20:18:43.417635 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:43.417746 (185)  20:18:26 duplicate_received
+20:18:43.419891 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:43.419985 (112)  20:17:48 duplicate_received
+20:18:43.472896 (185)  6 proceeds to forwarding to 2 peers
+20:18:43.474866 (22)  node 36 (yes) was notified with hops 5 (HTL=5)
+20:18:43.474961 (22)  20:17:48 duplicate_received
+20:18:43.476668 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:43.476756 (168)  20:18:26 duplicate_received
+20:18:43.542763 (95)  30 proceeds to forwarding to 2 peers
+20:18:43.604061 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:43.604181 (168)  20:18:26 duplicate_received
+20:18:43.606119 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:43.606216 (149)  20:18:29 duplicate_received
+20:18:43.780260 (94)  20 proceeds to forwarding to 2 peers
+20:18:43.798387 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:43.798506 (59)  20:18:55 duplicate_received
+20:18:43.820540 (148)  8 proceeds to forwarding to 2 peers
+20:18:43.821988 (18)  node 1 (yes) was notified with hops 4 (HTL=5)
+20:18:43.822084 (18)  20:18:55 duplicate_received
+20:18:43.825221 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:43.825323 (1)  20:18:43 duplicate_received
+20:18:43.849149 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:43.849274 (167)  20:18:27 duplicate_received
+20:18:44.57287 (3)  35 proceeds to forwarding to 2 peers
+20:18:44.66145 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:44.66305 (20)  20:18:56 duplicate_received
+20:18:44.80172 (75)  node 14 (yes) was notified with hops 5 (HTL=5)
+20:18:44.80286 (75)  20:17:48 duplicate_received
+20:18:44.141019 (77)  31 proceeds to forwarding to 2 peers
+20:18:44.141885 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:44.142067 (148)  20:18:29 duplicate_received
+20:18:44.145155 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:44.145267 (133)  20:18:29 duplicate_received
+20:18:44.289838 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:44.289953 (78)  20:17:58 duplicate_received
+20:18:44.291843 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:44.291952 (59)  20:18:56 duplicate_received
+20:18:44.396301 (75)  14 proceeds to forwarding to 2 peers
+20:18:44.400392 (21)  28 proceeds to forwarding to 2 peers
+20:18:44.431452 (57)  18 proceeds to forwarding to 2 peers
+20:18:44.491829 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:44.491960 (148)  20:18:30 duplicate_received
+20:18:44.497464 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:18:44.497576 (1)  20:18:44 duplicate_received
+20:18:44.524752 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:44.524885 (148)  20:18:30 duplicate_received
+20:18:44.552163 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:44.580467 (92)  20:17:49 duplicate_received
+20:18:44.619927 (55)  4 proceeds to forwarding to 2 peers
+20:18:44.622086 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:44.622193 (149)  20:18:30 duplicate_received
+20:18:44.623519 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:44.623614 (112)  20:17:49 duplicate_received
+20:18:44.844323 (111)  7 proceeds to forwarding to 2 peers
+20:18:44.856899 (76)  node 26 (yes) was notified with hops 5 (HTL=5)
+20:18:44.857007 (76)  20:17:58 duplicate_received
+20:18:44.897170 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:44.904281 (132)  20:18:30 duplicate_received
+20:18:44.976318 (133)  38 proceeds to forwarding to 2 peers
+20:18:44.976740 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:44.976933 (149)  20:18:30 duplicate_received
+20:18:44.981020 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:44.981130 (21)  20:17:49 duplicate_received
+20:18:45.273178 (132)  27 proceeds to forwarding to 2 peers
+20:18:45.275652 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:45.275753 (166)  20:18:28 duplicate_received
+20:18:45.284181 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:45.284281 (74)  20:17:50 duplicate_received
+20:18:45.407492 (22)  36 proceeds to forwarding to 2 peers
+20:18:45.408516 (188)  node 34 (yes) was notified with hops 4 (HTL=5)
+20:18:45.408609 (188)  20:18:28 duplicate_received
+20:18:45.411460 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:45.411580 (3)  20:18:45 duplicate_received
+20:18:45.708853 (168)  21 proceeds to forwarding to 2 peers
+20:18:45.710696 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:45.710796 (38)  20:18:57 duplicate_received
+20:18:45.716731 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:45.716852 (77)  20:17:59 duplicate_received
+20:18:45.798027 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:45.798135 (20)  20:18:57 duplicate_received
+20:18:45.800537 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:45.800633 (78)  20:17:59 duplicate_received
+20:18:45.852409 (78)  40 proceeds to forwarding to 2 peers
+20:18:45.853760 (57)  node 18 (yes) was notified with hops 4 (HTL=5)
+20:18:45.853854 (57)  20:18:57 duplicate_received
+20:18:45.856192 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:45.856285 (38)  20:18:57 duplicate_received
+20:18:45.891083 (39)  25 proceeds to forwarding to 2 peers
+20:18:45.952932 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:45.953047 (41)  20:18:45 duplicate_received
+20:18:45.955956 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:45.956070 (149)  20:18:31 duplicate_received
+20:18:46.43676 (92)  5 proceeds to forwarding to 2 peers
+20:18:46.95458 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:46.95567 (148)  20:18:31 duplicate_received
+20:18:46.98137 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:46.98244 (185)  20:18:29 duplicate_received
+20:18:46.111676 (149)  15 proceeds to forwarding to 2 peers
+20:18:46.112172 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:46.112345 (132)  20:18:31 duplicate_received
+20:18:46.114765 (56)  node 10 (yes) was notified with hops 5 (HTL=5)
+20:18:46.114871 (56)  20:18:58 duplicate_received
+20:18:46.122886 (18)  1 proceeds to forwarding to 2 peers
+20:18:46.124172 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:46.124250 (188)  20:18:29 duplicate_received
+20:18:46.126389 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:46.126497 (167)  20:18:29 duplicate_received
+20:18:46.165867 (2)  24 proceeds to forwarding to 2 peers
+20:18:46.352049 (55)  node 4 (yes) was notified with hops 4 (HTL=5)
+20:18:46.392567 (55)  20:17:50 duplicate_received
+20:18:46.446928 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:46.447054 (95)  20:18:58 duplicate_received
+20:18:46.447196 (20)  22 proceeds to forwarding to 2 peers
+20:18:46.605357 (1)  16 proceeds to forwarding to 2 peers
+20:18:46.610921 (149)  node 15 (yes) was notified with hops 5 (HTL=5)
+20:18:46.611153 (149)  20:18:32 duplicate_received
+20:18:46.613810 (3)  node 35 (yes) was notified with hops 5 (HTL=5)
+20:18:46.614013 (3)  20:18:46 duplicate_received
+20:18:46.752219 (74)  node 9 (yes) was notified with hops 4 (HTL=5)
+20:18:46.752328 (74)  20:17:51 duplicate_received
+20:18:46.770802 (59)  node 37 (yes) was notified with hops 4 (HTL=5)
+20:18:46.770918 (59)  20:18:58 duplicate_received
+20:18:46.818713 (59)  37 proceeds to forwarding to 2 peers
+20:18:46.820526 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:46.820631 (151)  20:18:30 duplicate_received
+20:18:46.825703 (131)  19 proceeds to forwarding to 2 peers
+20:18:46.878975 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:46.891158 (57)  20:18:58 duplicate_received
+20:18:46.941250 (167)  12 proceeds to forwarding to 2 peers
+20:18:47.5144 (132)  node 27 (yes) was notified with hops 4 (HTL=5)
+20:18:47.5295 (132)  20:18:32 duplicate_received
+20:18:47.11627 (2)  node 24 (yes) was notified with hops 4 (HTL=5)
+20:18:47.11757 (2)  20:18:46 duplicate_received
+20:18:47.196640 (166)  2 proceeds to forwarding to 2 peers
+20:18:47.198595 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:47.264565 (77)  20:18:00 duplicate_received
+20:18:47.280213 (112)  13 proceeds to forwarding to 2 peers
+20:18:47.292923 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:47.293033 (148)  20:18:32 duplicate_received
+20:18:47.319883 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:47.320052 (167)  20:18:30 duplicate_received
+20:18:47.349180 (58)  node 29 (yes) was notified with hops 5 (HTL=5)
+20:18:47.349290 (58)  20:18:59 duplicate_received
+20:18:48.122403 (58)  29 proceeds to forwarding to 2 peers
+20:18:48.122730 (56)  node 10 (yes) was notified with hops 4 (HTL=5)
+20:18:48.122802 (56)  20:19:00 duplicate_received
+20:18:48.124501 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:48.165416 (166)  20:18:31 duplicate_received
+20:18:48.350746 (151)  33 proceeds to forwarding to 2 peers
+20:18:48.351828 (132)  node 27 (yes) was notified with hops 4 (HTL=5)
+20:18:48.351981 (132)  20:18:34 duplicate_received
+20:18:48.355733 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:48.355846 (111)  20:17:53 duplicate_received
+20:18:48.411082 (38)  17 proceeds to forwarding to 2 peers
+20:18:48.473696 (148)  node 8 (yes) was notified with hops 5 (HTL=5)
+20:18:48.473818 (148)  20:18:34 duplicate_received
+20:18:48.474981 (149)  node 15 (yes) was notified with hops 5 (HTL=5)
+20:18:48.475061 (149)  20:18:34 duplicate_received
+20:18:48.475730 (185)  6 proceeds to forwarding to 2 peers
+20:18:48.476284 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:48.476446 (168)  20:18:31 duplicate_received
+20:18:48.477527 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:48.477617 (187)  20:18:31 duplicate_received
+20:18:48.545236 (95)  30 proceeds to forwarding to 2 peers
+20:18:48.606595 (187)  node 23 (yes) was notified with hops 5 (HTL=5)
+20:18:48.606722 (187)  20:18:31 duplicate_received
+20:18:48.641429 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:48.641554 (94)  20:17:53 duplicate_received
+20:18:48.777208 (94)  20 proceeds to forwarding to 2 peers
+20:18:48.821078 (148)  8 proceeds to forwarding to 2 peers
+20:18:48.822325 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:48.822480 (38)  20:19:00 duplicate_received
+20:18:48.828488 (3)  node 35 (yes) was notified with hops 5 (HTL=5)
+20:18:48.828604 (3)  20:18:48 duplicate_received
+20:18:48.839033 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:48.839184 (41)  20:18:48 duplicate_received
+20:18:48.841260 (166)  node 2 (yes) was notified with hops 4 (HTL=5)
+20:18:48.841369 (166)  20:18:32 duplicate_received
+20:18:49.56049 (3)  35 proceeds to forwarding to 2 peers
+20:18:49.132414 (21)  node 28 (yes) was notified with hops 5 (HTL=5)
+20:18:49.132535 (21)  20:17:53 duplicate_received
+20:18:49.142567 (77)  31 proceeds to forwarding to 2 peers
+20:18:49.143261 (167)  node 12 (yes) was notified with hops 4 (HTL=5)
+20:18:49.143435 (167)  20:18:32 duplicate_received
+20:18:49.146650 (56)  node 10 (yes) was notified with hops 4 (HTL=5)
+20:18:49.146746 (56)  20:19:01 duplicate_received
+20:18:49.150240 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:49.150340 (185)  20:18:32 duplicate_received
+20:18:49.295076 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:49.295230 (18)  20:19:01 duplicate_received
+20:18:49.297114 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:49.297303 (167)  20:18:32 duplicate_received
+20:18:49.320532 (188)  34 proceeds to forwarding to 2 peers
+20:18:49.320777 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:49.320977 (167)  20:18:32 duplicate_received
+20:18:49.322806 (149)  node 15 (yes) was notified with hops 5 (HTL=5)
+20:18:49.323059 (149)  20:18:35 duplicate_received
+20:18:49.392747 (21)  28 proceeds to forwarding to 2 peers
+20:18:49.493814 (57)  18 proceeds to forwarding to 2 peers
+20:18:49.495287 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:49.495407 (92)  20:17:54 duplicate_received
+20:18:49.497891 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:49.498004 (77)  20:18:03 duplicate_received
+20:18:49.563497 (55)  4 proceeds to forwarding to 2 peers
+20:18:49.745131 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:49.745378 (77)  20:18:03 duplicate_received
+20:18:49.749458 (133)  node 38 (yes) was notified with hops 5 (HTL=5)
+20:18:49.749658 (133)  20:18:35 duplicate_received
+20:18:49.766561 (76)  26 proceeds to forwarding to 2 peers
+20:18:49.767605 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:49.767730 (131)  20:18:35 duplicate_received
+20:18:49.769998 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:18:49.770129 (187)  20:18:33 duplicate_received
+20:18:49.845959 (111)  7 proceeds to forwarding to 2 peers
+20:18:49.846467 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:49.846584 (168)  20:18:33 duplicate_received
+20:18:49.848964 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:49.849089 (38)  20:19:01 duplicate_received
+20:18:49.977584 (133)  38 proceeds to forwarding to 2 peers
+20:18:50.989479 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:50.989794 (94)  20:17:55 duplicate_received
+20:18:50.993873 (56)  10 proceeds to forwarding to 2 peers
+20:18:50.994974 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:50.995095 (188)  20:18:33 duplicate_received
+20:18:50.995243 (188)  node 34 (yes) was notified with hops 4 (HTL=5)
+20:18:50.995335 (188)  20:18:34 duplicate_received
+20:18:50.997813 (132)  27 proceeds to forwarding to 2 peers
+20:18:51.569 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:18:51.714 (187)  20:18:33 duplicate_received
+20:18:51.1225 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:51.1367 (131)  20:18:35 duplicate_received
+20:18:51.1489 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:51.1629 (131)  20:18:36 duplicate_received
+20:18:51.3870 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:51.3984 (38)  20:19:02 duplicate_received
+20:18:51.4075 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:51.4153 (38)  20:19:02 duplicate_received
+20:18:51.11138 (168)  21 proceeds to forwarding to 2 peers
+20:18:51.16348 (92)  5 proceeds to forwarding to 2 peers
+20:18:51.19968 (74)  9 proceeds to forwarding to 2 peers
+20:18:51.27084 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:51.27279 (185)  20:18:33 duplicate_received
+20:18:51.34681 (41)  39 proceeds to forwarding to 2 peers
+20:18:51.36771 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:51.36940 (114)  20:17:55 duplicate_received
+20:18:51.46555 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:51.46708 (1)  20:18:50 duplicate_received
+20:18:51.51184 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:51.51473 (167)  20:18:33 duplicate_received
+20:18:51.51744 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:51.52001 (57)  20:19:02 duplicate_received
+20:18:51.64639 (18)  1 proceeds to forwarding to 2 peers
+20:18:51.65539 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:51.65663 (38)  20:19:03 duplicate_received
+20:18:51.71855 (151)  node 33 (yes) was notified with hops 4 (HTL=5)
+20:18:51.72025 (151)  20:18:34 duplicate_received
+20:18:51.111824 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:52.128303 (59)  20:19:02 duplicate_received
+20:18:52.128435 (59)  37 proceeds to forwarding to 2 peers
+20:18:52.128620 (167)  12 proceeds to forwarding to 2 peers
+20:18:52.128975 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:52.129088 (18)  20:19:03 duplicate_received
+20:18:52.133923 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:52.134216 (188)  20:18:34 duplicate_received
+20:18:52.134308 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:52.134397 (188)  20:18:35 duplicate_received
+20:18:52.136830 (149)  15 proceeds to forwarding to 2 peers
+20:18:52.137455 (130)  node 11 (yes) was notified with hops 4 (HTL=5)
+20:18:52.137558 (130)  20:18:36 duplicate_received
+20:18:52.143581 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:52.143682 (41)  20:18:51 duplicate_received
+20:18:52.143750 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:18:52.143804 (41)  20:18:51 duplicate_received
+20:18:52.143857 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:18:52.143946 (41)  20:18:51 duplicate_received
+20:18:52.144061 (1)  16 proceeds to forwarding to 2 peers
+20:18:52.148672 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:52.148788 (132)  20:18:37 duplicate_received
+20:18:52.163482 (112)  node 13 (yes) was notified with hops 5 (HTL=5)
+20:18:52.163580 (112)  20:17:56 duplicate_received
+20:18:52.167252 (131)  19 proceeds to forwarding to 2 peers
+20:18:52.169503 (114)  32 proceeds to forwarding to 2 peers
+20:18:52.169705 (168)  node 21 (yes) was notified with hops 4 (HTL=5)
+20:18:52.169800 (168)  20:18:34 duplicate_received
+20:18:52.173177 (74)  node 9 (yes) was notified with hops 4 (HTL=5)
+20:18:52.173286 (74)  20:17:55 duplicate_received
+20:18:52.183754 (38)  node 17 (yes) was notified with hops 4 (HTL=5)
+20:18:52.183867 (38)  20:19:03 duplicate_received
+20:18:52.188116 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:52.188254 (77)  20:18:05 duplicate_received
+20:18:52.188510 (2)  24 proceeds to forwarding to 2 peers
+20:18:52.200449 (166)  2 proceeds to forwarding to 2 peers
+20:18:52.204971 (38)  node 17 (yes) was notified with hops 5 (HTL=5)
+20:18:52.205078 (38)  20:19:04 duplicate_received
+20:18:52.248668 (95)  node 30 (yes) was notified with hops 4 (HTL=5)
+20:18:52.249041 (95)  20:19:03 duplicate_received
+20:18:52.277588 (112)  13 proceeds to forwarding to 2 peers
+20:18:52.284331 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:52.284443 (92)  20:17:57 duplicate_received
+20:18:52.702134 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:52.702208 (41)  20:18:52 duplicate_received
+20:18:52.702342 (2)  node 24 (yes) was notified with hops 5 (HTL=5)
+20:18:52.702426 (2)  20:18:52 duplicate_received
+20:18:53.154259 (187)  23 proceeds to forwarding to 2 peers
+20:18:53.157217 (74)  node 9 (yes) was notified with hops 5 (HTL=5)
+20:18:53.157323 (74)  20:17:57 duplicate_received
+20:18:53.160173 (111)  node 7 (yes) was notified with hops 5 (HTL=5)
+20:18:53.160283 (111)  20:17:57 duplicate_received
+20:18:53.353770 (151)  33 proceeds to forwarding to 2 peers
+20:18:53.353967 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:53.354043 (185)  20:18:36 duplicate_received
+20:18:53.355747 (76)  node 26 (yes) was notified with hops 5 (HTL=5)
+20:18:53.355850 (76)  20:18:07 duplicate_received
+20:18:53.413043 (38)  17 proceeds to forwarding to 2 peers
+20:18:53.414898 (18)  node 1 (yes) was notified with hops 5 (HTL=5)
+20:18:53.415023 (18)  20:19:05 duplicate_received
+20:18:53.420301 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:53.420529 (151)  20:18:36 duplicate_received
+20:18:53.476074 (185)  6 proceeds to forwarding to 2 peers
+20:18:53.477577 (133)  node 38 (yes) was notified with hops 4 (HTL=5)
+20:18:53.477690 (133)  20:18:39 duplicate_received
+20:18:53.480962 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:53.481069 (129)  20:18:39 duplicate_received
+20:18:53.546969 (95)  30 proceeds to forwarding to 2 peers
+20:18:53.548225 (39)  node 25 (yes) was notified with hops 5 (HTL=5)
+20:18:53.548328 (39)  20:19:05 duplicate_received
+20:18:53.554725 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:53.554862 (166)  20:18:36 duplicate_received
+20:18:53.784475 (94)  20 proceeds to forwarding to 2 peers
+20:18:53.800776 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:18:53.800917 (166)  20:18:37 duplicate_received
+20:18:53.852654 (131)  node 19 (yes) was notified with hops 5 (HTL=5)
+20:18:53.852887 (131)  20:18:39 duplicate_received
+20:18:54.145137 (77)  31 proceeds to forwarding to 2 peers
+20:18:54.266244 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:18:54.266379 (187)  20:18:37 duplicate_received
+20:18:54.269623 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:54.269728 (112)  20:17:58 duplicate_received
+20:18:54.323667 (188)  34 proceeds to forwarding to 2 peers
+20:18:54.325263 (114)  node 32 (yes) was notified with hops 5 (HTL=5)
+20:18:54.325369 (114)  20:17:59 duplicate_received
+20:18:54.328229 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:54.328387 (95)  20:19:06 duplicate_received
+20:18:54.435052 (57)  18 proceeds to forwarding to 2 peers
+20:18:54.435618 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:54.435796 (185)  20:18:37 duplicate_received
+20:18:54.439372 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:18:54.439486 (129)  20:18:40 duplicate_received
+20:18:54.768141 (76)  26 proceeds to forwarding to 2 peers
+20:18:54.768946 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:54.769133 (185)  20:18:38 duplicate_received
+20:18:54.772368 (41)  node 39 (yes) was notified with hops 4 (HTL=5)
+20:18:55.211464 (41)  20:18:54 duplicate_received
+20:18:55.213605 (185)  node 6 (yes) was notified with hops 4 (HTL=5)
+20:18:55.213759 (185)  20:18:38 duplicate_received
+20:18:55.213888 (111)  7 proceeds to forwarding to 2 peers
+20:18:55.219210 (133)  38 proceeds to forwarding to 2 peers
+20:18:55.238180 (74)  9 proceeds to forwarding to 2 peers
+20:18:55.238948 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:55.239058 (188)  20:18:38 duplicate_received
+20:18:55.242500 (20)  node 22 (yes) was notified with hops 5 (HTL=5)
+20:18:55.242573 (20)  20:19:07 duplicate_received
+20:18:55.252683 (41)  39 proceeds to forwarding to 2 peers
+20:18:55.253363 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:55.253462 (168)  20:18:38 duplicate_received
+20:18:55.256496 (57)  node 18 (yes) was notified with hops 5 (HTL=5)
+20:18:55.256621 (57)  20:19:07 duplicate_received
+20:18:55.271525 (2)  node 24 (yes) was notified with hops 4 (HTL=5)
+20:18:55.271776 (2)  20:18:54 duplicate_received
+20:18:55.271860 (2)  node 24 (yes) was notified with hops 5 (HTL=5)
+20:18:55.271927 (2)  20:18:54 duplicate_received
+20:18:55.279388 (132)  27 proceeds to forwarding to 2 peers
+20:18:55.331684 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:56.384443 (94)  20:17:59 duplicate_received
+20:18:56.384608 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:56.384673 (94)  20:18:00 duplicate_received
+20:18:56.384736 (94)  node 20 (yes) was notified with hops 5 (HTL=5)
+20:18:56.384797 (94)  20:18:00 duplicate_received
+20:18:56.384888 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:18:56.384950 (94)  20:18:00 duplicate_received
+20:18:56.386189 (130)  11 proceeds to forwarding to 2 peers
+20:18:56.386688 (132)  node 27 (yes) was notified with hops 5 (HTL=5)
+20:18:56.386760 (132)  20:18:41 duplicate_received
+20:18:56.398893 (20)  22 proceeds to forwarding to 2 peers
+20:18:56.399200 (114)  32 proceeds to forwarding to 2 peers
+20:18:56.400334 (111)  node 7 (yes) was notified with hops 4 (HTL=5)
+20:18:56.400434 (111)  20:18:00 duplicate_received
+20:18:56.402033 (129)  node 3 (yes) was notified with hops 5 (HTL=5)
+20:18:56.402133 (129)  20:18:41 duplicate_received
+20:18:56.406196 (92)  5 proceeds to forwarding to 2 peers
+20:18:56.406308 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:18:56.406367 (92)  20:18:01 duplicate_received
+20:18:56.410568 (39)  FINAL: node 25 yes
+20:18:56.410682 (39)  END_LOG
+20:18:56.413240 (78)  node 40 (yes) was notified with hops 5 (HTL=5)
+20:18:56.413342 (78)  20:18:09 duplicate_received
+20:18:56.415494 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:56.415599 (188)  20:18:39 duplicate_received
+20:18:56.416751 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:56.416896 (185)  20:18:39 duplicate_received
+20:18:56.420098 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:18:56.420192 (41)  20:18:56 duplicate_received
+20:18:56.425378 (18)  FINAL: node 1 yes
+20:18:56.425526 (18)  END_LOG
+20:18:56.428916 (74)  node 9 (yes) was notified with hops 4 (HTL=5)
+20:18:56.429144 (74)  20:18:00 duplicate_received
+20:18:56.436295 (168)  21 proceeds to forwarding to 2 peers
+20:18:56.442375 (55)  node 4 (yes) was notified with hops 5 (HTL=5)
+20:18:56.442474 (55)  20:18:00 duplicate_received
+20:18:56.444141 (149)  node 15 (yes) was notified with hops 4 (HTL=5)
+20:18:56.444273 (149)  20:18:40 duplicate_received
+20:18:56.444348 (149)  15 proceeds to forwarding to 2 peers
+20:18:56.444550 (59)  node 37 (yes) was notified with hops 5 (HTL=5)
+20:18:56.444632 (59)  20:19:07 duplicate_received
+20:18:56.504296 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:56.504421 (148)  20:18:41 duplicate_received
+20:18:56.504800 (22)  FINAL: node 36 yes
+20:18:56.504947 (22)  END_LOG
+20:18:56.565047 (2)  24 proceeds to forwarding to 2 peers
+20:18:56.620756 (129)  3 proceeds to forwarding to 2 peers
+20:18:56.623465 (77)  node 31 (yes) was notified with hops 5 (HTL=5)
+20:18:56.623609 (77)  20:18:10 duplicate_received
+20:18:56.625830 (2)  node 24 (yes) was notified with hops 5 (HTL=5)
+20:18:56.625964 (2)  20:18:56 duplicate_received
+20:18:56.762227 (3)  node 35 (yes) was notified with hops 4 (HTL=5)
+20:18:56.957864 (3)  20:18:56 duplicate_received
+20:18:56.966565 (148)  node 8 (yes) was notified with hops 4 (HTL=5)
+20:18:56.966721 (148)  20:18:42 duplicate_received
+20:18:57.17604 (131)  19 proceeds to forwarding to 2 peers
+20:18:57.17820 (59)  FINAL: node 37 yes
+20:18:57.17911 (59)  END_LOG
+20:18:57.203619 (166)  2 proceeds to forwarding to 2 peers
+20:18:57.541434 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:18:57.541573 (188)  20:18:40 duplicate_received
+20:18:57.557794 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:57.557914 (167)  20:18:40 duplicate_received
+20:18:57.566422 (76)  node 26 (yes) was notified with hops 4 (HTL=5)
+20:18:57.566526 (76)  20:18:10 duplicate_received
+20:18:57.573239 (112)  node 13 (yes) was notified with hops 4 (HTL=5)
+20:18:57.573353 (112)  20:18:02 duplicate_received
+20:18:57.573425 (112)  13 proceeds to forwarding to 2 peers
+20:18:58.59682 (58)  FINAL: node 29 yes
+20:18:58.63242 (58)  END_LOG
+20:18:58.158205 (187)  23 proceeds to forwarding to 2 peers
+20:18:58.218634 (185)  node 6 (yes) was notified with hops 5 (HTL=5)
+20:18:58.218824 (185)  20:18:41 duplicate_received
+20:18:58.219876 (167)  node 12 (yes) was notified with hops 5 (HTL=5)
+20:18:58.219963 (167)  20:18:41 duplicate_received
+20:18:58.343410 (38)  FINAL: node 17 yes
+20:18:58.344994 (38)  END_LOG
+20:18:58.358541 (151)  33 proceeds to forwarding to 2 peers
+20:18:58.364506 (21)  node 28 (yes) was notified with hops 4 (HTL=5)
+20:18:58.364622 (21)  20:18:03 duplicate_received
+20:18:58.375099 (1)  node 16 (yes) was notified with hops 4 (HTL=5)
+20:18:58.375265 (1)  20:18:58 duplicate_received
+20:18:58.477135 (185)  6 proceeds to forwarding to 2 peers
+20:18:58.478734 (95)  node 30 (yes) was notified with hops 5 (HTL=5)
+20:18:58.478834 (95)  20:19:10 duplicate_received
+20:18:58.486181 (95)  FINAL: node 30 yes
+20:18:58.486914 (95)  END_LOG
+20:18:58.497384 (92)  node 5 (yes) was notified with hops 5 (HTL=5)
+20:18:58.497569 (92)  20:18:03 duplicate_received
+20:18:58.785025 (94)  20 proceeds to forwarding to 2 peers
+20:18:58.828332 (148)  8 proceeds to forwarding to 2 peers
+20:18:58.830189 (168)  node 21 (yes) was notified with hops 5 (HTL=5)
+20:18:58.830304 (168)  20:18:42 duplicate_received
+20:18:58.832782 (151)  node 33 (yes) was notified with hops 5 (HTL=5)
+20:18:58.832923 (151)  20:18:42 duplicate_received
+20:18:59.60878 (3)  35 proceeds to forwarding to 2 peers
+20:18:59.74232 (77)  FINAL: node 31 yes
+20:18:59.74354 (77)  END_LOG
+20:18:59.209990 (21)  FINAL: node 28 yes
+20:18:59.210111 (21)  END_LOG
+20:18:59.324853 (188)  34 proceeds to forwarding to 2 peers
+20:18:59.325875 (131)  node 19 (yes) was notified with hops 4 (HTL=5)
+20:18:59.326059 (131)  20:18:45 duplicate_received
+20:18:59.401179 (57)  FINAL: node 18 yes
+20:18:59.401403 (57)  END_LOG
+20:18:59.465843 (55)  FINAL: node 4 yes
+20:18:59.465959 (55)  END_LOG
+20:18:59.699243 (76)  FINAL: node 26 yes
+20:18:59.699363 (76)  END_LOG
+20:18:59.772603 (111)  FINAL: node 7 yes
+20:18:59.772833 (111)  END_LOG
+20:19:00.14561 (74)  FINAL: node 9 yes
+20:19:00.14678 (74)  END_LOG
+20:19:00.183392 (132)  FINAL: node 27 yes
+20:19:00.184532 (132)  END_LOG
+20:19:00.253726 (41)  39 proceeds to forwarding to 2 peers
+20:19:00.315806 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:19:00.315929 (187)  20:18:43 duplicate_received
+20:19:00.327610 (92)  node 5 (yes) was notified with hops 4 (HTL=5)
+20:19:00.327728 (92)  20:18:05 duplicate_received
+20:19:00.571745 (56)  FINAL: node 10 yes
+20:19:00.571867 (56)  END_LOG
+20:19:00.711099 (92)  FINAL: node 5 yes
+20:19:00.730987 (92)  END_LOG
+20:19:00.773336 (168)  21 proceeds to forwarding to 2 peers
+20:19:00.774201 (129)  node 3 (yes) was notified with hops 4 (HTL=5)
+20:19:00.774301 (129)  20:18:46 duplicate_received
+20:19:00.776932 (167)  node 12 (yes) was notified with hops 4 (HTL=5)
+20:19:00.777004 (167)  20:18:44 duplicate_received
+20:19:00.793185 (78)  FINAL: node 40 yes
+20:19:00.793305 (78)  END_LOG
+20:19:01.114 (130)  FINAL: node 11 yes
+20:19:01.22112 (130)  END_LOG
+20:19:01.31143 (20)  FINAL: node 22 yes
+20:19:01.31259 (20)  END_LOG
+20:19:01.76502 (114)  FINAL: node 32 yes
+20:19:01.76621 (114)  END_LOG
+20:19:01.173800 (2)  24 proceeds to forwarding to 2 peers
+20:19:01.256611 (94)  node 20 (yes) was notified with hops 4 (HTL=5)
+20:19:01.256737 (94)  20:18:05 duplicate_received
+20:19:01.538707 (129)  FINAL: node 3 yes
+20:19:01.540032 (129)  END_LOG
+20:19:01.609721 (1)  16 proceeds to forwarding to 2 peers
+20:19:01.658808 (131)  FINAL: node 19 yes
+20:19:01.660149 (131)  END_LOG
+20:19:01.889455 (167)  12 proceeds to forwarding to 2 peers
+20:19:01.889652 (188)  node 34 (yes) was notified with hops 5 (HTL=5)
+20:19:01.889732 (188)  20:18:45 duplicate_received
+20:19:02.204602 (112)  FINAL: node 13 yes
+20:19:02.204724 (112)  END_LOG
+20:19:03.161142 (187)  23 proceeds to forwarding to 2 peers
+20:19:03.163154 (41)  node 39 (yes) was notified with hops 5 (HTL=5)
+20:19:03.163254 (41)  20:19:03 duplicate_received
+20:19:03.165224 (166)  node 2 (yes) was notified with hops 5 (HTL=5)
+20:19:03.165311 (166)  20:18:46 duplicate_received
+20:19:03.362983 (151)  33 proceeds to forwarding to 2 peers
+20:19:03.648662 (94)  FINAL: node 20 yes
+20:19:03.656982 (94)  END_LOG
+20:19:03.738310 (148)  FINAL: node 8 yes
+20:19:03.740168 (148)  END_LOG
+20:19:04.61455 (3)  [splay.events] W: Periodic: thread: 0x9799e20 from function: 0x971ad98 is not dead, we wait
+20:19:04.300576 (75)  FINAL: node 14 yes
+20:19:04.300699 (75)  END_LOG
+20:19:04.329255 (188)  [splay.events] W: Periodic: thread: 0x979b238 from function: 0x978a9d8 is not dead, we wait
+20:19:04.900651 (133)  FINAL: node 38 yes
+20:19:04.900775 (133)  END_LOG
+20:19:05.255926 (41)  39 proceeds to forwarding to 2 peers
+20:19:06.177395 (2)  [splay.events] W: Periodic: thread: 0x84854d0 from function: 0x83dba30 is not dead, we wait
+20:19:06.640888 (1)  [splay.events] W: Periodic: thread: 0x81c25c0 from function: 0x818b368 is not dead, we wait
+20:19:06.893818 (167)  [splay.events] W: Periodic: thread: 0x84759b8 from function: 0x8423420 is not dead, we wait
+20:19:07.213490 (166)  2 proceeds to forwarding to 2 peers
+20:19:07.214072 (187)  node 23 (yes) was notified with hops 4 (HTL=5)
+20:19:07.214157 (187)  20:18:50 duplicate_received
+20:19:08.162407 (187)  23 proceeds to forwarding to 2 peers
+20:19:08.365713 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:09.65638 (3)  [splay.events] W: Periodic: thread: 0x9799e20 from function: 0x971ad98 is not dead, we wait
+20:19:09.333071 (188)  [splay.events] W: Periodic: thread: 0x979b238 from function: 0x978a9d8 is not dead, we wait
+20:19:10.261207 (41)  [splay.events] W: Periodic: thread: 0x9fbc5c0 from function: 0x9fb82c8 is not dead, we wait
+20:19:11.41128 (149)  FINAL: node 15 yes
+20:19:11.41248 (149)  END_LOG
+20:19:11.181529 (2)  [splay.events] W: Periodic: thread: 0x84854d0 from function: 0x83dba30 is not dead, we wait
+20:19:11.617531 (1)  [splay.events] W: Periodic: thread: 0x81c25c0 from function: 0x818b368 is not dead, we wait
+20:19:11.899565 (167)  [splay.events] W: Periodic: thread: 0x84759b8 from function: 0x8423420 is not dead, we wait
+20:19:12.459002 (166)  [splay.events] W: Periodic: thread: 0x9210720 from function: 0x91af330 is not dead, we wait
+20:19:13.310938 (187)  [splay.events] W: Periodic: thread: 0x8d5c8f8 from function: 0x8ce9348 is not dead, we wait
+20:19:13.370337 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:14.335076 (188)  [splay.events] W: Periodic: thread: 0x979b238 from function: 0x978a9d8 is not dead, we wait
+20:19:14.544023 (3)  [splay.events] W: Periodic: thread: 0x9799e20 from function: 0x971ad98 is not dead, we wait
+20:19:15.261371 (41)  [splay.events] W: Periodic: thread: 0x9fbc5c0 from function: 0x9fb82c8 is not dead, we wait
+20:19:16.184562 (2)  [splay.events] W: Periodic: thread: 0x84854d0 from function: 0x83dba30 is not dead, we wait
+20:19:16.619351 (1)  [splay.events] W: Periodic: thread: 0x81c25c0 from function: 0x818b368 is not dead, we wait
+20:19:16.904246 (167)  [splay.events] W: Periodic: thread: 0x84759b8 from function: 0x8423420 is not dead, we wait
+20:19:17.224045 (166)  [splay.events] W: Periodic: thread: 0x9210720 from function: 0x91af330 is not dead, we wait
+20:19:18.297340 (187)  [splay.events] W: Periodic: thread: 0x8d5c8f8 from function: 0x8ce9348 is not dead, we wait
+20:19:18.372648 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:19.341202 (188)  [splay.events] W: Periodic: thread: 0x979b238 from function: 0x978a9d8 is not dead, we wait
+20:19:19.697825 (3)  [splay.events] W: Periodic: thread: 0x9799e20 from function: 0x971ad98 is not dead, we wait
+20:19:20.263340 (41)  [splay.events] W: Periodic: thread: 0x9fbc5c0 from function: 0x9fb82c8 is not dead, we wait
+20:19:21.185320 (2)  [splay.events] W: Periodic: thread: 0x84854d0 from function: 0x83dba30 is not dead, we wait
+20:19:21.621476 (1)  [splay.events] W: Periodic: thread: 0x81c25c0 from function: 0x818b368 is not dead, we wait
+20:19:21.907631 (167)  [splay.events] W: Periodic: thread: 0x84759b8 from function: 0x8423420 is not dead, we wait
+20:19:22.226399 (166)  [splay.events] W: Periodic: thread: 0x9210720 from function: 0x91af330 is not dead, we wait
+20:19:23.294619 (187)  [splay.events] W: Periodic: thread: 0x8d5c8f8 from function: 0x8ce9348 is not dead, we wait
+20:19:23.378312 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:24.346485 (188)  [splay.events] W: Periodic: thread: 0x979b238 from function: 0x978a9d8 is not dead, we wait
+20:19:24.803231 (3)  [splay.events] W: Periodic: thread: 0x9799e20 from function: 0x971ad98 is not dead, we wait
+20:19:25.265369 (41)  [splay.events] W: Periodic: thread: 0x9fbc5c0 from function: 0x9fb82c8 is not dead, we wait
+20:19:26.189384 (2)  [splay.events] W: Periodic: thread: 0x84854d0 from function: 0x83dba30 is not dead, we wait
+20:19:26.625474 (1)  [splay.events] W: Periodic: thread: 0x81c25c0 from function: 0x818b368 is not dead, we wait
+20:19:26.912555 (167)  [splay.events] W: Periodic: thread: 0x84759b8 from function: 0x8423420 is not dead, we wait
+20:19:27.292080 (166)  [splay.events] W: Periodic: thread: 0x9210720 from function: 0x91af330 is not dead, we wait
+20:19:28.300767 (187)  [splay.events] W: Periodic: thread: 0x8d5c8f8 from function: 0x8ce9348 is not dead, we wait
+20:19:28.383907 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:29.351918 (188)  [splay.events] W: Periodic: thread: 0x979b238 from function: 0x978a9d8 is not dead, we wait
+20:19:29.637711 (3)  [splay.events] W: Periodic: thread: 0x9799e20 from function: 0x971ad98 is not dead, we wait
+20:19:30.269457 (41)  [splay.events] W: Periodic: thread: 0x9fbc5c0 from function: 0x9fb82c8 is not dead, we wait
+20:19:31.193325 (2)  [splay.events] W: Periodic: thread: 0x84854d0 from function: 0x83dba30 is not dead, we wait
+20:19:31.629436 (1)  [splay.events] W: Periodic: thread: 0x81c25c0 from function: 0x818b368 is not dead, we wait
+20:19:31.917922 (167)  [splay.events] W: Periodic: thread: 0x84759b8 from function: 0x8423420 is not dead, we wait
+20:19:32.237685 (166)  [splay.events] W: Periodic: thread: 0x9210720 from function: 0x91af330 is not dead, we wait
+20:19:33.335268 (187)  [splay.events] W: Periodic: thread: 0x8d5c8f8 from function: 0x8ce9348 is not dead, we wait
+20:19:33.394426 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:34.357655 (188)  [splay.events] W: Periodic: thread: 0x979b238 from function: 0x978a9d8 is not dead, we wait
+20:19:34.641889 (3)  [splay.events] W: Periodic: thread: 0x9799e20 from function: 0x971ad98 is not dead, we wait
+20:19:35.273713 (41)  [splay.events] W: Periodic: thread: 0x9fbc5c0 from function: 0x9fb82c8 is not dead, we wait
+20:19:36.197441 (2)  [splay.events] W: Periodic: thread: 0x84854d0 from function: 0x83dba30 is not dead, we wait
+20:19:36.633934 (1)  [splay.events] W: Periodic: thread: 0x81c25c0 from function: 0x818b368 is not dead, we wait
+20:19:36.923333 (167)  [splay.events] W: Periodic: thread: 0x84759b8 from function: 0x8423420 is not dead, we wait
+20:19:37.243366 (166)  [splay.events] W: Periodic: thread: 0x9210720 from function: 0x91af330 is not dead, we wait
+20:19:38.103559 (187)  FINAL: node 23 yes
+20:19:38.116213 (187)  END_LOG
+20:19:38.552491 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:39.61974 (1)  node 16 (yes) was notified with hops 5 (HTL=5)
+20:19:39.96918 (1)  20:19:38 duplicate_received
+20:19:40.277483 (41)  [splay.events] W: Periodic: thread: 0x9fbc5c0 from function: 0x9fb82c8 is not dead, we wait
+20:19:41.138146 (2)  FINAL: node 24 yes
+20:19:41.573746 (2)  END_LOG
+20:19:41.630220 (1)  FINAL: node 16 yes
+20:19:41.630344 (1)  END_LOG
+20:19:41.845771 (167)  FINAL: node 12 yes
+20:19:41.845896 (167)  END_LOG
+20:19:42.248926 (166)  [splay.events] W: Periodic: thread: 0x9210720 from function: 0x91af330 is not dead, we wait
+20:19:43.510532 (151)  [splay.events] W: Periodic: thread: 0x8edaa10 from function: 0x8e36bf0 is not dead, we wait
+20:19:44.284585 (188)  FINAL: node 34 yes
+20:19:44.286073 (188)  END_LOG
+20:19:45.214260 (41)  FINAL: node 39 yes
+20:19:45.214376 (41)  END_LOG
+20:19:45.690655 (168)  FINAL: node 21 yes
+20:19:45.704590 (168)  END_LOG
+20:19:47.171637 (166)  FINAL: node 2 yes
+20:19:47.171763 (166)  END_LOG
+20:19:48.330455 (151)  FINAL: node 33 yes
+20:19:48.373220 (151)  END_LOG
+20:19:48.560639 (185)  FINAL: node 6 yes
+20:19:48.560763 (185)  END_LOG
+20:19:49.30828 (3)  FINAL: node 35 yes
+20:19:49.37072 (3)  END_LOG
