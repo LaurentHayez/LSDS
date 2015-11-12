@@ -16,7 +16,7 @@ function parser()
         for line in io.lines() do
             -- inserting the number of hops in an array
             --table.insert(number_of_hops, string.match(line, "%d+:%d+:%d+.%d+%s%(%d+%)%s%sNumber of hops:%s(%d)"))
-	   table.insert(number_of_hops, string.match(line, "Number of hops:(%d+)"))
+	   table.insert(number_of_hops, string.match(line, "%d+:%d+:%d+.%d+%s%(%d+%)%s%sNumber of hops:%s(%d+)"))
         end
 
         -- sort the table we just created

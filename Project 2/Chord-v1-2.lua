@@ -32,7 +32,7 @@ rpc.server(job.me.port)
 
 
 -- length of ID in bits
-m = 30
+m = 28
 ------------------------------------------------
 -- computes hash value for a given input string
 function compute_hash(o)
@@ -213,13 +213,14 @@ end
 ------------------------------------------------
 
 
-
+--[[
 ------------------------------------------------
 function terminator()
     events.sleep(max_time)
     os.exit()
 end
 ------------------------------------------------
+--]]
 
 ------------------------------------------------
 -- function to generate n random keys per node
@@ -254,7 +255,11 @@ function main()
 
     if on_cluster then
         -- sleep 10 minutes so that all the nodes on the cluster are ready.
-        events.sleep(600)
+        if job.position == 1 then
+	   events.sleep(540) 
+	else
+	   events.sleep(600)
+	end
     end
 
     -- This is the first node that every other node knows
@@ -295,8 +300,6 @@ function main()
         events.sleep(30)
         generate_keys(10)
     end
-
-    events.thread(terminator)
 end
 ------------------------------------------------
 

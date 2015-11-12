@@ -31,7 +31,7 @@ rpc.server(job.me.port)
 
 
 -- length of ID in bits
-m = 30
+m = 28
 ------------------------------------------------
 -- computes hash value for a given input string
 function compute_hash(o)
@@ -48,11 +48,14 @@ n = job.me
 -- it is the hash of the concatenation of the node's ip and port
 n.id = compute_hash(n.ip .. n.port)
 print("Node " .. job.position .. " id: " .. n.id)
+finger = {}
 -- fingers is table of know nodes (at initialization, it only knows itself, 
 -- start = n.id+2^(k-1) mod 2^m, 1 <= k <= m thus start = n.id + 1 % 2^m)
-finger = {[1] = {node = n, start = (n.id + 1) % 2^m}}
--- closest node with bigger id
-successor = finger[1].node
+for i = 1, m do
+   finger[i] = {node = nil, start = (n.id + 2^(i-1)) % 2^m}
+end
+finger[1].node = n
+
 -- closest node with lower id
 predecessor = nil
 -- max time that the algorithm can run is 3 min
@@ -67,7 +70,7 @@ max_time = 180
 
 ------------------------------------------------
 function get_successor()
-    return successor
+   return finger[1].node
 end
 ------------------------------------------------
 ------------------------------------------------
@@ -77,7 +80,7 @@ end
 ------------------------------------------------
 ------------------------------------------------
 function set_successor(node)
-    successor = node
+   finger[1].node = node
 end
 ------------------------------------------------
 ------------------------------------------------
@@ -86,15 +89,16 @@ function set_predecessor(node)
 end
 ------------------------------------------------
 
+
 ------------------------------------------------
 -- Utility function that tests if the ring is correctly constructed
 var = false
 function test()
     if var == false then
         var = true
-        print("Node ", job.position .. "\'s successor id: ", ' ', successor.id)
+        print("Node ", job.position .. "\'s successor id: ", ' ', get_successor().id)
         events.sleep(2)
-        rpc.call(successor, { "test" })
+        rpc.call(get_successor(), { "test" })
     end
 end
 
@@ -126,7 +130,7 @@ function is_between(nb, lower, upper, brackets)
         if lower < upper then
             return (nb > lower) and (nb < upper)
         else
-            return (nb >= lower) or (nb <= upper)
+            return (nb > lower) or (nb < upper)
         end
     elseif brackets == '(]' then
         if lower < upper then
@@ -155,7 +159,7 @@ end
 -- find_predecessor is split into two functions: closest_preceding_finger and find_predecessor
 function closest_preceding_finger(id)
     for i = m, 1, -1 do
-        if is_between(finger[i].node, n.id, id, '()') then
+        if is_between(finger[i].node.id, n.id, id, '()') then
             return finger[i].node
         end
     end
@@ -163,10 +167,11 @@ end
 ------------------------------------------------
 function find_predecessor(id)
     local n1 = n -- start searching with self
-    local n1_successor = successor
+    local n1_successor = get_successor()
     local i = 0
-
+    --print("Id: ", id, "( n1.id=", n1.id, "n1_successor.id = ", n1_successor.id, "]")
     while not is_between(id, n1.id, n1_successor.id, '(]') do
+       
         n1 = rpc.call(n1, {"closest_preceding_finger", id})
         n1_successor = rpc.call(n1, { "get_successor" }) -- invoke get_successor() on n1
         i = i + 1
@@ -180,8 +185,10 @@ end
 ------------------------------------------------
 -- ask node n1 to find id's successor
 function find_successor(id)
+   --print("\t\tStart find_successor")
     local n1, _ = find_predecessor(id)
     local n1_successor = rpc.call(n1, { "get_successor" })
+    --print("\t\tEnd find_successor")
     return n1_successor
 end
 
@@ -190,21 +197,26 @@ end
 ------------------------------------------------
 -- Instead of init_neighbours, we have init_finger_table, update_finger_table and update_others
 function init_finger_table(n1)
-    finger[1].node = rpc.call(n1, { "find_successor", finger[1].start })
-    successor = finger[1].node
-    predecessor = rpc.call(successor, { "get_predecessor" })
+   --print("\tStart init_finger_table")
+    --finger[1].node = rpc.call(n1, { "find_successor", finger[1].start })
+    -- no need for rpc because we are on the same node (?)
+   --print("Node "..job.position.." old finger[1].node.id = "..finger[1].node.id)
+    finger[1].node = rpc.call(n1, {"find_successor", finger[1].start})
+    --print("Node "..job.position.." new finger[1].node.id = "..finger[1].node.id)
+    predecessor = rpc.call(get_successor(), { "get_predecessor" })
     for i = 1, m-1 do
-       print(unpack(finger[i+1]))
-        if is_between(finger[i+1].start, n.id, finger[i].node, '[)') then
+    --    print(unpack(finger[i+1]))
+        if is_between(finger[i+1].start, n.id, finger[i].node.id, '[)') then
             finger[i+1].node = finger[i].node
         else
             finger[i+1].node = rpc.call(n1, { "find_successor", finger[i+1].start })
         end
     end
+    --print("\tEnd init_finger_table")
 end
 ------------------------------------------------
 function update_finger_table(s,i)
-    if finger[i].start ~= finger[i].node and is_between(s, finger[i].start, finger[i].node, '[)') then
+    if finger[i].start ~= finger[i].node.id and is_between(s.id, finger[i].start, finger[i].node.id, '[)') then
         finger[i].node = s
         p = predecessor
         rpc.call(p, { "update_finger_table", s,i })
@@ -212,9 +224,10 @@ function update_finger_table(s,i)
 end
 ------------------------------------------------
 function update_others()
-    rpc.call(successor, { "set_predecessor", n })
+    rpc.call(get_successor(), { "set_predecessor", n })
     for i = 1, m do
         p = find_predecessor((n.id+1-2^(i-1)) % 2 ^ m)
+	--print("p id: "..p.id)
         rpc.call(p, { "update_finger_table", n, i })
     end
 end
@@ -224,9 +237,11 @@ end
 -- n.join(n1): node n joins the network
 -- n1 is an arbitrary node in the network
 function join(n1)
+   --print("Start join")
     if n1 then
        init_finger_table(n1)
-       predecessor = rpc.call(successor, {"get_predecessor"})
+       predecessor = rpc.call(get_successor(), {"get_predecessor"})
+       print("Let\'s go to update_others()")
        update_others()
         -- n is the only node in the network
     else
@@ -236,9 +251,11 @@ function join(n1)
 	      finger[i] = {}
 	   end
 	   finger[i].node = n
+	   finger[i].start = (n.id + 2^(i-1)) % 2^m
         end
         predecessor = n
     end
+    --print("End join")
 end
 ------------------------------------------------
 
@@ -298,8 +315,12 @@ function main()
 
     if job.position == 1 then
         events.sleep(15)
-        rpc.call(successor, { "test" })
+        rpc.call(get_successor(), { "test" })
     end
+    
+    --print("Node "..job.position.." id: ", n.id)
+    --print("Node "..job.position.." successor: ", get_successor().id)
+    --print("Node "..job.position.." predecessor: ", predecessor.id)
 
     --[[
     if on_cluster then

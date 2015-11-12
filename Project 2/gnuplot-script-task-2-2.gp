@@ -9,7 +9,7 @@ set style line 5 lt 1 lc rgb "#CD00CD" lw 7 # purple
 set style line 6 lt 1 lc rgb "#FFFF00" lw 7 # yellow
 set style line 7 lt 3 lc rgb "#000000" lw 7 # black, dashed line
 
-set output "plots/task2-2-local.pdf"
+set output "plots/task2-2-cluster.pdf"
 set title "Search performance in basic Chord"
 
 # indicates the labels
@@ -18,7 +18,7 @@ set xlabel "number of hops"
 
 # set the grid on
 set xtics 5
-set ytics 2
+set ytics 100
 #set grid xtics
 set grid xtics ytics
 
@@ -37,6 +37,6 @@ set key top right
 set yrange [0:] # example of a closed range (points outside will not be displayed)
 set xrange [-1:] # example of a range closed on one side only, the max will determined automatically
 
-plot 'ParsedLogs/parsed-log-test' using 2:xtic(5)  title 'number of keys found in x hops'
+plot 'ParsedLogs/parsed-log-task2-2-cluster.txt' using 2:xtic(5)  title 'number of keys found in x hops'
 
 # $1 is column 1. You can do arithmetics on the values of the columns
