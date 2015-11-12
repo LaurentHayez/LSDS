@@ -241,7 +241,7 @@ function join(n1)
     if n1 then
        init_finger_table(n1)
        predecessor = rpc.call(get_successor(), {"get_predecessor"})
-       print("Let\'s go to update_others()")
+       --print("Let\'s go to update_others()")
        update_others()
         -- n is the only node in the network
     else
@@ -322,7 +322,7 @@ function main()
     --print("Node "..job.position.." successor: ", get_successor().id)
     --print("Node "..job.position.." predecessor: ", predecessor.id)
 
-    --[[
+    ---[[
     if on_cluster then
         events.sleep(300)
         generate_keys(500)
