@@ -110,7 +110,6 @@ end
 ------------------------------------------------
 
 ------------------------------------------------
-------------------------------------------------
 -- Utility function to check if c is in interval [a,b].
 -- Intervals can be (), (], [), [].
 -- A call to this function is for example: is_between(5, 4, 6, '(]')
@@ -153,9 +152,7 @@ function is_between(nb, lower, upper, brackets)
     end
 end
 
-------------------------------------------------
 
-------------------------------------------------
 -- find_predecessor is split into two functions: closest_preceding_finger and find_predecessor
 function closest_preceding_finger(id)
     for i = m, 1, -1 do
@@ -164,7 +161,7 @@ function closest_preceding_finger(id)
         end
     end
 end
-------------------------------------------------
+
 function find_predecessor(id)
     local n1 = n -- start searching with self
     local n1_successor = get_successor()
@@ -180,85 +177,36 @@ function find_predecessor(id)
     return n1, i
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- ask node n1 to find id's successor
 function find_successor(id)
-   --print("\t\tStart find_successor")
     local n1, _ = find_predecessor(id)
     local n1_successor = rpc.call(n1, { "get_successor" })
-    --print("\t\tEnd find_successor")
     return n1_successor
 end
 
-------------------------------------------------
+function fix_fingers()
+   i = math.random(1,m)
+   finger[i].node = find_successor(finger[i].start)
+end
 
-------------------------------------------------
--- Instead of init_neighbours, we have init_finger_table, update_finger_table and update_others
-function init_finger_table(n1)
-   --print("\tStart init_finger_table")
-    --finger[1].node = rpc.call(n1, { "find_successor", finger[1].start })
-    -- no need for rpc because we are on the same node (?)
-   --print("Node "..job.position.." old finger[1].node.id = "..finger[1].node.id)
-    finger[1].node = rpc.call(n1, {"find_successor", finger[1].start})
-    --print("Node "..job.position.." new finger[1].node.id = "..finger[1].node.id)
-    predecessor = rpc.call(get_successor(), { "get_predecessor" })
-    for i = 1, m-1 do
-    --    print(unpack(finger[i+1]))
-        if is_between(finger[i+1].start, n.id, finger[i].node.id, '[)') then
-            finger[i+1].node = finger[i].node
-        else
-            finger[i+1].node = rpc.call(n1, { "find_successor", finger[i+1].start })
-        end
-    end
-    --print("\tEnd init_finger_table")
+function notify(n1)
+   if predecessor == nil or is_between(n1.id, predecessor.id, n.id) then
+      predecessor = n1
+   end
 end
-------------------------------------------------
-function update_finger_table(s,i)
-    if finger[i].start ~= finger[i].node.id and is_between(s.id, finger[i].start, finger[i].node.id, '[)') then
-        finger[i].node = s
-        p = predecessor
-        rpc.call(p, { "update_finger_table", s,i })
-    end
-end
-------------------------------------------------
-function update_others()
-    rpc.call(get_successor(), { "set_predecessor", n })
-    for i = 1, m do
-        p = find_predecessor((n.id+1-2^(i-1)) % 2 ^ m)
-	--print("p id: "..p.id)
-        rpc.call(p, { "update_finger_table", n, i })
-    end
-end
-------------------------------------------------
 
-------------------------------------------------
--- n.join(n1): node n joins the network
--- n1 is an arbitrary node in the network
+function stabilize()
+   x = rpc.call(get_successor(), { "get_predecessor" })
+   if is_between(x.id, n.id, get_successor().id) then
+      finger[1].node = x
+   end
+   rpc.call(get_successor(), { "notify", n })
+end
+
 function join(n1)
-   --print("Start join")
-    if n1 then
-       init_finger_table(n1)
-       predecessor = rpc.call(get_successor(), {"get_predecessor"})
-       --print("Let\'s go to update_others()")
-       update_others()
-        -- n is the only node in the network
-    else
-        for i = 1, m do
-	   -- have to initialize an empty array for finger[i], otherwise lua does not understand what I want to do
-	   if i ~= 1 then
-	      finger[i] = {}
-	   end
-	   finger[i].node = n
-	   finger[i].start = (n.id + 2^(i-1)) % 2^m
-        end
-        predecessor = n
-    end
-    --print("End join")
+   predecessor = nil
+   successor = rpc.call(n1, {"find_successor", n})
 end
-------------------------------------------------
-
 
 ------------------------------------------------
 -- function to generate n random keys per node
@@ -299,6 +247,9 @@ function main()
         print("Node " .. job.position .. " joins the ring after waiting " .. (wait_time + 2) .. " seconds.\n")
         join(n0)
     end
+    
+    events.periodic(stabilize, 5)
+    events.periodic(fix_fingers, 5)
 
     if on_cluster then
         -- wait 3 minutes for latency.
@@ -309,10 +260,6 @@ function main()
         events.sleep(15)
         rpc.call(get_successor(), { "test" })
     end
-    
-    --print("Node "..job.position.." id: ", n.id)
-    --print("Node "..job.position.." successor: ", get_successor().id)
-    --print("Node "..job.position.." predecessor: ", predecessor.id)
 
     ---[[
     if on_cluster then
@@ -323,7 +270,6 @@ function main()
         generate_keys(10)
     end
     --]]
-
 end
 ------------------------------------------------
 
