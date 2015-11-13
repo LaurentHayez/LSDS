@@ -156,7 +156,7 @@ end
 -- find_predecessor is split into two functions: closest_preceding_finger and find_predecessor
 function closest_preceding_finger(id)
     for i = m, 1, -1 do
-        if is_between(finger[i].node.id, n.id, id, '()') then
+       if finger[i].node ~= nil and is_between(finger[i].node.id, n.id, id, '()') then
             return finger[i].node
         end
     end
@@ -196,16 +196,21 @@ function notify(n1)
 end
 
 function stabilize()
-   x = rpc.call(get_successor(), { "get_predecessor" })
+   local x = rpc.call(get_successor(), { "get_predecessor" })
    if is_between(x.id, n.id, get_successor().id) then
-      finger[1].node = x
+      set_successor(x)
    end
    rpc.call(get_successor(), { "notify", n })
 end
 
 function join(n1)
-   predecessor = nil
-   successor = rpc.call(n1, {"find_successor", n})
+   if n1 then
+      predecessor = nil
+      set_successor(rpc.call(n1, {"find_successor", n.id}))
+   else
+      predecessor = n
+      set_successor(n)
+   end
 end
 
 ------------------------------------------------
@@ -248,8 +253,11 @@ function main()
         join(n0)
     end
     
-    events.periodic(stabilize, 5)
-    events.periodic(fix_fingers, 5)
+    events.periodic(stabilize, 2)
+    events.periodic(fix_fingers, 2)
+
+        
+    events.sleep(30)
 
     if on_cluster then
         -- wait 3 minutes for latency.
@@ -257,7 +265,12 @@ function main()
     end
 
     if job.position == 1 then
-        events.sleep(15)
+        rpc.call(get_successor(), { "test" })
+    end
+
+    events.sleep(30)
+
+    if job.position == 1 then
         rpc.call(get_successor(), { "test" })
     end
 
