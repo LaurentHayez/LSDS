@@ -97,7 +97,7 @@ function test()
     if var == false then
         var = true
         print("Node ", job.position .. "\'s successor id: ", ' ', get_successor().id)
-        events.sleep(2)
+        events.sleep(0.07)
         rpc.call(get_successor(), { "test" })
     end
 end
@@ -156,10 +156,12 @@ end
 -- find_predecessor is split into two functions: closest_preceding_finger and find_predecessor
 function closest_preceding_finger(id)
     for i = m, 1, -1 do
-       if finger[i].node ~= nil and is_between(finger[i].node.id, n.id, id, '()') then
+       if finger[i].node and is_between(finger[i].node.id, n.id, id, '()') then
             return finger[i].node
         end
     end
+    -- Addition
+    return n
 end
 
 function find_predecessor(id)
@@ -168,8 +170,7 @@ function find_predecessor(id)
     local i = 0
     --print("Id: ", id, "( n1.id=", n1.id, "n1_successor.id = ", n1_successor.id, "]")
     while not is_between(id, n1.id, n1_successor.id, '(]') do
-       
-        n1 = rpc.call(n1, {"closest_preceding_finger", id})
+        n1 = rpc.call(n1, {"closest_preceding_finger", id}) 
         n1_successor = rpc.call(n1, { "get_successor" }) -- invoke get_successor() on n1
         i = i + 1
     end
@@ -178,11 +179,13 @@ function find_predecessor(id)
 end
 
 -- ask node n1 to find id's successor
+---[[
 function find_successor(id)
     local n1, _ = find_predecessor(id)
     local n1_successor = rpc.call(n1, { "get_successor" })
     return n1_successor
 end
+--]]
 
 function fix_fingers()
    i = math.random(1,m)
@@ -190,14 +193,15 @@ function fix_fingers()
 end
 
 function notify(n1)
-   if predecessor == nil or is_between(n1.id, predecessor.id, n.id) then
+   if not predecessor or is_between(n1.id, predecessor.id, n.id, '()') then
       predecessor = n1
    end
 end
 
 function stabilize()
    local x = rpc.call(get_successor(), { "get_predecessor" })
-   if is_between(x.id, n.id, get_successor().id) then
+   -- Addition of the x condition
+   if x and is_between(x.id, n.id, get_successor().id, '()') then
       set_successor(x)
    end
    rpc.call(get_successor(), { "notify", n })
@@ -207,9 +211,18 @@ function join(n1)
    if n1 then
       predecessor = nil
       set_successor(rpc.call(n1, {"find_successor", n.id}))
+      -- See if this works
+      --rpc.call(finger[1].node, {"notify", n})
    else
       predecessor = n
       set_successor(n)
+   end
+end
+
+--checks if predecessor has failed
+function check_predecessor()
+   if predecessor and not rpc.ping(predecessor) then
+      predecessor = nil
    end
 end
 
@@ -253,33 +266,33 @@ function main()
         join(n0)
     end
     
-    events.periodic(stabilize, 2)
-    events.periodic(fix_fingers, 2)
+    events.periodic(stabilize, 5)
+    events.periodic(check_predecessor, 5)
+    events.periodic(fix_fingers, 5)
 
         
-    events.sleep(30)
+    events.sleep(120)
 
     if on_cluster then
         -- wait 3 minutes for latency.
         events.sleep(180)
     end
-
+    
+    ---[[
     if job.position == 1 then
         rpc.call(get_successor(), { "test" })
     end
 
-    events.sleep(30)
-
-    if job.position == 1 then
-        rpc.call(get_successor(), { "test" })
-    end
+    --var = false
+    --]]
+    
 
     ---[[
     if on_cluster then
         events.sleep(300)
         generate_keys(500)
     else
-        events.sleep(30)
+        events.sleep(120)
         generate_keys(10)
     end
     --]]
