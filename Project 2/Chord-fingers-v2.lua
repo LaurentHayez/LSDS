@@ -282,11 +282,7 @@ function main()
     if job.position == 1 then
         rpc.call(get_successor(), { "test" })
     end
-
-    --var = false
     --]]
-    
-
     ---[[
     if on_cluster then
         events.sleep(300)
