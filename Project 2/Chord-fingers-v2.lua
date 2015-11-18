@@ -232,7 +232,7 @@ end
 ------------------------------------------------
 function main()
 
-   ---[[
+   --[[
     if on_cluster then
         -- sleep 10 minutes so that all the nodes on the cluster are ready.
         events.sleep(600)
