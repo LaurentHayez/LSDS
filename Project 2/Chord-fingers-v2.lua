@@ -158,7 +158,7 @@ function find_predecessor(id)
     local n1 = n -- start searching with self
     local n1_successor = get_successor()
     local i = 0
-    --print("Id: ", id, "( n1.id=", n1.id, "n1_successor.id = ", n1_successor.id, "]")
+    
     while not is_between(id, n1.id, n1_successor.id, '(]') do
         n1 = rpc.call(n1, {"closest_preceding_finger", id}) 
         n1_successor = rpc.call(n1, { "get_successor" }) -- invoke get_successor() on n1
@@ -169,13 +169,11 @@ function find_predecessor(id)
 end
 
 -- ask node n1 to find id's successor
----[[
 function find_successor(id)
     local n1, _ = find_predecessor(id)
     local n1_successor = rpc.call(n1, { "get_successor" })
     return n1_successor
 end
---]]
 
 function fix_fingers()
    i = math.random(1,m)
@@ -207,11 +205,14 @@ function join(n1)
    end
 end
 
+---[[
 --checks if fingers are stale references or not
---[[
-function check_predecessor()
-   if predecessor and not rpc.ping(predecessor) then
-      predecessor = nil
+function check_fingers()
+   for i = 1, m do
+      if finger[i] and not rpc.ping(finger[i]) then
+	 finger[i] = nil
+	 print("Stale reference to finger["..i.."]")
+      end
    end
 end
 --]]
@@ -259,39 +260,39 @@ function main()
     end
     
     events.periodic(stabilize, 2)
-    --events.periodic(check_predecessor, 5)
     events.periodic(fix_fingers, 5)
+    events.periodic(check_fingers, 20)
 
-    ---[[    
+    --[[    
     events.sleep(120)
     --]]
 
-    ---[[
+    --[[
     if on_cluster then
         -- wait 3 minutes for latency.
         events.sleep(180)
     end
     --]]
     
-    ---[[
+    --[[
     if job.position == 1 then
         rpc.call(get_successor(), { "test" })
     end
     var = false
     --]]
-    ---[[
+    --[[
     if on_cluster then
         -- wait 3 minutes for latency.
         events.sleep(180)
     end
     --]]
     
-    ---[[
+    --[[
     if job.position == 1 then
         rpc.call(get_successor(), { "test" })
     end
     --]]
-    ---[[
+    --[[
     if on_cluster then
         events.sleep(300)
         generate_keys(500)
