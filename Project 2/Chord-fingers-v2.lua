@@ -1,8 +1,9 @@
 --
 -- Author:      Laurent Hayez
 -- Date:        06 oct. 2015
--- Last Modif:  06 nov. 2015
+-- Last Modif:  17 nov. 2015
 -- Description: Implementation of Chord with fingers
+--              v2: stabilization for the fault-tolerant Chord Protocol.
 --
 
 require("splay.base")
@@ -32,12 +33,10 @@ rpc.server(job.me.port)
 
 -- length of ID in bits
 m = 28
-------------------------------------------------
 -- computes hash value for a given input string
 function compute_hash(o)
     return tonumber(string.sub(crypto.evp.new("sha1"):digest(o), 1, m / 4), 16)
 end
-------------------------------------------------
 
 ------------------------------------------------
 --- ===            Variables             === ---
@@ -61,34 +60,25 @@ predecessor = nil
 -- max time that the algorithm can run is 3 min
 max_time = 180
 
-
-
-
 ------------------------------------------------
 --- ===      Getters and Setters         === ---
 ------------------------------------------------
 
-------------------------------------------------
 function get_successor()
    return finger[1].node
 end
-------------------------------------------------
-------------------------------------------------
+
 function get_predecessor()
     return predecessor
 end
-------------------------------------------------
-------------------------------------------------
+
 function set_successor(node)
    finger[1].node = node
 end
-------------------------------------------------
-------------------------------------------------
+
 function set_predecessor(node)
     predecessor = node
 end
-------------------------------------------------
-
 
 ------------------------------------------------
 -- Utility function that tests if the ring is correctly constructed
@@ -97,7 +87,7 @@ function test()
     if var == false then
         var = true
         print("Node ", job.position .. "\'s successor id: ", ' ', get_successor().id)
-        events.sleep(0.07)
+        --events.sleep(0.07)
         rpc.call(get_successor(), { "test" })
     end
 end
@@ -211,20 +201,20 @@ function join(n1)
    if n1 then
       predecessor = nil
       set_successor(rpc.call(n1, {"find_successor", n.id}))
-      -- See if this works
-      --rpc.call(finger[1].node, {"notify", n})
    else
       predecessor = n
       set_successor(n)
    end
 end
 
---checks if predecessor has failed
+--checks if fingers are stale references or not
+--[[
 function check_predecessor()
    if predecessor and not rpc.ping(predecessor) then
       predecessor = nil
    end
 end
+--]]
 
 ------------------------------------------------
 -- function to generate n random keys per node
@@ -241,10 +231,12 @@ end
 ------------------------------------------------
 function main()
 
+   ---[[
     if on_cluster then
         -- sleep 10 minutes so that all the nodes on the cluster are ready.
         events.sleep(600)
     end
+   --]]
 
     -- This is the first node that every other node knows
     n0 = nodes[1]
@@ -266,17 +258,33 @@ function main()
         join(n0)
     end
     
-    events.periodic(stabilize, 5)
-    events.periodic(check_predecessor, 5)
+    events.periodic(stabilize, 2)
+    --events.periodic(check_predecessor, 5)
     events.periodic(fix_fingers, 5)
 
-        
+    ---[[    
     events.sleep(120)
+    --]]
 
+    ---[[
     if on_cluster then
         -- wait 3 minutes for latency.
         events.sleep(180)
     end
+    --]]
+    
+    ---[[
+    if job.position == 1 then
+        rpc.call(get_successor(), { "test" })
+    end
+    var = false
+    --]]
+    ---[[
+    if on_cluster then
+        -- wait 3 minutes for latency.
+        events.sleep(180)
+    end
+    --]]
     
     ---[[
     if job.position == 1 then
