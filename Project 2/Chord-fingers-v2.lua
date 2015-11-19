@@ -209,8 +209,9 @@ end
 --checks if fingers are stale references or not
 function check_fingers()
    for i = 1, m do
-      if finger[i] and not rpc.ping(finger[i]) then
-	 finger[i] = nil
+      --if finger[i] and not rpc.ping(finger[i]) then
+      if not rpc.ping(finger[i].node) then
+	 --finger[i] = nil
 	 print("Stale reference to finger["..i.."]")
       end
    end
@@ -259,8 +260,8 @@ function main()
         join(n0)
     end
     
-    events.periodic(stabilize, 2)
-    events.periodic(fix_fingers, 5)
+    events.periodic(stabilize, 10)
+    events.periodic(fix_fingers, 10)
     events.periodic(check_fingers, 20)
 
     --[[    
