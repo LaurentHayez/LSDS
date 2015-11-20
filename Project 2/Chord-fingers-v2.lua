@@ -158,8 +158,9 @@ function find_predecessor(id)
     local n1 = n -- start searching with self
     local n1_successor = get_successor()
     local i = 0
-    
-    while not is_between(id, n1.id, n1_successor.id, '(]') do
+
+    -- while successor is not nil and id not in (n1.id, successor.id]
+    while n1_successor and not is_between(id, n1.id, n1_successor.id, '(]') do
         n1 = rpc.call(n1, {"closest_preceding_finger", id}) 
         n1_successor = rpc.call(n1, { "get_successor" }) -- invoke get_successor() on n1
         i = i + 1
@@ -210,7 +211,7 @@ end
 function check_fingers()
    for i = 1, m do
       --if finger[i] and not rpc.ping(finger[i]) then
-      if not rpc.ping(finger[i].node) then
+      if finger[i].node and not rpc.ping(finger[i].node) then
 	 --finger[i] = nil
 	 print("Stale reference to finger["..i.."]")
       end
@@ -260,7 +261,7 @@ function main()
         join(n0)
     end
     
-    events.periodic(stabilize, 10)
+    events.periodic(stabilize, 5)
     events.periodic(fix_fingers, 10)
     events.periodic(check_fingers, 20)
 
