@@ -6,21 +6,27 @@
 1--]]
 
 function parser()
-   log = "SR-s10-f10-c20.txt"
-   io.input("Logs/"..log)
+   log = "SR-s10-f10-c15.txt"
+   input_file = io.open("Logs/"..log, "r")
+   --io.input("Logs/"..log)
     local number_of_nodes, i, stale_refs_counter, total_stale_refs, intervals = 64, 1, 0, 0, 0
-    local hours = {}
+    local hours = 0
     local useful_lines = {}
-    local minutes = {}
-    local seconds = {}
-    local CPUloads={}
+    local minutes = 0
+    local seconds = 0
 
-    first_line = io.read()
+    first_line = input_file:read()
     initial_time = string.match(first_line, "(%d+):%d+:%d+.%d+")*3600 + string.match(first_line, "%d+:(%d+):%d+.%d+")*60 + string.match(first_line, "%d+:%d+:(%d+).%d+")
      file = io.open("ParsedLogs/"..log, "w+")
-    file:write("0", "\t", "0", "\t", "0", "\n")
+     file:write("0", "\t", "0", "\t", "0", "\n")
 
-    for line in io.lines() do
+     -- Get last line of log
+     local len = input_file:seek("end", -31) -- last line is 16:48:14.599655 (117)  END_LOG => 31
+     local txt = input_file:read("*a")
+     local end_time = (string.match(txt, "(%d+):%d+:%d+.%d+")*3600 + string.match(txt, "%d+:(%d+):%d+.%d+")*60 + string.match(txt, "%d+:%d+:(%d+).%d+"))
+     local total_elapsed_time = end_time - initial_time
+     
+    for line in io.lines("Logs/"..log) do
        table.insert(useful_lines, string.match(line, "%d+:%d+:%d+.%d+%s%(%d+%)%s%sStale reference to finger%[%d+%]"))
     end
     
@@ -39,13 +45,14 @@ function parser()
        elseif elapsed_time > 20 then
 	  current_time = elapsed_time + 20*intervals
 	  -- format: elapsed_time (per 20 seconds)   number of stale references for the past 20 seconds   average number of stale references 
-	  file:write(current_time, "\t", stale_refs_counter, "\t", (total_stale_refs/current_time), "\n")
+	  file:write(current_time, "\t", stale_refs_counter, "\t", (total_stale_refs/total_elapsed_time), "\n")
 	  initial_time = time
 	  intervals = intervals + 1
 	  stale_refs_counter = 0
        end
     end
     file:close()
+    input_file:close()
 
 end
 

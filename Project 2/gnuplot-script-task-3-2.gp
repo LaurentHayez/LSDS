@@ -9,11 +9,11 @@ set style line 5 lt 1 lc rgb "#CD00CD" lw 7 # purple
 set style line 6 lt 1 lc rgb "#FFFF00" lw 7 # yellow
 set style line 7 lt 3 lc rgb "#000000" lw 7 # black, dashed line
 
-set output "plots/Average-SR-stabilization.pdf"
-set title "Stale references, with the stabilization period varying"
+set output "plots/Recovery-SR-check-fingers.pdf"
+set title "Recovering from churn with the check fingers period varying"
 
 # indicates the labels
-set ylabel "Average number of stale references"
+set ylabel "Number of stale references (in [t-20, t])"
 set xlabel "Time"
 
 # set the grid on
@@ -39,8 +39,8 @@ set xrange [0:] # example of a range closed on one side only, the max will deter
 
 #plot 'ParsedLogs/parsed_stale_refs.txt' u ($1):($2) with lines linestyle 1 title "Stabilization: 2sec\nFixing fingers: 5sec\nChecking stale refs: 20sec",\
 #     'ParsedLogs/parsed_stale_refs-10-10-20.txt' u ($1):($2) with lines linestyle 2 title "Stabilization: 10sec\nFixing fingers: 10sec\nChecking stale refs: 20sec"
-plot 'ParsedLogs/SR-s2-f10-c20.txt' u ($1):($3) with lines linestyle 1 title "Stabilization: 2sec Fixing fingers: 10sec Checking stale refs: 20sec",\
-     'ParsedLogs/SR-s5-f10-c20.txt' u ($1):($3) with lines linestyle 2 title "Stabilization: 5sec Fixing fingers: 10sec Checking stale refs: 20sec",\
-     'ParsedLogs/SR-s10-f10-c20.txt' u ($1):($3) with lines linestyle 3 title "Stabilization: 10sec Fixing fingers: 10sec Checking stale refs: 20sec"
+plot 'ParsedLogs/SR-s10-f10-c10.txt' u ($1):($2) with lines linestyle 1 title "Stabilization: 10sec Fixing fingers: 10sec Checking stale refs: 10sec",\
+     'ParsedLogs/SR-s10-f10-c15.txt' u ($1):($2) with lines linestyle 2 title "Stabilization: 10sec Fixing fingers: 10sec Checking stale refs: 15sec",\
+     'ParsedLogs/SR-s10-f10-c20.txt' u ($1):($2) with lines linestyle 3 title "Stabilization: 10sec Fixing fingers: 10sec Checking stale refs: 20sec"
 
 # $1 is column 1. You can do arithmetics on the values of the columns
