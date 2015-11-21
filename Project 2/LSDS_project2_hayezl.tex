@@ -212,9 +212,85 @@
   finger table to each node so that the queries can be performed in $O(\log(n))$ hops. Finally we will compare
   both protocols' search efficiency for 500 queries per node.
 
-  \subsection{Implementation}
-  \label{sec:implementation}
+  \subsection{Implementation without finger table}
+  \label{sec:implementation-without-ft}
   
+    As you can see in the file \texttt{Chord-v1-2.lua}, the only tricky function (at first sight at least) is
+    \texttt{is\_between}. It works as follow (example for the bracket pair ``()''): as we have a ring topology, we
+    must consider two cases, lower $<$ upper and upper $<$ lower. In the first case, nb $\in$ (lower, upper)
+    if nb $>$ lower and nb $<$ upper. In the second case, we have that lower is the last element of the ring,
+    and upper the first one (this can happen because we work modulo $2^m$). Thus nb $\in$ (lower, upper) if nb
+    $>$ lower (that is between lower and $2^m$) or nb $<$ upper (that is between $0$ and upper). For the other
+    bracket pairs, it is the same principle. This function will be used through the whole project.
+
+    \texttt{Chord-v1-2.lua} implements both algorithms 1 and 2 provided in the instructions.
+
+
+  \subsection{Implementation of the finger table}
+  \label{impl-fing-table}
+
+    \texttt{Chord-fingers-v1.lua} provides an implementation of the Chord protocol with a finger table. From
+    the previous implementation, we changed the function \texttt{init\_neighbors} to three functions, namely
+    \texttt{init\_finger\_table}, \texttt{update\_finger\_table} and \texttt{update\_others}. The function
+    \texttt{join} was also changed to initialize the finger table when a node joins and to tell the other node
+    in the ring to update their finger table. Finally, the function \texttt{find\_predecessor} was split into
+    the function \texttt{closest\_preceding\_finger} and \texttt{find\_predecessor}. In view of task 3.4, we
+    already implemented the hops' counter for the queries.
+
+    The finger table is initalized as follow:
+    
+    \begin{center}
+      \lstinputlisting[style=luaCode, caption=Initialization of the finger table for each node, label =
+      listing:init-fing-table, firstline=51, lastline=55]{Chord-fingers-v1.lua}
+    \end{center}
+
+    Before joining the ring, the nodes know no other node, so all the fingers are initialized to nil. The
+    start is where to start searching in the ring, this does not change so we initialize them to their correct
+    value. Finally we simply set \texttt{finger[1].node} to \texttt{n}, that is the node itself is its own
+    successor.
+
+
+  \subsection{Search performances}
+  \label{sec:search-performances}
+  
+    We start analyzing the search performance in the basic Chord implementation. We used a ring with 64 nodes
+    and 500 queries per node. We randomly generated the 500 keys as follows:
+    
+    \lstinputlisting[style=luaCode, caption=Generating random keys, label =
+      listing:gen-rand-keys, firstline=204, lastline=209]{Chord-v1-2.lua}
+
+   
+    In order to parse the produced logs, we used the following code in bash:
+\begin{lstlisting}[style=luaCode, language=bash, caption=Parser for the logs]
+grep "Number of hops" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})$/\1/g' | sort -n | uniq -c | sed -r 's/ +([0-9]+)/\2 \1/g' >> ParsedLogs/log-task2-5-cluster.txt
+\end{lstlisting}
+    
+    We produced the plot shown in Figure \ref{fig:search-basic-chord}. We see that the we found approximately
+    the same number of keys for each number of hops. This tells us, as we expected that the search time in the
+    basic Chord is $O(n)$ where $n$ is the number of nodes in the ring. 
+
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/task2-2-cluster.pdf}
+      \caption{Search performance in basic Chord}
+      \label{fig:search-basic-chord}
+    \end{figure}
+
+    
+
+    For the Chord implementation, we used the same parameters and the same code to generate the keys. We
+    obtained the results shown in Figure
+
+    \begin{figure}[h]
+      \centering
+%      \includegraphics{}
+      \caption{Search performance in Chord with a finger table}
+      \label{fig:search-perf-chord-fing-table}
+    \end{figure}
+    
+
+    
 
   
 

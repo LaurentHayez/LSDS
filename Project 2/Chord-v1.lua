@@ -5,7 +5,6 @@
 -- Description: Basic implementation of the chord ring.
 --
 
---- [[
 require("splay.base")
 rpc = require("splay.urpc")
 misc = require("splay.misc")
@@ -29,17 +28,13 @@ else
 end
 
 rpc.server(job.me.port)
---]]
 
 -- length of ID in bits
 m = 32
-------------------------------------------------
 -- computes hash value for a given input string
 function compute_hash(o)
     return tonumber(string.sub(crypto.evp.new("sha1"):digest(o), 1, m / 4), 16)
 end
-
-------------------------------------------------
 
 ------------------------------------------------
 --- ===            Variables           === ---
@@ -57,39 +52,27 @@ predecessor = nil
 -- max time that the algorithm can run is 3 min
 max_time = 180
 
-
-
-
 ------------------------------------------------
 --- ===      Getters and Setters       === ---
 ------------------------------------------------
 
-------------------------------------------------
 function get_successor()
     return successor
 end
 
-------------------------------------------------
-------------------------------------------------
 function get_predecessor()
     return predecessor
 end
 
-------------------------------------------------
-------------------------------------------------
 function set_successor(node)
     successor = node
 end
 
-------------------------------------------------
-------------------------------------------------
 function set_predecessor(node)
     predecessor = node
 end
 
-------------------------------------------------
 
------------------------------------------------------------------------------
 -- Utility function that tests if the ring is correctly constructed
 var = false
 function test()
@@ -100,8 +83,6 @@ function test()
         rpc.call(successor, { "test" })
     end
 end
-
------------------------------------------------------------------------------
 
 
 ------------------------------------------------
@@ -114,7 +95,7 @@ end
 -- A call to this function is for example: is_between(5, 4, 6, '(]')
 -- Returns true or false
 -- -----------------------
--- Note: The functionnment of is_between is the same for all kind of brackets. Example for '()':
+-- Note: The functionnment of is_between is the same for all kind of brackets. Example for '()':
 -- We are on a ring, so if the lower bound of the interval is smaller than the upper bound, we
 -- simply check if the id is in (lower, upper).
 -- if upper < lower, the id may still be in the intervall, that simply means that 2^m is in the interval,
@@ -128,7 +109,7 @@ function is_between(nb, lower, upper, brackets)
         if lower < upper then
             return (nb > lower) and (nb < upper)
         else
-            return (nb >= lower) or (nb <= upper)
+            return (nb > lower) or (nb < upper)
         end
     elseif brackets == '(]' then
         if lower < upper then
@@ -151,9 +132,7 @@ function is_between(nb, lower, upper, brackets)
     end
 end
 
-------------------------------------------------
 
-------------------------------------------------
 -- ask node n to find id's predecessor
 function find_predecessor(id)
     local n1 = n -- start searching with self
@@ -167,9 +146,6 @@ function find_predecessor(id)
     return n1
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- ask node n1 to find id's successor
 function find_successor(id)
     local n1 = find_predecessor(id)
@@ -177,9 +153,6 @@ function find_successor(id)
     return n1_successor
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- Initialize n's neighbours through n1
 -- This function will be changed in future versions.
 -- It will be split into three functions to implement chord's fingers.
@@ -197,9 +170,6 @@ function init_neighbours(n1)
     rpc.call(predecessor, { "set_successor", n })
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- n.join(n1): node n joins the network
 -- n1 is an arbitrary node in the network
 function join(n1)
@@ -214,18 +184,13 @@ end
 
 ------------------------------------------------
 
-
-
------------------------------------------------------------------------------
 function terminator()
     events.sleep(max_time)
     os.exit()
 end
 
------------------------------------------------------------------------------
+------------------------------------------------
 
-
------------------------------------------------------------------------------
 function main()
 
     if on_cluster then

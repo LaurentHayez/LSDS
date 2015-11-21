@@ -81,21 +81,6 @@ function set_predecessor(node)
 end
 
 ------------------------------------------------
--- Utility function that tests if the ring is correctly constructed
-var = false
-function test()
-    if var == false then
-        var = true
-        print("Node ", job.position .. "\'s successor id: ", ' ', get_successor().id)
-        --events.sleep(0.07)
-        rpc.call(get_successor(), { "test" })
-    end
-end
-
-------------------------------------------------
-
-
-------------------------------------------------
 --- ===        Chord functions         === ---
 ------------------------------------------------
 
@@ -141,7 +126,6 @@ function is_between(nb, lower, upper, brackets)
         end
     end
 end
-
 
 -- find_predecessor is split into two functions: closest_preceding_finger and find_predecessor
 function closest_preceding_finger(id)
@@ -206,7 +190,6 @@ function join(n1)
    end
 end
 
----[[
 --checks if fingers are stale references or not
 function check_fingers()
    for i = 1, m do
@@ -217,30 +200,10 @@ function check_fingers()
       end
    end
 end
---]]
 
 ------------------------------------------------
--- function to generate n random keys per node
-function generate_keys(n)
-    for j = 1, n do
-        rand_number = math.random(0, 2 ^ m)
-        local _, i = find_predecessor(rand_number)
-        print("Number of hops:", i)
-        print("Key to find:", rand_number)
-    end
-end
-------------------------------------------------
 
-------------------------------------------------
 function main()
-
-   --[[
-    if on_cluster then
-        -- sleep 10 minutes so that all the nodes on the cluster are ready.
-        events.sleep(600)
-    end
-   --]]
-
     -- This is the first node that every other node knows
     n0 = nodes[1]
     -- If n is the first node, it immediately joins the ring
@@ -264,54 +227,11 @@ function main()
     events.periodic(stabilize, 5)
     events.periodic(fix_fingers, 10)
     events.periodic(check_fingers, 20)
-
-    --[[    
-    events.sleep(120)
-    --]]
-
-    --[[
-    if on_cluster then
-        -- wait 3 minutes for latency.
-        events.sleep(180)
-    end
-    --]]
     
-    --[[
-    if job.position == 1 then
-        rpc.call(get_successor(), { "test" })
-    end
-    var = false
-    --]]
-    --[[
-    if on_cluster then
-        -- wait 3 minutes for latency.
-        events.sleep(180)
-    end
-    --]]
-    
-    --[[
-    if job.position == 1 then
-        rpc.call(get_successor(), { "test" })
-    end
-    --]]
-    --[[
-    if on_cluster then
-        events.sleep(300)
-        generate_keys(500)
-    else
-        events.sleep(120)
-        generate_keys(10)
-    end
-    --]]
 end
 ------------------------------------------------
 
 -- execute the main function
 events.thread(main)
 events.run()
-
-
-
-
-
 

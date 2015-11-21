@@ -1,0 +1,308 @@
+\message{ !name(LSDS_project2_hayezl.tex)}\documentclass[a4paper, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, wrapfig}
+\usepackage[top=3cm, bottom=3cm, left=3.2cm, right=3.2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{color, colortbl}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{pgf, pgfplots, tikz}
+\usepackage{listings}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usetikzlibrary{calc}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{decorations.markings}
+\usepackage{manfnt, multicol}
+\usepackage[section]{algorithm}
+\usepackage{algorithmicx, algpseudocode, listings}
+% fixes a bug for closing parantheses
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\lsthk@SelectCharTable}{%
+  \lst@ifbreaklines\lst@Def{`)}{\lst@breakProcessOther)}\fi}{}{}{}
+\makeatother
+\usepackage{array, multirow, longtable}
+\usepackage{enumerate}
+\usepackage[inline]{enumitem}
+\usepackage[english]{babel}
+\usepackage{caption, tabu}
+
+
+%°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°%
+%----Définition de l'environnement listings----%
+%°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°%
+
+\lstset{literate=
+  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+  {€}{{\EUR}}1 {£}{{\pounds}}1
+}
+
+\lstdefinestyle{luaCode}{
+  basicstyle=\footnotesize,        	% the size of the fonts that are used for the code
+  breakatwhitespace=true,         	% sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 	% sets automatic line breaking
+  captionpos=t,                    	% sets the caption-position to bottom
+  commentstyle=\footnotesize\ttfamily\color{Emerald},    	% comment style
+  deletekeywords={...},            	% if you want to delete keywords from the given language
+  escapeinside={¦}{¦)},         	% if you want to add LaTeX within your code
+  extendedchars=true,              	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  rulecolor=\color{OliveGreen!80},
+  frame=trbl,
+  framexleftmargin=10.8pt,
+  framexrightmargin=7.2pt,
+  keepspaces=true,                 	% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\small\bfseries\color{OliveGreen!80},   % keyword style
+  language=[5.0]Lua,                 	% the language of the code
+  morekeywords={job.position},            	% if you want to add more keywords to the set
+  numbers=left,                    	% where to put the line-numbers; possible values are (none, left, right)
+  numbersep=3pt,                   	% how far the line-numbers are from the code
+  numberstyle=\tiny\color{Gray}, 	% the style that is used for the line-numbers
+  resetmargins=false                    % sets margins to 0 in a list
+  showspaces=false,                	% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          	% underline spaces within strings only
+  showtabs=false,                  	% show tabs within strings adding particular underscores
+  stepnumber=2,                    	% the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{RawSienna},     	% string literal style
+  tabsize=2,                       	% sets default tabsize to 2 spaces
+  title=\lstname,                   	% show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=1cm,                      % sets left margin indentation
+  xrightmargin=1cm                      % sets right margin indentation
+}
+
+\lstdefinestyle{gpCode}{
+  basicstyle=\footnotesize,        	% the size of the fonts that are used for the code
+  breakatwhitespace=true,         	% sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 	% sets automatic line breaking
+  captionpos=t,                    	% sets the caption-position to bottom
+  commentstyle=\footnotesize\ttfamily\color{Emerald},    	% comment style
+  deletekeywords={...},            	% if you want to delete keywords from the given language
+  escapeinside={¦}{¦)},         	% if you want to add LaTeX within your code
+  extendedchars=true,              	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  rulecolor=\color{OliveGreen!80},
+  frame=trbl,
+  framexleftmargin=10.8pt,
+  framexrightmargin=7.2pt,
+  keepspaces=true,                 	% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\small\bfseries\color{OliveGreen!80},   % keyword style
+  language=Gnuplot,                 	% the language of the code
+  morekeywords={linestyle},            	% if you want to add more keywords to the set
+  numbers=left,                    	% where to put the line-numbers; possible values are (none, left, right)
+  numbersep=3pt,                   	% how far the line-numbers are from the code
+  numberstyle=\tiny\color{Gray}, 	% the style that is used for the line-numbers
+  resetmargins=false                    % sets margins to 0 in a list
+  showspaces=false,                	% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          	% underline spaces within strings only
+  showtabs=false,                  	% show tabs within strings adding particular underscores
+  stepnumber=2,                    	% the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{RawSienna},     	% string literal style
+  tabsize=2,                       	% sets default tabsize to 2 spaces
+  title=\lstname,                   	% show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=1cm,                      % sets left margin indentation
+  xrightmargin=1cm                      % sets right margin indentation
+}
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}} 
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}} 
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\epsilon}{\varepsilon} 
+\renewcommand{\phi}{\varphi}
+
+
+\newcommand{\CodeBrackets}[1]{{\color{RoyalBlue}{#1}}}    % color of parantheses and brackets
+\newcommand{\CodeDigits}[1]{{\color{RawSienna}{#1}}} % color of numbers
+
+%change les légendes des listings
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{%
+  \centering
+  {\colorbox{OliveGreen!80}{%
+      \parbox{0.9\linewidth}{%
+          \centering
+          #1#2#3
+        }
+      }
+    }
+  }
+\captionsetup[lstlisting]{%
+  format=listing,
+  labelfont=white,
+  textfont=white, 
+  singlelinecheck=false, 
+  indention=0pt,
+  margin=0pt, 
+  font={bf,sf,small}
+}
+
+
+%%%%%%%%	Définitions des environnements de théorèmes	%%%%%%%%
+%% style théorème, lemme, proposition
+\theoremstyle{plain}
+
+
+%% style définitions, exemples et remarques
+\theoremstyle{definition}
+
+
+% For syncronisation with skim
+\synctex = 1
+
+
+
+%\title{{\bfseries Large-Scale Distributed Systems}\\ {\Large Project 1: Gossip-based dissemination, Peer
+%    Sampling System}}
+\title{%
+  \normalfont{\bfseries{\rule{\linewidth}{2pt} Large-Scale Distributed Systems\\Project 2: Distributed Hash Tables\\ %
+    \vspace{-0.4cm}  \rule{\linewidth}{2pt}}}
+  }
+\author{Laurent \textsc{Hayez}}
+% Remove command to get current date 
+\date{\today}
+
+
+\begin{document}
+
+\message{ !name(LSDS_project2_hayezl.tex) !offset(-3) }
+
+
+
+
+\renewcommand{\proofname}{{\scshape Proof}}
+\renewcommand{\labelitemi}{\textbullet}
+
+
+\maketitle
+
+\renewcommand{\contentsname}{Table of contents}
+%Table of contents
+\tableofcontents
+
+
+
+%%  Section 1: Introduction
+\section{Introduction}
+\label{sec:introduction}
+
+  
+
+%%  Section 2: The base Chord protocol
+
+\section{The base Chord protocol}
+\label{sec:base-chord-protocol}
+
+  In this section, we will implement the base Chord protocol. At first, we will consider a simplified version
+  of Chord with no finger table. Each peer will only have links to its successor and its predecessor, thus we
+  expect the search time to be $O(n)$ hops, where $n$ is the number of peers in the ring. Secondly, we will add a
+  finger table to each node so that the queries can be performed in $O(\log(n))$ hops. Finally we will compare
+  both protocols' search efficiency for 500 queries per node.
+
+  \subsection{Implementation without finger table}
+  \label{sec:implementation-without-ft}
+  
+    As you can see in the file \texttt{Chord-v1-2.lua}, the only tricky function (at first sight at least) is
+    \texttt{is\_between}. It works as follow (example for the bracket pair ``()''): as we have a ring topology, we
+    must consider two cases, lower $<$ upper and upper $<$ lower. In the first case, nb $\in$ (lower, upper)
+    if nb $>$ lower and nb $<$ upper. In the second case, we have that lower is the last element of the ring,
+    and upper the first one (this can happen because we work modulo $2^m$). Thus nb $\in$ (lower, upper) if nb
+    $>$ lower (that is between lower and $2^m$) or nb $<$ upper (that is between $0$ and upper). For the other
+    bracket pairs, it is the same principle. This function will be used through the whole project.
+
+    \texttt{Chord-v1-2.lua} implements both algorithms 1 and 2 provided in the instructions.
+
+
+  \subsection{Implementation of the finger table}
+  \label{impl-fing-table}
+
+    \texttt{Chord-fingers-v1.lua} provides an implementation of the Chord protocol with a finger table. From
+    the previous implementation, we changed the function \texttt{init\_neighbors} to three functions, namely
+    \texttt{init\_finger\_table}, \texttt{update\_finger\_table} and \texttt{update\_others}. The function
+    \texttt{join} was also changed to initialize the finger table when a node joins and to tell the other node
+    in the ring to update their finger table. Finally, the function \texttt{find\_predecessor} was split into
+    the function \texttt{closest\_preceding\_finger} and \texttt{find\_predecessor}. In view of task 3.4, we
+    already implemented the hops' counter for the queries.
+
+    The finger table is initalized as follow:
+    
+    \begin{center}
+      \lstinputlisting[style=luaCode, caption=Initialization of the finger table for each node, label =
+      listing:init-fing-table, firstline=51, lastline=55]{Chord-fingers-v1.lua}
+    \end{center}
+
+    Before joining the ring, the nodes know no other node, so all the fingers are initialized to nil. The
+    start is where to start searching in the ring, this does not change so we initialize them to their correct
+    value. Finally we simply set \texttt{finger[1].node} to \texttt{n}, that is the node itself is its own
+    successor.
+
+
+  \subsection{Search performances}
+  \label{sec:search-performances}
+  
+    We start analyzing the search performance in the basic Chord implementation. We used a ring with 64 nodes
+    and 500 queries per node. We randomly generated the 500 keys as follows:
+    
+    \lstinputlisting[style=luaCode, caption=Generating random keys, label =
+      listing:gen-rand-keys, firstline=204, lastline=209]{Chord-v1-2.lua}
+
+   
+    We produced the plot shown in Figure \ref{fig:search-basic-chord}. We see that the we found approximately
+    the same number of keys for each number of hops. This tells us, as we expected that the search time in the
+    basic Chord is $O(n)$ where $n$ is the number of nodes in the ring.
+
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/task2-2-cluster.pdf}
+      \caption{Search performance in basic Chord}
+      \label{fig:search-basic-chord}
+    \end{figure}
+
+    
+
+
+    
+
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t 
+%%% End:
+\message{ !name(LSDS_project2_hayezl.tex) !offset(-308) }

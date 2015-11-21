@@ -33,12 +33,10 @@ rpc.server(job.me.port)
 
 -- length of ID in bits
 m = 28
-------------------------------------------------
 -- computes hash value for a given input string
 function compute_hash(o)
     return tonumber(string.sub(crypto.evp.new("sha1"):digest(o), 1, m / 4), 16)
 end
-------------------------------------------------
 
 ------------------------------------------------
 --- ===            Variables             === ---
@@ -56,35 +54,27 @@ predecessor = nil
 -- max time that the algorithm can run is 3 min
 max_time = 180
 
-
-
-
 ------------------------------------------------
 --- ===      Getters and Setters         === ---
 ------------------------------------------------
 
-------------------------------------------------
 function get_successor()
     return successor
 end
-------------------------------------------------
-------------------------------------------------
+
 function get_predecessor()
     return predecessor
 end
-------------------------------------------------
-------------------------------------------------
+
 function set_successor(node)
     successor = node
 end
-------------------------------------------------
-------------------------------------------------
+
 function set_predecessor(node)
     predecessor = node
 end
-------------------------------------------------
 
-------------------------------------------------
+
 -- Utility function that tests if the ring is correctly constructed
 var = false
 function test()
@@ -96,13 +86,9 @@ function test()
     end
 end
 
-------------------------------------------------
-
 
 ------------------------------------------------
 --- ===        Chord functions         === ---
-------------------------------------------------
-
 ------------------------------------------------
 ------------------------------------------------
 -- Utility function to check if c is in interval [a,b].
@@ -124,7 +110,7 @@ function is_between(nb, lower, upper, brackets)
         if lower < upper then
             return (nb > lower) and (nb < upper)
         else
-            return (nb >= lower) or (nb <= upper)
+            return (nb > lower) or (nb < upper)
         end
     elseif brackets == '(]' then
         if lower < upper then
@@ -147,9 +133,6 @@ function is_between(nb, lower, upper, brackets)
     end
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- ask node n to find id's predecessor
 function find_predecessor(id)
     local n1 = n -- start searching with self
@@ -165,9 +148,6 @@ function find_predecessor(id)
     return n1, i
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- ask node n1 to find id's successor
 function find_successor(id)
     local n1, _ = find_predecessor(id)
@@ -175,9 +155,6 @@ function find_successor(id)
     return n1_successor
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- Initialize n's neighbours through n1
 -- This function will be changed in future versions.
 -- It will be split into three functions to implement chord's fingers.
@@ -195,9 +172,6 @@ function init_neighbours(n1)
     rpc.call(predecessor, { "set_successor", n })
 end
 
-------------------------------------------------
-
-------------------------------------------------
 -- n.join(n1): node n joins the network
 -- n1 is an arbitrary node in the network
 function join(n1)
@@ -210,19 +184,6 @@ function join(n1)
     end
 end
 
-------------------------------------------------
-
-
---[[
-------------------------------------------------
-function terminator()
-    events.sleep(max_time)
-    os.exit()
-end
-------------------------------------------------
---]]
-
-------------------------------------------------
 -- function to generate n random keys per node
 -- use hash function to be in the same space as the nodes
 function generate_keys(n)
@@ -248,9 +209,9 @@ function generate_keys(n)
       end
    end
 end
-------------------------------------------------
 
 ------------------------------------------------
+
 function main()
 
     if on_cluster then

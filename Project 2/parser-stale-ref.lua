@@ -6,9 +6,8 @@
 1--]]
 
 function parser()
-   log = "SR-s10-f10-c15.txt"
+   log = "SR-s10-f20-c20-b.txt"
    input_file = io.open("Logs/"..log, "r")
-   --io.input("Logs/"..log)
     local number_of_nodes, i, stale_refs_counter, total_stale_refs, intervals = 64, 1, 0, 0, 0
     local hours = 0
     local useful_lines = {}
@@ -21,7 +20,7 @@ function parser()
      file:write("0", "\t", "0", "\t", "0", "\n")
 
      -- Get last line of log
-     local len = input_file:seek("end", -31) -- last line is 16:48:14.599655 (117)  END_LOG => 31
+     local len = input_file:seek("end", -31) -- last line is 16:48:14.599655 (117)  END_LOG => 31 caracters
      local txt = input_file:read("*a")
      local end_time = (string.match(txt, "(%d+):%d+:%d+.%d+")*3600 + string.match(txt, "%d+:(%d+):%d+.%d+")*60 + string.match(txt, "%d+:%d+:(%d+).%d+"))
      local total_elapsed_time = end_time - initial_time
@@ -31,12 +30,10 @@ function parser()
     end
     
     for line in io.lines("Logs/"..log) do
-       -- Getting the timestamp
-       -- table.insert(useful_lines, string.match(line, "%d+:%d+:%d+.%d+%s%(%d+%)%s%sStale reference to finger%[%d+%]"))
        hours = string.match(line, "(%d+):%d+:%d+.%d+")
        minutes = string.match(line, "%d+:(%d+):%d+.%d+")
        seconds = string.match(line, "%d+:%d+:(%d+).%d+")
-       -- tout multiplier par 60 pour être en secondes!
+       -- multiply everything by 3600 or 60 to be in seconds.
        time = hours*3600 + minutes*60 + seconds
        elapsed_time = time - initial_time
        if elapsed_time <= 20 and string.match(line, "%d+:%d+:%d+.%d+%s%(%d+%)%s%sStale reference to finger%[%d+%]") then
