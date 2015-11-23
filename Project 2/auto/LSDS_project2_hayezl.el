@@ -6,16 +6,16 @@
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("fontenc" "T1") ("geometry" "top=3cm" "bottom=3cm" "left=3.2cm" "right=3.2cm") ("xcolor" "usenames" "dvipsnames") ("algorithm" "section") ("enumitem" "inline") ("babel" "english")))
    (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "lstinline")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
    (TeX-run-style-hooks
     "latex2e"
     "article"
@@ -70,5 +70,15 @@
     "impl-fing-table"
     "sec:search-performances"
     "fig:search-basic-chord"
-    "fig:search-perf-chord-fing-table")))
+    "fig:search-perf-chord-fing-table"
+    "fig:comp-search-chord"
+    "sec:fault-tolerant-chord"
+    "sec:impl-ft-chord"
+    "sec:eval-ft-chord"
+    "fig:Av-SR-stab"
+    "fig:Av-SR-fix-fingers"
+    "fig:Av-SR-check-finger"
+    "fig:Rec-SR-stab"
+    "fig:Rec-SR-fix-fingers"
+    "fig:Rec-SR-check-finger")))
 

@@ -238,7 +238,8 @@
     \texttt{join} was also changed to initialize the finger table when a node joins and to tell the other node
     in the ring to update their finger table. Finally, the function \texttt{find\_predecessor} was split into
     the function \texttt{closest\_preceding\_finger} and \texttt{find\_predecessor}. In view of task 3.4, we
-    already implemented the hops' counter for the queries.
+    already implemented the hops' counter for the queries. As \texttt{successor = finger[1].node}, we deleted
+    the variable \texttt{successor} and instead called the function \texttt{get\_successor}, which returns \texttt{finger[1].node}.
 
     The finger table is initalized as follow:
     
@@ -263,9 +264,14 @@
       listing:gen-rand-keys, firstline=204, lastline=209]{Chord-v1-2.lua}
 
    
+    In order to parse the produced logs, we used the following code in bash:
+\begin{lstlisting}[style=luaCode, language=bash, caption=Parser for the logs]
+grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})$/\1/g' | sort -n | uniq -c | sed -r 's/ +([0-9]+)/\2 \1/g' >> ParsedLogs/log-task2-5-cluster.txt
+\end{lstlisting}
+    
     We produced the plot shown in Figure \ref{fig:search-basic-chord}. We see that the we found approximately
     the same number of keys for each number of hops. This tells us, as we expected that the search time in the
-    basic Chord is $O(n)$ where $n$ is the number of nodes in the ring.
+    basic Chord is $O(n)$ where $n$ is the number of nodes in the ring. 
 
 
     \begin{figure}[h]
@@ -277,13 +283,106 @@
 
     
 
+    For the Chord implementation with a finger table, we used the same parameters and the same code to generate the keys. We
+    obtained the results shown in Figure \ref{fig:search-perf-chord-fing-table}. As we expected, we can see
+    that we obtain the keys in $O(\log(n))$ hops. To compare both plots, we put them together in Figure
+    \ref{fig:comp-search-chord}. On this figure we clearly see how much the finger table helps to improve the
+    search performance.
 
-    
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/task2-5-cluster.pdf}
+      \caption{Search performance in Chord with a finger table}
+      \label{fig:search-perf-chord-fing-table}
+    \end{figure}
 
-    
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/task2-5-cluster-compar.pdf}
+      \caption{Comparison of the search performances in Chord}
+      \label{fig:comp-search-chord}
+    \end{figure}
 
+
+\section{The Fault-Tolerant Chord Protocol}
+\label{sec:fault-tolerant-chord}
+
+  In the previous section, we assumed that once a node joined the ring, it would not leave it. In this section
+  we present an implementation of Chord that can recover from nodes suddenly leaving the ring. We will analyze
+  this implementation by looking at the stale references in the finger table. Finally we will evaluate the
+  search performance under churn.
+
+  \subsection{Implementation of the fault-tolerant Chord protocol}
+  \label{sec:impl-ft-chord}
   
+    We changed a little bit the join function from the given algorithm. We implemented it as follows:
 
+    \lstinputlisting[style=luaCode, caption=join(n') for the fault-tolerant Chord protocol, label =
+    listing:join, firstline=183, lastline=191]{Chord-fingers-v2.lua}
+
+    The implementation of the fault-tolerant Chord protocol is provided in the file
+    \texttt{Chord-fingers-v2.lua}. There is nothing tricky in this implementation, appart from the previously
+    discussed parts. 
+    
+    
+  \subsection{Analysis of the fault-tolerant Chord protocol}
+  \label{sec:eval-ft-chord}
+
+    We start analyzing the average number of stale references under churn. 
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Average-SR-stabilization.pdf}
+      \caption{Average number of stale references, with the stabilization period varying}
+      \label{fig:Av-SR-stab}
+    \end{figure}
+    
+    
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Average-SR-fix-fingers.pdf}
+      \caption{Average number of stale references, with the fix\_fingers period varying}
+      \label{fig:Av-SR-fix-fingers}
+    \end{figure}
+    
+    
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Average-SR-check-finger.pdf}
+      \caption{Average number of stale references, with the check\_finger period varying}
+      \label{fig:Av-SR-check-finger}
+    \end{figure}
+
+
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Recovery-SR-stabilization.pdf}
+      \caption{Recovery of the finger table after churn, with the stabilization period varying}
+      \label{fig:Rec-SR-stab}
+    \end{figure}
+    
+    
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Recovery-SR-fix-fingers.pdf}
+      \caption{Recovery of the finger table after churn, with the fix\_fingers period varying}
+      \label{fig:Rec-SR-fix-fingers}
+    \end{figure}
+    
+    
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Recovery-SR-check-fingers.pdf}
+      \caption{Recovery of the finger table after churn, with the check\_finger period varying}
+      \label{fig:Rec-SR-check-finger}
+    \end{figure}
+
+
+
+    
+    
+    
 
 
 
@@ -305,4 +404,4 @@
 %%% mode: latex
 %%% TeX-master: t 
 %%% End:
-\message{ !name(LSDS_project2_hayezl.tex) !offset(-308) }
+\message{ !name(LSDS_project2_hayezl.tex) !offset(-407) }

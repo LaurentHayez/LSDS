@@ -161,8 +161,11 @@ function find_successor(id)
 end
 
 function fix_fingers()
-   i = math.random(2,m)
-   finger[i].node = find_successor(finger[i].start)
+   for i = 1, m do
+      if finger[i].node and not rpc.ping(finger[i].node) then
+	 finger[i].node = find_successor(finger[i].start)
+      end
+   end
 end
 
 function notify(n1)
@@ -222,8 +225,8 @@ function main()
         join(n0)
     end
     
-    events.periodic(stabilize, 5)
-    events.periodic(fix_fingers, 10)
+    events.periodic(stabilize, 10)
+    events.periodic(fix_fingers, 5)
     events.periodic(check_fingers, 20)
     
 end

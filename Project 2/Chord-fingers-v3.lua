@@ -145,7 +145,7 @@ function find_predecessor(id)
     local i = 0
 
     -- while successor is not nil and id not in (n1.id, successor.id]
-    while not is_between(id, n1.id, n1_successor.id, '(]') do
+    while n1_successor and not is_between(id, n1.id, n1_successor.id, '(]') do
         n1 = rpc.call(n1, {"closest_preceding_finger", id}) 
         n1_successor = rpc.call(n1, { "get_successor" }) -- invoke get_successor() on n1
         i = i + 1
@@ -162,7 +162,7 @@ function find_successor(id)
 end
 
 function fix_fingers()
-   i = math.random(1,m)
+   i = math.random(2,m)
    finger[i].node = find_successor(finger[i].start)
 end
 
