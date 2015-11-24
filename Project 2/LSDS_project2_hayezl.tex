@@ -198,8 +198,20 @@
 %%  Section 1: Introduction
 \section{Introduction}
 \label{sec:introduction}
-
   
+  The main goal of this project is to implement Chord protocol in a basic way. Chord is a distributed lookup
+  protocol that has a key-routing layer. The key-routing mechanism then permits to implement a distributed
+  hash table on top of it. 
+
+  We will start by implementing Chord with only successors and predecessors. This implementation is not
+  optimal, as the search time is $O(n)$. But we can do much better by adding a finger table to each node,
+  which will reduce the search time $O(\log n)$. This will be our next step.
+
+  Finally, we will modifiy some functions in order to have a fault-tolerant implementation. That is the nodes
+  can recover from other node's failure by updating periodically their successor and their finger table. We
+  will analyze how nodes failures affect the system by looking at stale references in the finger tables, and
+  we will also take a look at the search performance under churn.
+
 
 %%  Section 2: The base Chord protocol
 

@@ -205,9 +205,10 @@ function generate_keys(n)
     for j = 1, n do
         rand_number = math.random(0, 2 ^ m)
         local pred, i = find_predecessor(rand_number)
-	if pred then
+	 print("Key to find:", rand_number)
+	if pred and rpc.call(pred, {"get_successor"}) then
 	   print("Number of hops:", i)
-	   print("Key to find:", rand_number)
+	   print("Key "..rand_number.." found")
 	else
 	   print("Failed to find the key "..rand_number)
 	end

@@ -6,7 +6,7 @@
 1--]]
 
 function parser()
-   log = "SR-s10-f20-c20-b.txt"
+   log = "SR-s10-f20-c20-am.txt"
    input_file = io.open("Logs/"..log, "r")
     local number_of_nodes, i, stale_refs_counter, total_stale_refs, intervals = 64, 1, 0, 0, 0
     local hours = 0

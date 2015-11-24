@@ -9,11 +9,11 @@ set style line 5 lt 1 lc rgb "#CD00CD" lw 7 # purple
 set style line 6 lt 1 lc rgb "#FFFF00" lw 7 # yellow
 set style line 7 lt 3 lc rgb "#000000" lw 7 # black, dashed line
 
-set output "plots/Average-SR-fix-fingers.pdf"
-set title "Stale references, with the fix fingers period varying"
+set output "plots/Rec-SR-fix-fingers-ameliorated.pdf"
+set title "Recovering from churn with the fix fingers (with amelioration) period varying"
 
 # indicates the labels
-set ylabel "Average number of stale references per second"
+set ylabel "Number of stale references (in [t-20, t])"
 set xlabel "Time"
 
 # set the grid on
@@ -34,14 +34,13 @@ set grid x y
 set key top right
 
 # indicates the ranges
-set yrange [0:] # example of a closed range (points outside will not be displayed)
+set yrange [0:25] # example of a closed range (points outside will not be displayed)
 set xrange [0:] # example of a range closed on one side only, the max will determined automatically
 
 #plot 'ParsedLogs/parsed_stale_refs.txt' u ($1):($2) with lines linestyle 1 title "Stabilization: 2sec\nFixing fingers: 5sec\nChecking stale refs: 20sec",\
 #     'ParsedLogs/parsed_stale_refs-10-10-20.txt' u ($1):($2) with lines linestyle 2 title "Stabilization: 10sec\nFixing fingers: 10sec\nChecking stale refs: 20sec"
-plot 'ParsedLogs/SR-s10-f5-c20.txt' u ($1):($3) with lines linestyle 1 title "Stabilization: 10sec Fixing fingers: 5sec Checking stale refs: 20sec",\
-     'ParsedLogs/SR-s10-f10-c20.txt' u ($1):($3) with lines linestyle 2 title "Stabilization: 10sec Fixing fingers: 10sec Checking stale refs: 20sec",\
-     'ParsedLogs/SR-s10-f20-c20.txt' u ($1):($3) with lines linestyle 3 title "Stabilization: 10sec Fixing fingers: 20sec Checking stale refs: 20sec",\
-     'ParsedLogs/SR-s10-f20-c20-b.txt' u ($1):($3) with lines linestyle 4 title "Stabilization: 10sec Fixing fingers: 20sec Checking stale refs: 20sec  - b"
+plot 'ParsedLogs/SR-s10-f5-c20-am.txt' u ($1):($2) with lines linestyle 1 title "Stabilization: 10sec Fixing fingers: 5sec Checking stale refs: 20sec",\
+     'ParsedLogs/SR-s10-f10-c20-am.txt' u ($1):($2) with lines linestyle 2 title "Stabilization: 10sec Fixing fingers: 10sec Checking stale refs: 20sec",\
+     'ParsedLogs/SR-s10-f20-c20-am.txt' u ($1):($2) with lines linestyle 3 title "Stabilization: 10sec Fixing fingers: 20sec Checking stale refs: 20sec"
 
 # $1 is column 1. You can do arithmetics on the values of the columns
