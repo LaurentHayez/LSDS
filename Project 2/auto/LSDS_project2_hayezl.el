@@ -80,5 +80,9 @@
     "fig:Av-SR-check-finger"
     "fig:Rec-SR-stab"
     "fig:Rec-SR-fix-fingers"
-    "fig:Rec-SR-check-finger")))
+    "fig:Rec-SR-check-finger"
+    "fig:Av-SR-fix-finger-am"
+    "fig:Rec-SR-fix-finger-am"
+    "fig:percentage-successfully-found-keys"
+    "fig:search-perf-with-churn")))
 

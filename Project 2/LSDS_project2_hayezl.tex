@@ -343,6 +343,10 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
 
     \lstinputlisting[style=luaCode, caption=Check for the stale references, label =
     listing:stale-refs, firstline=194, lastline=200]{Chord-fingers-v2.lua}
+
+    The average number of stale references was calculated as
+      \[\frac{\text{current number of stale
+          references at current time}}{\text{total elapsed time}}.\]
     
     We made various plots, each with
     one different parameter varying. We used a set up of 64 nodes for the ring, and the provided churn trace
@@ -385,8 +389,7 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
 
     We now analyze how the nodes recovers from churn. We can see on Figures \ref{fig:Rec-SR-stab},
     \ref{fig:Rec-SR-fix-fingers} and \ref{fig:Rec-SR-check-finger} that the finger table does not recover well
-    from churn. This is due to the function \texttt{fix\_fingers}, shown in Listing \ref{
-    listing:fix-fingers}. 
+    from churn. This is due to the function \texttt{fix\_fingers}, shown in Listing \ref{listing:fix-fingers}. 
 
     \lstinputlisting[style=luaCode, caption=Function fix\_fingers, label =
     listing:fix-fingers, firstline=163, lastline=166]{Chord-fingers-v2.lua}
@@ -394,10 +397,19 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
     This finger simply select a random finger and updates its reference, but the chosen finger might be a
     valid one and the stale entries will thus not be updated. And as this is done every 5, 10 or 20 seconds it
     would take a long time to remove all the stale entries of the finger table. A possible amelioration of
-    this function could thus be to get the best of the functions \texttt{fix\_fingers} and \texttt{check\_fingers} to as follows
-    
-    \lstinputlisting[style=luaCode, caption=Function fix\_fingers, label =
+    this function could thus be to get the best of the functions \texttt{fix\_fingers} and
+    \texttt{check\_fingers} to as shown in Listing \ref{listing:check-and-fix-fingers}.
+
+    The results with this function are shown in Figures \ref{fig:Av-SR-fix-finger-am} and
+    \ref{fig:Rec-SR-fix-finger-am}. The amelioration is not transcendent, but we see that we have
+    approximately two times less stale references than before. \newpage
+
+        \lstinputlisting[style=luaCode, caption=Function fix\_fingers ameliorated, label =
     listing:check-and-fix-fingers, firstline=163, lastline=169]{Chord-fingers-v2-amelioration.lua}
+
+
+    We also see that, unlike before, this time the best result is obtained when we set the stabilization
+    period to 10 seconds, the fix\_fingers period to 10 seconds and the check\_fingers period to 20 seconds. 
 
     \begin{figure}[h]
       \centering
@@ -420,6 +432,35 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
       \includegraphics{plots/Recovery-SR-check-fingers.pdf}
       \caption{Recovery of the finger table after churn, with the check\_finger period varying}
       \label{fig:Rec-SR-check-finger}
+    \end{figure}
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Average-SR-fix-fingers-ameliorated.pdf}
+      \caption{Average number of stale references, with the ameliorated fix\_finger function}
+      \label{fig:Av-SR-fix-finger-am}
+    \end{figure}
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/Rec-SR-fix-fingers-ameliorated.pdf}
+      \caption{Recovery of the finger table after churn, with the fix\_finger (ameliorated) period varying}
+      \label{fig:Rec-SR-fix-finger-am}
+    \end{figure}
+    
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/task3-5.pdf}
+      \caption{Percentage of successfully found keys}
+      \label{fig:percentage-successfully-found-keys}
+    \end{figure}
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics{plots/task3-5-cluster.pdf}
+      \caption{Search performance in Chord with churn}
+      \label{fig:search-perf-with-churn}
     \end{figure}
 
 
