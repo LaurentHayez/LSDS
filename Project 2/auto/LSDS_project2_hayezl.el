@@ -78,6 +78,7 @@
     "fig:Av-SR-stab"
     "fig:Av-SR-fix-fingers"
     "fig:Av-SR-check-finger"
+    "sec:conclusion"
     "fig:Rec-SR-stab"
     "fig:Rec-SR-fix-fingers"
     "fig:Rec-SR-check-finger"

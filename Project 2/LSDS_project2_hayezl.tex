@@ -409,7 +409,38 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
 
 
     We also see that, unlike before, this time the best result is obtained when we set the stabilization
-    period to 10 seconds, the fix\_fingers period to 10 seconds and the check\_fingers period to 20 seconds. 
+    period to 10 seconds, the fix\_fingers period to 10 seconds and the check\_fingers period to 20
+    seconds. \\
+
+    Let's now take a look at Figures \ref{fig:percentage-successfully-found-keys} and
+    \ref{fig:search-perf-with-churn}. These graphs respectively represent the percentage of successfully found
+    keys and the number of keys found in $x$ hops, that is the search performance in Chord with churn. On the
+    first one, we observe that while there is no churn, the success ration is 100\% (except at the beggining,
+    where there was a little bug). Although there is churn, the success ratio is still over 99\% after the
+    churn. This is due to the fact that the successors of each node are periodically updated in order to have
+    a reliable path, even if we have stale references in the finger tables. We can see that on Figure
+    \ref{fig:search-perf-with-churn}. If we compare this histogram with Figure
+    \ref{fig:search-perf-chord-fing-table}, we see that it takes a little bit longer to
+    find a key when there is churn because of the stale references, but this is still more efficient than
+    having only a reference to the successor and to the predecessor.
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+  The goal of this project was to implement a distributed hash table on top of a key-routing layer. To do so,
+  we implemented Chord, with multiple steps. We started modestly by implementing a basic Chord protocol that
+  could search key values in $O(n)$ hops. Then we added a finger table to each node that boosted the search
+  performance to $O(\log n)$ hops. After that, we consolidated the implementation by updating periodically the
+  successor and the finger table for each node. We observed that updating one random finger at a time was not
+  the best way to recover from churn, and that periodically updating the whole table was a little bit
+  better. The search performance with churn was not too deprecated, as more than 99\% of the queries were
+  satisfied. The price to pay was a bit more hops to find the desired key, but it was still more efficient
+  than the first Chord implementation we presented.
+
+  There are some ameliorations we could bring to what we have done. For example instead of having only one
+  successor, we could maintain a list of $n$ successors and predecessors, in case the direct successor or
+  predecessor fails. We could also, as presented, update lazily the whole finger table periodically. 
 
     \begin{figure}[h]
       \centering
