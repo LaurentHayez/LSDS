@@ -200,15 +200,15 @@
 \label{sec:introduction}
   
   The main goal of this project is to implement Chord protocol in a basic way. Chord is a distributed lookup
-  protocol that has a key-routing layer. The key-routing mechanism then permits to implement a distributed
+  protocol which uses a key-routing mechanism. This mechanism permits to implement a distributed
   hash table on top of it. 
 
-  We will start by implementing Chord with only successors and predecessors. This implementation is not
-  optimal, as the search time is $O(n)$. But we can do much better by adding a finger table to each node,
+  We will start by implementing Chord with only successors and predecessors. We will see that this
+  implementation is not optimal, as the search time is $O(n)$. We will do much better by adding a finger table to each node,
   which will reduce the search time $O(\log n)$. This will be our next step.
 
-  Finally, we will modifiy some functions in order to have a fault-tolerant implementation. That is the nodes
-  can recover from other node's failure by updating periodically their successor and their finger table. We
+  Finally, we will modifiy some functions in order to have a fault-tolerant implementation. That is, the system
+  can recover from node failure by periodically updating the successor and the finger table for each node. We
   will analyze how nodes failures affect the system by looking at stale references in the finger tables, and
   we will also take a look at the search performance under churn.
 
@@ -258,9 +258,9 @@
     \end{center}
 
     Before joining the ring, the nodes know no other node, so all the fingers are initialized to nil. The
-    start is where to start searching in the ring, this does not change so we initialize them to their correct
-    value. Finally we simply set \texttt{finger[1].node} to \texttt{n}, that is the node itself is its own
-    successor.
+    finger[i].start is where to start searching in the ring. This value does not change during the execution
+    so we initialize them to their correct value. Finally we simply set \texttt{finger[1].node} to \texttt{n},
+    that is, the node is its own successor.
 
 
   \subsection{Search performances}
@@ -278,9 +278,10 @@
 grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})$/\1/g' | sort -n | uniq -c | sed -r 's/ +([0-9]+)/\2 \1/g' >> ParsedLogs/log-task2-5-cluster.txt
 \end{lstlisting}
     
-    We produced the plot shown in Figure \ref{fig:search-basic-chord}. We see that the we found approximately
-    the same number of keys for each number of hops. This tells us, as we expected that the search time in the
-    basic Chord is $O(n)$ where $n$ is the number of nodes in the ring. 
+    The plot shown in Figure \ref{fig:search-basic-chord} represents the number of keys found in a given
+    number of hops. We see that the we found approximately the same number of keys for each number of hops, or
+    in other words, we have an uniform distribution. This tells us, as we expected that the search time in the
+    basic Chord is $O(n)$ where $n$ is the number of nodes in the ring.
 
 
     \begin{figure}[h]
@@ -345,12 +346,12 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
     listing:stale-refs, firstline=194, lastline=200]{Chord-fingers-v2.lua}
 
     The average number of stale references was calculated as
-      \[\frac{\text{current number of stale
-          references at current time}}{\text{total elapsed time}}.\]
+      \[\frac{\text{number of stale
+          references at current time}}{\text{final time} - \text{initial time}}.\]
     
     We made various plots, each with
     one different parameter varying. We used a set up of 64 nodes for the ring, and the provided churn trace
-    to simulate the nodes leaving the ring. On Figure \ref{fig:Av-SR-fix-fingers}, we see that when we set the
+    to simulate nodes leaving and joining the ring. On Figure \ref{fig:Av-SR-fix-fingers}, we see that when we set the
     stabilization period to 10 seconds, the fix\_fingers period to 20 seconds and the check\_fingers period to
     20 seconds, we have less stale references than for the other periods. That result was surprising, so we
     launched the same experiment one more time, but as you can see the result was similar.
@@ -387,7 +388,7 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
 
     
 
-    We now analyze how the nodes recovers from churn. We can see on Figures \ref{fig:Rec-SR-stab},
+    We now analyze how the nodes recover from churn. We can see on Figures \ref{fig:Rec-SR-stab},
     \ref{fig:Rec-SR-fix-fingers} and \ref{fig:Rec-SR-check-finger} that the finger table does not recover well
     from churn. This is due to the function \texttt{fix\_fingers}, shown in Listing \ref{listing:fix-fingers}. 
 
@@ -402,7 +403,7 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
 
     The results with this function are shown in Figures \ref{fig:Av-SR-fix-finger-am} and
     \ref{fig:Rec-SR-fix-finger-am}. The amelioration is not transcendent, but we see that we have
-    approximately two times less stale references than before. \newpage
+    approximately two times less stale references than before. 
 
         \lstinputlisting[style=luaCode, caption=Function fix\_fingers ameliorated, label =
     listing:check-and-fix-fingers, firstline=163, lastline=169]{Chord-fingers-v2-amelioration.lua}
@@ -414,7 +415,7 @@ grep "Number of hops:" Logs/log-task2-5-cluster.txt | sed -r 's/.*\t([0-9]{1,2})
 
     Let's now take a look at Figures \ref{fig:percentage-successfully-found-keys} and
     \ref{fig:search-perf-with-churn}. These graphs respectively represent the percentage of successfully found
-    keys and the number of keys found in $x$ hops, that is the search performance in Chord with churn. On the
+    keys and the number of keys found in $x$ hops, that is, the search performance in Chord with churn. On the
     first one, we observe that while there is no churn, the success ration is 100\% (except at the beggining,
     where there was a little bug). Although there is churn, the success ratio is still over 99\% after the
     churn. This is due to the fact that the successors of each node are periodically updated in order to have
