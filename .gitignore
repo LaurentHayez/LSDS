@@ -215,3 +215,5 @@ build/
 .rvmrc
 
 
+# ignore specific folder
+/Users/laurent/Google Drive/Master/Large Scale Distributed System/Projects/Project 2/final/
