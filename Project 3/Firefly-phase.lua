@@ -374,6 +374,8 @@ end
 -- Active thread
 function firefly_activeThread()
     if phi >= 1 then
+        phi = 0
+        log:print("Node "..job.position.." emitted a flash.")
         firefly_sendFlash()
     else
         local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
