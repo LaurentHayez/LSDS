@@ -346,8 +346,7 @@ phase_advance = true
 
 -- sendFlash
 function firefly_sendFlash()
-    local P = {}
-    P = pss_getView()
+    local P = pss_getView()
     for i, peer in ipairs(P) do
         rpc.call(peer, {"firefly_passiveThread"})
     end
