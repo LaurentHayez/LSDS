@@ -261,7 +261,7 @@ function pss_init()
     -- note that we select randomly c+1 nodes so that if we have ourself in it,
     -- we avoid using it. Ages are taken randomly in [0..c] but could be
     -- 0 as well.
-    if #job.nodes <= c then
+    if #nodes <= c then
         log:print("There are not enough nodes in the initial array from splay.")
         log:print("Use a network of at least "..(c+1).." nodes, and an initial array of type random with at least "..(c+1).." nodes")
         log:print("FATAL: exiting")
@@ -274,7 +274,7 @@ function pss_init()
         os.exit()
     end
     local indexes = {}
-    for i=1,#job.nodes do
+    for i=1,#nodes do
         indexes[#indexes+1]=i
     end
     local selected_indexes = misc.random_pick(indexes,c+1)
@@ -282,7 +282,7 @@ function pss_init()
     while #view < c do
         if not (selected_indexes[i] == job.position) then
             view[#view+1] =
-            {peer={ip=job.nodes[selected_indexes[i]].ip,port=job.nodes[selected_indexes[i]].port},age=0,id=selected_indexes[i]}
+            {peer={ip=nodes[selected_indexes[i]].ip,port=nodes[selected_indexes[i]].port},age=0,id=selected_indexes[i]}
         end
         i=i+1
     end
@@ -334,9 +334,9 @@ delta = 1                   -- cycle length
 active_thread_period = 2    -- period of active thread
 update_phi_period = 0       -- period between two updates of phi
 if delta < 1 then
-    update_phi_period = (active_thead_period / 5) * delta
+    update_phi_period = (active_thread_period / 5) * delta
 else
-    update_phi_period = active_thead_period / (5 * delta)
+    update_phi_period = active_thread_period / (5 * delta)
 end
 offset = 0.1
 max_time = 600              -- max time of execution
@@ -347,8 +347,9 @@ phase_advance = true
 -- sendFlash
 function firefly_sendFlash()
     local P = pss_getView()
-    for i, peer in ipairs(P) do
-        rpc.call(peer, {"firefly_passiveThread"})
+    print_view()
+    for i, node in ipairs(P) do
+        rpc.call(node.peer, {"firefly_passiveThread"})
     end
 end
 
@@ -377,7 +378,8 @@ function firefly_activeThread()
     else
         local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
         events.wait("Flash!")
-        log:print("Flash emitted.")
+	phi = 0
+        log:print("Node "..job.position.." emitted a flash.")
         firefly_sendFlash()
         events.kill(update_phi)
     end
@@ -385,8 +387,8 @@ end
 
 -- Passive thread
 function firefly_passiveThread()
-    log:print("Flash received.")
-    processFlash()
+    log:print("Node "..job.position.." received a flash.")
+    firefly_processFlash()
 end
 
 -- Terminator function
@@ -407,7 +409,7 @@ function main ()
     log:print("Waiting 120 sec for pss")
     events.sleep(120)
     log:print("Start firefly")
-    events.thread(firefly_activeThread, active_thread_period)
+    events.periodic(firefly_activeThread, active_thread_period)
 end
 
 events.thread(main)
