@@ -2,7 +2,7 @@
 **
 ** Author:      Laurent Hayez
 ** Date:        03 dec 2015
-** File:        Firefly implementation (skeleton)
+** File:        Firefly implementation (phase-advance and phase-delay)
 **
 --]]
 
@@ -322,16 +322,37 @@ function pss_getPeer()
     return view[math.random(#view)]
 end
 
+-- Added by Laurent Hayez
+function pss_getView()
+    return view
+end
+
 
 -- Variables for Firefly
-phi = 0             -- phase such that dphi/dt = 1/delta => phi = 1/delta * t
-delta = 1           -- cycle length
+phi = 0                     -- phase
+delta = 1                   -- cycle length
+active_thread_period = 2    -- period of active thread
+update_phi_period = 0       -- period between two updates of phi
+if delta < 1 then
+    update_phi_period = (active_thead_period / 5) * delta
+else
+    update_phi_period = active_thead_period / (5 * delta)
+end
 offset = 0.1
-max_time = 600
-active_thread_period = 2
+max_time = 600              -- max time of execution
 phase_advance = true
 
 -- Firefly functions
+
+-- sendFlash
+function firefly_sendFlash()
+    local P = {}
+    P = pss_getView()
+    for i, peer in ipairs(P) do
+        rpc.call(peer, {"firefly_passiveThread"})
+    end
+end
+
 -- processFlash implemented with the phase-advance phase-delay algorithm
 function firefly_processFlash()
     if phase_advance then
@@ -341,21 +362,25 @@ function firefly_processFlash()
     end
 end
 
+-- updatePhi
+function firefly_updatePhi()
+    if phi < 1 then
+        phi = phi + (1 / delta) * update_phi_period
+    else
+        events.fire("Flash!")
+    end
+end
+
 -- Active thread
 function firefly_activeThread()
-    init_time = misc.time()
-    -- sinon faire avec simplement le events.periodic
-    while phi ~= 1 do
-        phi = phi + 1/delta * offset
-    end
-    phi = 0
-    P = {}
-    for i = 1, 10 do
-        P[i] = pss_getPeer()
-    end
-    for peer in ipairs(P) do
-        log:print("Sending flash.")
-        rpc.call(peer, {"passiveThread"})
+    if phi >= 1 then
+        firefly_sendFlash()
+    else
+        local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
+        events.wait("Flash!")
+        log:print("Flash emitted.")
+        firefly_sendFlash()
+        events.kill(update_phi)
     end
 end
 
@@ -365,9 +390,9 @@ function firefly_passiveThread()
     processFlash()
 end
 
-
+-- Terminator function
 function terminator()
-    log:print("node "..job.position.." will quit in 2min")
+    log:print("node "..job.position.." will quit in "..(max_time/60).." min")
     events.sleep(max_time)
     log:print("node "..job.position.." quitting...")
     os.exit()
@@ -388,4 +413,3 @@ end
 
 events.thread(main)
 events.run()
-
