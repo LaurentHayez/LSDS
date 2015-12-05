@@ -41,9 +41,13 @@ def init_parser():
 
 def parser():
     input_file, output_file = init_parser()
+    init_time = 0
     with open(input_file, 'r') as f:
-        first_line = f.readline()
-    init_time = get_time(first_line)
+        for line in f:
+            current_line = re.match('(\d+):(\d+):(\d+)\.\d+ \(\d+\)  Node (\d+) emitted a flash.', line)
+            if current_line:
+                init_time = get_time(line)
+                break
     input_file = open(input_file, 'r')
     output_file = open(output_file, 'w')
 
@@ -51,7 +55,7 @@ def parser():
         current_line = re.match('(\d+):(\d+):(\d+)\.\d+ \(\d+\)  Node (\d+) emitted a flash.', line)
         if current_line:
             current_time = get_time(line)
-            output_file.write(str(current_time - init_time) + "\t" + current_line.group(4))
+            output_file.write(str(current_time - init_time) + "\t" + current_line.group(4) + "\n")
 
 
 def main():
