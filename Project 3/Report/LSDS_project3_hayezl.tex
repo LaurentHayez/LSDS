@@ -1,0 +1,292 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx, wrapfig}
+\usepackage[top=3cm, bottom=3cm, left=3.2cm, right=3.2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{color, colortbl}
+\usepackage[usenames, dvipsnames]{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{pgf, pgfplots, tikz}
+\usepackage{listings}
+\usepackage{makeidx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usetikzlibrary{calc}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{decorations.markings}
+\usepackage{manfnt, multicol}
+\usepackage[section]{algorithm}
+\usepackage{algorithmicx, algpseudocode, listings}
+% fixes a bug for closing parantheses
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\lsthk@SelectCharTable}{%
+  \lst@ifbreaklines\lst@Def{`)}{\lst@breakProcessOther)}\fi}{}{}{}
+\makeatother
+\usepackage{array, multirow, longtable}
+\usepackage{enumerate}
+\usepackage[inline]{enumitem}
+\usepackage[english]{babel}
+\usepackage{caption, tabu}
+
+
+%°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°%
+%----Définition de l'environnement listings----%
+%°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°%
+
+\lstset{literate=
+  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+  {€}{{\EUR}}1 {£}{{\pounds}}1
+}
+
+\lstdefinestyle{luaCode}{
+  basicstyle=\footnotesize,        	% the size of the fonts that are used for the code
+  breakatwhitespace=true,         	% sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 	% sets automatic line breaking
+  captionpos=t,                    	% sets the caption-position to bottom
+  commentstyle=\footnotesize\ttfamily\color{Emerald},    	% comment style
+  deletekeywords={...},            	% if you want to delete keywords from the given language
+  escapeinside={¦}{¦)},         	% if you want to add LaTeX within your code
+  extendedchars=true,              	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  rulecolor=\color{OliveGreen!80},
+  frame=trbl,
+  framexleftmargin=10.8pt,
+  framexrightmargin=7.2pt,
+  keepspaces=true,                 	% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\small\bfseries\color{OliveGreen!80},   % keyword style
+  language=[5.0]Lua,                 	% the language of the code
+  morekeywords={job.position},            	% if you want to add more keywords to the set
+  numbers=left,                    	% where to put the line-numbers; possible values are (none, left, right)
+  numbersep=3pt,                   	% how far the line-numbers are from the code
+  numberstyle=\tiny\color{Gray}, 	% the style that is used for the line-numbers
+  resetmargins=false                    % sets margins to 0 in a list
+  showspaces=false,                	% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          	% underline spaces within strings only
+  showtabs=false,                  	% show tabs within strings adding particular underscores
+  stepnumber=2,                    	% the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{RawSienna},     	% string literal style
+  tabsize=2,                       	% sets default tabsize to 2 spaces
+  title=\lstname,                   	% show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=1cm,                      % sets left margin indentation
+  xrightmargin=1cm                      % sets right margin indentation
+}
+
+\lstdefinestyle{gpCode}{
+  basicstyle=\footnotesize,        	% the size of the fonts that are used for the code
+  breakatwhitespace=true,         	% sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 	% sets automatic line breaking
+  captionpos=t,                    	% sets the caption-position to bottom
+  commentstyle=\footnotesize\ttfamily\color{Emerald},    	% comment style
+  deletekeywords={...},            	% if you want to delete keywords from the given language
+  escapeinside={¦}{¦)},         	% if you want to add LaTeX within your code
+  extendedchars=true,              	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  rulecolor=\color{OliveGreen!80},
+  frame=trbl,
+  framexleftmargin=10.8pt,
+  framexrightmargin=7.2pt,
+  keepspaces=true,                 	% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\small\bfseries\color{OliveGreen!80},   % keyword style
+  language=Gnuplot,                 	% the language of the code
+  morekeywords={linestyle},            	% if you want to add more keywords to the set
+  numbers=left,                    	% where to put the line-numbers; possible values are (none, left, right)
+  numbersep=3pt,                   	% how far the line-numbers are from the code
+  numberstyle=\tiny\color{Gray}, 	% the style that is used for the line-numbers
+  resetmargins=false                    % sets margins to 0 in a list
+  showspaces=false,                	% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          	% underline spaces within strings only
+  showtabs=false,                  	% show tabs within strings adding particular underscores
+  stepnumber=2,                    	% the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{RawSienna},     	% string literal style
+  tabsize=2,                       	% sets default tabsize to 2 spaces
+  title=\lstname,                   	% show the filename of files included with \lstinputlisting; also try caption instead of title
+  xleftmargin=1cm,                      % sets left margin indentation
+  xrightmargin=1cm                      % sets right margin indentation
+}
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}} 
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}} 
+\newcommand{\C}{\mathbb{C}}
+\renewcommand{\epsilon}{\varepsilon} 
+\renewcommand{\phi}{\varphi}
+
+
+\newcommand{\CodeBrackets}[1]{{\color{RoyalBlue}{#1}}}    % color of parantheses and brackets
+\newcommand{\CodeDigits}[1]{{\color{RawSienna}{#1}}} % color of numbers
+
+%change les légendes des listings
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{%
+  \centering
+  {\colorbox{OliveGreen!80}{%
+      \parbox{0.9\linewidth}{%
+          \centering
+          #1#2#3
+        }
+      }
+    }
+  }
+\captionsetup[lstlisting]{%
+  format=listing,
+  labelfont=white,
+  textfont=white, 
+  singlelinecheck=false, 
+  indention=0pt,
+  margin=0pt, 
+  font={bf,sf,small}
+}
+
+
+%%%%%%%%	Définitions des environnements de théorèmes	%%%%%%%%
+%% style théorème, lemme, proposition
+\theoremstyle{plain}
+
+
+%% style définitions, exemples et remarques
+\theoremstyle{definition}
+
+
+% For syncronisation with skim
+\synctex = 1
+
+
+
+%\title{{\bfseries Large-Scale Distributed Systems}\\ {\Large Project 1: Gossip-based dissemination, Peer
+%    Sampling System}}
+\title{%
+  \normalfont{\bfseries{\rule{\linewidth}{2pt} Large-Scale Distributed Systems\\Project 3: Firefly-inspired synchronization\\ %
+    \vspace{-0.4cm}  \rule{\linewidth}{2pt}}}
+  }
+\author{Laurent \textsc{Hayez}}
+% Remove command to get current date 
+\date{\today}
+
+
+\begin{document}
+
+
+
+\renewcommand{\proofname}{{\scshape Proof}}
+\renewcommand{\labelitemi}{\textbullet}
+
+
+\maketitle
+
+\renewcommand{\contentsname}{Table of contents}
+%Table of contents
+\tableofcontents
+
+
+
+%%  Section 1: Introduction
+\section{Introduction}
+\label{sec:introduction}
+  
+  
+%% Section 2: Skeleton
+
+\section{Implementation of the skeleton}
+\label{sec:impl-skel}
+
+  According to the paper ``Firefly-inspired Heartbeat Synchronization in Overlay Networks'', the skeleton for
+  the different algorithms is composed of two main functions, namely \textsc{activeThread} and
+  \textsc{passiveThread}. We provide the pseudo code for the implementation in Algorithm \ref{alg:firefly-skeleton}.
+
+  %Algorithme 3.1: Interpolation de Lagrange
+   \begin{algorithm}
+     \caption{Skeleton for the Firefly algorithms}
+     \label{alg:firefly-skeleton}
+     \begin{algorithmic}
+       \State \textbf{Variables:}
+       \State $\phi$ \Comment phase
+       \State $\Delta$ \Comment cycle length
+       \State update\_phi\_period $= \begin{cases} \frac{\Delta}{5} & \text{if } \Delta < 1 \\
+         \frac{1}{5\Delta} & \text{if } \Delta \geq 1 \end{cases}$
+       \State
+       \Function{sendFlash()}{}
+         \State $P \gets$ view from PSS
+         \State send flash to all peers in $P$
+       \EndFunction
+       \State
+       \Function{processFlash()}{}
+         \State depends on the implementation
+       \EndFunction
+       \State
+       \Function{updatePhi()}{}
+         \If{$\phi < 1$}
+           \State $\phi \gets \phi + \frac{1}{\Delta} \cdot $update\_phi\_period
+         \Else
+           \State fire event ``Flash!''
+         \EndIf
+       \EndFunction
+       \State
+       \Function{activeThread()}{}
+          \If{$\phi \geq 1$}
+            \State $\phi \gets 0$
+            \State sendFlash()
+          \Else
+            \State update\_phi $\gets$ new periodic thread ``updatePhi'' with period update\_phi\_period
+            \State wait for the event ``Flash!''
+            \State $\phi \gets 0$
+            \State sendFlash()
+            \State kill update\_phi
+          \EndIf
+       \EndFunction
+       \State
+       \Function{passiveThread()}{}
+         \State receive flash
+         \State processFlash()
+       \EndFunction
+     \end{algorithmic}
+   \end{algorithm}
+
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+  
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+	
+\end{document}
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t 
+%%% End:
