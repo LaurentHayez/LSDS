@@ -331,7 +331,7 @@ end
 -- Variables for Firefly
 phi = 0                     -- phase
 delta = 1                   -- cycle length
-active_thread_period = 2    -- period of active thread
+active_thread_period = delta    -- period of active thread
 update_phi_period = 0       -- period between two updates of phi
 if delta < 1 then
     update_phi_period = (active_thread_period / 5) * delta
@@ -347,9 +347,8 @@ phase_advance = true
 -- sendFlash
 function firefly_sendFlash()
     local P = pss_getView()
-    print_view()
     for i, node in ipairs(P) do
-        rpc.call(node.peer, {"firefly_passiveThread"})
+        rpc.call(node.peer, {"firefly_passiveThread", job.position})
     end
 end
 
@@ -380,7 +379,7 @@ function firefly_activeThread()
     else
         local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
         events.wait("Flash!")
-	phi = 0
+	    phi = 0
         log:print("Node "..job.position.." emitted a flash.")
         firefly_sendFlash()
         events.kill(update_phi)
@@ -388,8 +387,8 @@ function firefly_activeThread()
 end
 
 -- Passive thread
-function firefly_passiveThread()
-    log:print("Node "..job.position.." received a flash.")
+function firefly_passiveThread(sending_node_id)
+    log:print("Node "..job.position.." received a flash from node "..sending_node_id)
     firefly_processFlash()
 end
 
