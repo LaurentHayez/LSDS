@@ -420,10 +420,14 @@ end
 -- main function
 function main ()
     log:print("node "..job.position.." starting!")
-    events.thread(terminator)
+    -- wait for all the nodes to be ready
+    if on_cluster then
+        events.sleep(600)
+    end
     log:print("node "..job.position.." starting pss_init...")
     pss_init()
     log:print("Waiting 120 sec for pss")
+    events.thread(terminator)
     events.sleep(120)
     log:print("Start firefly")
     events.periodic(firefly_activeThread, active_thread_period)
