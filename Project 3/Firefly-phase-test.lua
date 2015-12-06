@@ -334,9 +334,9 @@ delta = 1                   -- cycle length
 active_thread_period = delta    -- period of active thread
 update_phi_period = 0       -- period between two updates of phi
 if delta < 1 then
-    update_phi_period = (active_thread_period / 5) * delta
+    update_phi_period = delta / 5
 else
-    update_phi_period = active_thread_period / (5 * delta)
+    update_phi_period = 1 / (5 * delta)
 end
 offset = 0.1
 max_time = 600              -- max time of execution
