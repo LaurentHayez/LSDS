@@ -422,7 +422,7 @@ function main ()
     log:print("node "..job.position.." starting!")
     -- wait for all the nodes to be ready
     if on_cluster then
-        events.sleep(600)
+        events.sleep(120)
     end
     log:print("node "..job.position.." starting pss_init...")
     pss_init()
