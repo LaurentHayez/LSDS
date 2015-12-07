@@ -13,8 +13,8 @@ import re
 
 
 def get_time(line):
-    time = re.match('(\d+):(\d+):(\d+)\.\d+ \(\d+\)  \w+', line)
-    return int(time.group(1)) * 3600 + int(time.group(2)) * 60 + int(time.group(3))
+    time = re.match('(\d+):(\d+):(\d+)\.(\d)\d* \(\d+\)  \w+', line)
+    return int(time.group(1)) * 3600 + int(time.group(2)) * 60 + int(time.group(3)) + int(time.group(4)) / 10
 
 
 def init_parser():
@@ -52,10 +52,10 @@ def parser():
     output_file = open(output_file, 'w')
 
     for line in input_file:
-        current_line = re.match('(\d+):(\d+):(\d+)\.\d+ \(\d+\)  Node (\d+) emitted a flash.', line)
+        current_line = re.match('(\d+):(\d+):(\d+)\.(\d)\d* \(\d+\)  Node (\d+) emitted a flash.', line)
         if current_line:
             current_time = get_time(line)
-            output_file.write(str(current_time - init_time) + "\t" + current_line.group(4) + "\n")
+            output_file.write(str(current_time - init_time) + "\t" + current_line.group(5) + "\n")
 
 
 def main():
