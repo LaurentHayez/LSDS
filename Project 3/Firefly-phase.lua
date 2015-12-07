@@ -408,6 +408,7 @@ function main ()
     if on_cluster then
         events.sleep(600)
     end
+    events.thread(terminator)
     log:print("node "..job.position.." starting pss_init...")
     pss_init()
     log:print("Waiting 120 sec for pss")
