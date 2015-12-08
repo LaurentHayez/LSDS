@@ -6,6 +6,10 @@
 **
 --]]
 
+require("splay.base")
+
+verbose = true
+
 -- Added by Laurent Hayez
 function pss_getView()
     return view
@@ -57,15 +61,27 @@ end
 
 -- processFlash implemented with the adaptive Ermentrout model
 function firefly_processFlash()
+    if verbose then
+        log:print("Old omega: ", omega)
+    end
     omega = omega + epsilon * (omega_natural - omega) + g_plus(phi) * (omega_min - omega) +
             g_minus(phi) * (omega_max - omega)
+    if verbose then
+        log:print("New omega: ", omega)
+    end
 end
 
 -- updatePhi
 function firefly_updatePhi()
     if phi < 1 then
         phi = phi + omega * update_phi_period
+        if verbose then
+            print("New phi = ", phi)
+        end
     else
+        if verbose then
+            log:print("PHI HAS REACHED THRESHOLD 1, FIRING FLASH")
+        end
         events.fire("Flash!")
     end
 end
@@ -74,21 +90,21 @@ end
 function firefly_activeThread()
     if phi >= 1 then
         phi = 0
-        log:print("Node "..job.position.." emitted a flash.")
+        log:print("Node "..job.position.." emitted a flash. (phi was already at 1)")
         firefly_sendFlash()
     else
         local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
         events.wait("Flash!")
 	    phi = 0
         log:print("Node "..job.position.." emitted a flash.")
-        firefly_sendFlash()
+        --firefly_sendFlash()
         events.kill(update_phi)
     end
 end
 
 -- Passive thread
 function firefly_passiveThread(sending_node_id)
-    log:print("Node "..job.position.." received a flash from node "..sending_node_id)
+    --log:print("Node "..job.position.." received a flash from node "..sending_node_id)
     firefly_processFlash()
 end
 
@@ -110,9 +126,9 @@ function main ()
     end
     log:print("node "..job.position.." starting pss_init...")
     pss_init()
-    log:print("Waiting 120 sec for pss")
-    events.thread(terminator)
-    events.sleep(120)
+    --log:print("Waiting 120 sec for pss")
+    --events.thread(terminator)
+    --events.sleep(120)
     log:print("Start firefly")
     events.periodic(firefly_activeThread, active_thread_period)
 end
