@@ -339,7 +339,7 @@ omega_min = 1 / delta_max
 omega_max = 1 / delta_min
 omega = 1 / delta
 omega_natural = 1 / delta_natural
-epsilon = 0.01
+epsilon = 0.05
 
 active_thread_period = delta    -- period of active thread
 update_phi_period = 0       -- period between two updates of phi
@@ -371,7 +371,7 @@ function firefly_sendFlash()
     end
 end
 
--- processFlash implemented with the phase-advance phase-delay algorithm
+-- processFlash implemented with the adaptive Ermentrout model
 function firefly_processFlash()
     omega = omega + epsilon * (omega_natural - omega) + g_plus(phi) * (omega_min - omega) +
             g_minus(phi) * (omega_max - omega)

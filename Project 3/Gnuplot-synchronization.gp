@@ -11,7 +11,7 @@ set style line 7 lt 3 lc rgb "#000000" lw 3 # black, dashed line
 # Olive green color html: #556B2F
 
 set output outputname
-set title "Synchronization for the phase-delay algorithm (100 nodes, delta = 2)"
+set title "Synchronization for the adaptive Ermentrout model (100 nodes, epsilon=0.05)"
 
 # indicates the labels
 set ylabel "Node id"
