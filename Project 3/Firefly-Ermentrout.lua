@@ -389,7 +389,7 @@ end
 
 -- Active thread
 function firefly_activeThread()
-    if update_phi_init then
+    if not update_phi_init then
         update_phi_init = true
         events.periodic(firefly_updatePhi, update_phi_period)
     end
