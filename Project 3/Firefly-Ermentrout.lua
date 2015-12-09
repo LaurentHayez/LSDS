@@ -331,26 +331,27 @@ end
 -- Variables for Firefly
 math.randomseed(job.position * os.time())
 phi = 0                                 -- phase
-delta_min = 0.85
-delta_max = 1.15
+delta_min = 1.75
+delta_max = 2.25
 delta = delta_min + (delta_max - delta_min) * math.random()         -- cycle length
-delta_natural = 1
+delta_natural = 2
 omega_min = 1 / delta_max
 omega_max = 1 / delta_min
 omega = 1 / delta
 omega_natural = 1 / delta_natural
-epsilon = 0.05
+epsilon = 0.01
 
-active_thread_period = delta    -- period of active thread
-update_phi_period = 0       -- period between two updates of phi
+active_thread_period = delta_max    -- period of active thread
+update_phi_period = 0.01       -- period between two updates of phi
 if delta < 1 then
-    update_phi_period = delta / 5
+    update_phi_period = delta_natural / 10
 else
-    update_phi_period = 1 / (5 * delta)
+    update_phi_period = 1 / (10 * delta_natural)
 end
 offset = 0.1
 max_time = 600              -- max time of execution
 phase_advance = true
+update_phi_init = false
 
 -- Firefly functions
 
@@ -360,7 +361,7 @@ function g_plus(value)
 end
 -- g_minus
 function g_minus(value)
-    return -math.min((math.sin(2 * math.pi * value)) / (2 * math.pi), 0)
+    return - (math.min((math.sin(2 * math.pi * value)) / (2 * math.pi), 0))
 end
 
 -- sendFlash
@@ -373,8 +374,7 @@ end
 
 -- processFlash implemented with the adaptive Ermentrout model
 function firefly_processFlash()
-    omega = omega + epsilon * (omega_natural - omega) + g_plus(phi) * (omega_min - omega) +
-            g_minus(phi) * (omega_max - omega)
+    omega = omega + epsilon * (omega_natural - omega) + g_plus(phi) * (omega_min - omega) + g_minus(phi) * (omega_max - omega)
 end
 
 -- updatePhi
@@ -383,23 +383,19 @@ function firefly_updatePhi()
         phi = phi + omega * update_phi_period
     else
         events.fire("Flash!")
+        phi = 0
     end
 end
 
 -- Active thread
 function firefly_activeThread()
-    if phi >= 1 then
-        phi = 0
-        log:print("Node "..job.position.." emitted a flash.")
-        firefly_sendFlash()
-    else
-        local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
-        events.wait("Flash!")
-	    phi = 0
-        log:print("Node "..job.position.." emitted a flash.")
-        firefly_sendFlash()
-        events.kill(update_phi)
+    if update_phi_init then
+        update_phi_init = true
+        events.periodic(firefly_updatePhi, update_phi_period)
     end
+    events.wait("Flash!")
+    firefly_sendFlash()
+    log:print("Node "..job.position.." emitted a flash.")
 end
 
 -- Passive thread
