@@ -20,6 +20,7 @@
 \usetikzlibrary{calc}
 \usetikzlibrary{plotmarks}
 \usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathreplacing}
 \usepackage{manfnt, multicol}
 \usepackage[section]{algorithm}
 \usepackage{algorithmicx, algpseudocode, listings}
@@ -198,18 +199,71 @@
 %%  Section 1: Introduction
 \section{Introduction}
 \label{sec:introduction}
+
+  In nature, fireflies produce light in order to attract mates or prey. One interesting feature of these
+  beetles is that when they emit light in group, at some point, they do it in a synchronized manner, just by
+  looking at when their neighbours emit light. This feature is interesting in large-scale distributed systems,
+  as synchronization might be required, but one node does not know every other nodes. 
+
+  The objective is thus to inspire ourselves from fireflies to try to synchronize nodes in a decentralized
+  manner. At first we will detail the protocol skeleton and explain how the core of the protocols will
+  work. Then we will look at a two models called ``phase-advance'' and ``phase-delay'' and briefly analyze
+  them. The main and final part will be the ``adaptive Ermentrout model'' which is more representative of
+  the reality. We will explain the implementation specifities and analyze this model in different situations.
   
   
 %% Section 2: Skeleton
 
-\section{Implementation of the skeleton}
+\section{Protocol skeleton}
 \label{sec:impl-skel}
 
   According to the paper ``Firefly-inspired Heartbeat Synchronization in Overlay Networks'', the skeleton for
   the different algorithms is composed of two main functions, namely \textsc{activeThread} and
-  \textsc{passiveThread}. We provide the pseudo code for the implementation in Algorithm \ref{alg:firefly-skeleton}.
+  \textsc{passiveThread}. We provide the pseudo code for the implementation in Algorithm
+  \ref{alg:firefly-skeleton}.
 
-  %Algorithme 3.1: Interpolation de Lagrange
+  In the different protocols, a node is an oscillator characterized by its phase $\phi$ and the cycle length
+  $\Delta$. We define $\phi$ as a sawtooth function with domain $[0,1]$ such that $\frac{d\phi}{dt} =
+  \frac{1}{\Delta}$. This is represented in Figure \ref{fig:repr-phi}.
+
+  When $\phi$ reaches $1$, the node will send a flash to a set of neighbour nodes, and $\phi$ is reset to
+  $0$. The cycle length, depending on the model chosen, can be the same or different for all nodes. The
+  function \textsc{updatePhi} will differ in our implementations, but we will come back on this when needed.
+
+  The core of the synchronization protocol is the function \textsc{processFlash}, i.e. what a node does when it
+  receives a flash. This function is responsible of how $\phi$ is updated. Depending on the implementation,
+  $\phi$ will be updated, or $\Delta$ will be updated and will affect $\phi$.
+  
+
+  \begin{figure}[h]
+    \centering
+    \begin{tikzpicture}
+      % Axis
+      \draw[->, >=latex] (-1, 0) -- (10, 0) node[right]{time};
+      \draw[->, >=latex] (0, -1) -- (0, 4);
+      % Function phi
+      \draw (0,0) -- (2, 2) (2, 0) -- (4, 2) (4, 0) -- (6, 2) (6, 0) -- (8, 2) (8, 0);
+      \draw[dashed] (2,2) -- (2,0) (4, 2) -- (4, 0) (6, 2) -- (6, 0) (8,2) -- (8,0);
+      \draw (8, 1) node[right]{$\phi$};
+      % draw the fires
+      \draw[color = BrickRed, ->, >=latex] (2,2) to node[near end, above, rotate=90]{Fire!} (2, 3);
+      \draw[color = BrickRed, ->, >=latex] (4,2) to node[near end, above, rotate=90]{Fire!} (4, 3);
+      \draw[color = BrickRed, ->, >=latex] (6,2) to node[near end, above, rotate=90]{Fire!} (6, 3);
+      \draw[color = BrickRed, ->, >=latex] (8,2) to node[near end, above, rotate=90]{Fire!} (8, 3);
+      % draw delta
+      \draw[decorate, decoration = {brace, amplitude=10pt, mirror}, yshift = -4pt] (0,0) -- (2, 0) node [midway,
+      yshift = -0.8cm] {$\Delta$};
+      % draw tick 1 on y axis
+      \draw (-0.1, 2) -- (0.1, 2) node[near start, left]{$1$};
+      \draw[dashed, color=gray!60] (0,2) -- (10, 2);
+      % draw dphi/dt = 1/delta
+      \draw (1.5,1.5) node[above left, rotate=45]{$\frac{d\phi}{dt} = \frac{1}{\Delta}$};
+    \end{tikzpicture}
+    \caption{Representation of $\phi$ and its relation with $\Delta$}
+    \label{fig:repr-phi}
+  \end{figure}
+
+  
    \begin{algorithm}
      \caption{Skeleton for the Firefly algorithms}
      \label{alg:firefly-skeleton}
@@ -217,8 +271,9 @@
        \State \textbf{Variables:}
        \State $\phi$ \Comment phase
        \State $\Delta$ \Comment cycle length
-       \State update\_phi\_period $= \begin{cases} \frac{\Delta}{5} & \text{if } \Delta < 1 \\
-         \frac{1}{5\Delta} & \text{if } \Delta \geq 1 \end{cases}$
+       \State update\_phi\_init $\gets$ false 
+       \State update\_phi\_period $= \begin{cases} \frac{\Delta}{10} & \text{if } \Delta < 1 \\
+         \frac{1}{10\Delta} & \text{if } \Delta \geq 1 \end{cases}$
        \State
        \Function{sendFlash()}{}
          \State $P \gets$ view from PSS
@@ -234,20 +289,17 @@
            \State $\phi \gets \phi + \frac{1}{\Delta} \cdot $update\_phi\_period
          \Else
            \State fire event ``Flash!''
+           \State $\phi \gets 0$
          \EndIf
        \EndFunction
        \State
        \Function{activeThread()}{}
-          \If{$\phi \geq 1$}
-            \State $\phi \gets 0$
-            \State sendFlash()
-          \Else
-            \State update\_phi $\gets$ new periodic thread ``updatePhi'' with period update\_phi\_period
-            \State wait for the event ``Flash!''
-            \State $\phi \gets 0$
-            \State sendFlash()
-            \State kill update\_phi
+          \If{$\neg$ update\_phi\_init}
+            \State update\_phi\_init $\gets$ true
+            \State new periodic thread ``updatePhi'' with period update\_phi\_period
           \EndIf
+          \State wait for the event ``Flash!''
+          \State sendFlash()
        \EndFunction
        \State
        \Function{passiveThread()}{}
