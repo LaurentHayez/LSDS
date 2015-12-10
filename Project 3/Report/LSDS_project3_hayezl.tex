@@ -233,6 +233,9 @@
   The core of the synchronization protocol is the function \textsc{processFlash}, i.e. what a node does when it
   receives a flash. This function is responsible of how $\phi$ is updated. Depending on the implementation,
   $\phi$ will be updated, or $\Delta$ will be updated and will affect $\phi$.
+
+  The underlying overlay network protocol used for a node to know its neighbours is the Peer Sampling Service
+  (PSS).
   
 
   \begin{figure}[h]
@@ -308,6 +311,10 @@
        \EndFunction
      \end{algorithmic}
    \end{algorithm}
+
+
+   We briefly discuss how the protocol skeleton works before we move to the implementation of the
+   phase-advance and phase-delay protocols. 
 
 
 

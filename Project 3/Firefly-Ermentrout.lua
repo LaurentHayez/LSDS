@@ -348,10 +348,10 @@ if delta < 1 then
 else
     update_phi_period = 1 / (10 * delta_natural)
 end
-offset = 0.1
 max_time = 600              -- max time of execution
 phase_advance = true
 update_phi_init = false
+churn = true
 
 -- Firefly functions
 
@@ -415,16 +415,21 @@ end
 
 -- main function
 function main ()
+    if churn then
+        events.wait(5)
+    end
     log:print("node "..job.position.." starting!")
     -- wait for all the nodes to be ready
-    if on_cluster then
+    if on_cluster and not churn then
         events.sleep(120)
     end
     log:print("node "..job.position.." starting pss_init...")
     pss_init()
     log:print("Waiting 120 sec for pss")
-    events.thread(terminator)
-    events.sleep(120)
+    if not churn then
+        events.thread(terminator)
+        events.sleep(120)
+    end
     log:print("Start firefly")
     events.periodic(firefly_activeThread, active_thread_period)
 end

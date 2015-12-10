@@ -332,13 +332,12 @@ end
 phi = 0                     -- phase
 delta = 1                   -- cycle length
 active_thread_period = delta    -- period of active thread
-update_phi_period = 0       -- period between two updates of phi
+update_phi_period = 0.01       -- period between two updates of phi
 if delta < 1 then
-    update_phi_period = delta / 5
+    update_phi_period = delta / 10
 else
-    update_phi_period = 1 / (5 * delta)
+    update_phi_period = 1 / (10 * delta)
 end
-offset = 0.1
 max_time = 600              -- max time of execution
 phase_advance = true
 
@@ -367,23 +366,19 @@ function firefly_updatePhi()
         phi = phi + (1 / delta) * update_phi_period
     else
         events.fire("Flash!")
+        phi = 0
     end
 end
 
 -- Active thread
 function firefly_activeThread()
-    if phi >= 1 then
-        phi = 0
-        log:print("Node "..job.position.." emitted a flash.")
-        firefly_sendFlash()
-    else
-        local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
-        events.wait("Flash!")
-	    phi = 0
-        log:print("Node "..job.position.." emitted a flash.")
-        firefly_sendFlash()
-        events.kill(update_phi)
+    if not update_phi_init then
+        update_phi_init = true
+        events.periodic(firefly_updatePhi, update_phi_period)
     end
+    events.wait("Flash!")
+    firefly_sendFlash()
+    log:print("Node "..job.position.." emitted a flash.")
 end
 
 -- Passive thread
@@ -403,16 +398,12 @@ end
 
 -- main function
 function main ()
+    events.sleep(5)
     log:print("node "..job.position.." starting!")
-    -- wait for all the nodes to be ready
-    if on_cluster then
-        events.sleep(120)
-    end
-    events.thread(terminator)
     log:print("node "..job.position.." starting pss_init...")
     pss_init()
     log:print("Waiting 120 sec for pss")
-    events.sleep(120)
+    events.thread(terminator)
     log:print("Start firefly")
     events.periodic(firefly_activeThread, active_thread_period)
 end

@@ -10,11 +10,12 @@
 phi = 1                     -- phase
 delta = 1                   -- cycle length
 active_thead_period = delta     -- period of active thread
-update_phi_period = 0       -- period between two updates of phi
+update_phi_init = false
+update_phi_period = 0.01       -- period between two updates of phi
 if delta < 1 then
-    update_phi_period = (active_thead_period / 5) * delta
+    update_phi_period = delta / 10
 else
-    update_phi_period = active_thead_period / (5 * delta)
+    update_phi_period = 1 / (10 * delta)
 end
 
 -- Firefly functions
@@ -38,23 +39,19 @@ function firefly_updatePhi()
         phi = phi + (1 / delta) * update_phi_period
     else
         events.fire("Flash!")
+        phi = 0
     end
 end
 
 -- Active thread
 function firefly_activeThread()
-    if phi >= 1 then
-        phi = 0
-        log:print("Node "..job.position.." emitted a flash.")
-        firefly_sendFlash()
-    else
-        local update_phi = events.periodic(firefly_updatePhi, update_phi_period)
-        events.wait("Flash!")
-        phi = 0
-        log:print("Node "..job.position.." emitted a flash.")
-        firefly_sendFlash()
-        events.kill(update_phi)
+    if not update_phi_init then
+        update_phi_init = true
+        events.periodic(firefly_updatePhi, update_phi_period)
     end
+    events.wait("Flash!")
+    firefly_sendFlash()
+    log:print("Node "..job.position.." emitted a flash.")
 end
 
 -- Passive thread
