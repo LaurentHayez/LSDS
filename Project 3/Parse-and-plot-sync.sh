@@ -27,4 +27,5 @@ else
   echo "Plotting $input"
   gnuplot -e "datafile='${input}'; outputname='${output}'" Gnuplot-synchronization.gp
   echo "Plot saved as $output"
+  open ${output}
 fi

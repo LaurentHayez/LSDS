@@ -331,10 +331,10 @@ end
 -- Variables for Firefly
 math.randomseed(job.position * os.time())
 phi = 0                                 -- phase
-delta_min = 1.75
-delta_max = 2.25
+delta_min = 4.5
+delta_max = 5.5
 delta = delta_min + (delta_max - delta_min) * math.random()         -- cycle length
-delta_natural = 2
+delta_natural = 5
 omega_min = 1 / delta_max
 omega_max = 1 / delta_min
 omega = 1 / delta
@@ -349,8 +349,6 @@ else
     update_phi_period = 1 / (10 * delta_natural)
 end
 max_time = 600              -- max time of execution
-phase_advance = true
-update_phi_init = false
 churn = true
 
 -- Firefly functions
@@ -384,15 +382,12 @@ function firefly_updatePhi()
     else
         events.fire("Flash!")
         phi = 0
+        events.thread(firefly_activeThread)
     end
 end
 
 -- Active thread
 function firefly_activeThread()
-    if not update_phi_init then
-        update_phi_init = true
-        events.periodic(firefly_updatePhi, update_phi_period)
-    end
     events.wait("Flash!")
     firefly_sendFlash()
     log:print("Node "..job.position.." emitted a flash.")
@@ -416,7 +411,7 @@ end
 -- main function
 function main ()
     if churn then
-        events.wait(5)
+        events.sleep(60)
     end
     log:print("node "..job.position.." starting!")
     -- wait for all the nodes to be ready
@@ -431,7 +426,8 @@ function main ()
         events.sleep(120)
     end
     log:print("Start firefly")
-    events.periodic(firefly_activeThread, active_thread_period)
+    events.thread(firefly_activeThread, active_thread_period)
+    events.periodic(firefly_updatePhi, update_phi_period)
 end
 
 events.thread(main)
