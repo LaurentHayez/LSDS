@@ -1,0 +1,5 @@
+at 0 seconds join 64 
+at 3 minutes remove 14
+at 3 minutes,30 seconds remove 30% 
+at 4 minutes add 20%
+at 6 minutes stop
