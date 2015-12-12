@@ -17,7 +17,7 @@ set title "Synchronization for the adaptive Ermentrout model with churn (64 node
 set ylabel "Node id"
 set xlabel "Time"
 
-# set the grid on
+# set
 set grid x y
 
 # set the key, options are top/bottom and left/right
