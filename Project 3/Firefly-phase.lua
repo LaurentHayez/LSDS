@@ -363,19 +363,15 @@ end
 -- updatePhi
 function firefly_updatePhi()
     if phi < 1 then
-        phi = phi + (1 / delta) * update_phi_period
+        phi = phi + update_phi_period / delta
     else
         events.fire("Flash!")
         phi = 0
+        events.thread(firefly_activeThread)
     end
 end
-
 -- Active thread
 function firefly_activeThread()
-    if not update_phi_init then
-        update_phi_init = true
-        events.periodic(firefly_updatePhi, update_phi_period)
-    end
     events.wait("Flash!")
     firefly_sendFlash()
     log:print("Node "..job.position.." emitted a flash.")
@@ -398,14 +394,21 @@ end
 
 -- main function
 function main ()
-    events.sleep(5)
+    events.sleep(120)
     log:print("node "..job.position.." starting!")
     log:print("node "..job.position.." starting pss_init...")
+    if on_cluster then
+        events.sleep(120)
+    end
     pss_init()
     log:print("Waiting 120 sec for pss")
+    if on_cluster then
+        events.sleep(120)
+    end
     events.thread(terminator)
     log:print("Start firefly")
-    events.periodic(firefly_activeThread, active_thread_period)
+    events.thread(firefly_activeThread)
+    events.periodic(firefly_updatePhi, update_phi_period)
 end
 
 events.thread(main)

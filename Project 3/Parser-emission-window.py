@@ -13,8 +13,9 @@ import re
 
 
 def get_time(line):
-    time = re.match('(\d+):(\d+):(\d+)\.(\d)\d* \(\d+\)  \w+', line)
-    return int(time.group(1)) * 3600 + int(time.group(2)) * 60 + int(time.group(3)) + int(time.group(4)) / 10
+    time = re.match('(\d+):(\d+):(\d+)\.(\d+) \(\d+\)  \w+', line)
+    return int(time.group(1)) * 3600 + int(time.group(2)) * 60 + int(time.group(3)) + int(time.group(4)) / 10 ** (
+        len(time.group(4)))
 
 
 def init_parser():
@@ -24,12 +25,12 @@ def init_parser():
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hi:o:', ['ifile=', 'ofile='])
     except getopt.GetoptError:
-        print('Parser-emission-window -i <input file> -o <output file>')
+        print('python3 Parser-emission-window.py -i <input file> -o <output file>')
         sys.exit(2)
 
     for opt, arg in opts:
         if opt == '-h':
-            print('Parser-emission-window -i <input file> -o <output file>')
+            print('python3 Parser-emission-window.py -i <input file> -o <output file>')
             sys.exit()
         elif opt in ('-i', '--ifile'):
             input_file = arg
@@ -41,21 +42,30 @@ def init_parser():
 
 def parser():
     input_file, output_file = init_parser()
-    init_time = 0
-    with open(input_file, 'r') as f:
-        for line in f:
-            current_line = re.match('(\d+):(\d+):(\d+)\.\d+ \(\d+\)  Node (\d+) emitted a flash.', line)
-            if current_line:
-                init_time = get_time(line)
-                break
+    reference_time, initial_time, current_time, delta = 0, 0, 0, 5
+    is_reference_time, is_initial_time = False, False
     input_file = open(input_file, 'r')
     output_file = open(output_file, 'w')
 
     for line in input_file:
         current_line = re.match('(\d+):(\d+):(\d+)\.(\d)\d* \(\d+\)  Node (\d+) emitted a flash.', line)
-        if current_line:
+
+        if current_line and not is_initial_time:
+            initial_time = get_time(line)
+            is_initial_time = True
+
+        if current_line and not is_reference_time:
+            reference_time = get_time(line)
+            is_reference_time = True
+
+        if current_line and get_time(line) - reference_time < delta:
             current_time = get_time(line)
-            output_file.write(str(current_time - init_time) + "\t" + current_line.group(5) + "\n")
+        elif current_line and get_time(line) - reference_time >= delta:
+            output_file.write(str(current_time - initial_time) + "\t" + str(current_time - reference_time) + "\n")
+            reference_time = get_time(line)
+
+    input_file.close()
+    output_file.close()
 
 
 def main():

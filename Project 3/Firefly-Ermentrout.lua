@@ -426,7 +426,7 @@ function main ()
         events.sleep(120)
     end
     log:print("Start firefly")
-    events.thread(firefly_activeThread, active_thread_period)
+    events.thread(firefly_activeThread)
     events.periodic(firefly_updatePhi, update_phi_period)
 end
 
