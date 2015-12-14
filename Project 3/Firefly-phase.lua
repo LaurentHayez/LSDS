@@ -373,8 +373,8 @@ end
 -- Active thread
 function firefly_activeThread()
     events.wait("Flash!")
-    firefly_sendFlash()
     log:print("Node "..job.position.." emitted a flash.")
+    firefly_sendFlash()
 end
 
 -- Passive thread

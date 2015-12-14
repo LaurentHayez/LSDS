@@ -247,7 +247,7 @@
       % Function phi
       \draw (0,0) -- (2, 2) (2, 0) -- (4, 2) (4, 0) -- (6, 2) (6, 0) -- (8, 2) (8, 0);
       \draw[dashed] (2,2) -- (2,0) (4, 2) -- (4, 0) (6, 2) -- (6, 0) (8,2) -- (8,0);
-      \draw (8, 1) node[right]{$\phi$};
+      \draw (7, 1) node[above left]{$\phi$};
       % draw the fires
       \draw[color = BrickRed, ->, >=latex] (2,2) to node[near end, above, rotate=90]{Fire!} (2, 3);
       \draw[color = BrickRed, ->, >=latex] (4,2) to node[near end, above, rotate=90]{Fire!} (4, 3);
@@ -273,8 +273,7 @@
      \begin{algorithmic}
        \State \textbf{Variables:}
        \State $\phi$ \Comment phase
-       \State $\Delta$ \Comment cycle length
-       \State update\_phi\_init $\gets$ false 
+       \State $\Delta$ \Comment cycle length 
        \State update\_phi\_period $= \begin{cases} \frac{\Delta}{10} & \text{if } \Delta < 1 \\
          \frac{1}{10\Delta} & \text{if } \Delta \geq 1 \end{cases}$
        \State
@@ -293,14 +292,11 @@
          \Else
            \State fire event ``Flash!''
            \State $\phi \gets 0$
+           \State start new thread \textsc{activeThread}
          \EndIf
        \EndFunction
        \State
        \Function{activeThread()}{}
-          \If{$\neg$ update\_phi\_init}
-            \State update\_phi\_init $\gets$ true
-            \State new periodic thread ``updatePhi'' with period update\_phi\_period
-          \EndIf
           \State wait for the event ``Flash!''
           \State sendFlash()
        \EndFunction
@@ -314,7 +310,57 @@
 
 
    We briefly discuss how the protocol skeleton works before we move to the implementation of the
-   phase-advance and phase-delay protocols. 
+   phase-advance and phase-delay protocols.
+
+   For every implementations, we start by initializing the PSS at each node, and wait two minutes to have a
+   consistent view. Then we start a thread \textsc{activeThread} and a periodic thread \textsc{updatePhi}. As
+   we defined $\phi$ to be such that $\frac{d\phi}{dt} = \frac{1}{\Delta}$, we have $\phi = \int \phi dt$,
+   which explains how we update $\phi$. If $\phi \geq 1$, we fire the event ``Flash!'' that triggers
+   \textsc{activeThread} to send that it emitted a flash to the nodes in its view. In \textsc{updatePhi}, we
+   then set $\phi$ to 0, as in Figure \ref{fig:repr-phi} and call \textsc{activeThread} to wait for a new
+   flash.
+
+   
+
+\section{Phase-advance and phase-delay protocols}
+\label{sec:phase-ad-phase-de}
+
+  \subsection{Implementation}
+  \label{sec:implementation}
+
+    The fundamental difference with the protocol skeleton here is the implementation of the
+    \textsc{processFlash} function. As the two protocols are almost the same, we added the boolean
+    \textsc{phase\_advance} to signify the usage of the phase-advance or phase-delay protocol. The pseudo-code
+    of the implementation is given in Algorithm \ref{alg:firefly-phase}.
+
+    \begin{algorithm}
+     \caption{processFlash for the phase-advance and phase-delay protocols}
+     \label{alg:firefly-phase}
+     \begin{algorithmic}
+       \State \textbf{Variables:}
+       \State phase\_advance $\gets$ true or false      
+       \State
+       \Function{processFlash()}{}
+         \If{phase\_advance}
+           \State $\phi \gets 1$
+         \Else
+           \State $\phi \gets 0$
+         \EndIf
+       \EndFunction
+     \end{algorithmic}
+   \end{algorithm}
+
+
+
+   \subsection{Analysis of the protocols}
+   \label{sec:analysis-protocols}
+
+     We tried our implementation with 100 nodes per experiment and $\Delta = 1, 2$ and $5$. For the
+     PSS, we used a view of $10$ peers with a period of $20$ seconds for each update. We used a random
+     selection for the peer selection, and we used a swapping parameter of $3$ and a healing parameter of $2$
+     for the view exchange policy. 
+
+     We start by analyzing the convergence of the phase-advance protocols. 
 
 
 
