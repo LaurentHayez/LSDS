@@ -6,16 +6,16 @@
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("fontenc" "T1") ("geometry" "top=3cm" "bottom=3cm" "left=3.2cm" "right=3.2cm") ("xcolor" "usenames" "dvipsnames") ("algorithm" "section") ("enumitem" "inline") ("babel" "english")))
    (add-to-list 'LaTeX-verbatim-environments-local "lstlisting")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "lstinline")
-   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "lstinline")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "lstinline")
    (TeX-run-style-hooks
     "latex2e"
     "article"
@@ -51,6 +51,7 @@
     "multirow"
     "longtable"
     "enumerate"
+    "csquotes"
     "enumitem"
     "babel"
     "caption"
@@ -72,5 +73,11 @@
     "sec:implementation"
     "alg:firefly-phase"
     "sec:analysis-protocols"
+    "fig:pa-sync-d1"
+    "fig:pa-sync-d2"
+    "fig:pa-sync-d5"
+    "fig:pd-sync-d1"
+    "fig:pd-sync-d2"
+    "fig:pd-sync-d5"
     "sec:conclusion")))
 
