@@ -32,6 +32,7 @@
 \makeatother
 \usepackage{array, multirow, longtable}
 \usepackage{enumerate}
+\usepackage{csquotes}
 \usepackage[inline]{enumitem}
 \usepackage[english]{babel}
 \usepackage{caption, tabu}
@@ -360,7 +361,86 @@
      selection for the peer selection, and we used a swapping parameter of $3$ and a healing parameter of $2$
      for the view exchange policy. 
 
-     We start by analyzing the convergence of the phase-advance protocols. 
+     We start by analyzing the convergence of the phase-advance protocol. On Figure \ref{fig:pa-sync-d1}, we
+     can see that from time to time, the protocol seems to synchronize, it does not converge to a stable state
+     where all the nodes emit flashes at the same time. In fact, what happens is what we see on Figures
+     \ref{fig:pa-sync-d2} and \ref{fig:pa-sync-d5}. Whenever a node flashes, it tells ten other nodes, that set
+     $\phi$ to $1$, emit a flash, tell ten other nodes, which emit a flash and so on. We thus have an
+     exponential growth of the flash rate which makes the memory used explode very fast. In the logs, we had
+     this very error:
+
+     \begin{displayquote}
+       \texttt{17:37:43.276437 (66)  Too much memory used: wants 2097182 (max: 2097152), end of process.}
+     \end{displayquote}
+
+     This model is therefore highly impratical because it overloads the network very quickly. By analogy with
+     fireflies, at first a few fireflies would emit light, and then by observing the neighbours they would
+     emit light every time they see a neighbour emitting light, quickly resulting in emitting light constantly, which
+     does not happen in reality. 
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-1-9.pdf}
+       \caption{Phase-advance model synchronization with $\Delta = 1$}
+       \label{fig:pa-sync-d1}
+     \end{figure}
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-2-6.pdf}
+       \caption{Phase-advance model synchronization with $\Delta = 2$}
+       \label{fig:pa-sync-d2}
+     \end{figure}
+
+      \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-5-3.pdf}
+       \caption{Phase-advance model synchronization with $\Delta = 5$}
+       \label{fig:pa-sync-d5}
+     \end{figure}
+
+
+     Now let's take a look at the phase-delay model. On Figures \ref{fig:pd-sync-d1} and \ref{fig:pd-sync-d2},
+     we representend the emissions for $\Delta = 1$ and $\Delta = 2$ respectively. On both figures we cannot
+     distinguish a convergence in the flash emissions. On Figure \ref{fig:pd-sync-d5} however, we can see that
+     from 150 seconds after the first flash, the nodes that emit flashes are synchronized. 
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-1-6.pdf}
+       \caption{Phase-delay model synchronization with $\Delta = 1$}
+       \label{fig:pd-sync-d1}
+     \end{figure}
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-2-4.pdf}
+       \caption{Phase-delay model synchronization with $\Delta = 2$}
+       \label{fig:pd-sync-d2}
+     \end{figure}
+
+      \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-5-5.pdf}
+       \caption{Phase-delay model synchronization with $\Delta = 5$}
+       \label{fig:pd-sync-d5}
+     \end{figure}
+     
+     Although we seem to obtain some synchronization for $\Delta = 5$, the phase-delay protocol is not
+     guaranteed to converge to a stable state where all the nodes are synchronized. Both phase-advance and
+     phase-delay protocols rely on the assumption that when a message is sent, it is instantly received. In
+     practice, this assumption is highly unrealistic due to packet loss, congestion or simply because even the
+     fastest networks, a message is not instantly delivered.
+
+     In our experiments, we considered $\Delta$ to be fixed and the same at all nodes. This assumption does
+     not represent reality either; why would all fireflies emit light at the same rate? If we had different
+     $\Delta$s at all nodes, or if the skew of the clocks is important, none of the models is guaranteed to
+     converge, and it is rather logical as we don't update $\Delta$. If a node starts with $\Delta = 4.5$ and
+     another with $\Delta = 5.5$, they will never synchronize. Therefore, both phase-advance and phase-delay
+     are mathematically insufficient to model the reality.
+
+
+     
 
 
 
