@@ -379,7 +379,7 @@ end
 
 -- Passive thread
 function firefly_passiveThread(sending_node_id)
-    log:print("Node "..job.position.." received a flash from node "..sending_node_id)
+    -- log:print("Node "..job.position.." received a flash from node "..sending_node_id)
     firefly_processFlash()
 end
 
@@ -408,7 +408,7 @@ function main ()
     events.thread(terminator)
     log:print("Start firefly")
     events.thread(firefly_activeThread)
-    events.periodic(firefly_updatePhi, update_phi_period)
+    events.periodic(update_phi_period, firefly_updatePhi)
 end
 
 events.thread(main)

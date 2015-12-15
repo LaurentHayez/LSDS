@@ -440,6 +440,101 @@
      are mathematically insufficient to model the reality.
 
 
+
+\section{Adaptive Ermentrout model}
+\label{sec:adapt-ermentr-model}
+
+  According to our preceding conclusion, we now consider a model that allows the node to initally have
+  different cycle lengths. This model is called the ``adaptive Ermentrout model''. In this model, we denote by
+  $i$ the $i$-th node in the system. Each node has an initial cycle length $\delta_i$ and a natural cycle
+  length $\Delta$ which are bounded below and above, ie $\delta_i, \Delta \in (\Delta_l, \Delta_u)$. If there
+  is no interaction with other nodes, a node will flash every $\Delta$ seconds. 
+
+  Furthermore, we do not express the model in terms of the cycle length, but rather in terms of the frequency
+  $\omega_i = \frac{1}{\delta_i}$. We have $\Omega = \frac{1}{\Delta}$, $\Omega_l = \frac{1}{\Delta_u}$ and
+  $\Omega_u = \frac{1}{\Delta_l}$.
+
+  \subsection{Implementation}
+  \label{sec:implementation-1}
+
+    The main difference with the phase-advance and phase-delay models is that the function
+    \textsc{processFlash} does not update $\phi$, but the frequency $\omega_i$. If a flash arrives when $\phi
+    < \frac{1}{2}$ (too late), the frequency will be decreased, and if a flash arrives when $\phi >
+    \frac{1}{2}$ (too early), the frequency will be augmented, meaning that a node will ajust its frequency
+    according to the flashes it receives. In addition to that, we add a new parameter $\epsilon$ which
+    we set to $0.01$ and which represent the offset of the frequency when we update it. The pseudo-code of the
+    algorithm is given in Algorithm \ref{alg:adapt-er} (note that the pseudo-code given is what to add/modify
+    from the skeleton protocol).
+
+
+    \begin{algorithm}
+     \caption{Pseudo-code for the adaptive Ermentrout model}
+     \label{alg:adapt-er}
+     \begin{algorithmic}
+       \State \textbf{Variables:}
+       \State $\Delta_l,\ \Delta,\ \delta_i,\ \Delta_u\ \gets\ 4.5,\ 5,\ \mathrm{rand}(\Delta_l, \Delta_u),\
+       5.5$ 
+       \State $\Omega_l,\ \Omega,\ \omega_i, \Omega_u\ \gets\ \frac{1}{\Delta_u},\ \frac{1}{\Delta},\
+       \frac{1}{\delta_i},\ \frac{1}{\Delta_l}$
+       \State $\epsilon \gets 0.01$
+       \State
+       \Function{processFlash()}{}
+         \State $\omega_i \gets \omega_i + \epsilon(\Omega - \omega) + g^+(\phi)(\Omega_l - \omega) +
+         g^-(\phi)(\Omega_u - \omega)$
+       \EndFunction
+       \State
+       \State $g^+(\phi) \gets \max \left( \frac{\sin(2\pi \phi)}{2\pi}, 0 \right)$
+       \State $g^-(\phi) \gets -\min \left( \frac{\sin(2\pi \phi)}{2\pi}, 0 \right)$
+       \State
+       \Function{updatePhi()}{}
+         \If{$\phi < 1$}
+           \State $\phi \gets \phi + \omega_i \cdot $update\_phi\_period
+         \Else
+           \State fire event ``Flash!''
+           \State $\phi \gets 0$
+           \State start new thread \textsc{activeThread}
+         \EndIf
+       \EndFunction
+     \end{algorithmic}
+   \end{algorithm}
+
+
+   The functions $g^+$ and $g^-$ formalize the idea that if a flash arrives ``too late'' (respectively ``too
+   early''), we must deacrease the frequency (respectively increase it). Indeed we have that
+   \[
+   g^+(\phi) = 
+   \begin{cases}
+     0 < a \leq \frac{1}{2\pi} & \text{if } \phi < \frac{1}{2}\\
+     0 & \text{if } \phi \geq \frac{1}{2}
+   \end{cases},\quad
+   g^-(\phi) = 
+   \begin{cases}
+     0 < a \leq \frac{1}{2\pi} & \text{if } \phi > \frac{1}{2}\\
+     0 & \text{if } \phi \leq \frac{1}{2}
+   \end{cases}.
+   \]
+
+   
+    
+   \subsection{Analysis of the protocol}
+   \label{sec:analysis-protocol-er}
+
+     The setup for this experiment was a network of $64$ nodes. We used $\Delta_l = 4.5$ sec, $\Delta_u = 5.5$
+     sec, $\Delta = 5$ sec and $\delta_i$ a random number between $\Delta_l$ and $\Delta_u$. The settings for
+     the peer sampling service are the same as for the previous experiment.
+     
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-d5-2.pdf}
+       \caption{Adaptive Ermentrout model synchronization}
+       \label{fig:er-sync}
+     \end{figure}
+
+
+     On Figure \ref{fig:er-sync}, we represented how the node synchronize under the adaptive Ermentrout
+     model. We clearly see that after 50 seconds, when most of the nodes joined the network, the nodes reaches
+     a stable state where the emit light at the same time.
+
      
 
 
