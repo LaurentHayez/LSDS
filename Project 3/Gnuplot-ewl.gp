@@ -11,7 +11,7 @@ set style line 7 lt 3 lc rgb "#000000" lw 3 # black, dashed line
 # Olive green color html: #556B2F
 
 set output outputname
-set title "Emission window length for the adaptive Ermentrout model (delta = 5)"
+set title "Emission window length for the adaptive Ermentrout model (64 nodes, delta = 5)"
 
 # indicates the labels
 set ylabel "Emission window (s)"
@@ -29,6 +29,6 @@ set xrange [0:] # example of a range closed on one side only, the max will deter
 
 #set pointsize 0.1
 
-plot datafile u ($1):($2) with lines linestyle 2 title "64 nodes"
+plot datafile u ($1):($2) with lines linestyle 2 title "Emission window length"
 
 # $1 is column 1. You can do arithmetics on the values of the columns

@@ -11,7 +11,7 @@ set style line 7 lt 3 lc rgb "#000000" lw 3 # black, dashed line
 # Olive green color html: #556B2F
 
 set output outputname
-set title "Cycle lengths for the adaptive Ermentrout model (100 nodes, delta = 5)"
+set title "Cycle lengths for the adaptive Ermentrout model (64 nodes, delta = 5)"
 
 # indicates the labels
 set ylabel "Cycle length (s)"
