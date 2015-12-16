@@ -8,7 +8,6 @@
 """
 import getopt
 import re
-
 import sys
 
 
@@ -17,6 +16,9 @@ class Parser(object):
         self.input_file = input_file
 
     def get_number_of_nodes(self):
+        """
+        :return: the number of nodes according to the name of the file
+        """
         return int(re.match('Logs/Firefly-\w\w-(\d+).+', self.input_file).group(1))
 
     @staticmethod
@@ -60,6 +62,10 @@ class Parser(object):
 
 
 def get_paths():
+    """
+    Generate the output files by getting the input file (passed as an argument)
+    :return: input file, output file for cycle lengths, output file for emission window length
+    """
     try:
         opts, args = getopt.getopt(sys.argv[1:], 'hi:', ['ifile='])
     except getopt.GetoptError:
@@ -80,6 +86,11 @@ def get_paths():
 
 
 def cycle_lengths(lists, ofile):
+    """
+    This function calculates the cycle lengths for each nodes.
+    :param lists: list containing the times at which every node flashed
+    :param ofile: output file to write the cycle lengths to.
+    """
     with open(ofile, 'w') as output_file:
         for elem in lists:
             for i in range(1, len(elem)):
@@ -89,6 +100,13 @@ def cycle_lengths(lists, ofile):
 def get_closests(lists, time):
     # This is not the best thing to do, but radius = Delta/2
     # I did not want to create another parameter, especially that I only used Delta = 5 in my test.
+    """
+    This is the second step of the algorithm described in emission_window_length.
+    It reads every time list (for each node) until it finds a timestamp within 2.5sec
+    :param lists: list containing the times at which every node flashed
+    :param time: time of the reference node to look for
+    :return: list of all the time within 2.5 sec of the ref time (at most one per node)
+    """
     radius = 2.5
     closests = []
     for l in lists:
