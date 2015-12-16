@@ -20,6 +20,7 @@
 \usetikzlibrary{calc}
 \usetikzlibrary{plotmarks}
 \usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathreplacing}
 \usepackage{manfnt, multicol}
 \usepackage[section]{algorithm}
 \usepackage{algorithmicx, algpseudocode, listings}
@@ -31,6 +32,7 @@
 \makeatother
 \usepackage{array, multirow, longtable}
 \usepackage{enumerate}
+\usepackage{csquotes}
 \usepackage[inline]{enumitem}
 \usepackage[english]{babel}
 \usepackage{caption, tabu}
@@ -228,13 +230,41 @@
   $\Delta$. We define $\phi$ as a sawtooth function with domain $[0,1]$ such that $\frac{d\phi}{dt} =
   \frac{1}{\Delta}$. This is represented in Figure \ref{fig:repr-phi}.
 
+  When $\phi$ reaches $1$, the node will send a flash to a set of neighbour nodes, and $\phi$ is reset to
+  $0$. The cycle length, depending on the model chosen, can be the same or different for all nodes. The
+  function \textsc{updatePhi} will differ in our implementations, but we will come back on this when needed.
+
+  The core of the synchronization protocol is the function \textsc{processFlash}, i.e. what a node does when it
+  receives a flash. This function is responsible of how $\phi$ is updated. Depending on the implementation,
+  $\phi$ will be updated, or $\Delta$ will be updated and will affect $\phi$.
+
+  The underlying overlay network protocol used for a node to know its neighbours is the Peer Sampling Service
+  (PSS).
+  
+
   \begin{figure}[h]
     \centering
     \begin{tikzpicture}
       % Axis
-      \draw[->, >=latex] (-1, 0) -- (10, 0);
-      \draw[->, >=latex] (0, -1) -- (0, 2);
-      
+      \draw[->, >=latex] (-1, 0) -- (10, 0) node[right]{time};
+      \draw[->, >=latex] (0, -1) -- (0, 4);
+      % Function phi
+      \draw (0,0) -- (2, 2) (2, 0) -- (4, 2) (4, 0) -- (6, 2) (6, 0) -- (8, 2) (8, 0);
+      \draw[dashed] (2,2) -- (2,0) (4, 2) -- (4, 0) (6, 2) -- (6, 0) (8,2) -- (8,0);
+      \draw (7, 1) node[above left]{$\phi$};
+      % draw the fires
+      \draw[color = BrickRed, ->, >=latex] (2,2) to node[near end, above, rotate=90]{Fire!} (2, 3);
+      \draw[color = BrickRed, ->, >=latex] (4,2) to node[near end, above, rotate=90]{Fire!} (4, 3);
+      \draw[color = BrickRed, ->, >=latex] (6,2) to node[near end, above, rotate=90]{Fire!} (6, 3);
+      \draw[color = BrickRed, ->, >=latex] (8,2) to node[near end, above, rotate=90]{Fire!} (8, 3);
+      % draw delta
+      \draw[decorate, decoration = {brace, amplitude=10pt, mirror}, yshift = -4pt] (0,0) -- (2, 0) node [midway,
+      yshift = -0.8cm] {$\Delta$};
+      % draw tick 1 on y axis
+      \draw (-0.1, 2) -- (0.1, 2) node[near start, left]{$1$};
+      \draw[dashed, color=gray!60] (0,2) -- (10, 2);
+      % draw dphi/dt = 1/delta
+      \draw (1.5,1.5) node[above left, rotate=45]{$\frac{d\phi}{dt} = \frac{1}{\Delta}$};
     \end{tikzpicture}
     \caption{Representation of $\phi$ and its relation with $\Delta$}
     \label{fig:repr-phi}
@@ -247,9 +277,9 @@
      \begin{algorithmic}
        \State \textbf{Variables:}
        \State $\phi$ \Comment phase
-       \State $\Delta$ \Comment cycle length
-       \State update\_phi\_period $= \begin{cases} \frac{\Delta}{5} & \text{if } \Delta < 1 \\
-         \frac{1}{5\Delta} & \text{if } \Delta \geq 1 \end{cases}$
+       \State $\Delta$ \Comment cycle length 
+       \State update\_phi\_period $= \begin{cases} \frac{\Delta}{10} & \text{if } \Delta < 1 \\
+         \frac{1}{10\Delta} & \text{if } \Delta \geq 1 \end{cases}$
        \State
        \Function{sendFlash()}{}
          \State $P \gets$ view from PSS
@@ -265,20 +295,14 @@
            \State $\phi \gets \phi + \frac{1}{\Delta} \cdot $update\_phi\_period
          \Else
            \State fire event ``Flash!''
+           \State $\phi \gets 0$
+           \State start new thread \textsc{activeThread}
          \EndIf
        \EndFunction
        \State
        \Function{activeThread()}{}
-          \If{$\phi \geq 1$}
-            \State $\phi \gets 0$
-            \State sendFlash()
-          \Else
-            \State update\_phi $\gets$ new periodic thread ``updatePhi'' with period update\_phi\_period
-            \State wait for the event ``Flash!''
-            \State $\phi \gets 0$
-            \State sendFlash()
-            \State kill update\_phi
-          \EndIf
+          \State wait for the event ``Flash!''
+          \State sendFlash()
        \EndFunction
        \State
        \Function{passiveThread()}{}
@@ -287,6 +311,290 @@
        \EndFunction
      \end{algorithmic}
    \end{algorithm}
+
+
+   We briefly discuss how the protocol skeleton works before we move to the implementation of the
+   phase-advance and phase-delay protocols.
+
+   For every implementations, we start by initializing the PSS at each node, and wait two minutes to have a
+   consistent view. Then we start a thread \textsc{activeThread} and a periodic thread \textsc{updatePhi}. As
+   we defined $\phi$ to be such that $\frac{d\phi}{dt} = \frac{1}{\Delta}$, we have $\phi = \int \phi dt$,
+   which explains how we update $\phi$. If $\phi \geq 1$, we fire the event ``Flash!'' that triggers
+   \textsc{activeThread} to send that it emitted a flash to the nodes in its view. In \textsc{updatePhi}, we
+   then set $\phi$ to 0, as in Figure \ref{fig:repr-phi} and call \textsc{activeThread} to wait for a new
+   flash.
+
+   
+
+\section{Phase-advance and phase-delay protocols}
+\label{sec:phase-ad-phase-de}
+
+  \subsection{Implementation}
+  \label{sec:implementation}
+
+    The fundamental difference with the protocol skeleton here is the implementation of the
+    \textsc{processFlash} function. As the two protocols are almost the same, we added the boolean
+    \textsc{phase\_advance} to signify the usage of the phase-advance or phase-delay protocol. The pseudo-code
+    of the implementation is given in Algorithm \ref{alg:firefly-phase}.
+
+    \begin{algorithm}
+     \caption{processFlash for the phase-advance and phase-delay protocols}
+     \label{alg:firefly-phase}
+     \begin{algorithmic}
+       \State \textbf{Variables:}
+       \State phase\_advance $\gets$ true or false      
+       \State
+       \Function{processFlash()}{}
+         \If{phase\_advance}
+           \State $\phi \gets 1$
+         \Else
+           \State $\phi \gets 0$
+         \EndIf
+       \EndFunction
+     \end{algorithmic}
+   \end{algorithm}
+
+
+
+   \subsection{Analysis of the protocols}
+   \label{sec:analysis-protocols}
+
+     We tried our implementation with 100 nodes per experiment and $\Delta = 1, 2$ and $5$. For the
+     PSS, we used a view of $10$ peers with a period of $20$ seconds for each update. We used a random
+     selection for the peer selection, and we used a swapping parameter of $3$ and a healing parameter of $2$
+     for the view exchange policy. 
+
+     We start by analyzing the convergence of the phase-advance protocol. On Figure \ref{fig:pa-sync-d1}, we
+     can see that from time to time, the protocol seems to synchronize, it does not converge to a stable state
+     where all the nodes emit flashes at the same time. In fact, what happens is what we see on Figures
+     \ref{fig:pa-sync-d2} and \ref{fig:pa-sync-d5}. Whenever a node flashes, it tells ten other nodes, that set
+     $\phi$ to $1$, emit a flash, tell ten other nodes, which emit a flash and so on. We thus have an
+     exponential growth of the flash rate which makes the memory used explode very fast. In the logs, we had
+     this very error:
+
+     \begin{displayquote}
+       \texttt{17:37:43.276437 (66)  Too much memory used: wants 2097182 (max: 2097152), end of process.}
+     \end{displayquote}
+
+     This model is therefore highly impratical because it overloads the network very quickly. By analogy with
+     fireflies, at first a few fireflies would emit light, and then by observing the neighbours they would
+     emit light every time they see a neighbour emitting light, quickly resulting in emitting light constantly, which
+     does not happen in reality. 
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-1-9.pdf}
+       \caption{Phase-advance model synchronization with $\Delta = 1$}
+       \label{fig:pa-sync-d1}
+     \end{figure}
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-2-6.pdf}
+       \caption{Phase-advance model synchronization with $\Delta = 2$}
+       \label{fig:pa-sync-d2}
+     \end{figure}
+
+      \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-5-3.pdf}
+       \caption{Phase-advance model synchronization with $\Delta = 5$}
+       \label{fig:pa-sync-d5}
+     \end{figure}
+
+
+     Now let's take a look at the phase-delay model. On Figures \ref{fig:pd-sync-d1} and \ref{fig:pd-sync-d2},
+     we representend the emissions for $\Delta = 1$ and $\Delta = 2$ respectively. On both figures we cannot
+     distinguish a convergence in the flash emissions. On Figure \ref{fig:pd-sync-d5} however, we can see that
+     from 150 seconds after the first flash, the nodes that emit flashes are synchronized. 
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-1-6.pdf}
+       \caption{Phase-delay model synchronization with $\Delta = 1$}
+       \label{fig:pd-sync-d1}
+     \end{figure}
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-2-4.pdf}
+       \caption{Phase-delay model synchronization with $\Delta = 2$}
+       \label{fig:pd-sync-d2}
+     \end{figure}
+
+      \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-5-5.pdf}
+       \caption{Phase-delay model synchronization with $\Delta = 5$}
+       \label{fig:pd-sync-d5}
+     \end{figure}
+     
+     Although we seem to obtain some synchronization for $\Delta = 5$, the phase-delay protocol is not
+     guaranteed to converge to a stable state where all the nodes are synchronized. Both phase-advance and
+     phase-delay protocols rely on the assumption that when a message is sent, it is instantly received. In
+     practice, this assumption is highly unrealistic due to packet loss, congestion or simply because even the
+     fastest networks, a message is not instantly delivered.
+
+     In our experiments, we considered $\Delta$ to be fixed and the same at all nodes. This assumption does
+     not represent reality either; why would all fireflies emit light at the same rate? If we had different
+     $\Delta$s at all nodes, or if the skew of the clocks is important, none of the models is guaranteed to
+     converge, and it is rather logical as we don't update $\Delta$. If a node starts with $\Delta = 4.5$ and
+     another with $\Delta = 5.5$, they will never synchronize. Therefore, both phase-advance and phase-delay
+     are mathematically insufficient to model the reality.
+
+
+
+\section{Adaptive Ermentrout model}
+\label{sec:adapt-ermentr-model}
+
+  According to our preceding conclusion, we now consider a model that allows the node to initally have
+  different cycle lengths. This model is called the ``adaptive Ermentrout model''. In this model, we denote by
+  $i$ the $i$-th node in the system. Each node has an initial cycle length $\delta_i$ and a natural cycle
+  length $\Delta$ which are bounded below and above, ie $\delta_i, \Delta \in (\Delta_l, \Delta_u)$. If there
+  is no interaction with other nodes, a node will flash every $\Delta$ seconds. 
+
+  Furthermore, we do not express the model in terms of the cycle length, but rather in terms of the frequency
+  $\omega_i = \frac{1}{\delta_i}$. We have $\Omega = \frac{1}{\Delta}$, $\Omega_l = \frac{1}{\Delta_u}$ and
+  $\Omega_u = \frac{1}{\Delta_l}$.
+
+  \subsection{Implementation}
+  \label{sec:implementation-1}
+
+    The main difference with the phase-advance and phase-delay models is that the function
+    \textsc{processFlash} does not update $\phi$, but the frequency $\omega_i$. If a flash arrives when $\phi
+    < \frac{1}{2}$ (too late), the frequency will be decreased, and if a flash arrives when $\phi >
+    \frac{1}{2}$ (too early), the frequency will be augmented, meaning that a node will ajust its frequency
+    according to the flashes it receives. In addition to that, we add a new parameter $\epsilon$ which
+    we set to $0.01$ and which represent the offset of the frequency when we update it. The pseudo-code of the
+    algorithm is given in Algorithm \ref{alg:adapt-er} (note that the pseudo-code given is what to add/modify
+    from the skeleton protocol).
+
+
+    \begin{algorithm}
+     \caption{Pseudo-code for the adaptive Ermentrout model}
+     \label{alg:adapt-er}
+     \begin{algorithmic}
+       \State \textbf{Variables:}
+       \State $\Delta_l,\ \Delta,\ \delta_i,\ \Delta_u\ \gets\ 4.5,\ 5,\ \mathrm{rand}(\Delta_l, \Delta_u),\
+       5.5$ 
+       \State $\Omega_l,\ \Omega,\ \omega_i, \Omega_u\ \gets\ \frac{1}{\Delta_u},\ \frac{1}{\Delta},\
+       \frac{1}{\delta_i},\ \frac{1}{\Delta_l}$
+       \State $\epsilon \gets 0.01$
+       \State
+       \Function{processFlash()}{}
+         \State $\omega_i \gets \omega_i + \epsilon(\Omega - \omega) + g^+(\phi)(\Omega_l - \omega) +
+         g^-(\phi)(\Omega_u - \omega)$
+       \EndFunction
+       \State
+       \State $g^+(\phi) \gets \max \left( \frac{\sin(2\pi \phi)}{2\pi}, 0 \right)$
+       \State $g^-(\phi) \gets -\min \left( \frac{\sin(2\pi \phi)}{2\pi}, 0 \right)$
+       \State
+       \Function{updatePhi()}{}
+         \If{$\phi < 1$}
+           \State $\phi \gets \phi + \omega_i \cdot $update\_phi\_period
+         \Else
+           \State fire event ``Flash!''
+           \State $\phi \gets 0$
+           \State start new thread \textsc{activeThread}
+         \EndIf
+       \EndFunction
+     \end{algorithmic}
+   \end{algorithm}
+
+
+   The functions $g^+$ and $g^-$ formalize the idea that if a flash arrives ``too late'' (respectively ``too
+   early''), we must deacrease the frequency (respectively increase it). Indeed we have that
+   \[
+   g^+(\phi) = 
+   \begin{cases}
+     0 < a \leq \frac{1}{2\pi} & \text{if } \phi < \frac{1}{2}\\
+     0 & \text{if } \phi \geq \frac{1}{2}
+   \end{cases},\quad
+   g^-(\phi) = 
+   \begin{cases}
+     0 < a \leq \frac{1}{2\pi} & \text{if } \phi > \frac{1}{2}\\
+     0 & \text{if } \phi \leq \frac{1}{2}
+   \end{cases}.
+   \]
+
+   
+    
+   \subsection{Analysis of the protocol}
+   \label{sec:analysis-protocol-er}
+
+     The setup for this experiment was a network of $64$ nodes. We used $\Delta_l = 4.5$ sec, $\Delta_u = 5.5$
+     sec, $\Delta = 5$ sec and $\delta_i$ a random number between $\Delta_l$ and $\Delta_u$. The settings for
+     the peer sampling service are the same as for the previous experiment. To plot the figure in
+     this section we used the Python scripts \texttt{Parser-synchronization.py} and
+     \texttt{Parser-ultimate.py}, and the bash scripts \texttt{Parse-and-plot-sync.sh} and
+     \texttt{Parse-and-} \texttt{plot-ultimate.sh}. The bash scripts call the python scripts and the gnuplot script to
+     plot the graphs.
+     
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-d5-2.pdf}
+       \caption{Adaptive Ermentrout model synchronization}
+       \label{fig:er-sync}
+     \end{figure}
+
+
+     On Figure \ref{fig:er-sync}, we represented how the node synchronize under the adaptive Ermentrout
+     model. We clearly see that after 50 seconds, when most of the nodes joined the network, the nodes reaches
+     a stable state where the emit light at the same time.
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-d5-2-ewl.pdf}
+       \caption{Adaptive Ermentrout model emission window length}
+       \label{fig:er-ewl}
+     \end{figure}
+
+     On Figure \ref{fig:er-ewl}, we represented the emission window length according to the time. As expected,
+     the emission window length reduces as time increases, which indicates that the algorithm converges to a
+     stable state. There are some fluctuations however, but the general trend is to decrease and converge to
+     somewhere between $0.5$ and $1$ second. On Figure \ref{fig:er-cl}, we plotted the cycle length for each
+     node according to the time. The fluctuations can be explained with the cycle length, because we see that
+     when there are fluctuations for the emission window length, we have some weird values for the cycle
+     lengths, explaining the occasional desynchronization. This could be because the nodes on the cluster were
+     overloaded at this time.
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-d5-2-cl.pdf}
+       \caption{Adaptive Ermentrout model cycle length}
+       \label{fig:er-cl}
+     \end{figure}
+
+
+   \subsection{Analysis of the protocol under churn}
+   \label{sec:analys-prot-under-churn}
+
+     
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-churn-d5-10.pdf}
+       \caption{Adaptive Ermentrout model synchronization under churn}
+       \label{fig:er-churn-sync}
+     \end{figure}
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-churn-d5-10-ewl.pdf}
+       \caption{Adaptive Ermentrout model emission window length under churn}
+       \label{fig:er-churn-ewl}
+     \end{figure}
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-churn-d5-10-cl.pdf}
+       \caption{Adaptive Ermentrout model cycle length under churn}
+       \label{fig:er-churn-cl}
+     \end{figure}
+
+     
+
+     
 
 
 
@@ -321,4 +629,4 @@
 %%% mode: latex
 %%% TeX-master: t 
 %%% End:
-\message{ !name(LSDS_project3_hayezl.tex) !offset(-324) }
+\message{ !name(LSDS_project3_hayezl.tex) !offset(-632) }

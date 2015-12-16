@@ -84,5 +84,11 @@
     "alg:adapt-er"
     "sec:analysis-protocol-er"
     "fig:er-sync"
+    "fig:er-ewl"
+    "fig:er-cl"
+    "sec:analys-prot-under-churn"
+    "fig:er-churn-sync"
+    "fig:er-churn-ewl"
+    "fig:er-churn-cl"
     "sec:conclusion")))
 

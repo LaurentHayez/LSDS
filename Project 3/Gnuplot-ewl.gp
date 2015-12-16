@@ -11,7 +11,7 @@ set style line 7 lt 3 lc rgb "#000000" lw 3 # black, dashed line
 # Olive green color html: #556B2F
 
 set output outputname
-set title "Emission window length for the adaptive Ermentrout model (64 nodes, delta = 5)"
+set title "Emission window length for the adaptive Ermentrout model under churn (64 nodes, delta = 5)"
 
 # indicates the labels
 set ylabel "Emission window (s)"

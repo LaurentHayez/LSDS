@@ -11,7 +11,7 @@ set style line 7 lt 3 lc rgb "#000000" lw 3 # black, dashed line
 # Olive green color html: #556B2F
 
 set output outputname
-set title "Synchronization for the adaptive Ermentrout model (64 nodes, delta = 5)"
+set title "Synchronization for the adaptive Ermentrout model with churn (64 nodes, delta = 5)"
 
 # indicates the labels
 set ylabel "Node id"
@@ -25,7 +25,7 @@ set key top right
 
 # indicates the ranges
 set yrange [0:70] # example of a closed range (points outside will not be displayed)
-set xrange [0:300] # example of a range closed on one side only, the max will determined automatically
+set xrange [0:450] # example of a range closed on one side only, the max will determined automatically
 
 set pointsize 0.1
 
