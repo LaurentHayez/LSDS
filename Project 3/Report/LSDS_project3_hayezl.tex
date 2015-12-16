@@ -380,21 +380,21 @@
 
      \begin{figure}[h]
        \centering
-       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-1-9.pdf}
+       \includegraphics[width=\textwidth]{../Plots/Firefly-pa-100nodes-1-9.pdf}
        \caption{Phase-advance model synchronization with $\Delta = 1$}
        \label{fig:pa-sync-d1}
      \end{figure}
 
      \begin{figure}[h]
        \centering
-       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-2-6.pdf}
+       \includegraphics[width=\textwidth]{../Plots/Firefly-pa-100nodes-2-6.pdf}
        \caption{Phase-advance model synchronization with $\Delta = 2$}
        \label{fig:pa-sync-d2}
      \end{figure}
 
       \begin{figure}[h]
        \centering
-       \includegraphics[scale=0.8]{../Plots/Firefly-pa-100nodes-5-3.pdf}
+       \includegraphics[width=\textwidth]{../Plots/Firefly-pa-100nodes-5-3.pdf}
        \caption{Phase-advance model synchronization with $\Delta = 5$}
        \label{fig:pa-sync-d5}
      \end{figure}
@@ -407,21 +407,21 @@
 
      \begin{figure}[h]
        \centering
-       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-1-6.pdf}
+       \includegraphics[width=\textwidth]{../Plots/Firefly-pd-100nodes-1-6.pdf}
        \caption{Phase-delay model synchronization with $\Delta = 1$}
        \label{fig:pd-sync-d1}
      \end{figure}
 
      \begin{figure}[h]
        \centering
-       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-2-4.pdf}
+       \includegraphics[width=\textwidth]{../Plots/Firefly-pd-100nodes-2-4.pdf}
        \caption{Phase-delay model synchronization with $\Delta = 2$}
        \label{fig:pd-sync-d2}
      \end{figure}
 
       \begin{figure}[h]
        \centering
-       \includegraphics[scale=0.8]{../Plots/Firefly-pd-100nodes-5-5.pdf}
+       \includegraphics[width=\textwidth]{../Plots/Firefly-pd-100nodes-5-5.pdf}
        \caption{Phase-delay model synchronization with $\Delta = 5$}
        \label{fig:pd-sync-d5}
      \end{figure}
@@ -521,11 +521,15 @@
 
      The setup for this experiment was a network of $64$ nodes. We used $\Delta_l = 4.5$ sec, $\Delta_u = 5.5$
      sec, $\Delta = 5$ sec and $\delta_i$ a random number between $\Delta_l$ and $\Delta_u$. The settings for
-     the peer sampling service are the same as for the previous experiment.
+     the peer sampling service are the same as for the previous experiment. To plot the figure in
+     this section we used the Python scripts \texttt{Parser-synchronization.py} and
+     \texttt{Parser-ultimate.py}, and the bash scripts \texttt{Parse-and-plot-sync.sh} and
+     \texttt{Parse-and-} \texttt{plot-ultimate.sh}. The bash scripts call the python scripts and the gnuplot script to
+     plot the graphs.
      
      \begin{figure}[h]
        \centering
-       \includegraphics[scale=0.8]{../Plots/Firefly-er-64nodes-d5-2.pdf}
+       \includegraphics[width=\textwidth]{../Plots/Firefly-er-64nodes-d5-2.pdf}
        \caption{Adaptive Ermentrout model synchronization}
        \label{fig:er-sync}
      \end{figure}
@@ -535,17 +539,97 @@
      model. We clearly see that after 50 seconds, when most of the nodes joined the network, the nodes reaches
      a stable state where the emit light at the same time.
 
-     
+     \begin{figure}[h]
+       \centering
+       \includegraphics[width=\textwidth]{../Plots/Firefly-er-64nodes-d5-2-ewl.pdf}
+       \caption{Adaptive Ermentrout model emission window length}
+       \label{fig:er-ewl}
+     \end{figure}
 
-     
+     On Figure \ref{fig:er-ewl}, we represented the emission window length according to the time. As expected,
+     the emission window length reduces as time increases, which indicates that the algorithm converges to a
+     stable state. There are some fluctuations however, but the general trend is to decrease and converge to
+     somewhere between $0.5$ and $1$ second. On Figure \ref{fig:er-cl}, we plotted the cycle length for each
+     node according to the time. The fluctuations can be explained with the cycle length, because we see that
+     when there are fluctuations for the emission window length, we have some weird values for the cycle
+     lengths, explaining the occasional desynchronization. This could be because the nodes on the cluster were
+     overloaded at this time.
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[width=\textwidth]{../Plots/Firefly-er-64nodes-d5-2-cl.pdf}
+       \caption{Adaptive Ermentrout model cycle length}
+       \label{fig:er-cl}
+     \end{figure}
 
 
+   \subsection{Analysis of the protocol under churn}
+   \label{sec:analys-prot-under-churn}
 
+     We now analyze the protocol's behaviour under churn. On Figure \ref{fig:er-churn-sync}, we show the
+     flashes the node emitted. We see that it converges until there is churn, and that under churn, the
+     remaining nodes are not desynchronized too much. The desynchronization happens when the new node join at
+     around 300 seconds.
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[width=\textwidth]{../Plots/Firefly-er-64nodes-churn-d5-10.pdf}
+       \caption{Adaptive Ermentrout model synchronization under churn}
+       \label{fig:er-churn-sync}
+     \end{figure}
+
+     The observations above are confirmed with Figure \ref{fig:er-churn-ewl} that represents the emission
+     window length under churn. We clearly see that the protocol synchronizes until the churn starts. At this
+     point the emission window length is a little bit higher. When new nodes join the system there is a peek
+     for the emission window length, and we see that the problem is not when node leave the system, but rather
+     when new nodes join the system.
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[width=\textwidth]{../Plots/Firefly-er-64nodes-churn-d5-10-ewl.pdf}
+       \caption{Adaptive Ermentrout model emission window length under churn}
+       \label{fig:er-churn-ewl}
+     \end{figure}
+
+     We clearly see this in Figure \ref{fig:er-churn-cl}, which represents the cycle length under churn. Until
+     there is churn, the cycle lengths are all around 5 seconds, but when there is churn everything starts to
+     break, and nothing recovers. 
+
+     \begin{figure}[h]
+       \centering
+       \includegraphics[width=\textwidth]{../Plots/Firefly-er-64nodes-churn-d5-10-cl.pdf}
+       \caption{Adaptive Ermentrout model cycle length under churn}
+       \label{fig:er-churn-cl}
+     \end{figure}
+
+   
 \section{Conclusion}
 \label{sec:conclusion}
 
   
+  This project inspired from fireflies to create a system that can synchronize itself in a decentralized
+  manner, only by getting partial information of the global system from the neighbours. One important piece is
+  the peer sampling service, that allows every node to have a partial view, but the main focus was on the
+  mathematical models that permitted to synchronize the nodes like fireflies synchronize to emit light.
 
+  We looked at three models, namely the phase-advance and phase-delay which are very similar, and the
+  adaptive Ermentrout model. The two first model where over-simplifying the reality and made unrealistic
+  assumptions that can not be guaranteed. The phase-advance was flooding the network, and quickly the network
+  would behave like a continuous big flash that would stop when some node crash. The phase-delay is a little
+  bit better and show signs of convergence, but not for all nodes. 
+
+  The adaptive Ermentrout model eliminated the unrealistic assumptions, and thus represented the reality
+  better. We shown that under good conditions, the protocol was converging to a stable state of
+  synchronization. This was illustrated with the emission window length getting smaller through time and the
+  cycle lengths also converging.
+
+  However, under churn, the adaptive Ermentrout model has troubles when new nodes join the network. This may
+  come from a bug in the implementation, because the cycle length should not be under 4.5 seconds, which is
+  the case here.
+
+  To conclude, the adaptive Ermentrout model is a good protocol to synchronize a large-scale system in a
+  decentralized manner. Here we only considered a network of 64 nodes, but in the reference paper, it was
+  shown that the protocol converges quickly to a stable state for a network of $2^{16}$ nodes. 
 
 
     
