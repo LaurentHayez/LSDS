@@ -204,7 +204,7 @@
   In nature, fireflies produce light in order to attract mates or prey. One interesting feature of these
   beetles is that when they emit light in group, at some point, they do it in a synchronized manner, just by
   looking at when their neighbours emit light. This feature is interesting in large-scale distributed systems,
-  as synchronization might be required, but one node does not know every other nodes. 
+  as synchronization might be required, but one node only has a partial view of the global system. 
 
   The objective is thus to inspire ourselves from fireflies to try to synchronize nodes in a decentralized
   manner. At first we will detail the protocol skeleton and explain how the core of the protocols will
@@ -362,7 +362,7 @@
      for the view exchange policy. 
 
      We start by analyzing the convergence of the phase-advance protocol. On Figure \ref{fig:pa-sync-d1}, we
-     can see that from time to time, the protocol seems to synchronize, it does not converge to a stable state
+     can see that from time to time, the protocol seems to synchronize, however it does not converge to a stable state
      where all the nodes emit flashes at the same time. In fact, what happens is what we see on Figures
      \ref{fig:pa-sync-d2} and \ref{fig:pa-sync-d5}. Whenever a node flashes, it tells ten other nodes, that set
      $\phi$ to $1$, emit a flash, tell ten other nodes, which emit a flash and so on. We thus have an
@@ -429,7 +429,7 @@
      Although we seem to obtain some synchronization for $\Delta = 5$, the phase-delay protocol is not
      guaranteed to converge to a stable state where all the nodes are synchronized. Both phase-advance and
      phase-delay protocols rely on the assumption that when a message is sent, it is instantly received. In
-     practice, this assumption is highly unrealistic due to packet loss, congestion or simply because even the
+     practice, this assumption is highly unrealistic due to packet loss, congestion or simply because even in the
      fastest networks, a message is not instantly delivered.
 
      In our experiments, we considered $\Delta$ to be fixed and the same at all nodes. This assumption does
@@ -499,7 +499,7 @@
    \end{algorithm}
 
 
-   The functions $g^+$ and $g^-$ formalize the idea that if a flash arrives ``too late'' (respectively ``too
+   The functions $g^+$ and $g^-$ in Algorithm \ref{alg:adapt-er} formalize the idea that if a flash arrives ``too late'' (respectively ``too
    early''), we must deacrease the frequency (respectively increase it). Indeed we have that
    \[
    g^+(\phi) = 
@@ -524,7 +524,7 @@
      the peer sampling service are the same as for the previous experiment. To plot the figure in
      this section we used the Python scripts \texttt{Parser-synchronization.py} and
      \texttt{Parser-ultimate.py}, and the bash scripts \texttt{Parse-and-plot-sync.sh} and
-     \texttt{Parse-and-} \texttt{plot-ultimate.sh}. The bash scripts call the python scripts and the gnuplot script to
+     \texttt{Parse-and-} \texttt{plot-ultimate.sh}. The bash scripts call the python scripts and the gnuplot scripts to
      plot the graphs.
      
      \begin{figure}[h]
@@ -608,24 +608,24 @@
 
   
   This project inspired from fireflies to create a system that can synchronize itself in a decentralized
-  manner, only by getting partial information of the global system from the neighbours. One important piece is
+  manner, only by getting partial information of the global system. One important piece is
   the peer sampling service, that allows every node to have a partial view, but the main focus was on the
   mathematical models that permitted to synchronize the nodes like fireflies synchronize to emit light.
 
   We looked at three models, namely the phase-advance and phase-delay which are very similar, and the
   adaptive Ermentrout model. The two first model where over-simplifying the reality and made unrealistic
   assumptions that can not be guaranteed. The phase-advance was flooding the network, and quickly the network
-  would behave like a continuous big flash that would stop when some node crash. The phase-delay is a little
+  would behave like a continuous big flash that would stop when some nodes crash. The phase-delay is a little
   bit better and show signs of convergence, but not for all nodes. 
 
-  The adaptive Ermentrout model eliminated the unrealistic assumptions, and thus represented the reality
-  better. We shown that under good conditions, the protocol was converging to a stable state of
+  The adaptive Ermentrout model eliminated the unrealistic assumptions, and thus represented the reality in a
+  better way. We shown that under good conditions, the protocol was converging to a stable state of
   synchronization. This was illustrated with the emission window length getting smaller through time and the
   cycle lengths also converging.
 
   However, under churn, the adaptive Ermentrout model has troubles when new nodes join the network. This may
-  come from a bug in the implementation, because the cycle length should not be under 4.5 seconds, which is
-  the case here.
+  come from a bug in the implementation, because the cycle length should not be under 4.5 seconds or above 5.5
+  seconds, which is the case here.
 
   To conclude, the adaptive Ermentrout model is a good protocol to synchronize a large-scale system in a
   decentralized manner. Here we only considered a network of 64 nodes, but in the reference paper, it was
